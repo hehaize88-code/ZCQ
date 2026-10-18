@@ -66,7 +66,7 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
     }
     return now()+fallback;
   }
-  return async function read(path:string,ttl=180000,staleMs=720000):Promise<string>{
+  async function read(path:string,ttl=180000,staleMs=720000):Promise<string>{
     const url=new URL(path,origin);
     if(url.origin!==origin)throw new Error('Invalid source');
     const key=url.href;
@@ -181,5 +181,17 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
       if(value!==undefined)return value;
       throw error;
     }
-  };
+  }
+  return Object.assign(read,{cached:async(path:string,maxAge:number):Promise<string|undefined>=>{
+    const url=new URL(path,origin);
+    if(url.origin!==origin)throw new Error('Invalid source');
+    const key=url.href;
+    // A fallback may inspect already verified data, but must never trigger
+    // another origin request or extend the snapshot's original lifetime.
+    const failure=failures.get(key);
+    if(failure&&!failure.transient)return;
+    let entry=cache.get(key);
+    try{const stored=await shared?.get(key);if(stored&&(!entry||stored.at>entry.at))entry=stored;}catch{}
+    if(entry&&entry.at<=now()&&now()-entry.at<maxAge)return entry.value;
+  }});
 }

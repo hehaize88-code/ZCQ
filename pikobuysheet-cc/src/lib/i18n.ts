@@ -55,6 +55,32 @@ mt:'Żraben|Hoodies u ġersijiet|T-shirts|Ġkieket|Qliezet u xorts|Kpiepel|Aċċ
 const qcActions:Record<string,string>={
  en:'Load QC photos',de:'QC-Fotos laden',es:'Cargar fotos QC',fr:'Charger les photos QC',it:'Carica foto QC',pl:'Wczytaj zdjęcia QC',pt:'Carregar fotografias QC',ro:'Încarcă fotografiile QC',sv:'Ladda QC-bilder',nl:'QC-foto’s laden',da:'Indlæs QC-billeder',fi:'Lataa QC-kuvat',el:'Φόρτωση φωτογραφιών QC',cs:'Načíst fotografie QC',hu:'QC-fotók betöltése',bg:'Зареди QC снимки',sk:'Načítať fotografie QC',hr:'Učitaj QC fotografije',sl:'Naloži fotografije QC',lt:'Įkelti QC nuotraukas',lv:'Ielādēt QC fotoattēlus',et:'Laadi QC-fotod',ga:'Lódáil grianghraif QC',mt:'Tagħbija tar-ritratti QC'
 };
-export function translate(lang: string) { return {...Object.fromEntries(keys.map((key,i)=>[key,rows[lang].split('|')[i]])),loadQc:qcActions[lang]||qcActions.en} as Record<string,string>; }
+const productSummaries:Record<string,string>={
+ "en": "Showing the catalog photo and estimated price. Full details are temporarily unavailable. Check options and the current price in Pikobuy.",
+ "de": "Angezeigt werden das Katalogfoto und der geschätzte Preis. Vollständige Details sind vorübergehend nicht verfügbar. Prüfe Optionen und den aktuellen Preis bei Pikobuy.",
+ "es": "Se muestran la foto del catálogo y el precio estimado. Los detalles completos no están disponibles temporalmente. Consulta las opciones y el precio actual en Pikobuy.",
+ "fr": "La photo du catalogue et le prix estimé sont affichés. Les détails complets sont temporairement indisponibles. Vérifiez les options et le prix actuel sur Pikobuy.",
+ "it": "Sono mostrati la foto del catalogo e il prezzo stimato. I dettagli completi sono temporaneamente indisponibili. Verifica opzioni e prezzo attuale su Pikobuy.",
+ "pl": "Wyświetlamy zdjęcie z katalogu i szacowaną cenę. Pełne szczegóły są tymczasowo niedostępne. Sprawdź warianty i aktualną cenę w Pikobuy.",
+ "pt": "São apresentados a fotografia do catálogo e o preço estimado. Os detalhes completos estão temporariamente indisponíveis. Consulte as opções e o preço atual no Pikobuy.",
+ "ro": "Sunt afișate fotografia din catalog și prețul estimat. Detaliile complete sunt temporar indisponibile. Verifică opțiunile și prețul actual pe Pikobuy.",
+ "sv": "Katalogbilden och det uppskattade priset visas. Fullständiga detaljer är tillfälligt otillgängliga. Kontrollera alternativ och aktuellt pris på Pikobuy.",
+ "nl": "De catalogusfoto en geschatte prijs worden weergegeven. Volledige details zijn tijdelijk niet beschikbaar. Bekijk opties en de actuele prijs op Pikobuy.",
+ "da": "Katalogbilledet og den anslåede pris vises. Alle detaljer er midlertidigt utilgængelige. Tjek muligheder og aktuel pris på Pikobuy.",
+ "fi": "Näytetään luettelon kuva ja arvioitu hinta. Täydelliset tiedot eivät ole tilapäisesti saatavilla. Tarkista vaihtoehdot ja nykyinen hinta Pikobuysta.",
+ "el": "Εμφανίζονται η φωτογραφία του καταλόγου και η εκτιμώμενη τιμή. Οι πλήρεις λεπτομέρειες δεν είναι προσωρινά διαθέσιμες. Ελέγξτε τις επιλογές και την τρέχουσα τιμή στο Pikobuy.",
+ "cs": "Zobrazuje se fotografie z katalogu a odhadovaná cena. Úplné podrobnosti jsou dočasně nedostupné. Varianty a aktuální cenu ověřte v Pikobuy.",
+ "hu": "A katalógus képe és a becsült ár látható. A teljes részletek átmenetileg nem érhetők el. Ellenőrizd a változatokat és az aktuális árat a Pikobuyon.",
+ "bg": "Показани са снимката от каталога и ориентировъчната цена. Пълните подробности временно не са налични. Проверете вариантите и текущата цена в Pikobuy.",
+ "sk": "Zobrazuje sa fotografia z katalógu a odhadovaná cena. Úplné podrobnosti sú dočasne nedostupné. Varianty a aktuálnu cenu si overte v Pikobuy.",
+ "hr": "Prikazani su fotografija iz kataloga i procijenjena cijena. Potpuni detalji privremeno nisu dostupni. Provjerite opcije i trenutačnu cijenu na Pikobuyu.",
+ "sl": "Prikazana sta kataloška fotografija in ocenjena cena. Vse podrobnosti trenutno niso na voljo. Možnosti in trenutno ceno preverite na Pikobuyu.",
+ "lt": "Rodoma katalogo nuotrauka ir apytikslė kaina. Visa informacija laikinai nepasiekiama. Variantus ir dabartinę kainą patikrinkite „Pikobuy“.",
+ "lv": "Tiek rādīts kataloga fotoattēls un aptuvenā cena. Pilna informācija īslaicīgi nav pieejama. Pārbaudiet variantus un pašreizējo cenu Pikobuy.",
+ "et": "Kuvatakse kataloogipilt ja hinnanguline hind. Täielikud andmed pole ajutiselt saadaval. Kontrolli valikuid ja praegust hinda Pikobuyst.",
+ "ga": "Taispeántar grianghraf na catalóige agus an praghas measta. Níl na sonraí iomlána ar fáil faoi láthair. Seiceáil na roghanna agus an praghas reatha ar Pikobuy.",
+ "mt": "Qed jintwerew ir-ritratt tal-katalgu u l-prezz stmat. Id-dettalji sħaħ mhumiex disponibbli temporanjament. Iċċekkja l-għażliet u l-prezz attwali fuq Pikobuy."
+};
+export function translate(lang: string) { return {...Object.fromEntries(keys.map((key,i)=>[key,rows[lang].split('|')[i]])),loadQc:qcActions[lang]||qcActions.en,summaryOnly:productSummaries[lang]||productSummaries.en} as Record<string,string>; }
 export function categoryNames(lang:string) {return categoryRows[lang].split('|');}
 export function localized(lang:string,path='/') {return (lang==='en'?'':`/${lang}`)+path;}

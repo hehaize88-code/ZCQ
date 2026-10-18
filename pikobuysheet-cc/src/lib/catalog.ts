@@ -1,5 +1,5 @@
 import { parseHTML } from 'linkedom';
-import { createSourceReader } from './source-cache';
+import { createSourceReader,SourceRetryError,SourceHttpError } from './source-cache';
 import { edgeSourceCache,createSharedSourceCache,type SourceKV } from './edge-source-cache';
 import { publicSourceSnapshot,isPublicSnapshotSource } from './source-public-snapshot';
 export const ORIGIN='https://findspreadsheet.com';
@@ -53,10 +53,23 @@ export async function getRate(read:SourceReader=upstream){try {const js=await re
 export function price(raw:string,rate:number|undefined,lang='en'){if(raw.includes('$'))return raw;const n=Number(raw);if(!raw||!Number.isFinite(n))return '—';return new Intl.NumberFormat(lang,{style:'currency',currency:rate?'USD':'CNY',maximumFractionDigits:2}).format(rate?n/rate:n);}
 export function buyLink(id:string){if(!/^\d{5,20}$/.test(id))return '';return 'https://www.pikobuy.com/product/detail?'+new URLSearchParams({productUrl:`https://weidian.com/item.html?itemID=${id}`});}
 export async function getProduct(path:string,read:SourceReader=upstream){
- const {document}=parseHTML(await read(safeProduct(path)));const detail=document.querySelector('.product-detail');if(!detail)throw new Error('Product missing');
+ path=safeProduct(path);
+ let html:string;
+ try{html=await read(path);}catch(error){
+  if(!(error instanceof SourceRetryError)||error instanceof SourceHttpError&&error.status!==429&&error.status<500)throw error;
+  // Reuse only a matching, real product card already in a valid public list.
+  // This is a labelled summary, never a fabricated full gallery or SKU result.
+  for(const [source,maxAge] of [['/AllProducts/',86400000],[`/${path.split('/')[1]}/`,900000]] as const){
+   const cached=await read.cached(source,maxAge);if(!cached)continue;
+   const item=cards(parseHTML(cached).document).find(item=>item.path===path);
+   if(item?.title&&item.image){return {path,id:item.id,title:item.title,images:[item.image],rawPrice:item.rawPrice,related:[],partial:true};}
+  }
+  throw error;
+ }
+ const {document}=parseHTML(html);const detail=document.querySelector('.product-detail');if(!detail)throw new Error('Product missing');
  const id=detail.querySelector('[data-cart-weidian]')?.getAttribute('data-cart-weidian')||detail.querySelector('[data-qc-item-id]')?.getAttribute('data-qc-item-id')||'';
  const images=[...new Set([...detail.querySelectorAll('.product-gallery img')].map((im:any)=>imageUrl(im.getAttribute('data-src')||im.getAttribute('src'))).filter(Boolean))];
- return {path,id,title:detail.querySelector('.product-title')?.textContent.trim()||'',images,rawPrice:detail.querySelector('.product-price')?.textContent.trim()||'',related:cards(document)};
+ return {path,id,title:detail.querySelector('.product-title')?.textContent.trim()||'',images,rawPrice:detail.querySelector('.product-price')?.textContent.trim()||'',related:cards(document),partial:false};
 }
 export async function getSku(id:string,read:SourceReader=upstream){if(!/^\d{5,20}$/.test(id))return null;try{return JSON.parse(await read('/api/Goods/getSkuData?weidian_id='+id,300000,0));}catch{return null;}}
 export async function getQc(id:string,read:SourceReader=upstream){if(!/^\d{5,20}$/.test(id))return {status:'unavailable',images:[]};try {const data=JSON.parse(await read('/qcradar-qc.php?item='+id,60000,0));return {status:data.status,images:Array.isArray(data.images)?data.images.filter((im:any)=>imageUrl(im.display)&&!im.isVideo).map((im:any)=>({url:imageUrl(im.display),label:[im.skuLabel,im.agentPlatform,im.takenAt].filter(Boolean).join(' · ')})):[]};}catch{return {status:'unavailable',images:[]};}}
