@@ -1,6 +1,6 @@
 import { parseHTML } from 'linkedom';
 import { createSourceReader,SourceRetryError,SourceHttpError } from './source-cache';
-import { edgeSourceCache,createSharedSourceCache,type SourceKV } from './edge-source-cache';
+import { edgeSourceCache,createSharedSourceCache,categorySources,type SourceKV } from './edge-source-cache';
 import { publicSourceSnapshot,isPublicSnapshotSource } from './source-public-snapshot';
 export const ORIGIN='https://findspreadsheet.com';
 export const REGISTER='https://www.pikobuy.com/?mode=register&redirect=/home';
@@ -42,10 +42,10 @@ function cards(doc:any):Product[]{return [...doc.querySelectorAll('.product-card
 }).filter(Boolean);}
 export async function getCatalog(path='/AllProducts/',read:SourceReader=upstream){
  const source=safeCatalog(path);
- // Keep the main catalog's last successful public response for at most one
+ // Keep every root category's last successful public response for at most one
  // day during transient failures. Normal refresh remains every three minutes;
- // source 403/404/410 never falls back to stale data. Other paths stay at 15 min.
- const {document}=parseHTML(await read(source,180000,source==='/AllProducts/'?86220000:720000));
+ // source 403/404/410 never falls back to stale data. Pagination stays at 15 min.
+ const {document}=parseHTML(await read(source,180000,source==='/AllProducts/'||categorySources.includes(source)?86220000:720000));
  return {products:cards(document),sorts:[...document.querySelectorAll('.sort-btn')].map((el:any)=>({path:navigation(el),active:el.classList.contains('active'),key:new URL(navigation(el)||'/',ORIGIN).searchParams.get('sort')})).filter(x=>x.path),pages:[...document.querySelectorAll('.pagination a')].map((el:any)=>({path:navigation(el),text:el.textContent.trim(),active:el.parentElement.classList.contains('active')})),activeCategory:document.querySelector('.filter-btn.active')?navigation(document.querySelector('.filter-btn.active')):''};
 }
 let lastRate:number|undefined;
@@ -59,7 +59,7 @@ export async function getProduct(path:string,read:SourceReader=upstream){
   if(!(error instanceof SourceRetryError)||error instanceof SourceHttpError&&error.status!==429&&error.status<500)throw error;
   // Reuse only a matching, real product card already in a valid public list.
   // This is a labelled summary, never a fabricated full gallery or SKU result.
-  for(const [source,maxAge] of [['/AllProducts/',86400000],[`/${path.split('/')[1]}/`,900000]] as const){
+  for(const [source,maxAge] of [['/AllProducts/',86400000],[`/${path.split('/')[1]}/`,86400000]] as const){
    const cached=await read.cached(source,maxAge);if(!cached)continue;
    const item=cards(parseHTML(cached).document).find(item=>item.path===path);
    if(item?.title&&item.image){return {path,id:item.id,title:item.title,images:[item.image],rawPrice:item.rawPrice,related:[],partial:true};}

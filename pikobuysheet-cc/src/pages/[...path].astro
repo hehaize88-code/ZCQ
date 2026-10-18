@@ -54,7 +54,8 @@ Astro.response.headers.set('X-Robots-Tag',robots);
 const url=(path:string)=>localized(lang,path);
 const catalogLink=(path:string)=>url('/spreadsheet/')+'?source='+encodeURIComponent(path);
 const currentPath=route==='/'?'/':route+(route.endsWith('.html')?'':'/');
-const activeCategory=categories.findIndex(x=>listing.activeCategory===`/${x}/`);
+// Preserve the selected category even when its source response is unavailable.
+const activeCategory=categories.findIndex(x=>listing.activeCategory===`/${x}/`||source.startsWith(`/${x}/`));
 const categoryTitle=activeCategory>=0?names[activeCategory]:t.all;
 const title=article?article.title+' | Pikobuy Sheet':faq?ui.faqTitle+' | Pikobuy Sheet':articleIndex?ui.articlesTitle+' | Pikobuy Sheet':guide?ui.guideTitle+' | Pikobuy Sheet':product?`${product.title} | Pikobuy Spreadsheet`:home?'Pikobuy Spreadsheet — Shoes, Clothing & Product Finds':visual?`${t.visual} | Pikobuy Spreadsheet`:guide?`${t.guide} | Pikobuy Spreadsheet`:`${query||categoryTitle} | Pikobuy Spreadsheet`;
 const hero=listing.products.slice(0,3);

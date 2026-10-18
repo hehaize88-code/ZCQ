@@ -1,5 +1,5 @@
 import { createApp } from 'astro/app/entrypoint';
-import {catalogFor} from '../src/lib/catalog.ts';
+import {refreshCatalogRoots} from '../src/lib/catalog-refresh.ts';
 import { SITEMAP_XML, SITEMAP_BYTES } from '../.generated/sitemap-response.mjs';
 const app = createApp();
 export default { async fetch(request, env, ctx) {
@@ -16,11 +16,7 @@ export default { async fetch(request, env, ctx) {
   }
   return app.render(request, { locals: {sourceCache: env?.SOURCE_CACHE}, waitUntil: ctx?.waitUntil?.bind(ctx) });
 }, async scheduled(controller,env,ctx){
-  // One normal, rate-limit-aware refresh every ten minutes. No retry loop,
-  // and no extension of the successful snapshot's original age on failures.
+  // Rotate all twelve root lists, with at most three sequential refreshes.
   if(!env?.SOURCE_CACHE)return;
-  ctx.waitUntil((async()=>{
-    try{await catalogFor(env.SOURCE_CACHE).getCatalog();}
-    catch(error){console.warn('Catalog scheduled refresh deferred',{reason:error instanceof Error?error.message:'Source unavailable'});}
-  })());
+  ctx.waitUntil(refreshCatalogRoots(env.SOURCE_CACHE,controller?.scheduledTime));
 }};

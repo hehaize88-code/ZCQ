@@ -1,8 +1,13 @@
 import type {SharedSourceCache,SourceEntry} from './source-cache';
 
 // Bounded, temporary public catalog snapshots. Locale requests share source URLs.
-// Two fixed resources plus 88 replaceable slots: no persistent catalog,
+// Two fixed resources plus 11 reserved category and 77 replaceable slots: no persistent catalog,
 // user searches, cookies, SKU/QC responses, or public proxy route.
+export const categorySources=['/shoes/','/hoodies-sweaters/','/t-shirts/','/jackets/','/pants-shorts/','/headwear/','/accessories/','/ShortSets/','/electronics/','/other-stuff/','/jersey/'];
+// Keep the existing keys for root categories, but stop product traffic from
+// replacing them. These are their original, distinct v2 hash slots.
+const categorySlots=[27,31,1,62,33,28,21,58,38,52,87];
+const replaceableSlots=Array.from({length:88},(_,i)=>i).filter(i=>!categorySlots.includes(i));
 export function sourceCacheKey(source:string){
   const url=new URL(source);
   if(url.origin!=='https://findspreadsheet.com')return;
@@ -14,7 +19,8 @@ export function sourceCacheKey(source:string){
   if(!new RegExp('^/'+category+'/(?:list_\\d+_\\d+/|[a-zA-Z0-9-]+-\\d+\\.html)?$').test(resource))return;
   let hash=2166136261;
   for(const char of resource)hash=Math.imul(hash^char.charCodeAt(0),16777619)>>>0;
-  return {key:base+'slot-'+(hash%88),resource,bucket:true};
+  const categoryIndex=categorySources.indexOf(resource);
+  return {key:base+'slot-'+(categoryIndex>=0?categorySlots[categoryIndex]:replaceableSlots[hash%replaceableSlots.length]),resource,bucket:true};
 }
 export const edgeSourceCache:SharedSourceCache={
   async retryAt(scope='origin'){
