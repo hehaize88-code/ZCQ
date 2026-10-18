@@ -1,5 +1,9 @@
 export type SourceEntry={at:number,value:string};
 export type SharedSourceCache={get(key:string):Promise<SourceEntry|undefined>,set(key:string,entry:SourceEntry,retentionMs:number):Promise<void>,retryAt?():Promise<number|undefined>,backoff?(until:number):Promise<void>};
+export class SourceHttpError extends Error {
+  status:number;
+  constructor(status:number){super(`Source ${status}`);this.name='SourceHttpError';this.status=status;}
+}
 // Ephemeral cache only. Never retry a rate-limited source immediately.
 // Stale data is allowed only for transient errors and retains its original age.
 export function createSourceReader(origin:string, transport:typeof fetch=fetch, now=Date.now,shared?:SharedSourceCache) {
@@ -53,7 +57,7 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
           throw failure;
         }
         if(!response.ok){
-          const error=new Error(`Source ${response.status}`);
+          const error=new SourceHttpError(response.status);
           const until=retryAt(response.headers.get('Retry-After'),response.status===429?60000:30000);
           if(response.status===429){
             originRetryAt=until;

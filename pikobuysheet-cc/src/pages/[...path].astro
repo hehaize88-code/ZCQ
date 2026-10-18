@@ -8,7 +8,8 @@ import {loadEditorial} from '../lib/editorial';
 import Card from '../components/Card.astro';
 import {languages,translate,categoryNames,localized} from '../lib/i18n';
 import {editorial} from '../lib/copy';
-import {getCatalog,getProduct,getRate,getSku,getQc,price,categories,REGISTER,buyLink,ORIGIN,safeCatalog} from '../lib/catalog';
+import {getCatalog,getProduct,getRate,getSku,getQc,price,categories,REGISTER,buyLink,ORIGIN,safeCatalog,safeProduct} from '../lib/catalog';
+import {SourceHttpError} from '../lib/source-cache';
 // Astro may normalize .html when matching catch-all params; upstream product
 // URLs require that suffix. Preserve the actual request path for data and locales.
 const segments=new URL(Astro.request.url).pathname.split('/').filter(Boolean);
@@ -23,12 +24,18 @@ let query=(Astro.url.searchParams.get('q')||'').slice(0,120);
 let source='/AllProducts/';
 try {source=query?'/search.html?'+new URLSearchParams({keywords:query,channelid:'2'}):safeCatalog(Astro.url.searchParams.get('source')||'/AllProducts/');}catch{invalid=true;}
 if(!query)query=new URL(source,ORIGIN).searchParams.get('keywords')||'';
-const ratePromise=(home||catalog||detail)?getRate():Promise.resolve(undefined);
+if(detail){try{safeProduct(route.slice('/products'.length));}catch{invalid=true;}}
+let rate:number|undefined;
 try {
  if(!invalid&&(home||catalog))listing=await getCatalog(home?'/AllProducts/':source);
  if(!invalid&&detail){product=await getProduct(route.slice('/products'.length));[sku,qc]=await Promise.all([getSku(product.id),getQc(product.id)]);}
-}catch(e){error=true; console.error("FindSpreadsheet source unavailable", e instanceof Error ? e.message : 'Unknown source error');}
-const rate=await ratePromise;
+ // Fetch optional exchange rates only after real product data is available.
+ // A missing/limited product must not generate another upstream request.
+ if(!invalid&&(home||catalog||detail))rate=await getRate();
+}catch(e){
+ if(e instanceof SourceHttpError&&(e.status===404||e.status===410)){invalid=true;}
+ else {error=true;console.error("FindSpreadsheet source unavailable",e instanceof Error?e.message:'Unknown source error');}
+}
 if(invalid)Astro.response.status=404;
 // Product recommendations are optional on the editorial homepage. A source
 // outage must not remove its independent guides, articles and FAQs from search.

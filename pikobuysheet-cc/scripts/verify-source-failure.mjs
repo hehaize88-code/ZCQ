@@ -114,7 +114,7 @@ try {
     const invalid=await app.fetch(new Request(site+path),{},{});
     assert.equal(invalid.status,404);await invalid.arrayBuffer();
   }
-  assert.equal(sourceCalls,2,'a cold outage triggers only initial catalog and rate requests');
+  assert.equal(sourceCalls,1,'a cold outage does not request optional rates, SKU or QC');
   assert.ok(sourceErrors>=48);
 } finally {globalThis.fetch=previousFetch;console.error=previousError;}
 console.log('PASS: source coalescing, bounded stale data, Retry-After, cold failures, 24 homepage locales, honest catalog/detail 503, SEO boundaries and stable sitemap');
