@@ -22,7 +22,8 @@ Updated: 2026-10-18
 - Main branch deploys using npm run build and npx wrangler deploy.
 - apex production hostname is indexable; other hosts are noindex. Error and query pages are noindex.
 - Canonical, hreflang and structured-data URLs use https://pikobuysheet.cc.
-- Primary sitemap: /sitemap-pages.xml, containing 360 core/editorial URLs (24 languages × 15 pages) as compact standard XML. robots.txt advertises this address. Language alternatives remain in each HTML page. The original /sitemap.xml remains available with its language alternatives; both use the same path generator.
+- Primary sitemap: /sitemap-index.xml, a sitemap index pointing to /sitemap-pages.xml. The child sitemap contains 360 core/editorial URLs (24 languages × 15 pages) as compact standard XML. robots.txt advertises the index. Language alternatives remain in each HTML page. The original /sitemap.xml remains available with its language alternatives; both URL maps use the same path generator.
+- 2026-10-18: GSC live inspection fetched /sitemap-pages.xml at 10:14:30 Asia/Shanghai with HTTP200 and the complete XML, but the Sitemaps report still showed Couldn't fetch/0 discovered. The user removed the report entry and requested another address at 10:21; /sitemap-index.xml was added for manual submission. Do not claim sitemap processing or indexing success without a successful GSC report.
 - www redirects to apex with 301, retaining path and query.
 - Official assets are served from public/brand; no product image assets are stored here.
 - Earlier preview research/validation files are historical. Production deployment verification will be recorded separately.
