@@ -10,6 +10,22 @@ function cacheKey(source:string){
   return 'https://pikobuysheet.cc/__internal-source-cache/v1/'+encodeURIComponent(resource);
 }
 export const edgeSourceCache:SharedSourceCache={
+  async retryAt(){
+    if(typeof caches==='undefined')return;
+    const cache=await caches.open('pikobuysheet-source-v1');
+    const response=await cache.match('https://pikobuysheet.cc/__internal-source-cache/v1/retry-after');
+    if(!response)return;
+    const until=Number(await response.text());
+    return Number.isFinite(until)?until:undefined;
+  },
+  async backoff(until){
+    if(typeof caches==='undefined'||until<=Date.now())return;
+    const cache=await caches.open('pikobuysheet-source-v1');
+    await cache.put('https://pikobuysheet.cc/__internal-source-cache/v1/retry-after',new Response(String(until),{headers:{
+      'Content-Type':'text/plain',
+      'Cache-Control':`public, max-age=${Math.ceil((until-Date.now())/1000)}`
+    }}));
+  },
   async get(source){
     const key=cacheKey(source);
     if(!key||typeof caches==='undefined')return;

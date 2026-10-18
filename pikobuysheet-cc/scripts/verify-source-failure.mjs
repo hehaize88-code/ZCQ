@@ -55,6 +55,17 @@ await privateRead('/private/');assert.equal(sharedEntries.has(origin+'/private/'
 const brokenCache={get:async()=>{throw new Error('cache unavailable');},set:async()=>{throw new Error('cache unavailable');}};
 const uncached=createSourceReader(origin,async()=>new Response('real uncached catalog'),()=>sharedTime,brokenCache);
 assert.equal(await uncached('/AllProducts/'),'real uncached catalog');
+let sharedRetry=0,sharedLimitedCalls=0;
+const limitedCache={...shared,retryAt:async()=>sharedRetry,backoff:async until=>{sharedRetry=until;}};
+const limitedFetch=async()=>{sharedLimitedCalls++;return new Response('limited',{status:429,headers:{'Retry-After':'120'}});};
+const limitedA=createSourceReader(origin,limitedFetch,()=>sharedTime,limitedCache);
+const limitedB=createSourceReader(origin,limitedFetch,()=>sharedTime,limitedCache);
+await assert.rejects(limitedA('/uncached-a/'),/Source 429/);
+await assert.rejects(limitedB('/uncached-b/'),/cooldown/);
+assert.equal(sharedLimitedCalls,1,'different isolates and resource paths respect shared Retry-After');
+sharedTime+=120001;
+await assert.rejects(limitedB('/uncached-b/'),/Source 429/);
+assert.equal(sharedLimitedCalls,2,'one new attempt is allowed after the shared cooldown');
 
 // Exercise the actual production bundle with an unavailable, cold source.
 const previousFetch=globalThis.fetch,previousError=console.error;

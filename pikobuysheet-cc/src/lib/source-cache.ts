@@ -1,5 +1,5 @@
 export type SourceEntry={at:number,value:string};
-export type SharedSourceCache={get(key:string):Promise<SourceEntry|undefined>,set(key:string,entry:SourceEntry,retentionMs:number):Promise<void>};
+export type SharedSourceCache={get(key:string):Promise<SourceEntry|undefined>,set(key:string,entry:SourceEntry,retentionMs:number):Promise<void>,retryAt?():Promise<number|undefined>,backoff?(until:number):Promise<void>};
 // Ephemeral cache only. Never retry a rate-limited source immediately.
 // Stale data is allowed only for transient errors and retains its original age.
 export function createSourceReader(origin:string, transport:typeof fetch=fetch, now=Date.now,shared?:SharedSourceCache) {
@@ -33,6 +33,7 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
       }catch{/* Cache service failure must not fail the source request. */}
       if(hit&&now()-hit.at<ttl)return hit.value;
     }
+    try {originRetryAt=Math.max(originRetryAt,await shared?.retryAt?.()||0);}catch{/* Local backoff remains active. */}
     const stale=()=>hit&&now()-hit.at<ttl+staleMs?hit.value:undefined;
     const failure=failures.get(key);
     if(now()<originRetryAt||(failure&&now()<failure.until)){
@@ -54,7 +55,10 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
         if(!response.ok){
           const error=new Error(`Source ${response.status}`);
           const until=retryAt(response.headers.get('Retry-After'),response.status===429?60000:30000);
-          if(response.status===429)originRetryAt=until;
+          if(response.status===429){
+            originRetryAt=until;
+            try {await shared?.backoff?.(until);}catch{/* Local backoff remains active. */}
+          }
           failures.set(key,{until,error,transient:response.status===429||response.status>=500});trim(failures);
           await response.body?.cancel();
           throw error;
