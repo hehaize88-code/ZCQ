@@ -13,7 +13,7 @@ export class SourceHttpError extends SourceRetryError {
 // this exact JSON error. Only that contract proves a delegated QC quota limit;
 // HTML challenges, unknown errors and every other endpoint remain origin-wide.
 async function inspectSourceLimit(url:URL,response:Response){
-  const unknown={delegatedQc:false,errorCode:null as string|null,errorPage:'unknown'};
+  const unknown={delegatedQc:false,errorCode:null as string|null,errorPage:'unknown',errorTitle:null as string|null};
   if(!response.body)return unknown;
   const reader=response.body.getReader();
   const decoder=new TextDecoder();
@@ -22,19 +22,21 @@ async function inspectSourceLimit(url:URL,response:Response){
     while(true){
       const {done,value}=await reader.read();
       if(done)break;
+      const remaining=4096-size;
       size+=value.byteLength;
-      if(size>4096)return unknown;
+      if(size>4096){body+=decoder.decode(value.subarray(0,remaining),{stream:true});break;}
       body+=decoder.decode(value,{stream:true});
     }
     body+=decoder.decode();
     const plain=body.replace(/<[^>]*>/g,' ');
+    const errorTitle=body.match(/<title[^>]*>([^<]{1,160})<\/title>/i)?.[1]?.replace(/\s+/g,' ').trim()||null;
     const errorCode=plain.match(/error(?:\s+code)?[\s:]+(1\d{3})\b/i)?.[1]||null;
     const errorPage=/too many requests|rate.?limit/i.test(plain)?'rate-limit':/access denied|blocked/i.test(plain)?'access-denied':/overload|resource limit/i.test(plain)?'resource-limit':'unknown';
     let delegatedQc=false;
     if(size<=1024&&url.origin==='https://findspreadsheet.com'&&url.pathname==='/qcradar-qc.php'&&/^application\/json\b/i.test(response.headers.get('Content-Type')||'')){
       try{const data=JSON.parse(body);delegatedQc=data?.status==='error'&&data?.message==='QC API request failed';}catch{}
     }
-    return {delegatedQc,errorCode,errorPage};
+    return {delegatedQc,errorCode,errorPage,errorTitle};
   }catch{return unknown;}finally{try{await reader.cancel();}catch{}reader.releaseLock();}
 }
 // Ephemeral cache only. Never retry a rate-limited source immediately.
@@ -129,7 +131,7 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
           const scope:SourceBackoffScope=limitInfo?.delegatedQc?'qc':'origin';
           if(response.status===429||response.status>=500)console.warn('FindSpreadsheet upstream response',{
             path:url.pathname,status:response.status,scope,
-            errorCode:limitInfo?.errorCode,errorPage:limitInfo?.errorPage,
+            errorCode:limitInfo?.errorCode,errorPage:limitInfo?.errorPage,errorTitle:limitInfo?.errorTitle,
             contentType:response.headers.get('Content-Type'),cacheStatus:response.headers.get('x-hcdn-cache-status'),
             server:response.headers.get('server'),retryAfter:response.headers.get('Retry-After'),
             requestId:response.headers.get('x-hcdn-request-id')
