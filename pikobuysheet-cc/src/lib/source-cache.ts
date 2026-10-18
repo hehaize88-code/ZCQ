@@ -59,6 +59,11 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
         if(!response.ok){
           const error=new SourceHttpError(response.status);
           const until=retryAt(response.headers.get('Retry-After'),response.status===429?60000:30000);
+          if(response.status===429||response.status>=500)console.warn('FindSpreadsheet upstream response',{
+            path:url.pathname,status:response.status,
+            server:response.headers.get('server'),retryAfter:response.headers.get('Retry-After'),
+            requestId:response.headers.get('x-hcdn-request-id')
+          });
           if(response.status===429){
             originRetryAt=until;
             try {await shared?.backoff?.(until);}catch{/* Local backoff remains active. */}
