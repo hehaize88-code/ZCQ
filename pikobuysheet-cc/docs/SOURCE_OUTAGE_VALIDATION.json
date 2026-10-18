@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-18",
+  "site": "https://pikobuysheet.cc",
+  "deployed_commit": "a1639a8db7e4acce283aff6ef9aa52dfd0754385",
+  "cloudflare_build": "e36f954f-29eb-4ed9-af11-35eed5864bf3",
+  "cloudflare_version": "1dd2f1f8-c7fb-4b30-87df-acb0d517c4bf",
+  "confirmed_defect": "The route treated a failed optional homepage catalog fetch as a page-wide 503 and noindex. All 24 homepages and 24 catalog landing pages returned 503 before this fix.",
+  "change": "Homepages retain independent editorial content and 200/index when optional product recommendations fail. Source requests coalesce in each isolate, honor Retry-After and have bounded stale-on-transient-error behavior. Catalog/detail cold failures remain honest 503 responses with Retry-After and no-store.",
+  "validation": {
+    "build": "passed",
+    "fault_injection": "node scripts/verify-source-failure.mjs passed",
+    "before_http_503": 48,
+    "editorial_http_200": 312,
+    "transport_failures_rechecked_successfully": 120,
+    "homepages_http_200_and_index": 24,
+    "homepage_dom": "All 24 retain guide, article and FAQ sections. No products invented.",
+    "catalog_live_samples": [
+      {
+        "path": "/spreadsheet/",
+        "status": "503",
+        "robots_header": [
+          "noindex, follow"
+        ]
+      },
+      {
+        "path": "/de/spreadsheet/",
+        "status": "503",
+        "robots_header": [
+          "noindex, follow"
+        ]
+      }
+    ],
+    "sitemap": {
+      "path": "/sitemap-main.xml",
+      "status": 200,
+      "content_type": "application/xml; charset=utf-8",
+      "bytes": 27377,
+      "unique_urls": 360,
+      "sha256": "36e3cfd370bc9d104baf232fa35ff2c23eb4192f449e91c25a14cafd0a620173",
+      "unchanged": true
+    },
+    "robots": "HTTP 200, allows all, advertises sitemap-main.xml"
+  },
+  "unresolved": [
+    "Runtime catalog source remains unavailable; this release reduces repeated requests but does not claim to restore Worker-to-source connectivity.",
+    "Search Console sitemap report success has NOT been confirmed. Page 503 errors do not prove the cause of its generic Could not fetch report.",
+    "Cloudflare connector requires reauthentication; connected-browser access lost its originating context. Current runtime logs and post-deployment GSC report could not be inspected."
+  ],
+  "next_steps": [
+    "Restore the connected browser session for Cloudflare logs and GSC.",
+    "Capture exact Worker source failure and restore legitimate source access without bypassing source rate limits.",
+    "Recheck current sitemap report and live URL inspection; keep the stable sitemap URL."
+  ]
+}
