@@ -11,5 +11,16 @@
     "404 and query noindex",
     "www 301 preserves path and query"
   ],
-  "result": "passed"
+  "result": "passed",
+  "liveDeployment": {
+    "build": "d40e8920-4b94-4d27-b66f-1540c29bc4de",
+    "version": "822fc7a9-9947-4e49-8f53-781ce7eba173",
+    "gitCommit": "80566000aa40181ba78f93b3a03a22e23cc855d2",
+    "homeFaqArticlesGermanArticleRobotsSitemapFaviconHTTP": 200,
+    "wwwHTTP": 301,
+    "sitemapUrls": 360,
+    "productionRobots": "index, follow",
+    "workersDevRobots": "noindex, follow",
+    "liveDataLimitation": "Search and details returned503; real-time Worker log reports upstream Source429. Original preview search also returned503."
+  }
 }

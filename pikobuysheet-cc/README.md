@@ -14,6 +14,7 @@ Cloudflare Workers Builds settings:
 - Build command: `npm run build`
 - Deploy command: `npx wrangler deploy`
 - Node version: 24 (also specified in `.node-version`)
+- Watch paths: `pikobuysheet-cc/**`; exclude `pikobuysheet-cc/docs/**` and `pikobuysheet-cc/*.md`
 - Custom domains: `pikobuysheet.cc` and `www.pikobuysheet.cc` (301 to apex)
 
 ## Data and editorial content
@@ -29,3 +30,5 @@ QC availability depends on the upstream source; image search is not connected. B
 Only the apex production hostname permits indexing. Error pages, image-search status pages and query variants are noindex. Canonical and hreflang URLs consistently point to the production domain. `/sitemap.xml` lists 360 editorial/core URLs in 24 languages; product pages are discovered through live catalog links rather than a copied product store. Non-production hosts keep noindex and a blocking robots.txt.
 
 The independent preview Worker is maintained separately and is not modified by this production configuration.
+
+Live check note (2026-10-18): deployment and SEO routes are live. The upstream site returned HTTP429 to Cloudflare during search/detail checks; the UI reports temporary unavailability. This limitation also affected the original preview.
