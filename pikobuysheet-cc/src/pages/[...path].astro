@@ -71,7 +71,7 @@ const canonical=new URL(url(currentPath),SITE_ORIGIN).href;
 </div></header>
 <main data-catalog-retry={error&&(home||catalog)?retryAfter:undefined}>
 {home&&<>
-<section class="hero wrap"><div class="hero-copy"><span class="eyebrow"><span class="mini-line"></span> PIKOBUY SPREADSHEET</span><h1>Pikobuy<br/><span>spreadsheet.</span></h1><h2>{c.tagline}</h2><p>{c.intro}</p>
+<section class="hero wrap"><div class="hero-copy"><span class="eyebrow"><span class="mini-line"></span> PIKOBUY SPREADSHEET</span><h1>Pikobuy<br/>{' '}<span>spreadsheet.</span></h1><h2>{c.tagline}</h2><p>{c.intro}</p>
 <form class="search-box" action={url('/spreadsheet/')} method="get"><Icon name="search"/><input name="q" aria-label={t.search} placeholder={t.placeholder} maxlength="120" required/><button aria-label={t.search} type="submit"><Icon name="arrow"/></button></form>
 <div class="hero-links"><a href={url('/search/visual/')}><Icon name="camera" size={17}/>{t.visual}</a><span></span><a href={url('/spreadsheet/')}>{t.all}<Icon name="arrow" size={15}/></a></div>
 </div><div class="hero-showcase" aria-label={t.popular}><div class="orbit-label"><Icon name="star" size={16}/>{t.popular}</div><div class="hero-grid">{hero.map((p:any,i:number)=><a class={`hero-item hero-item-${i}`} href={url('/products'+p.path)}><div class="hero-image"><img src={p.image} alt={p.title} width="420" height="420" loading="eager" referrerpolicy="no-referrer"/></div><div class="hero-item-meta"><span>{p.title}</span><strong>{price(p.rawPrice,rate,lang)}</strong></div></a>)}</div>{!hero.length&&<div class="empty">{error?c.error:t.empty}</div>}<span class="showcase-caption">{t.photos} · FindSpreadsheet</span></div></section>
