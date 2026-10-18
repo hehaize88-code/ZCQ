@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "articlesLabel": "Articles",
+    "articlesTitle": "Pikobuy buying guides",
+    "articlesIntro": "Ten practical guides to finding products, checking details and planning your order. Start with the decision in front of you.",
+    "faqTitle": "Pikobuy FAQ",
+    "faqIntro": "Clear answers about product links, warehouse photos, shipping and returns. Platform information is checked against Pikobuy’s own pages; our site features are explained separately.",
+    "faqSearch": "Search the FAQ",
+    "noMatch": "No matching questions. Try another word.",
+    "faqCount": "questions",
+    "readGuide": "Read the guide",
+    "allArticles": "All articles",
+    "updated": "Reviewed",
+    "onThisPage": "In this guide",
+    "sources": "Sources",
+    "sourceNote": "Official information checked on 17 October 2026. Policies and available services can change; confirm the terms shown for your order.",
+    "relatedTitle": "Read next",
+    "backArticles": "Back to articles",
+    "minRead": "min read",
+    "chapter": "Guide",
+    "continueExploring": "Continue exploring",
+    "homeArticlesTitle": "A better-informed first order.",
+    "viewAllFaq": "Browse all questions",
+    "editorialNote": "Independent editorial guidance. Examples explain a method; they are not live quotes, product tests or promises of an outcome.",
+    "homeFaqTitle": "A few things to know before you order.",
+    "faqBrowse": "Choose a topic or search for an answer.",
+    "readArticle": "Read article",
+    "contents": "Contents",
+    "guideTitle": "From your first find to your parcel",
+    "guideIntro": "Follow the order through its separate stages. Use the spreadsheet for research, then manage the purchase, inspection and shipment in your official Pikobuy account.",
+    "guideDetails": "The full ordering guide",
+    "articlesCount": "guides",
+    "sourceNames": {
+      "guide": "Pikobuy shopping guide",
+      "home": "Pikobuy homepage",
+      "shipping": "Pikobuy forwarding and shipping terms",
+      "returns": "Pikobuy returns policy",
+      "estimate": "Pikobuy shipping estimator",
+      "contact": "Pikobuy contact page",
+      "about": "About Pikobuy",
+      "terms": "Pikobuy terms of service",
+      "privacy": "Pikobuy privacy policy",
+      "site": "How this preview works"
+    },
+    "faqGroups": {
+      "start": "Getting started",
+      "order": "Products and orders",
+      "photos": "Photos and inspection",
+      "shipping": "Shipping and tracking",
+      "returns": "Returns",
+      "account": "Accounts and support"
+    },
+    "guideSteps": [
+      {
+        "title": "Find and shortlist",
+        "body": "Search the live FindSpreadsheet catalog or choose a category. Open the product detail to check the source listing, photos and available options."
+      },
+      {
+        "title": "Check the exact item",
+        "body": "Match the source product ID, color, size and quantity. Save the original link and resolve unclear measurements before you pay."
+      },
+      {
+        "title": "Place the purchase order",
+        "body": "Open the item in Pikobuy and review the current options, price and order terms there. The official guide separates this payment from later international shipping."
+      },
+      {
+        "title": "Review the warehouse result",
+        "body": "When your purchase reaches the warehouse, review the photos associated with your own order. Raise a mismatch or return request promptly; eligibility and deadlines apply."
+      },
+      {
+        "title": "Plan and submit the parcel",
+        "body": "Check the destination, product type, packed weight and dimensions in the official shipping estimator. Select the available route and packaging, then review the final shipping charge."
+      },
+      {
+        "title": "Follow the shipment",
+        "body": "Keep the parcel reference and distinguish seller delivery, warehouse receipt and international tracking. Contact official support with the relevant order or parcel ID if an update needs clarification."
+      }
+    ],
+    "menu": "Menu"
+  },
+  "faq": [
+    {
+      "id": "independent",
+      "group": "start",
+      "q": "Is this the official Pikobuy website?",
+      "a": "No. Pikobuy Sheet is an independent product discovery site. Ordering, payments and account support take place on pikobuy.com. Our product information is supplied by FindSpreadsheet.",
+      "sourceIds": [
+        "site"
+      ]
+    },
+    {
+      "id": "spreadsheet",
+      "group": "start",
+      "q": "What is a Pikobuy spreadsheet?",
+      "a": "Here it is a searchable catalog of product links, images and estimated prices. Use it to make a shortlist, then confirm the live listing in Pikobuy before ordering.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "how-to-use-pikobuy-spreadsheet"
+    },
+    {
+      "id": "agent",
+      "group": "start",
+      "q": "What does Pikobuy do?",
+      "a": "Pikobuy describes a purchasing and forwarding service: finding items, buying from sellers, receiving them at its warehouse and arranging international delivery. This site supplies discovery tools, not those services.",
+      "sourceIds": [
+        "about",
+        "home"
+      ],
+      "related": "pikobuy-ordering-guide"
+    },
+    {
+      "id": "signup",
+      "group": "start",
+      "q": "Where do I register?",
+      "a": "Use Join Pikobuy to open the official registration page. Registration and credentials are handled by Pikobuy; browsing this preview does not require an account here.",
+      "sourceIds": [
+        "site"
+      ]
+    },
+    {
+      "id": "marketplaces",
+      "group": "start",
+      "q": "Which marketplaces does the official guide mention?",
+      "a": "The guide names Taobao, Tmall, 1688, Weidian and Yupoo among sourcing options. That does not mean every item can be bought or shipped. Confirm the exact listing and any restrictions with Pikobuy.",
+      "sourceIds": [
+        "guide"
+      ]
+    },
+    {
+      "id": "search",
+      "group": "order",
+      "q": "How do I find a product here?",
+      "a": "Enter a product name or source ID in the search box, or choose a category. Results come from FindSpreadsheet. A shortened or translated title may not identify a unique seller listing.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "how-to-use-pikobuy-spreadsheet"
+    },
+    {
+      "id": "image-search",
+      "group": "order",
+      "q": "Does image search work in this preview?",
+      "a": "Not yet. The FindSpreadsheet image-search connection has not been verified. Use text search for now. Pikobuy’s own homepage describes image-based sourcing, which is a separate official service.",
+      "sourceIds": [
+        "site",
+        "home"
+      ]
+    },
+    {
+      "id": "source-id",
+      "group": "order",
+      "q": "Why are the catalog ID and Weidian ID different?",
+      "a": "The catalog record identifies a page in FindSpreadsheet. The Weidian item ID identifies the original product. The Open in Pikobuy button uses the original product ID, not the catalog record number.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "pikobuy-weidian-links"
+    },
+    {
+      "id": "prices",
+      "group": "order",
+      "q": "Does the displayed price include delivery?",
+      "a": "No. Treat the catalog price as an item estimate. International delivery and other applicable charges need separate confirmation. Pikobuy’s guide places international shipping payment after the warehouse stage.",
+      "sourceIds": [
+        "site",
+        "guide"
+      ],
+      "related": "pikobuy-shipping-cost"
+    },
+    {
+      "id": "variants",
+      "group": "order",
+      "q": "Does choosing a size here place an order?",
+      "a": "No. This preview helps you inspect available source options. Select and verify the required color, size and quantity again in Pikobuy before submitting or paying for an order.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "pikobuy-sizing-guide"
+    },
+    {
+      "id": "stock",
+      "group": "order",
+      "q": "What if the item is out of stock?",
+      "a": "Pikobuy’s shopping guide says an unavailable item will be refunded. Check the status and applicable details in your official order; a catalog card is not a stock reservation.",
+      "sourceIds": [
+        "guide"
+      ]
+    },
+    {
+      "id": "photo-types",
+      "group": "photos",
+      "q": "Are product photos the same as warehouse QC photos?",
+      "a": "No. Listing images describe an offer; warehouse photos relate to an item received for an order. Check the item, option and context before using a photo as evidence.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "pikobuy-qc-photo-guide"
+    },
+    {
+      "id": "qc-missing",
+      "group": "photos",
+      "q": "Why does this preview sometimes show QC unavailable?",
+      "a": "The main source’s QC connection is currently unavailable in this preview. That does not prove an item has no warehouse photos. Review your own order in Pikobuy for its inspection information.",
+      "sourceIds": [
+        "site"
+      ]
+    },
+    {
+      "id": "inspection",
+      "group": "photos",
+      "q": "What can warehouse inspection establish?",
+      "a": "The guide mentions receipt, photos and defect checks. The forwarding terms exclude specialist inspection of professional products. Photos can show visible details but are not proof of authenticity, durability or complete functionality.",
+      "sourceIds": [
+        "guide",
+        "shipping"
+      ],
+      "related": "pikobuy-qc-photo-guide"
+    },
+    {
+      "id": "extra-photos",
+      "group": "photos",
+      "q": "Can I ask for detailed photos?",
+      "a": "The forwarding terms mention purchasing additional detailed photos. Ask official support what can be photographed for your item and confirm the charge before requesting a service.",
+      "sourceIds": [
+        "shipping"
+      ]
+    },
+    {
+      "id": "packing",
+      "group": "photos",
+      "q": "Can I request different packaging?",
+      "a": "The official guide mentions minimal and reinforced packaging requests. Discuss the item’s needs before removing boxes, labels or seals; changing packaging can affect protection and return eligibility.",
+      "sourceIds": [
+        "guide",
+        "returns"
+      ],
+      "related": "pikobuy-parcel-packing"
+    },
+    {
+      "id": "estimate",
+      "group": "shipping",
+      "q": "What information does the shipping estimator ask for?",
+      "a": "The official estimator asks for destination, product type and weight in kilograms, with length, width and height in centimeters. Use packed-parcel information when available and compare the routes actually returned.",
+      "sourceIds": [
+        "estimate"
+      ],
+      "related": "pikobuy-shipping-cost"
+    },
+    {
+      "id": "combine",
+      "group": "shipping",
+      "q": "Can goods from different sellers share a parcel?",
+      "a": "Pikobuy’s contact page describes combining items from different sellers into one parcel. Confirm which items and routes are compatible. Combining orders does not automatically make every shipment cheaper.",
+      "sourceIds": [
+        "contact"
+      ],
+      "related": "pikobuy-parcel-packing"
+    },
+    {
+      "id": "tracking",
+      "group": "shipping",
+      "q": "When should tracking appear?",
+      "a": "The shopping guide says tracking becomes available within three days after dispatch. This describes tracking availability, not delivery time. If your dispatched parcel lacks an update, ask official support to check its reference.",
+      "sourceIds": [
+        "guide"
+      ],
+      "related": "pikobuy-tracking-guide"
+    },
+    {
+      "id": "delivery-time",
+      "group": "shipping",
+      "q": "Is there one delivery time for every country?",
+      "a": "No fixed universal delivery time is established by the pages reviewed. Route, destination and parcel circumstances differ. Use the estimate for your selected route and allow for the risks described in the shipping terms.",
+      "sourceIds": [
+        "estimate",
+        "shipping"
+      ],
+      "related": "pikobuy-tracking-guide"
+    },
+    {
+      "id": "forwarding",
+      "group": "shipping",
+      "q": "Is forwarding the same as a purchase made by Pikobuy?",
+      "a": "Forwarding starts with goods sent to the assigned warehouse address. Its terms have separate inspection and after-sales limitations. Confirm the warehouse instructions before sending anything; do not assume purchase-order support rules apply.",
+      "sourceIds": [
+        "shipping"
+      ]
+    },
+    {
+      "id": "return-window",
+      "group": "returns",
+      "q": "When can I request a warehouse return?",
+      "a": "For eligible orders, the policy describes a five-day, 120-hour application window after the In Warehouse status, calculated from the next hour. Seller consent and product conditions still apply. Check your order promptly.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "return-eligibility",
+      "group": "returns",
+      "q": "Is every product returnable?",
+      "a": "No. The policy lists exclusions and condition requirements, including customized goods and some intimate apparel. A general return window does not override the seller’s rules or the item’s eligibility.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "return-cost",
+      "group": "returns",
+      "q": "Are returns always free?",
+      "a": "No. Charges depend on the reason, seller and order status. The policy contains differing descriptions of original delivery charges, so obtain a clear case-specific cost breakdown before agreeing to a return.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "return-packaging",
+      "group": "returns",
+      "q": "Should I remove tags or packaging before deciding?",
+      "a": "Keep them until you have checked the item and return conditions. The policy ties eligibility to resale condition and gives product-specific requirements for seals, labels and packaging.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "payments",
+      "group": "account",
+      "q": "Which payment method can I use?",
+      "a": "Pikobuy displays several payment brands, but the reviewed pages do not establish availability for every country, currency or order. Use the methods and charges offered in your official checkout.",
+      "sourceIds": [
+        "about",
+        "guide"
+      ]
+    },
+    {
+      "id": "failed-payment",
+      "group": "account",
+      "q": "Will an unpaid order be processed?",
+      "a": "The terms say failed payment prevents order processing. Check the order and payment status before trying again; if a charge looks unclear, contact official support rather than assuming a new payment is required.",
+      "sourceIds": [
+        "terms"
+      ]
+    },
+    {
+      "id": "account-data",
+      "group": "account",
+      "q": "Where can I ask about account data or support?",
+      "a": "Use Pikobuy’s official contact page for order support. Its privacy policy directs account-closure and personal-data deletion requests to customer support. Never send your password or payment credentials to this independent site.",
+      "sourceIds": [
+        "contact",
+        "privacy"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "how-to-use-pikobuy-spreadsheet",
+      "category": "Spreadsheet",
+      "title": "How to Use a Pikobuy Spreadsheet: Search, Compare and Build a Useful Shortlist",
+      "description": "A practical way to search Pikobuy finds, preserve the right product links, compare variants and budget before opening an order.",
+      "intro": "A Pikobuy spreadsheet is useful when it helps you make a clearer purchasing decision. A large catalog alone does not tell you whether a particular size fits, whether the photographed option matches the selected variant, or whether international delivery fits your budget. Treat browsing as the beginning of a checking process, with a small shortlist as the outcome. Pikobuy Sheet brings product information from findspreadsheet.com into local browsing and detail pages. Its purchase button then opens the corresponding product on Pikobuy, where ordering decisions belong. This guide explains a practical method for moving between those stages without confusing a discovery price with a final quote or a saved image with evidence about your own order.",
+      "sections": [
+        {
+          "heading": "Start with a specific shopping brief",
+          "paragraphs": [
+            "Write down the job the item needs to do before searching. For clothing, that could mean a lightweight layer for mild weather, a particular garment measurement, and a maximum amount reserved for the item itself. For an accessory, it might mean the intended dimensions, preferred material and compatibility with something you already own. These requirements are more useful than a broad goal such as finding the best product. They also help you recognize when an attractive photograph is pulling you away from what you need.",
+            "Separate requirements into essential and optional details. If a jacket must fit over a sweater, room through the chest is essential; an exact shade may be optional. Keep the brief in your own notes so it remains available across tabs. This is a personal comparison method, not a claim that the site provides a saved-list account feature. A clear brief lets you reject unsuitable results quickly and spend time on the few that deserve closer attention."
+          ]
+        },
+        {
+          "heading": "Search in small, deliberate steps",
+          "paragraphs": [
+            "Begin with the product type and one useful distinguishing term. A search for a specific garment shape or accessory type is easier to interpret than a sentence containing every preference. If results are too broad, add a second term. If there are no useful matches, remove a qualifier or try an alternative description. A listing may use different English wording from your own, so a missing result does not establish that the product is unavailable everywhere.",
+            "Use categories to establish context before comparing individual cards. A photograph can make a sweatshirt and a lightweight outer layer look similar, while their measurements and practical use differ. Open promising results into their local detail pages, then check what information is actually available. Text search is the working discovery path for this preview. Image search is not connected, so an image you upload elsewhere or a camera icon you recognize should not be treated as evidence of an operational search service here."
+          ]
+        },
+        {
+          "heading": "Separate a product card from a purchasing decision",
+          "paragraphs": [
+            "A card is a compact introduction: it may help you recognize the item and compare a displayed price, but it cannot carry every qualification. On the detail page, look for additional images, source information and the options supplied for that product. Check whether the title identifies a general style, a particular version, or a group of variants. Do not assume that every colour in a gallery is available for the same price or that the first image describes the currently selected option.",
+            "The distinction becomes especially important when several items look nearly identical. One might include an accessory that another sells separately, or use a different size range. If the available information cannot resolve that difference, record the uncertainty rather than choosing a more confident interpretation. Before paying, confirm the relevant option on Pikobuy. The official shopping guide places specification and quantity selection before purchasing payment; a discovery page does not replace that step."
+          ]
+        },
+        {
+          "heading": "Preserve links and variants in your shortlist",
+          "paragraphs": [
+            "Keep each shortlisted item together with its detail link, source product identifier where available, intended colour or version, and intended size. Add the date you checked it and a brief reason it made the list. A screenshot alone is a weak bookmark: it may omit the source, capture an earlier price, or show a colour that is no longer offered. The link allows you to revisit the current listing instead of reconstructing it from a similar photograph.",
+            "A simple note can have five fields: item, link, selected option, reason to consider, and unresolved point. For example, an explicitly hypothetical entry might say that a navy overshirt fits the intended use but still needs a sleeve measurement. That is more actionable than marking it as good quality without evidence. Keep alternatives only when they solve the same need; otherwise a shortlist quietly becomes another catalog and makes comparison harder."
+          ]
+        },
+        {
+          "heading": "Compare costs on the same basis",
+          "paragraphs": [
+            "Decide what the displayed number represents before sorting by price. Compare the intended variant and quantity, then leave room in your budget for costs that are not established by a catalog card. The amount shown during discovery may change by the time you open the purchasing platform. A currency conversion also does not, by itself, establish the exchange rate or payment amount that will apply at checkout.",
+            "Use a planning total rather than pretending to know the final delivered cost. As a hypothetical example, two shortlisted items costing 20 and 24 units of your budgeting currency differ by four units at the item stage. That comparison says nothing yet about their parcel size, delivery route or other charges. Record confirmed amounts separately from estimates. This helps you see whether a cheaper product remains attractive after the missing information is checked, without presenting invented freight prices as real Pikobuy quotes."
+          ]
+        },
+        {
+          "heading": "Give evidence more weight than visual similarity",
+          "paragraphs": [
+            "Ask what each image can actually support. A clear photograph can help you inspect visible design details; it cannot confirm every material claim, long-term durability or how the item will fit your body. A seller gallery describes a listing, while photos of a particular purchased unit describe that unit. Similar appearance across two cards is therefore a reason to inspect identifiers and options, not proof that the products are identical.",
+            "Pikobuy Sheet's live QC connection is currently unavailable. Missing QC should remain a missing piece of evidence, not be replaced by a stock image with a reassuring label. If you later purchase through Pikobuy, examine the photos connected to your own warehouse order before making a shipping decision. For an uncertain shortlist item, write down the specific evidence you need, such as a label photo or a measurement, rather than relying on a general impression."
+          ]
+        },
+        {
+          "heading": "Keep context when changing language or device",
+          "paragraphs": [
+            "The interface can help you browse in your preferred language, but product titles and source option names may retain their original wording. Preserve that wording alongside your own notes. Translating a colour or size informally can introduce an error when you return to a selection menu, particularly if several options have similar names. When an option is unclear, keep the original text and seek clarification instead of choosing the closest familiar label.",
+            "On a phone, review one shortlisted item at a time and confirm that you have not changed the selected option while scrolling. On a larger screen, compare equivalent fields across a small number of tabs. Either method works if the same identifiers and requirements stay attached to each item. Avoid treating the first visible result as the best match merely because it is easier to reach; ordering and visual prominence are not independent product evaluations."
+          ]
+        },
+        {
+          "heading": "Finish browsing with a clear next action",
+          "paragraphs": [
+            "For each candidate, choose a practical outcome: ready to verify on Pikobuy, needs a specific detail, or no longer suitable. A missing measurement calls for clarification; a price outside the budget calls for a different choice. Neither problem is solved by opening more nearly identical cards. Narrowing the list is progress because it makes the eventual order easier to check and reduces the chance of paying for an unintended option.",
+            "When you use the purchase button, confirm the destination is the official Pikobuy product page and compare its item and options with your notes. Pikobuy's own guide describes using links or keywords to locate products and then selecting the purchasing details. Keep registration, payment and order support on that official platform. The independent spreadsheet remains a discovery and comparison aid, while your saved identifiers and unanswered points provide the continuity between browsing and a deliberate purchase."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "home"
+      ],
+      "related": [
+        "pikobuy-ordering-guide",
+        "pikobuy-weidian-links",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-ordering-guide",
+      "category": "Buying guide",
+      "title": "Pikobuy Ordering Guide: From Your First Product Link to Parcel Submission",
+      "description": "Understand the purchasing and international shipping stages, with practical checks for variants, warehouse evidence and parcel costs.",
+      "intro": "An agent order contains several decisions that happen at different times. Choosing a product, buying it from a seller, reviewing its arrival at a warehouse and arranging international delivery are connected, but they are not the same action. Pikobuy's public shopping guide describes purchasing payment first and international shipping payment later. Understanding that sequence is more useful than memorizing a promised number of delivery days. This article follows the buyer's path and explains what to check before moving forward. It is a preparation guide based on public information and original decision checklists, not an account of a test purchase. Your current order screen and the terms applying to your chosen services remain the place to confirm specific charges and options.",
+      "sections": [
+        {
+          "heading": "Prepare the destination and the item requirements",
+          "paragraphs": [
+            "Before placing an order, check the destination details you will need for delivery. Keep the recipient name, address components and contact information in a form you can review carefully. Do not improvise an abbreviation just to make a field fit. If your address contains a building, unit or other essential local detail, establish where that information belongs before the parcel reaches the submission stage. Accurate preparation avoids trying to correct several uncertainties at once later.",
+            "Prepare the item separately. Record its source link, the version you want, the intended size or dimensions, and anything that must be confirmed before purchase. A hypothetical first order containing one clearly specified item is easier to audit than a collection of ambiguous alternatives, although the right quantity depends on your own needs. Treat this preparation as a way to reduce mistakes, not as a guarantee against every seller or logistics problem."
+          ]
+        },
+        {
+          "heading": "Use discovery information to reach the official product page",
+          "paragraphs": [
+            "On Pikobuy Sheet, search or browse the catalog, then open the local detail page for the item you want to inspect. Product information on this independent site comes from findspreadsheet.com. The purchase link is the handoff to Pikobuy, not confirmation that you have already ordered. After opening it, compare the product identity, images and relevant options against your notes. A page that merely looks similar is not sufficient if its source identifier differs.",
+            "If a listing does not load or the expected option is absent, stop at that point and resolve the mismatch. Repeating a payment attempt cannot repair an incorrect product link. Pikobuy's guide describes entering product links or keywords and directs users to support when they cannot find an item. Use that official assistance for purchasing availability. Keep the independent site's browsing function distinct from questions that only the platform or seller can answer."
+          ]
+        },
+        {
+          "heading": "Review the specification before the first payment",
+          "paragraphs": [
+            "Read every selection that affects what will arrive: colour, size, model, quantity and any separately sold component. Check that the active option matches the image you relied on. In a hypothetical listing that offers both a single accessory and a set, a prominent group photograph would not establish which option you selected. The safest approach is to compare the option text directly with the intended purchase and resolve ambiguity before paying.",
+            "Then inspect the amount and any listed charges on the actual purchasing screen. Keep a record of the confirmed item and selected options for your own reference. Pikobuy's guide says the actual purchase price applies and describes refunds when goods are out of stock. That does not turn an earlier discovery price into a binding quote. If the amount or availability differs from your plan, make a fresh decision instead of assuming the earlier information must prevail."
+          ]
+        },
+        {
+          "heading": "Track the seller-to-warehouse stage separately",
+          "paragraphs": [
+            "After purchasing, follow the status of the item as an order, rather than expecting international parcel tracking immediately. The seller-to-warehouse movement is a different stage from the eventual journey to your address. Use the wording shown in your account to understand what has happened. Avoid translating an unfamiliar status into a firm dispatch date unless the platform actually provides that information for your order.",
+            "Keep messages focused when clarification is needed. Include the order identifier, the item or selected option concerned, the status you see, and the specific point you need resolved. For example, ask whether a requested specification was confirmed instead of sending only an image and a general complaint. This is an editorial communication method, not a statement about support turnaround. It creates a record that is easier to follow if the order has several products progressing at different speeds."
+          ]
+        },
+        {
+          "heading": "Review the warehouse evidence against the order",
+          "paragraphs": [
+            "When the item reaches the warehouse, compare the available evidence with your original specification. Pikobuy's guide includes arrival check-in, photographs and defect checking in this stage. Begin with identity: is this the expected item, colour and quantity? Then inspect visible details that matter to your use. If the size label is visible, compare it with the size ordered, while remembering that a label alone does not establish actual fit.",
+            "Separate a visible issue from something the evidence cannot answer. A clearly different colour is a different concern from uncertain fabric feel, and each requires a different clarification. Preserve relevant order information and raise a concrete issue promptly. Do not submit the international parcel simply to clear a pending task when an important discrepancy remains unresolved. Reviewing early also gives you a better opportunity to ask about the applicable options before subsequent handling changes the item's condition."
+          ]
+        },
+        {
+          "heading": "Choose packaging and a shipping scenario deliberately",
+          "paragraphs": [
+            "Once you know which items you intend to keep, review the proposed parcel. Consider protection, packed dimensions, weight and the destination together. A smaller package is not automatically the better package if it leaves a fragile object inadequately protected. Conversely, retaining unnecessary bulk can affect which delivery options make sense. Ask for clarification when a packaging choice is unclear rather than assuming a familiar name implies a particular service.",
+            "The official estimator provides fields for destination, product type, weight and dimensions. Use the relevant parcel information to compare current scenarios, and check the conditions attached to each result. For a hypothetical comparison, one route might suit your timing preference while another suits a different package profile; that is a decision framework, not a claim about routes currently offered. Do not choose solely from a headline amount without understanding the package assumptions behind it."
+          ]
+        },
+        {
+          "heading": "Treat international shipping as the second payment decision",
+          "paragraphs": [
+            "At parcel submission, review the recipient information again and check the selected service, package contents and payable breakdown. This is the second major decision in the public guide's sequence. Your earlier item purchase does not mean every possible delivery charge has already been settled. Keep confirmed costs separate from amounts that remain estimates or depend on destination requirements, and avoid using the catalog card as your total-cost record.",
+            "Pause if a new charge, packaging change or route condition materially alters your budget. A useful personal check is to explain the decision in one sentence: what you are shipping, where it is going, which service you selected and which uncertainties remain. If you cannot do that, review the screen or ask a specific question. This method helps reveal missing information without inventing a universal cheapest route or promising that a particular parcel will avoid delays."
+          ]
+        },
+        {
+          "heading": "Keep a clear record through delivery",
+          "paragraphs": [
+            "After dispatch, retain the parcel identifier and follow the available tracking for that international shipment. Do not confuse a seller's domestic tracking number with the final parcel record. An update gap by itself does not tell you the cause; use the latest actual status and the platform's support channel when you need an explanation. Avoid accepting an unsolicited payment instruction merely because it refers to a delivery you are expecting; verify it through the service you are using.",
+            "When the parcel arrives, inspect the packaging and contents and retain useful evidence if something differs from the order. Keep the item record, warehouse observations and delivery information connected so you can describe the issue accurately. The aim throughout is continuity: each decision should use the information established at the previous stage. A careful process cannot remove all uncertainty, but it makes mistakes easier to identify and questions easier for the appropriate party to address."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "contact"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-weidian-links",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-weidian-links",
+      "category": "Product links",
+      "title": "Pikobuy Weidian Links: Keep the Correct Product ID from Discovery to Order",
+      "description": "Learn how to recognize a Weidian source ID, avoid confusing catalog record numbers and verify the product after opening Pikobuy.",
+      "intro": "A product link is a reference to a specific listing, not merely a convenient way to open a familiar picture. When an independent catalog and a purchasing agent both display the same item, their addresses can contain different numbers for different reasons. Confusing those numbers can send you to the wrong product even when the surrounding link looks plausible. The useful distinction is simple: a catalog record identifies an entry in the discovery site, while the Weidian item identifier identifies the seller's source listing. This guide explains how to preserve that identity as you move from Pikobuy Sheet to the official platform, without requiring you to write code or understand the site's internal implementation.",
+      "sections": [
+        {
+          "heading": "Identify the source listing before comparing addresses",
+          "paragraphs": [
+            "Start by establishing what the product link refers to. In a Weidian item address, the value associated with itemID identifies the source listing. For example, consider https://weidian.com/item.html?itemID=7857789312, where 7857789312 is the source identifier. That example explains the link format; it is not a claim about the product's current availability, quality, price or suitability. Those details still need checking on the current listing and purchasing page.",
+            "Keep the full source address when you save an item, rather than writing down only a title. Titles can change, repeat across sellers or describe several similar options. Images can also be reused. An identifier gives you a more precise reference when asking whether the same listing has opened. It does not, however, guarantee that the listing's contents will remain unchanged forever, so compare the current product information as well as the number."
+          ]
+        },
+        {
+          "heading": "Distinguish a catalog record from a Weidian item ID",
+          "paragraphs": [
+            "An independent catalog may assign its own record number to the page where it presents a find. That number belongs to the catalog's organization. It should not be substituted into a Weidian product address merely because it appears at the end of a local page URL. The source product identifier must come from the actual source information, not from a guess based on whichever number is easiest to see.",
+            "Consider a clearly hypothetical case in which a discovery page ends with record 120 while the Weidian listing carries a much longer itemID. Both numbers can correctly refer to their respective pages, but they do different jobs. Saving the local page helps you revisit the catalog description; saving the source address helps you identify the seller listing. Keeping both in your notes makes comparison easier when you return later or need to report that a purchase link opens an unexpected item."
+          ]
+        },
+        {
+          "heading": "Understand the purchasing link as a handoff",
+          "paragraphs": [
+            "A Pikobuy product address can contain the source address as part of its destination information. The provided example follows this form: https://www.pikobuy.com/product/detail?productUrl=https://weidian.com/item.html?itemID=7857789312. Its purpose is to tell Pikobuy which source listing to open. A working site button may display some punctuation as encoded characters in the address bar; that can be an ordinary way of carrying one address inside another, rather than evidence that the source identifier changed.",
+            "For everyday use, prefer the prepared purchase button over manually reconstructing the link. After opening it, confirm the official domain and inspect the loaded product. The address is a route to a decision, not proof that every detail is correct. If you share a link with someone else, preserve it as a complete clickable address and avoid inserting spaces, omitting the ending or replacing the identifier with a catalog record number."
+          ]
+        },
+        {
+          "heading": "Check the product and the option after opening Pikobuy",
+          "paragraphs": [
+            "Matching a source identifier is an important check, but it does not select the right variant for you. Review the title, visible product information and available choices after the page loads. Then compare the active colour, size, model and quantity with the item you intended to buy. A listing can contain several related options, including options whose prices differ or whose names are difficult to interpret without the accompanying image.",
+            "Use the source identifier to establish the listing and the option text to establish the intended purchase. If your notes say one version but the page opens with another selection active, change and verify it deliberately. Do not assume the first photograph or an option chosen during an earlier visit still controls the current order. Pikobuy's public guide places specification selection before payment; a correct link is only the starting point for that specification check."
+          ]
+        },
+        {
+          "heading": "Handle redirects and incomplete links cautiously",
+          "paragraphs": [
+            "Links copied from messaging apps or notes can lose part of their ending or acquire surrounding punctuation. Before concluding that the seller removed a product, compare the copied address with the original source you saved. Look for an unintended space, a missing identifier or an extra character included from a sentence. Do not repeatedly change random digits until a page loads: finding any product is different from finding the intended product.",
+            "If a shortened or redirected link opens successfully, inspect the final product information and preserve a clear source reference when the platform makes one available. When it does not open, keep the original link and ask for clarification through the official purchasing service. Avoid relying on an unrelated third-party converter that cannot explain which listing it resolved. The practical goal is a traceable connection between the find you selected and the product you are considering paying for."
+          ]
+        },
+        {
+          "heading": "Recognize when availability or content has changed",
+          "paragraphs": [
+            "A saved link can remain syntactically correct while the product is unavailable, the seller has changed the listing or an intended option has disappeared. Treat these as product-information issues rather than assuming every failure is caused by the URL. Compare what you see now with your earlier notes, including the date you recorded them. If the options or images differ materially, pause before proceeding even if the identifier still matches.",
+            "Record the discrepancy in concrete terms. For example, a hypothetical note might say that the previously selected medium option is no longer shown, rather than claiming the entire link is broken. That makes the next step clearer: check another size only if it meets your measurements, seek clarification, or remove the item from consideration. Do not use an old screenshot as evidence that the seller must still supply a particular version at the earlier price."
+          ]
+        },
+        {
+          "heading": "Keep marketplace formats separate",
+          "paragraphs": [
+            "A Weidian template should be used with a genuine Weidian source identifier. Other marketplaces have their own address structures and identifiers. A number from a Taobao listing or a source URL from another platform should not be inserted into the Weidian itemID position simply because both are product references. That substitution changes the meaning of the link and can open an unrelated item or fail entirely.",
+            "Pikobuy's guide mentions several marketplaces, but that broad official sourcing description does not establish that every independent catalog button supports every format. For this site's Weidian purchase flow, verify the actual Weidian source. When browsing a different marketplace, retain its original link and confirm the supported purchasing path on Pikobuy instead of adapting a format by guesswork. Platform support, individual listing availability and the correctness of a particular generated link are separate things to check."
+          ]
+        },
+        {
+          "heading": "Save a useful reference for later questions",
+          "paragraphs": [
+            "A good product reference combines the local discovery page, the full source link, the intended option and a short description of the unresolved point. If a purchase page opens the wrong item, include what you expected and what appeared. If the listing is correct but an option is unclear, identify the option text. This is more useful than sending a screenshot containing only a product photograph or a number without explaining which system it belongs to.",
+            "Before payment, make one final comparison between the item you meant to buy and the page where you are about to order. Keep account credentials and payment details out of shared notes or public screenshots. The discipline is modest: preserve identifiers, verify the current listing and confirm the selected variant. It prevents a discovery site's internal record, an outdated image or an incomplete copied address from quietly taking the place of the actual product you intended."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-ordering-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-qc-photo-guide",
+      "category": "Quality checks",
+      "title": "Pikobuy QC Photo Guide: Read Warehouse Evidence Without Overclaiming",
+      "description": "Compare listing images with your own warehouse photos, check identity and visible details, and identify what still needs clarification.",
+      "intro": "QC photos are most useful when you approach them with a specific checklist and a clear understanding of their limits. They can help reveal a visible mismatch or document the condition of a particular item, but a photograph is not a complete product test. It also matters whose item is pictured and when the image was taken. Pikobuy Sheet's live QC connection is currently unavailable; product-gallery images here should not be mistaken for verified photos of your own order. Pikobuy's official guide separately describes photo confirmation and defect checking when purchased goods arrive at its warehouse. This article explains how to review that kind of evidence carefully, while separating things you can observe from things that still require clarification.",
+      "sections": [
+        {
+          "heading": "Establish what kind of image you are viewing",
+          "paragraphs": [
+            "Begin by classifying the evidence. A listing photograph illustrates what the seller presents for sale. A photo from a previous buyer, if its context is known, shows a different person's item at a particular time. A warehouse photograph connected to your own order is more directly relevant to the item you will decide whether to ship. These sources can complement one another, but they are not interchangeable and should not be labelled as if they prove the same thing.",
+            "Record the product reference and any visible order context before inspecting details. An image with no reliable connection to the intended listing may be visually interesting but weak evidence for your decision. Similarly, several similar pictures are not necessarily several independent checks. If the site provides only a gallery, describe it as a gallery. Do not turn unavailable QC into a positive quality signal or assume that an image of a similar product fills the gap."
+          ]
+        },
+        {
+          "heading": "Confirm identity, quantity and selected options first",
+          "paragraphs": [
+            "Start with the checks that can prevent the clearest ordering mistakes. Compare the received item against your order's colour, model, size label and quantity. Look for included accessories or components if they were part of the selected option. A hypothetical pair of gloves, for example, should be checked as the ordered set, rather than accepted merely because one glove in the image resembles the listing. The comparison must use your actual selected option, not only the product's main marketing photo.",
+            "Keep a distinction between a visible label and the underlying property it describes. A size label can show that the labelled size matches your order, but it does not establish the garment's measurements. A printed material description is not an independent laboratory finding. Identity checks are therefore the first layer of review: they help establish whether the warehouse is showing the intended item before you spend time evaluating finer visible details."
+          ]
+        },
+        {
+          "heading": "Use a repeatable visual inspection order",
+          "paragraphs": [
+            "Review the item in a consistent sequence instead of jumping between the most noticeable details. For a garment, you might examine the overall shape, front and back, closures, seams, visible surface marks and labels. For an accessory, the sequence may focus on the body, attachment points, included parts and areas that will receive regular handling. Adapt the checklist to the item rather than borrowing a generic list that ignores its actual use.",
+            "Describe observations precisely. A visible dark mark near a cuff is a clearer statement than declaring the entire item poor quality. Note whether the photograph gives enough resolution and coverage to distinguish a mark from a shadow or folded fabric. If not, classify it as unresolved. This approach avoids two opposite mistakes: accepting an obvious discrepancy because the overall picture looks attractive, and treating every uncertain detail as a proven defect without enough evidence."
+          ]
+        },
+        {
+          "heading": "Account for lighting, perspective and missing views",
+          "paragraphs": [
+            "Photographs compress a three-dimensional object into a view shaped by lighting, camera position and framing. Colour can appear different under different light, while folds or perspective can make a straight edge look uneven. Before drawing a conclusion, compare the same feature across available views. A concern that appears consistently in clear photographs deserves a different response from an effect that appears only in one shadowed corner.",
+            "Missing views are themselves a limit on what you can conclude. A clean front view does not establish the condition of the back, and a closed package does not reveal everything inside. Write down the missing view that would resolve your concern. For example, request a clearer view of a specific seam or label instead of asking vaguely for better photos. A targeted request helps focus attention on a decision-relevant point without assuming the warehouse can perform every type of examination."
+          ]
+        },
+        {
+          "heading": "Read measurement photos as measurements, not impressions",
+          "paragraphs": [
+            "If a measurement photo is available, identify the starting point, endpoint, unit and the way the item is positioned. A tape placed diagonally across a garment does not answer the same question as a straight width measurement. Likewise, a stretched waistband and a relaxed waistband describe different conditions. Compare the photo with your chosen reference method before using the number to make a fit decision.",
+            "Use a familiar garment as a comparison when appropriate, and keep flat measurements separate from body measurements. In a hypothetical example, a shirt measured at 56 centimetres across the chest should be compared with a reference shirt measured across the same points. It should not be read as a 56-centimetre body circumference. If the endpoints or unit cannot be seen, ask for clarification rather than treating a partly visible tape as an exact result. Measurement evidence is useful only when its method is understandable."
+          ]
+        },
+        {
+          "heading": "Turn concerns into specific clarification requests",
+          "paragraphs": [
+            "A useful request connects one observation with one decision. State the order or item reference, identify the area concerned, explain what is unclear and describe the view or information that would help. For example, an explicitly hypothetical request might ask for a closer view of a zipper area because the available image does not show whether the fabric is caught. This is more precise than requesting a general guarantee that the item is perfect.",
+            "Pikobuy's forwarding terms mention additional detailed photographs and limit professional inspection for special products. Confirm what assistance is available for your actual order and whether it carries a charge. Do not assume that a request for a photograph includes functional testing, authentication or dismantling. Keep the response connected to the original concern so you can decide whether it resolves the issue, leaves an important uncertainty or reveals a discrepancy that needs a different process."
+          ]
+        },
+        {
+          "heading": "Make the keep-or-query decision before further handling",
+          "paragraphs": [
+            "Review important evidence while you still have a meaningful choice about what happens next. If the item visibly differs from the selected option, preserve the relevant photographs and order information and ask about the applicable resolution. If the problem is uncertainty rather than a confirmed mismatch, say so. A documented question about a measurement is different from an allegation that the seller sent the wrong size.",
+            "Avoid removing labels, changing packaging or approving further handling without considering whether it affects the options available for that item. The correct response depends on the current order status and applicable terms, so do not infer a universal remedy from another buyer's story. Once your concern is resolved, record the reason for your decision. That note can be brief, but it makes it easier to understand later whether you accepted a visible characteristic, received clarification or overlooked a question that was never answered."
+          ]
+        },
+        {
+          "heading": "Keep the conclusion within the evidence",
+          "paragraphs": [
+            "Finish with a bounded conclusion: the visible colour matches the intended option, the photographed quantity is correct, a measurement appears consistent with your reference method, or a specific issue remains unresolved. Avoid broad labels such as authenticated, guaranteed durable or flawless unless you have appropriate evidence beyond a basic photograph. A warehouse image cannot demonstrate long-term wear, hidden construction, every internal component or how the item will feel in use.",
+            "The same restraint applies when discussing products with other shoppers. Explain which images you reviewed and what they showed, without presenting a different person's unit as proof of future seller consistency. A careful QC review is not an attempt to remove every unknown. It is a method for identifying visible mistakes, asking better questions and making a conscious decision about remaining uncertainty. Combined with accurate order details and a sensible budget, that method is more valuable than an unsupported quality score."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "shipping"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-ordering-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-sizing-guide",
+      "category": "Sizing",
+      "title": "Pikobuy Sizing Guide: Compare Measurements Before Choosing Clothes or Shoes",
+      "description": "Use a reliable reference garment, consistent measurement methods and listing-specific shoe information instead of universal size conversions.",
+      "intro": "A familiar size label is a starting point, not a complete fit description. Two garments marked medium can have different cuts, and a shoe size printed in one system does not establish how a particular model will feel. The practical task is to compare information measured in compatible ways and to decide which fit characteristics matter to you. Pikobuy's shopping guide asks buyers to confirm specifications, colour and size before ordering; it does not establish a universal size conversion for every seller. This guide offers an original measurement workflow for making that decision more carefully. It cannot promise fit, and it should not replace a seller's specific measurement instructions or clarification when the listing is ambiguous.",
+      "sections": [
+        {
+          "heading": "Choose a reference that matches the intended use",
+          "paragraphs": [
+            "Start with an item you already own and know how to wear comfortably. Choose a reference that serves a similar purpose to the product you are considering. A fitted T-shirt is a poor comparison for a structured overshirt you plan to wear over layers. Likewise, a stretchy waistband behaves differently from a fixed waistband even if the relaxed measurement happens to be similar. Record both the dimensions and what you like or dislike about the reference fit.",
+            "Define the intended result in concrete terms. You might want the same sleeve reach, more room through the torso or a shorter overall length. Those preferences help you interpret a measurement difference rather than treating every difference as an error. Keep the reference item available while comparing listings, so you can remeasure a point instead of relying on memory. The goal is a repeatable comparison, not a claim that one reference can predict every fabric or construction."
+          ]
+        },
+        {
+          "heading": "Keep body measurements and garment measurements distinct",
+          "paragraphs": [
+            "Read the size chart's description before using its numbers. Some charts describe the intended body measurement, while others give the dimensions of the finished garment. A flat width is also different from a circumference. If the chart does not explain which method it uses, ask for clarification rather than selecting the interpretation that produces the size you expected. Mixing these methods can create a large error even when every number is copied correctly.",
+            "Use consistent units in your notes and label the measurement type. In a hypothetical example, a flat chest width of 55 centimetres and a body chest circumference of 100 centimetres are not directly equivalent fields. Doubling a flat width gives a rough circumference for that measured garment section, but it does not account for shape, stretch or how much room you prefer. Treat that arithmetic as a way to understand the chart, not as a universal fit formula."
+          ]
+        },
+        {
+          "heading": "Measure tops along comparable reference points",
+          "paragraphs": [
+            "For tops, begin with the measurements that matter most to the garment's design: chest width, overall length, shoulder position and sleeve length. Lay the reference item consistently and avoid pulling the fabric unless the listing explicitly defines a stretched measurement. Note where each measurement begins and ends. A sleeve measured from a shoulder seam is not the same measurement as one taken from the centre back of the neck.",
+            "Pay attention to construction. A dropped shoulder can move the seam lower on the arm, making a seam-to-cuff number look shorter while the total reach remains generous. A curved hem or different front and back lengths also complicates a single length figure. Compare the chart's diagram or instructions when available. If the listing gives only a size label and no useful dimensions, acknowledge that the fit decision is less certain rather than inventing a chart from a visually similar product."
+          ]
+        },
+        {
+          "heading": "Compare trousers using several dimensions together",
+          "paragraphs": [
+            "Waist alone is not enough to describe trouser fit. Review the rise, hip or seat room, thigh width, inseam and leg opening when those measurements are available. A pair that matches your reference waist can still feel different through the seat or sit at a different height. Decide which dimensions are essential for comfort and intended use, then check them together instead of choosing the size with the most familiar waist label.",
+            "For elasticated or adjustable waists, distinguish relaxed and extended measurements and follow the seller's stated method. Do not assume the maximum extension describes a comfortable everyday fit. In a hypothetical comparison, two pairs with the same relaxed waist might differ substantially in rise and thigh room; the better choice depends on your reference and preferences. Record any missing dimension that could change the decision, especially when a photograph makes the cut difficult to judge."
+          ]
+        },
+        {
+          "heading": "Interpret cut and fabric without guessing performance",
+          "paragraphs": [
+            "Dimensions describe shape under particular measurement conditions; they do not fully describe how a fabric drapes, stretches or feels. Use the listing's stated material information as something to check, not as proof of an untested property. A loose-looking photograph may involve styling, a different model size or a pose that changes the apparent silhouette. Compare the available dimensions with your reference before relying on that visual impression.",
+            "Leave room for uncertainty where the evidence is limited. If a garment is intended to fit closely and the relevant measurements are missing, the unresolved point may matter more than a low price. If you prefer a relaxed fit, specify which areas need extra room rather than automatically choosing one label larger. There is no universal instruction to size up or down that works across all sellers, cuts and materials. The right question is whether this particular option supports the fit you want."
+          ]
+        },
+        {
+          "heading": "Use listing-specific information for shoes",
+          "paragraphs": [
+            "For shoes, record the length of both feet using a consistent method and the socks appropriate to the intended use. Measure on a stable surface, and repeat the process if the result is unclear. Keep the larger result visible in your notes, along with any fit preferences or width concerns you already know from shoes you wear comfortably. These measurements help you interpret the seller's guidance; they do not by themselves identify a guaranteed size.",
+            "Check what the listing's shoe chart actually represents: foot length, insole length or another reference. Those figures are not interchangeable. Avoid converting between UK, US and EU labels with a generic table and assuming the result applies to every model. If the seller provides a specific chart or fitting instructions, compare them carefully with your information. Where width, internal shape or sizing guidance remains unclear, ask for clarification before paying rather than treating a familiar printed label as sufficient evidence."
+          ]
+        },
+        {
+          "heading": "Check labels and measurements when warehouse evidence arrives",
+          "paragraphs": [
+            "Once your own item reaches the warehouse, compare any visible size label with the option you ordered. That can identify a selection or fulfilment mismatch, but a matching label does not settle whether the item fits your needs. If measurement evidence is available or can be requested, use the same endpoints and conditions as your original comparison. A differently positioned tape can make two valid photographs appear contradictory.",
+            "Read the evidence conservatively. For a hypothetical shirt, a photograph showing a clear flat chest measurement is useful only if the unit and endpoints are visible and the garment is positioned understandably. It still cannot show every aspect of movement or comfort. If an important dimension differs from what you expected, document the difference and ask about the applicable options before proceeding. Do not relabel an unclear measurement as a confirmed defect merely to make the uncertainty easier to describe."
+          ]
+        },
+        {
+          "heading": "Build a reusable sizing note for future choices",
+          "paragraphs": [
+            "Keep a compact record containing the reference item, measurement method, units, relevant dimensions, chosen option and remaining uncertainty. After you receive and try an item, add your actual observation about fit for your own use. Distinguish those first-hand notes from expectations formed before purchase. Over time, that record becomes a better personal reference than a list of brand labels, because it explains why a particular cut worked or did not work for you.",
+            "Use the record to improve the next comparison, while avoiding the assumption that a seller's next product will fit identically. Construction and materials can differ even within a similar category. A careful sizing decision combines listing-specific information, a well-chosen reference and a clear preference about fit. When essential information is absent, pausing is a valid outcome. The objective is to reduce avoidable selection errors, not to create a false promise that measurements can remove every uncertainty from buying without trying an item on."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "shipping"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-ordering-guide",
+        "pikobuy-qc-photo-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-shipping-cost",
+      "category": "Shipping",
+      "title": "Pikobuy Shipping Cost: Build a Useful Estimate Before You Buy",
+      "description": "Prepare Pikobuy shipping calculator inputs, compare realistic parcel scenarios and separate estimated freight from a confirmed final quote.",
+      "intro": "A useful Pikobuy shipping estimate is a record of a particular parcel, destination and set of assumptions. It is not a permanent price per kilogram. Before comparing routes, make the parcel description consistent enough that the comparison means something. This guide gives you an input worksheet, a way to compare packing scenarios and a final review process. Any example below is hypothetical and demonstrates a method; it is not a Pikobuy quote or a prediction about your shipment.",
+      "sections": [
+        {
+          "heading": "Start with the official estimate inputs",
+          "paragraphs": [
+            "Pikobuy's public shipping estimate form asks for the destination, product type, weight in kilograms and parcel dimensions in centimetres. Those fields are the starting point for an estimate. A product's listing price does not supply the missing parcel measurements, and a screenshot of someone else's total does not establish a price for your address. Open the official estimator with a clear description of what you intend to send. Record the date because the available choices and displayed prices are observations made at that time.",
+            "Create one short note containing the destination, item types, expected contents, packing assumptions and source of each measurement. Label an approximate weight as approximate. Label a warehouse measurement as measured, including whether it describes the item or the completed parcel. These distinctions prevent a preliminary guess from being copied into a later comparison as if it were confirmed. If an input is unknown, leave a visible question in your notes and work out who can provide the missing information."
+          ]
+        },
+        {
+          "heading": "Separate product weight from the packed parcel",
+          "paragraphs": [
+            "An item and its shipping package are different objects. Packaging can add weight, and the outer box can occupy considerably more space than the item itself. A seller's product description may report a weight without explaining whether it includes retail packaging. Treat that number as a clue until its meaning is clear. When the warehouse provides information, check that every selected item is included and that the dimensions refer to the packing arrangement you actually intend to use.",
+            "Consider a hypothetical order containing two shirts and a rigid presentation box. Adding the shirt weights does not describe the finished parcel because the box and protective material remain unaccounted for. Equally, removing the box from your estimate is not valid unless you have decided it is unnecessary and confirmed that removal is possible. Write the assumption beside the number. Good estimation is less about finding an optimistic total and more about making every important part of the total explainable."
+          ]
+        },
+        {
+          "heading": "Keep units and measurement methods consistent",
+          "paragraphs": [
+            "Use the units requested by the form and convert carefully. A figure recorded in grams should not be entered unchanged into a field labelled kilograms. Similarly, check whether a dimension came from an item description, a photograph or a measurement of the outer package. If three dimensions describe different objects or different packing stages, they cannot form a reliable parcel estimate. Keep the original measurement beside any conversion so that an unexpected result can be traced back without starting the research again.",
+            "For a worked arithmetic example, an imagined parcel measuring 40 by 30 by 20 centimetres occupies 24,000 cubic centimetres. That calculation describes its volume only; it does not establish a chargeable weight or a shipping bill. If a particular route publishes a volumetric formula, apply that route's stated divisor and rounding rules. Do not assume another route uses the same formula. The practical goal is to understand the rule attached to the quote you are considering, not to invent a universal formula."
+          ]
+        },
+        {
+          "heading": "Compare scenarios by changing one assumption",
+          "paragraphs": [
+            "A useful comparison begins with a baseline. Save the destination, contents, measurements and packing choice for your first scenario. Then change one meaningful factor, such as the proposed outer packaging, while holding the other inputs constant. This makes the difference easier to interpret. If you change destination, contents and packing simultaneously, a lower total tells you very little about which decision produced it. Avoid comparing a preliminary estimate with a final packed quote without noting the different evidence behind them.",
+            "For example, compare an illustrative scenario that retains a nonessential retail box with a second scenario that removes it, provided removal is suitable for the item. Do not assume the second parcel is cheaper before obtaining its dimensions and quote. Additional protective material could change the result. If neither set of dimensions is measured yet, the exercise still helps identify useful questions for the warehouse, but it remains a planning comparison. Record the unresolved assumption instead of treating the lower number as money already saved."
+          ]
+        },
+        {
+          "heading": "Read the complete route result",
+          "paragraphs": [
+            "When results appear, read the conditions alongside the price. A route that is unavailable for the selected product type is not a real alternative, even if a similar service name appears in somebody else's screenshot. Check the destination coverage and any displayed restrictions against the actual parcel. Preserve the full route name and quote details rather than shortening everything to a carrier brand. Different services associated with the same carrier can have different terms, so a familiar logo is not enough for comparison.",
+            "Keep a compact record of the amount, currency, quoted parcel measurements, any displayed additions and the information still requiring confirmation. If the interface offers optional services, record whether they are included in each scenario. An estimated delivery range should be kept separate from a required arrival date. If you need the goods for a specific event, evaluate the consequence of a delay instead of treating a faster-looking estimate as a guarantee. Ask the platform about unclear route conditions before committing the parcel."
+          ]
+        },
+        {
+          "heading": "Build a total budget beside the freight estimate",
+          "paragraphs": [
+            "Shipping is one line in a purchasing budget. Keep the product amount, any domestic delivery amount, optional services and international quote in separate rows. Use the actual transaction currency for each row rather than silently combining unlike amounts. A displayed conversion is useful for comparison, but retain the original currency and check the amount presented at payment. This structure helps you notice a missing cost without assuming that every purchase has the same fee categories or that any particular service is free.",
+            "Add an uncertainty column to the budget. Mark a paid amount as settled, a current quote as quoted and an unconfirmed charge as unknown. Your own maximum acceptable total belongs in a separate column so that it cannot be mistaken for a platform estimate. If the project only works when every unknown becomes zero, the plan has very little room for change. Reduce the shortlist or obtain better information before increasing the order. Destination-specific charges require current information appropriate to your shipment; this article supplies no tax calculation."
+          ],
+          "bullets": [
+            "Keep quoted freight separate from product payments and optional services.",
+            "Save the currency and date beside every amount you compare.",
+            "Review unknown costs before treating a shortlist as affordable."
+          ]
+        },
+        {
+          "heading": "Replace assumptions before paying for shipping",
+          "paragraphs": [
+            "Return to the worksheet when the parcel is ready. Compare the selected contents with the original shortlist and remove items that were cancelled or returned. Check the final packing instructions against any earlier request to retain or remove packaging. Replace provisional measurements with the current parcel figures where available. If the quoted amount changes, inspect those inputs first. A changed box size, different item selection or additional service can explain a difference that initially looks like an unexplained price increase.",
+            "Do not approve an unclear total merely because you have already spent time assembling the order. Save the relevant breakdown and ask a specific question: which measurement, service or route condition accounts for the change. That is easier to answer than a general complaint that shipping seems expensive. Once the information is clear, compare the total with your own budget and decide whether to proceed. Keep the final confirmation with the parcel reference so future tracking and support discussions use the same record."
+          ]
+        },
+        {
+          "heading": "Keep an estimate you can update",
+          "paragraphs": [
+            "The most reusable result is a clear worksheet, not a remembered price. Save the scenario name, quote date, destination, contents, packing choice, measurements and unanswered questions. If you return later, refresh the live quote and change the outdated inputs. A small amount of organised evidence makes it possible to compare the next decision without pretending that shipping conditions remain fixed.",
+            "Use the parcel packing guide to decide which packaging assumptions deserve a comparison. Use the tracking guide after submission to keep purchase and shipment progress separate. The official Pikobuy shipping estimate remains the place to obtain the platform's current scenario-based result; this independent article explains how to prepare and interpret the information without supplying invented rates."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-parcel-packing",
+        "pikobuy-tracking-guide",
+        "pikobuy-returns-refunds"
+      ]
+    },
+    {
+      "slug": "pikobuy-parcel-packing",
+      "category": "Shipping",
+      "title": "Pikobuy Parcel Packing: Compare Consolidation and Protection",
+      "description": "Prepare a Pikobuy parcel with clear packing instructions, compare combined and separate shipments and keep inspection and return decisions visible.",
+      "intro": "Parcel preparation connects the items you selected with the package you are willing to send. The useful question is whether the proposed arrangement protects the contents, matches the available route and fits your budget. A smaller box is not automatically a better parcel, and combining items is not automatically cheaper. This guide uses hypothetical packing examples and an evidence checklist to help you compare alternatives before approving a shipment.",
+      "sections": [
+        {
+          "heading": "Make the contents list final before packing",
+          "paragraphs": [
+            "Start with a list of the specific warehouse items you intend to include. Match each item to its order reference and selected variant, then record whether its inspection decision is complete. An item awaiting a size check or a seller response should remain visibly unresolved. This is a practical organising method, not a claim about the labels in Pikobuy's interface. The aim is to avoid submitting a parcel while assuming that an unanswered product question will somehow be resolved during shipping.",
+            "Review quantity as well as identity. Two similar listings can produce a duplicate you no longer want, while a set can contain multiple pieces that should remain together. Record the expected pieces so the packing request is understandable. If an item is under return consideration, resolve that decision before asking for packaging changes that could affect its condition or completeness. Save the final contents list with the parcel notes; it becomes the reference for checking the quote and later confirming what was delivered."
+          ]
+        },
+        {
+          "heading": "Define the purpose of each packaging request",
+          "paragraphs": [
+            "Pikobuy's beginner guide mentions minimal and reinforced packaging requests, and its contact page describes combining purchases from different sellers. Those descriptions establish options to discuss, not a universal recommendation or a promise of savings. Before asking for a change, state the result you need. A request to protect a fragile edge is more informative than simply asking for the best packaging. A request to retain a presentation box has a different purpose from asking to keep unnecessary shipping cartons.",
+            "Separate essential packaging from preferences. An essential requirement might be keeping the components of a set together; a preference might be retaining a decorative box. Explain any requirement you cannot verify from the existing photos and ask whether the proposed service addresses it. Do not assume a short instruction guarantees a particular material or procedure. If the packing choice matters to your decision, seek a clear description of what will be done and review any displayed cost before confirming it."
+          ]
+        },
+        {
+          "heading": "Compare one combined parcel with realistic alternatives",
+          "paragraphs": [
+            "Consolidation deserves a comparison because it changes both the contents and the package. The relevant calculation is the current total for one proposed combined parcel versus the total for the actual alternative parcels. Keep the destination, item selection and required services consistent. Do not compare a measured combined package with imagined lightweight separate boxes and call the difference a saving. If either option is still unmeasured, describe the result as a planning exercise and record the measurements required to improve it.",
+            "Imagine a hypothetical order with clothing and a rigid collectible box. A single outer carton might need to accommodate the box's shape, while a separate arrangement creates two packages. Neither arrangement can be declared cheaper from the item count alone. Compare available quotes and decide whether the convenience of one delivery matters to you. Also consider whether an unresolved item would delay everything else. That is a timing preference you can evaluate without inventing a promised processing speed for either arrangement."
+          ]
+        },
+        {
+          "heading": "Balance space reduction against protection and condition",
+          "paragraphs": [
+            "Removing packaging is a tradeoff, not a default instruction. Some packaging is presentational, some keeps components organised and some protects surfaces or shapes. Look at the actual item and ask what the proposed removal changes. If you are unsure whether an insert is protective or decorative, obtain a clearer description instead of requesting that everything be discarded. The right decision can differ between two products in the same category, so a universal instruction such as remove all boxes loses important detail.",
+            "For an illustrative comparison, a soft garment and a structured hat have different needs even if both are lightweight. A compact arrangement that suits the garment may flatten the hat. A rigid item placed beside a delicate surface may need separation rather than tighter compression. These examples explain the questions to ask; they do not specify a packing service that Pikobuy promises to provide. Retain packaging or labels while a return decision is pending, and confirm any item-specific conditions before authorising irreversible changes."
+          ]
+        },
+        {
+          "heading": "Write instructions that can be checked",
+          "paragraphs": [
+            "A useful instruction names the item, the requested change and the thing that must be preserved. Keep each request short enough to review without interpreting a long conversation. For example, an illustrative note could ask to keep a named accessory with its corresponding item while removing only the external transit carton if suitable. The qualification matters: the warehouse should not have to guess whether you intended removal of retail packaging, protective inserts or product components. Ask for clarification when the service description is ambiguous.",
+            "Avoid sending contradictory messages across different channels. If you change your mind, identify the earlier instruction and state which version should apply. Save the latest request and any response with the parcel reference. A clear record does not guarantee that every instruction can be accommodated, but it makes a discrepancy easier to identify. Before approval, check that the quoted service and any available packing information match the request you actually accepted, rather than an earlier idea that remained in the conversation."
+          ],
+          "bullets": [
+            "Identify the warehouse item or order reference for every special request.",
+            "State what should change and what must remain with the item.",
+            "Confirm feasibility and cost before assuming the request is included."
+          ]
+        },
+        {
+          "heading": "Check the parcel against the route you can use",
+          "paragraphs": [
+            "Packing decisions and route selection should be reviewed together. A proposed parcel is useful only if an available service accepts its destination, contents and dimensions. Read the current route information and ask about unclear restrictions using an accurate item description. Do not assume that a route used for another person's clothing parcel also accepts your different contents. Equally, a recognisable carrier name does not tell you which specific service or conditions apply to the quote shown in your account.",
+            "Keep the packed weight and outer dimensions next to the route comparison. If a different arrangement changes those measurements, refresh the estimate rather than reusing a quote for the previous package. Record optional services consistently across alternatives. This turns a vague search for cheap shipping into a comparison between arrangements that could actually be submitted. If no suitable option appears, pause and ask the platform about the specific constraint. Changing an item description to hide its nature would not resolve the underlying eligibility problem."
+          ]
+        },
+        {
+          "heading": "Review the final submission as one decision",
+          "paragraphs": [
+            "Before paying, open the contents list, packing notes and route result together. Check the delivery address carefully, including the details the service requires. Confirm that the chosen items and any remaining components match the list. Review the final amount and currency rather than relying on an earlier estimate. If the parcel changed after a return or an unavailable item, make sure the quote reflects the remaining contents. A few consistent records are more useful than a large folder of unrelated screenshots.",
+            "Make unresolved questions explicit. A missing packing confirmation, unexplained charge or incorrect address is a reason to seek clarification before submission. Describe the exact issue and the answer needed to move forward. Once the information is clear, save the final confirmation and parcel reference. This record helps you distinguish a later tracking question from a packing question and avoids asking support to reconstruct the decision from scattered messages. It also gives you a reliable list against which to check the delivered contents."
+          ]
+        },
+        {
+          "heading": "Keep the packing record useful after dispatch",
+          "paragraphs": [
+            "After the parcel is submitted, retain the contents list and the accepted packing instructions. They are a reference, not proof that a future delivery will be trouble-free. If a question arises, begin with the actual parcel reference and explain the difference between what was requested, what was confirmed and what you observed. Keep observations separate from assumptions about the cause.",
+            "Use the shipping-cost guide for consistent quote inputs and the tracking guide for shipment progress. If an item is still awaiting a return decision, read the returns guide before changing its packaging. The purpose of this workflow is a parcel decision you can explain: which goods are included, why the packing is appropriate and which current quote you accepted."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "contact",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-returns-refunds",
+        "pikobuy-tracking-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-returns-refunds",
+      "category": "After-sales",
+      "title": "Pikobuy Returns and Refunds: Prepare a Warehouse Decision",
+      "description": "Check return eligibility, preserve item evidence and clarify costs before requesting a Pikobuy warehouse return or cancellation.",
+      "intro": "A useful return request begins with the actual item, its current order stage and a precise description of the problem. A general policy heading cannot decide every case. This guide explains how to organise evidence and ask for a clear outcome without assuming that a return is free or guaranteed. It is based on the public policy reviewed for this project, together with an original practical checklist; it is not a report of a return we personally submitted.",
+      "sections": [
+        {
+          "heading": "Identify the order and its current stage",
+          "paragraphs": [
+            "Open the specific order before drafting a request. Save its reference, selected variant, quantity, current status and the time shown for the relevant change. Check whether you are considering cancellation before dispatch by the seller, a warehouse return or a question about goods already sent internationally. Those situations involve different evidence and available actions. Do not let the word refund hide the stage of the transaction. A refund describes a possible money movement; it does not explain what action has been requested or accepted.",
+            "If you have several similar purchases, match the issue to the correct item reference rather than relying on a thumbnail. Record the original selection and what you believe arrived. This is especially useful when two colours or sizes share the same listing photograph. Keep the purchase confirmation alongside warehouse observations so support can see the difference. If the interface and a recent message appear inconsistent, ask which current status controls the next step instead of choosing the version that seems more convenient."
+          ]
+        },
+        {
+          "heading": "Treat the warehouse window as a prompt to act",
+          "paragraphs": [
+            "Pikobuy's returns page describes a conditional five-day application period, expressed as 120 hours and counted from the next hour after the order becomes In Warehouse. Seller participation, consent and the required resale condition matter. Use the actual account deadline and seek clarification promptly if its timing is unclear. The published window is not a reason to postpone inspection until the last moment, and it does not establish that every item is eligible or that an application will necessarily be accepted.",
+            "Build your own review reminder around the observed warehouse event rather than an expected delivery date. Gather the inspection evidence, identify any unanswered question and decide who needs to clarify it. If a photograph is insufficient, request the specific additional view needed and keep the timing issue visible. Do not assume that asking a question pauses a deadline. In a hypothetical case where an item arrives before a weekend, review it when you see the warehouse event instead of waiting for a more convenient day."
+          ]
+        },
+        {
+          "heading": "Describe the problem as an observable difference",
+          "paragraphs": [
+            "A clear issue statement compares the order with the observation. State the selected size, colour or quantity, then identify the relevant photograph or record. If there is visible damage, describe its location without guessing how it happened. If the problem is a changed preference, say that plainly instead of inventing a defect. Accurate categorisation helps the request reach the appropriate discussion and avoids forcing support to separate the actual issue from unsupported claims about the seller or the warehouse.",
+            "For an illustrative request, a buyer might write that the order specifies a blue variant while the warehouse label appears to identify a different colour, attaching the order selection and a clear label image. This reports evidence and leaves room for clarification if lighting or translation caused confusion. A vague statement that the item looks wrong gives much less to investigate. Keep each problem separate if there are several, and explain the outcome you are requesting rather than assuming that a complaint automatically initiates a return."
+          ]
+        },
+        {
+          "heading": "Preserve the condition needed for a decision",
+          "paragraphs": [
+            "Avoid requesting unnecessary changes while return eligibility is being assessed. Packaging, labels, seals and included accessories can matter to the seller's condition requirements. Keep a list of what the listing promised and what the warehouse photographs show. If you previously asked for a tag or box to be removed, include that fact in the conversation so the request is evaluated on the actual condition. Hiding a relevant change would make the evidence less useful and could produce an answer based on an incorrect assumption.",
+            "Separate inspection from alteration. A clearer image or an explanation of a label is different from asking for a sealed component to be opened or a product to be modified. If a proposed inspection could change the item's condition, ask about the consequences before authorising it. The right approach depends on the product and the applicable seller requirements. A careful record helps you understand what remains possible; it cannot restore removed packaging or turn an excluded item into an eligible one."
+          ]
+        },
+        {
+          "heading": "Confirm the cost breakdown for the actual request",
+          "paragraphs": [
+            "The official returns text describes shipping and service charges, but its passages are not consistent about the original delivery charge on an initially free-shipping purchase. Do not treat a short policy label as a universal price promise. Request the applicable breakdown for your order, including any deduction and the amount expected back. Ask which charges are confirmed and which depend on seller agreement. This article deliberately does not turn the inconsistent wording into a fixed all-inclusive return fee.",
+            "Write the proposed refund and each stated cost in the same currency before comparing them. Keep the product amount separate from money paid for unrelated items or services. If an adjustment is unclear, ask how it was calculated and which transaction it belongs to. A comparison should explain the result, not simply show two totals that do not match. Once an amount is confirmed, retain the message or account record so you can later distinguish an agreed deduction from an unexplained difference."
+          ],
+          "bullets": [
+            "Ask for the refund amount and each applicable charge separately.",
+            "Confirm which costs depend on the seller's response or final handling.",
+            "Keep the currency, order reference and written explanation together."
+          ]
+        },
+        {
+          "heading": "Submit a concise request through the official channel",
+          "paragraphs": [
+            "Use the action available for the order or the official support route. Include the item reference, current stage, selected option, observed problem and desired next step. Attach only the evidence necessary to explain the issue. You do not need to include passwords, payment-card details or unrelated personal information in a product complaint. A concise request can still be complete: it tells the reader what happened, why the evidence supports it and what decision you need from the platform or seller.",
+            "A useful message structure is one sentence identifying the order, one explaining the mismatch or reason, and one asking for eligibility and costs to be confirmed before the next action. If the return is time-sensitive, state the displayed warehouse event or deadline without claiming that your own calculation overrides the account. Save the request time and any confirmation. If you need to correct information, refer to the same request so the evidence remains connected rather than opening several contradictory explanations."
+          ]
+        },
+        {
+          "heading": "Distinguish a request from approval and settlement",
+          "paragraphs": [
+            "Record the stages of the response in plain language. A submitted request, a seller's agreement, a return shipment and a completed refund are different events. Do not mark the process finished merely because the first message has been acknowledged. Keep the latest confirmed event and the next action visible. If you are asked to supply a missing photo or confirm a cost, note that requirement and respond through the relevant channel. This avoids repeatedly asking for an update while a clear action remains outstanding.",
+            "When a refund appears, compare it with the confirmed breakdown and the actual transaction record. Preserve a discrepancy as a question rather than assuming a particular cause. Ask which amount was credited, where it was credited and which agreed deductions apply. This guide provides no guaranteed settlement timetable or payment-provider promise. If the request is declined, ask for the stated reason and any remaining option appropriate to the order. A documented answer is more useful than an assumption based on another buyer's different purchase."
+          ]
+        },
+        {
+          "heading": "Keep return decisions connected to the parcel plan",
+          "paragraphs": [
+            "Remove an item from your planned shipping list only when the relevant decision is clear, and update the list again if the outcome changes. A pending return can affect which goods you want to send and whether an earlier packing estimate still describes the parcel. Refresh the contents and quote before approving shipment instead of using a calculation that includes an item no longer intended to travel.",
+            "Use the QC guide to collect specific visual evidence and the packing guide to preserve the item while you decide. Official support and the live order remain the sources for eligibility and the final outcome. This independent guide helps organise that conversation; it cannot approve a return, negotiate with a seller or inspect a private refund record."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "returns",
+        "contact"
+      ],
+      "related": [
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing",
+        "pikobuy-shipping-cost"
+      ]
+    },
+    {
+      "slug": "pikobuy-tracking-guide",
+      "category": "Shipping",
+      "title": "Pikobuy Tracking: Identify the Stage and Record the Evidence",
+      "description": "Separate seller delivery, warehouse processing and international tracking, then prepare a clear support request when a Pikobuy update is missing.",
+      "intro": "A Pikobuy purchase can have several references and several periods of waiting before it reaches you. The first useful step when tracking seems quiet is to identify which stage you are observing. A seller's domestic delivery record, a warehouse receipt and an international parcel update describe different events. This guide provides a practical status log and stage-specific checks without inventing an arrival date or claiming access to your private order.",
+      "sections": [
+        {
+          "heading": "Choose the reference that matches the question",
+          "paragraphs": [
+            "Start with the order or parcel record in your official account. Identify whether the number you are using belongs to a product purchase, a seller's shipment or an international parcel. Keep the label displayed beside the reference rather than copying an unexplained string into your notes. If several purchases are combined, one parcel can relate to more than one product order. That relationship should be written down so you do not mistake a completed domestic delivery for delivery to your own address.",
+            "Use a small record with the reference, its purpose, the latest visible event and the time you checked it. Keep a link to the relevant official page or carrier route supplied by the account. Do not assume an unsolicited message is valid simply because it contains a familiar number. Open the known account or carrier channel independently when checking a notification. The goal is to connect each observation to a record you can identify, not to accumulate screenshots from unrelated tracking pages."
+          ]
+        },
+        {
+          "heading": "Separate purchasing from seller dispatch",
+          "paragraphs": [
+            "A product payment records a purchasing step; it is not evidence that a seller has handed goods to a carrier. Read the current order event and note any request for information or confirmation. If the order is waiting on a selected option, an unanswered message can be more relevant than repeated tracking searches. Describe the observed state in your notes without inventing an exact platform status name. Different screens or translations may use different wording, so preserve the text that appears in your account.",
+            "For a hypothetical example, a buyer has paid for two items but only one displays a seller shipment reference. Those records should remain separate. The reference for the first item does not establish progress for the second. Ask about the outstanding purchase using its own order number and the last confirmed event. Avoid applying another shopper's seller-processing experience as a deadline. The useful question is whether the platform needs an action from you or has a current explanation for the specific order."
+          ]
+        },
+        {
+          "heading": "Treat warehouse receipt as its own event",
+          "paragraphs": [
+            "When a domestic carrier reports delivery, compare that event with the warehouse record rather than assuming they are identical. A carrier event and an account update describe different parts of the process. Record both if they are available and identify which confirmation is missing. Do not infer loss from the absence of an immediate photo, and do not infer that inspection is complete solely because a seller's tracking says delivered. Use the platform's current information to establish what has actually been received and processed.",
+            "This is also the point at which product questions become relevant. If the warehouse photos reveal the wrong option or insufficient sizing evidence, resolve that issue before treating the item as ready for an international parcel. Keep inspection notes separate from movement notes so a shipping enquiry does not obscure a return deadline. An item can have arrived successfully while still requiring a decision from you. Progress is therefore not just a sequence of tracking scans; it includes the confirmations needed for the next action."
+          ]
+        },
+        {
+          "heading": "Distinguish parcel submission from international movement",
+          "paragraphs": [
+            "Check whether an international parcel has actually been created and submitted, rather than assuming every warehoused item will move automatically. Review the selected contents, route, address and any outstanding payment or request displayed in the account. Save the parcel reference when it becomes available. If you altered the contents or packing, keep the latest version so a later enquiry refers to the parcel that was accepted. This prevents a conversation about shipment from being based on a draft arrangement that was never finalised.",
+            "Pikobuy's public beginner guide says tracking information becomes available within three days after shipment. That is the published expectation for tracking availability after dispatch, not a promise that the parcel arrives in three days. It also does not establish that every carrier event appears immediately. Record the actual dispatch information shown for your parcel and compare it with the official record. If the expected tracking information remains absent, use those dates and the parcel reference when asking the platform for clarification."
+          ]
+        },
+        {
+          "heading": "Read a quiet tracking period in context",
+          "paragraphs": [
+            "A missing new scan tells you that the visible record has not changed; it does not by itself explain the reason. Start with the last confirmed event, its location if shown and the selected service. Check for an official notice or a request that requires a response. Keep any explanation from the platform or carrier distinct from your own interpretation. If you only have a general estimate, do not convert it into a precise arrival commitment or assume that another route follows the same pattern.",
+            "Compare the elapsed time with the current information supplied for your actual shipment, then ask a focused question if the gap needs investigation. Repeatedly refreshing several tracking websites can create more apparent contradictions than clarity, especially when their updates arrive at different times. Record the source and time of each meaningful observation. If two official records disagree, provide both and ask which event is authoritative for the next step. This approach preserves the uncertainty without declaring the parcel lost or promising that it is moving normally."
+          ]
+        },
+        {
+          "heading": "Send a support request that identifies the missing event",
+          "paragraphs": [
+            "A useful support request names the parcel or order, the latest confirmed event and the specific information that is missing. State when you checked the record and include the relevant screenshot if it helps. Ask for the next action, not just a general prediction. For example, an illustrative enquiry could ask whether a parcel shown as dispatched has an assigned international tracking reference. That is a narrower and more answerable request than asking why the whole order is taking too long.",
+            "If the issue involves a delivery attempt or address information, describe what the actual record says and what needs correction. Do not post a complete address or private account details in a public discussion to obtain routine tracking help. Use the official contact route linked from Pikobuy for account-specific enquiries. Keep the request and response beside the parcel log. When following up, refer to the unresolved point and any new evidence rather than restarting the story with a different set of dates."
+          ],
+          "bullets": [
+            "Provide the relevant order or parcel reference and last confirmed event.",
+            "Explain which update or action you need the platform to clarify.",
+            "Keep private delivery information inside the appropriate official channel."
+          ]
+        },
+        {
+          "heading": "Record delivery observations before closing the log",
+          "paragraphs": [
+            "When a delivery event appears, verify what you actually received. Match the parcel reference and contents against your saved list. If a package is present but something seems wrong, describe the observable issue and retain the relevant evidence. A tracking page marked delivered and a complete, undamaged contents check are different observations. Do not erase the earlier records as soon as the carrier status changes; they may help explain a discrepancy or identify which service and parcel are involved.",
+            "For an illustrative example, a combined parcel might contain two expected items while a third item belonged to a different parcel that has not arrived. The original contents list resolves that apparent shortage before an incorrect claim is made. If a real discrepancy remains, contact the responsible official channel promptly with the parcel reference and clear description. This guide does not establish claim deadlines, compensation or insurance cover. Those questions depend on the actual service and terms associated with the transaction and require direct confirmation."
+          ]
+        },
+        {
+          "heading": "Maintain a short log of meaningful changes",
+          "paragraphs": [
+            "A good log needs only the date, source, event, unresolved question and next action. Add a row when something meaningful changes rather than recording every refresh. Use separate sections for the product order and international parcel, with a clear link between them. This makes it easier to see whether the next step belongs to the seller, the warehouse, the carrier or you.",
+            "Use the packing guide before submission and the returns guide if an inspection problem remains unresolved. Once a parcel is moving, the official account and the carrier information provided for it are the relevant sources. This independent guide explains how to read the evidence and communicate clearly; it cannot view a private shipment or make a delivery promise."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "contact"
+      ],
+      "related": [
+        "pikobuy-parcel-packing",
+        "pikobuy-returns-refunds",
+        "pikobuy-shipping-cost"
+      ]
+    },
+    {
+      "slug": "pikobuy-review-checklist",
+      "category": "Research",
+      "title": "Pikobuy Review Checklist: Evaluate the Evidence Before Paying",
+      "description": "Assess Pikobuy information, product listings, payment details, QC limitations and shipping assumptions without relying on invented reviews or ratings.",
+      "intro": "Searches about whether Pikobuy is legit or safe often ask for a single verdict, but several different decisions are involved: identifying the official service, checking the seller's item, understanding payment and inspecting the shipment plan. This article is an evidence checklist, not a hands-on purchase review or a rating. It explains what public information can establish, what needs order-specific confirmation and how to decide which unanswered questions matter before you pay.",
+      "sections": [
+        {
+          "heading": "Separate the platform, seller and independent guide",
+          "paragraphs": [
+            "Pikobuy's homepage describes purchasing assistance, warehouse inspection and international shipping. Those are different functions from the independent product discovery provided here. Pikobuy Sheet uses FindSpreadsheet product data to help you browse; registration and purchasing take place on the official Pikobuy domain. A useful review should keep those roles clear. A working directory page does not prove a seller's product quality, and a familiar platform logo does not make every page using that logo an official support or payment channel.",
+            "Before evaluating a claim, identify who made it and what they could reasonably know. A seller can describe a listing; a warehouse photo can show visible features of a received item; an independent article can explain a research method. None automatically establishes the others. Write down the particular decision you are making, such as whether the selected variant is clear or whether the shipping budget is complete. This is more useful than allowing a broad positive impression to answer several unrelated questions."
+          ]
+        },
+        {
+          "heading": "Verify the destination before entering account details",
+          "paragraphs": [
+            "Check the address of the page where you are about to register, log in or pay. Use the official domain provided in the account flow and inspect unexpected changes before continuing. A screenshot, search result title or social profile name is not the same thing as the address in your browser. If a message directs you elsewhere to solve an account problem, return to the known official account or contact page and verify the request there. Do not let urgency replace this simple identity check.",
+            "Apply the same separation to support. This independent site does not need your Pikobuy password, payment credentials or private order information to explain its catalog. An account-specific question belongs with the service that holds the account. Keep screenshots used in public discussions free of delivery addresses and other unnecessary personal details. These are practical account-handling habits, not evidence that a particular message is fraudulent or that every official interaction is risk-free. When the destination or request is unclear, seek confirmation before providing sensitive information."
+          ]
+        },
+        {
+          "heading": "Read reviews as evidence with a scope",
+          "paragraphs": [
+            "A review becomes more useful when it identifies the date, service used, type of purchase and part of the process actually experienced. A report about a successful delivery does not necessarily evaluate return handling. A comment about an unsuccessful product import does not establish the outcome of a shipment. Look for enough detail to understand the scope without demanding that a reviewer publish private records. Keep promotional descriptions, user observations and formal policy statements in separate categories when comparing what they say.",
+            "Pay attention to unsupported certainty. A star rating without context, a collection of impressive package photographs or a claimed permanent discount can attract attention without answering your own question. If a writer earns a referral reward, that disclosure helps you understand the commercial relationship; it does not automatically make every statement true or false. Evaluate the evidence attached to the specific claim. This article offers no invented score, completed test order or claim that a set of anonymous comments proves a universal service outcome."
+          ]
+        },
+        {
+          "heading": "Check the actual product and selected option",
+          "paragraphs": [
+            "Open the source listing and compare its identity with the item shown in the agent. Check the item ID where available, title, selected colour, size, quantity and included components. A shared photograph can appear across several options, so the cover image alone is not enough. Preserve the exact selection before paying. If the listing is incomplete, ask the question that would change your decision rather than filling the gap with assumptions based on another product bearing a similar name.",
+            "Consider a hypothetical bag listing with several sizes pictured together. The large bag in the cover photograph may not be the option currently selected. A reliable comparison uses the selected option and its dimensions, then checks whether the price applies to it. The same principle applies to a set where accessories are pictured but not clearly included. Your task is to establish what the order would contain. A product being easy to import proves technical readability, not stock, authenticity or consistency between different sellers."
+          ]
+        },
+        {
+          "heading": "Examine the payment and total-cost record",
+          "paragraphs": [
+            "Review the amount and currency presented before payment, along with the item selection and any charges shown. Save the transaction reference and the breakdown supplied by the service. Do not use a payment-method logo in a footer as proof that the method is available for your location or purchase. Availability belongs to the actual checkout. Likewise, a converted display price is not a substitute for reading the amount you authorise. If a calculation is unclear, resolve it before approving the transaction.",
+            "Keep a wider budget beside the checkout record. Include the known product amount, any stated domestic delivery or service amount and the international shipping estimate, while marking anything unconfirmed. The purpose is not to assert that every possible charge applies; it is to keep unknowns visible. A hypothetical low-priced item can still be unsuitable if its packing and shipping assumptions exceed your budget. Do not judge affordability solely from a product card, a coupon headline or another buyer's total for a different destination and parcel."
+          ]
+        },
+        {
+          "heading": "Use inspection photos for the questions they can answer",
+          "paragraphs": [
+            "A clear warehouse photograph can help compare visible identity, labels, quantity and condition with the order. It cannot by itself establish every material property, internal function or future durability. Pikobuy's forwarding terms explicitly distinguish ordinary inspection from professional inspection of special products. When reviewing evidence, ask what is actually visible and what remains untested. Keep seller gallery images, historical reference QC and the photographs of your own received item separate so a useful example is not mistaken for proof about your order.",
+            "Turn a missing detail into a specific request when appropriate. If fit depends on a measurement, identify the measuring points instead of asking whether the item looks good. If an included component is absent from the available frame, ask for confirmation of that component rather than assuming it is missing. Record the answer and the decision it supports. Avoid turning a favourable photo into a blanket endorsement of the seller. The evidence can resolve a narrow question while leaving other product and service uncertainties unchanged."
+          ],
+          "bullets": [
+            "Identify which item and variant each photograph actually represents.",
+            "Separate a visible observation from an untested product claim.",
+            "Request the missing evidence that would change your next decision."
+          ]
+        },
+        {
+          "heading": "Read the policy that applies to your next action",
+          "paragraphs": [
+            "A general favourable review cannot replace the conditions attached to a specific action. Before relying on a return, review the relevant item and seller requirements. Before changing packaging, understand what condition must be preserved. Before submitting a parcel, inspect the route and quoted services. Keep the policy link and review date with your notes, but use the current order and official support for an unclear application. A saved article can explain the process while still becoming outdated on a changing fee or operational detail.",
+            "Focus your question on the uncertainty. Instead of asking whether the service is safe in every respect, ask whether this product is eligible for the selected route, which costs are included or what evidence is needed for the proposed return. A precise answer can support one decision without pretending to remove every risk. If the answer is missing and the consequence matters to you, pause that action. This is a practical decision rule, not a claim that the platform or a seller has done something wrong."
+          ]
+        },
+        {
+          "heading": "Make a decision that matches the evidence",
+          "paragraphs": [
+            "Finish the review with three short lists: confirmed details, open questions and the action you are prepared to take. A clear source link and variant might support further research while an uncertain shipping budget prevents payment. A received item that matches the order may still need a packing decision. Treat those as separate conclusions instead of forcing everything into a single rating.",
+            "Use the spreadsheet guide for product comparison, the QC guide for visible checks and the shipping-cost guide for parcel assumptions. Keep official account questions with Pikobuy. The useful outcome is an informed next step supported by identifiable evidence, not an invented guarantee, an automatic recommendation or a review score that conceals what has never been tested."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "home",
+        "shipping",
+        "contact"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ]
+    }
+  ]
+}

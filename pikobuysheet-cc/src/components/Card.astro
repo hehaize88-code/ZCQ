@@ -1,0 +1,10 @@
+---
+import Icon from './Icon.astro';
+import {price,categories} from '../lib/catalog';
+import {localized,categoryNames} from '../lib/i18n';
+const {product:p,lang,t,rate,eager=false}=Astro.props;
+const name=categoryNames(lang)[categories.indexOf(p.category)]||t.all;
+---
+<article class="product-card"><a class="product-photo" href={localized(lang,'/products'+p.path)} aria-label={`${t.view}: ${p.title}`}>
+{p.image?<img src={p.image} alt={p.title} loading={eager?'eager':'lazy'} width="400" height="400" referrerpolicy="no-referrer"/>:<span class="missing">{t.photoMissing}</span>}<span class="photo-arrow"><Icon name="arrow" size={18}/></span></a>
+<div class="card-info"><span class="category-label">{name}</span><a href={localized(lang,'/products'+p.path)}><h3>{p.title}</h3></a><div class="card-bottom"><strong>{price(p.rawPrice,rate,lang)}</strong><span>{rate?'USD':'CNY'}</span></div></div></article>

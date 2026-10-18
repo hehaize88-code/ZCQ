@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "articlesLabel": "Artículos",
+    "articlesTitle": "Guías de compra de Pikobuy",
+    "articlesIntro": "Diez guías prácticas para encontrar productos, comprobar detalles y planificar tu pedido. Empieza por la decisión que tengas por delante.",
+    "faqTitle": "Preguntas frecuentes de Pikobuy",
+    "faqIntro": "Respuestas claras sobre enlaces de productos, fotos del almacén, envíos y devoluciones. La información de la plataforma se contrasta con las propias páginas de Pikobuy; las funciones de nuestro sitio se explican por separado.",
+    "faqSearch": "Buscar en las preguntas frecuentes",
+    "noMatch": "No hay preguntas coincidentes. Prueba otra palabra.",
+    "faqCount": "preguntas",
+    "readGuide": "Leer la guía",
+    "allArticles": "Todos los artículos",
+    "updated": "Revisado",
+    "onThisPage": "En esta guía",
+    "sources": "Fuentes",
+    "sourceNote": "Información oficial comprobada el 17 de octubre de 2026. Las políticas y los servicios disponibles pueden cambiar; confirma las condiciones que se muestran para tu pedido.",
+    "relatedTitle": "Qué leer después",
+    "backArticles": "Volver a los artículos",
+    "minRead": "min de lectura",
+    "chapter": "Guía",
+    "continueExploring": "Seguir explorando",
+    "homeArticlesTitle": "Un primer pedido mejor informado.",
+    "viewAllFaq": "Ver todas las preguntas",
+    "editorialNote": "Orientación editorial independiente. Los ejemplos explican un método; no son presupuestos vigentes, pruebas de productos ni promesas de un resultado.",
+    "homeFaqTitle": "Algunas cosas que conviene saber antes de pedir.",
+    "faqBrowse": "Elige un tema o busca una respuesta.",
+    "readArticle": "Leer artículo",
+    "contents": "Contenido",
+    "guideTitle": "De tu primer hallazgo a tu paquete",
+    "guideIntro": "Sigue el pedido a través de sus distintas etapas. Utiliza la hoja de cálculo para investigar y después gestiona la compra, la inspección y el envío en tu cuenta oficial de Pikobuy.",
+    "guideDetails": "La guía completa para hacer pedidos",
+    "articlesCount": "guías",
+    "sourceNames": {
+      "guide": "Guía de compras de Pikobuy",
+      "home": "Página de inicio de Pikobuy",
+      "shipping": "Condiciones de reexpedición y envío de Pikobuy",
+      "returns": "Política de devoluciones de Pikobuy",
+      "estimate": "Estimador de envíos de Pikobuy",
+      "contact": "Página de contacto de Pikobuy",
+      "about": "Acerca de Pikobuy",
+      "terms": "Condiciones de servicio de Pikobuy",
+      "privacy": "Política de privacidad de Pikobuy",
+      "site": "Cómo funciona esta vista previa"
+    },
+    "faqGroups": {
+      "start": "Primeros pasos",
+      "order": "Productos y pedidos",
+      "photos": "Fotos e inspección",
+      "shipping": "Envíos y seguimiento",
+      "returns": "Devoluciones",
+      "account": "Cuentas y asistencia"
+    },
+    "guideSteps": [
+      {
+        "title": "Encuentra y preselecciona",
+        "body": "Busca en el catálogo en tiempo real de FindSpreadsheet o elige una categoría. Abre el detalle del producto para comprobar el anuncio original, las fotos y las opciones disponibles."
+      },
+      {
+        "title": "Comprueba el artículo exacto",
+        "body": "Verifica el identificador original del producto, el color, la talla y la cantidad. Guarda el enlace original y aclara cualquier medida dudosa antes de pagar."
+      },
+      {
+        "title": "Realiza el pedido de compra",
+        "body": "Abre el artículo en Pikobuy y revisa allí las opciones actuales, el precio y las condiciones del pedido. La guía oficial distingue este pago del envío internacional posterior."
+      },
+      {
+        "title": "Revisa el resultado del almacén",
+        "body": "Cuando tu compra llegue al almacén, revisa las fotos asociadas a tu propio pedido. Comunica pronto cualquier discrepancia o solicitud de devolución; se aplican requisitos y plazos."
+      },
+      {
+        "title": "Planifica y solicita el envío del paquete",
+        "body": "Comprueba el destino, el tipo de producto, el peso embalado y las dimensiones en el estimador oficial de envíos. Selecciona una ruta disponible y el embalaje, y revisa el coste final del envío."
+      },
+      {
+        "title": "Sigue el envío",
+        "body": "Conserva la referencia del paquete y distingue la entrega del vendedor, la recepción en almacén y el seguimiento internacional. Contacta con la asistencia oficial indicando el identificador del pedido o paquete correspondiente si necesitas aclarar una actualización."
+      }
+    ],
+    "menu": "Menú"
+  },
+  "faq": [
+    {
+      "id": "independent",
+      "group": "start",
+      "q": "¿Es este el sitio web oficial de Pikobuy?",
+      "a": "No. Pikobuy Sheet es un sitio independiente para descubrir productos. Los pedidos, los pagos y la asistencia de cuentas se gestionan en pikobuy.com. Nuestra información de productos la proporciona FindSpreadsheet.",
+      "sourceIds": [
+        "site"
+      ]
+    },
+    {
+      "id": "spreadsheet",
+      "group": "start",
+      "q": "¿Qué es una hoja de cálculo de Pikobuy?",
+      "a": "Aquí es un catálogo con búsqueda de enlaces de productos, imágenes y precios estimados. Úsalo para crear una selección y después confirma el anuncio vigente en Pikobuy antes de pedir.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "how-to-use-pikobuy-spreadsheet"
+    },
+    {
+      "id": "agent",
+      "group": "start",
+      "q": "¿Qué hace Pikobuy?",
+      "a": "Pikobuy describe un servicio de compra y reexpedición: buscar artículos, comprarlos a vendedores, recibirlos en su almacén y organizar la entrega internacional. Este sitio proporciona herramientas de descubrimiento, no esos servicios.",
+      "sourceIds": [
+        "about",
+        "home"
+      ],
+      "related": "pikobuy-ordering-guide"
+    },
+    {
+      "id": "signup",
+      "group": "start",
+      "q": "¿Dónde me registro?",
+      "a": "Utiliza Unirse a Pikobuy para abrir la página oficial de registro. Pikobuy gestiona el registro y las credenciales; explorar esta vista previa no requiere una cuenta aquí.",
+      "sourceIds": [
+        "site"
+      ]
+    },
+    {
+      "id": "marketplaces",
+      "group": "start",
+      "q": "¿Qué mercados menciona la guía oficial?",
+      "a": "La guía nombra Taobao, Tmall, 1688, Weidian y Yupoo entre las opciones de búsqueda. Esto no significa que todos los artículos puedan comprarse o enviarse. Confirma el anuncio exacto y las restricciones con Pikobuy.",
+      "sourceIds": [
+        "guide"
+      ]
+    },
+    {
+      "id": "search",
+      "group": "order",
+      "q": "¿Cómo encuentro un producto aquí?",
+      "a": "Introduce un nombre de producto o identificador original en el cuadro de búsqueda, o elige una categoría. Los resultados provienen de FindSpreadsheet. Un título abreviado o traducido puede no identificar un anuncio único de un vendedor.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "how-to-use-pikobuy-spreadsheet"
+    },
+    {
+      "id": "image-search",
+      "group": "order",
+      "q": "¿Funciona la búsqueda por imágenes en esta vista previa?",
+      "a": "Todavía no. No se ha verificado la conexión de búsqueda por imágenes de FindSpreadsheet. Por ahora, utiliza la búsqueda por texto. La propia página de inicio de Pikobuy describe la búsqueda mediante imágenes, que es un servicio oficial independiente.",
+      "sourceIds": [
+        "site",
+        "home"
+      ]
+    },
+    {
+      "id": "source-id",
+      "group": "order",
+      "q": "¿Por qué son diferentes el identificador del catálogo y el de Weidian?",
+      "a": "El registro del catálogo identifica una página en FindSpreadsheet. El identificador del artículo de Weidian identifica el producto original. El botón Abrir en Pikobuy utiliza el identificador original del producto, no el número de registro del catálogo.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "pikobuy-weidian-links"
+    },
+    {
+      "id": "prices",
+      "group": "order",
+      "q": "¿El precio mostrado incluye la entrega?",
+      "a": "No. Considera el precio del catálogo una estimación del artículo. La entrega internacional y otros cargos aplicables deben confirmarse por separado. La guía de Pikobuy sitúa el pago del envío internacional después de la etapa de almacén.",
+      "sourceIds": [
+        "site",
+        "guide"
+      ],
+      "related": "pikobuy-shipping-cost"
+    },
+    {
+      "id": "variants",
+      "group": "order",
+      "q": "¿Elegir una talla aquí realiza un pedido?",
+      "a": "No. Esta vista previa te ayuda a examinar las opciones disponibles en la fuente. Selecciona y verifica de nuevo el color, la talla y la cantidad necesarios en Pikobuy antes de enviar o pagar un pedido.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "pikobuy-sizing-guide"
+    },
+    {
+      "id": "stock",
+      "group": "order",
+      "q": "¿Qué ocurre si el artículo está agotado?",
+      "a": "La guía de compras de Pikobuy indica que un artículo no disponible se reembolsará. Comprueba el estado y los detalles aplicables en tu pedido oficial; una tarjeta del catálogo no reserva existencias.",
+      "sourceIds": [
+        "guide"
+      ]
+    },
+    {
+      "id": "photo-types",
+      "group": "photos",
+      "q": "¿Las fotos del producto son iguales que las fotos de control de calidad del almacén?",
+      "a": "No. Las imágenes del anuncio describen una oferta; las fotos del almacén corresponden a un artículo recibido para un pedido. Comprueba el artículo, la opción y el contexto antes de utilizar una foto como prueba.",
+      "sourceIds": [
+        "site"
+      ],
+      "related": "pikobuy-qc-photo-guide"
+    },
+    {
+      "id": "qc-missing",
+      "group": "photos",
+      "q": "¿Por qué esta vista previa muestra a veces que el control de calidad no está disponible?",
+      "a": "La conexión de control de calidad de la fuente principal no está disponible actualmente en esta vista previa. Eso no demuestra que un artículo carezca de fotos del almacén. Revisa tu propio pedido en Pikobuy para consultar su información de inspección.",
+      "sourceIds": [
+        "site"
+      ]
+    },
+    {
+      "id": "inspection",
+      "group": "photos",
+      "q": "¿Qué puede determinar la inspección del almacén?",
+      "a": "La guía menciona la recepción, las fotos y las comprobaciones de defectos. Las condiciones de reexpedición excluyen la inspección especializada de productos profesionales. Las fotos pueden mostrar detalles visibles, pero no prueban autenticidad, durabilidad ni funcionamiento completo.",
+      "sourceIds": [
+        "guide",
+        "shipping"
+      ],
+      "related": "pikobuy-qc-photo-guide"
+    },
+    {
+      "id": "extra-photos",
+      "group": "photos",
+      "q": "¿Puedo pedir fotos detalladas?",
+      "a": "Las condiciones de reexpedición mencionan la compra de fotos detalladas adicionales. Pregunta a la asistencia oficial qué puede fotografiarse de tu artículo y confirma el precio antes de solicitar el servicio.",
+      "sourceIds": [
+        "shipping"
+      ]
+    },
+    {
+      "id": "packing",
+      "group": "photos",
+      "q": "¿Puedo solicitar un embalaje diferente?",
+      "a": "La guía oficial menciona solicitudes de embalaje mínimo y reforzado. Consulta las necesidades del artículo antes de retirar cajas, etiquetas o precintos; cambiar el embalaje puede afectar a la protección y a los requisitos para devolverlo.",
+      "sourceIds": [
+        "guide",
+        "returns"
+      ],
+      "related": "pikobuy-parcel-packing"
+    },
+    {
+      "id": "estimate",
+      "group": "shipping",
+      "q": "¿Qué información solicita el estimador de envíos?",
+      "a": "El estimador oficial pide el destino, el tipo de producto y el peso en kilogramos, con longitud, anchura y altura en centímetros. Utiliza los datos del paquete embalado cuando estén disponibles y compara las rutas que realmente devuelva.",
+      "sourceIds": [
+        "estimate"
+      ],
+      "related": "pikobuy-shipping-cost"
+    },
+    {
+      "id": "combine",
+      "group": "shipping",
+      "q": "¿Pueden compartir paquete productos de distintos vendedores?",
+      "a": "La página de contacto de Pikobuy describe la agrupación de artículos de diferentes vendedores en un solo paquete. Confirma qué artículos y rutas son compatibles. Agrupar pedidos no abarata automáticamente todos los envíos.",
+      "sourceIds": [
+        "contact"
+      ],
+      "related": "pikobuy-parcel-packing"
+    },
+    {
+      "id": "tracking",
+      "group": "shipping",
+      "q": "¿Cuándo debería aparecer el seguimiento?",
+      "a": "La guía de compras indica que el seguimiento está disponible en los tres días posteriores a la expedición. Esto describe la disponibilidad del seguimiento, no el plazo de entrega. Si un paquete expedido no tiene actualizaciones, pide a la asistencia oficial que compruebe su referencia.",
+      "sourceIds": [
+        "guide"
+      ],
+      "related": "pikobuy-tracking-guide"
+    },
+    {
+      "id": "delivery-time",
+      "group": "shipping",
+      "q": "¿Hay un único plazo de entrega para todos los países?",
+      "a": "Las páginas revisadas no establecen un plazo fijo y universal de entrega. La ruta, el destino y las circunstancias del paquete varían. Utiliza la estimación de la ruta seleccionada y contempla los riesgos descritos en las condiciones de envío.",
+      "sourceIds": [
+        "estimate",
+        "shipping"
+      ],
+      "related": "pikobuy-tracking-guide"
+    },
+    {
+      "id": "forwarding",
+      "group": "shipping",
+      "q": "¿La reexpedición es lo mismo que una compra realizada por Pikobuy?",
+      "a": "La reexpedición empieza con mercancías enviadas a la dirección de almacén asignada. Sus condiciones tienen limitaciones propias de inspección y posventa. Confirma las instrucciones del almacén antes de enviar nada; no supongas que se aplican las normas de asistencia de los pedidos de compra.",
+      "sourceIds": [
+        "shipping"
+      ]
+    },
+    {
+      "id": "return-window",
+      "group": "returns",
+      "q": "¿Cuándo puedo solicitar una devolución desde el almacén?",
+      "a": "Para los pedidos admisibles, la política describe un plazo de solicitud de cinco días, 120 horas, después del estado En almacén, calculado desde la hora siguiente. Siguen siendo necesarios el consentimiento del vendedor y el cumplimiento de las condiciones del producto. Comprueba tu pedido cuanto antes.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "return-eligibility",
+      "group": "returns",
+      "q": "¿Se pueden devolver todos los productos?",
+      "a": "No. La política enumera exclusiones y requisitos de estado, incluidos los productos personalizados y ciertas prendas íntimas. Un plazo general de devolución no anula las normas del vendedor ni los requisitos de admisibilidad del artículo.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "return-cost",
+      "group": "returns",
+      "q": "¿Las devoluciones son siempre gratuitas?",
+      "a": "No. Los cargos dependen del motivo, el vendedor y el estado del pedido. La política contiene descripciones diferentes de los gastos de entrega originales, así que solicita un desglose claro de costes para tu caso antes de aceptar una devolución.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "return-packaging",
+      "group": "returns",
+      "q": "¿Debo quitar las etiquetas o el embalaje antes de decidir?",
+      "a": "Consérvalos hasta haber comprobado el artículo y las condiciones de devolución. La política vincula la admisibilidad al estado apto para reventa e indica requisitos específicos de precintos, etiquetas y embalaje según el producto.",
+      "sourceIds": [
+        "returns"
+      ],
+      "related": "pikobuy-returns-refunds"
+    },
+    {
+      "id": "payments",
+      "group": "account",
+      "q": "¿Qué método de pago puedo utilizar?",
+      "a": "Pikobuy muestra varias marcas de pago, pero las páginas revisadas no establecen su disponibilidad para todos los países, monedas o pedidos. Utiliza los métodos y los cargos ofrecidos en el proceso de pago oficial.",
+      "sourceIds": [
+        "about",
+        "guide"
+      ]
+    },
+    {
+      "id": "failed-payment",
+      "group": "account",
+      "q": "¿Se tramitará un pedido sin pagar?",
+      "a": "Las condiciones indican que un pago fallido impide tramitar el pedido. Comprueba el estado del pedido y del pago antes de volver a intentarlo; si un cargo no está claro, contacta con la asistencia oficial en lugar de suponer que hace falta otro pago.",
+      "sourceIds": [
+        "terms"
+      ]
+    },
+    {
+      "id": "account-data",
+      "group": "account",
+      "q": "¿Dónde puedo preguntar sobre los datos de mi cuenta o solicitar asistencia?",
+      "a": "Utiliza la página de contacto oficial de Pikobuy para recibir asistencia sobre pedidos. Su política de privacidad dirige las solicitudes de cierre de cuenta y eliminación de datos personales a atención al cliente. Nunca envíes tu contraseña ni tus credenciales de pago a este sitio independiente.",
+      "sourceIds": [
+        "contact",
+        "privacy"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "how-to-use-pikobuy-spreadsheet",
+      "category": "Hoja de cálculo",
+      "title": "Cómo utilizar una hoja de cálculo de Pikobuy: buscar, comparar y crear una selección útil",
+      "description": "Un método práctico para buscar hallazgos de Pikobuy, conservar los enlaces correctos de los productos, comparar variantes y calcular el presupuesto antes de abrir un pedido.",
+      "intro": "Una hoja de cálculo de Pikobuy resulta útil cuando te ayuda a tomar una decisión de compra más clara. Un catálogo grande por sí solo no indica si una talla concreta te queda bien, si la opción fotografiada coincide con la variante seleccionada o si la entrega internacional encaja en tu presupuesto. Considera la exploración el comienzo de un proceso de comprobación cuyo resultado sea una pequeña selección. Pikobuy Sheet incorpora información de productos de findspreadsheet.com a páginas locales de exploración y detalle. Su botón de compra abre después el producto correspondiente en Pikobuy, donde deben tomarse las decisiones sobre pedidos. Esta guía explica un método práctico para pasar de una etapa a otra sin confundir un precio de descubrimiento con un presupuesto final ni una imagen guardada con pruebas sobre tu propio pedido.",
+      "sections": [
+        {
+          "heading": "Empieza con unos requisitos de compra concretos",
+          "paragraphs": [
+            "Anota qué función debe cumplir el artículo antes de buscar. Para ropa, podría ser una capa ligera para temperaturas suaves, una medida concreta de la prenda y un importe máximo reservado al artículo en sí. Para un accesorio, podrían ser las dimensiones previstas, el material preferido y la compatibilidad con algo que ya tienes. Estos requisitos son más útiles que un objetivo amplio como encontrar el mejor producto. También ayudan a detectar cuándo una fotografía atractiva te está alejando de lo que necesitas.",
+            "Separa los requisitos en detalles esenciales y opcionales. Si una chaqueta debe caber sobre un jersey, la holgura en el pecho es esencial; un tono exacto puede ser opcional. Conserva los requisitos en tus propias notas para tenerlos disponibles al cambiar de pestaña. Se trata de un método personal de comparación, no de afirmar que el sitio ofrece una función de cuenta para guardar listas. Unos requisitos claros permiten descartar rápidamente resultados inadecuados y dedicar tiempo a los pocos que merecen más atención."
+          ]
+        },
+        {
+          "heading": "Busca con pasos pequeños e intencionados",
+          "paragraphs": [
+            "Empieza por el tipo de producto y un término distintivo útil. Es más fácil interpretar una búsqueda de una forma concreta de prenda o un tipo de accesorio que una frase con todas tus preferencias. Si los resultados son demasiado amplios, añade un segundo término. Si no hay coincidencias útiles, elimina un matiz o prueba otra descripción. Un anuncio puede utilizar expresiones inglesas diferentes de las tuyas, así que la ausencia de resultados no demuestra que el producto no esté disponible en ninguna parte.",
+            "Utiliza las categorías para establecer el contexto antes de comparar tarjetas individuales. Una fotografía puede hacer que una sudadera y una prenda exterior ligera parezcan similares, aunque sus medidas y uso práctico difieran. Abre los resultados prometedores en sus páginas locales de detalle y comprueba qué información está realmente disponible. La búsqueda por texto es la vía de descubrimiento operativa en esta vista previa. La búsqueda por imágenes no está conectada, así que una imagen que subas en otro lugar o un icono de cámara que reconozcas no deben considerarse pruebas de un servicio de búsqueda operativo aquí."
+          ]
+        },
+        {
+          "heading": "Distingue una tarjeta de producto de una decisión de compra",
+          "paragraphs": [
+            "Una tarjeta es una presentación resumida: puede ayudarte a reconocer el artículo y comparar un precio mostrado, pero no puede contener todos los matices. En la página de detalle, busca imágenes adicionales, información de la fuente y las opciones proporcionadas para ese producto. Comprueba si el título identifica un estilo general, una versión concreta o un grupo de variantes. No supongas que todos los colores de una galería están disponibles al mismo precio ni que la primera imagen describe la opción seleccionada en ese momento.",
+            "La distinción cobra especial importancia cuando varios artículos parecen casi idénticos. Uno puede incluir un accesorio que otro vende por separado, o utilizar un rango de tallas diferente. Si la información disponible no resuelve esa diferencia, registra la incertidumbre en lugar de escoger una interpretación más segura de lo justificado. Antes de pagar, confirma la opción correspondiente en Pikobuy. La guía oficial de compras sitúa la selección de especificaciones y cantidad antes del pago de compra; una página de descubrimiento no sustituye ese paso."
+          ]
+        },
+        {
+          "heading": "Conserva enlaces y variantes en tu selección",
+          "paragraphs": [
+            "Guarda cada artículo seleccionado junto con su enlace de detalle, el identificador original del producto cuando esté disponible, el color o versión previstos y la talla deseada. Añade la fecha de consulta y una razón breve para incluirlo en la lista. Una captura de pantalla por sí sola es una referencia débil: puede omitir la fuente, recoger un precio anterior o mostrar un color que ya no se ofrece. El enlace permite volver al anuncio actual en lugar de reconstruirlo a partir de una fotografía parecida.",
+            "Una nota sencilla puede tener cinco campos: artículo, enlace, opción seleccionada, motivo para considerarlo y cuestión pendiente. Por ejemplo, una entrada explícitamente hipotética podría indicar que una sobrecamisa azul marino encaja con el uso previsto, pero aún falta conocer la medida de manga. Esto resulta más útil que marcarla como de buena calidad sin pruebas. Conserva alternativas solo cuando resuelvan la misma necesidad; de lo contrario, la selección se convierte discretamente en otro catálogo y dificulta la comparación."
+          ]
+        },
+        {
+          "heading": "Compara los costes sobre la misma base",
+          "paragraphs": [
+            "Decide qué representa el número mostrado antes de ordenar por precio. Compara la variante y la cantidad previstas, dejando margen en el presupuesto para costes que una tarjeta del catálogo no determina. El importe mostrado durante la búsqueda puede cambiar cuando abras la plataforma de compra. Una conversión de moneda tampoco establece por sí misma el tipo de cambio ni el importe que se aplicará al pagar.",
+            "Utiliza un total de planificación en lugar de fingir que conoces el coste final entregado. Como ejemplo hipotético, dos artículos seleccionados que cuestan 20 y 24 unidades de la moneda de tu presupuesto difieren en cuatro unidades en la etapa del artículo. Esa comparación todavía no dice nada sobre el tamaño del paquete, la ruta de entrega u otros cargos. Registra los importes confirmados por separado de las estimaciones. Así podrás comprobar si un producto más barato sigue siendo atractivo tras aclarar la información pendiente, sin presentar precios de transporte inventados como presupuestos reales de Pikobuy."
+          ]
+        },
+        {
+          "heading": "Da más peso a las pruebas que al parecido visual",
+          "paragraphs": [
+            "Pregúntate qué puede respaldar realmente cada imagen. Una fotografía clara puede ayudarte a examinar detalles visibles del diseño; no confirma todas las afirmaciones sobre materiales, la durabilidad a largo plazo ni cómo te quedará el artículo. La galería de un vendedor describe un anuncio, mientras que las fotos de una unidad concreta comprada describen esa unidad. Por tanto, el parecido entre dos tarjetas es un motivo para revisar identificadores y opciones, no una prueba de que los productos sean idénticos.",
+            "La conexión de control de calidad en tiempo real de Pikobuy Sheet no está disponible actualmente. La falta de fotos de control debe seguir siendo una ausencia de pruebas, no sustituirse por una imagen de catálogo con una etiqueta tranquilizadora. Si después compras a través de Pikobuy, examina las fotos vinculadas a tu propio pedido en almacén antes de decidir el envío. Para un artículo de la selección sobre el que tengas dudas, anota las pruebas concretas que necesitas, como una foto de la etiqueta o una medida, en lugar de depender de una impresión general."
+          ]
+        },
+        {
+          "heading": "Conserva el contexto al cambiar de idioma o dispositivo",
+          "paragraphs": [
+            "La interfaz puede ayudarte a explorar en tu idioma preferido, pero los títulos de productos y nombres de opciones de la fuente pueden conservar su redacción original. Guarda esa redacción junto con tus notas. Traducir informalmente un color o una talla puede introducir un error cuando vuelvas a un menú de selección, especialmente si varias opciones tienen nombres similares. Cuando una opción no esté clara, conserva el texto original y solicita una aclaración en vez de elegir la etiqueta familiar más cercana.",
+            "En el teléfono, revisa un artículo seleccionado cada vez y confirma que no has cambiado la opción elegida al desplazarte. En una pantalla grande, compara campos equivalentes en unas pocas pestañas. Ambos métodos funcionan si los mismos identificadores y requisitos permanecen asociados a cada artículo. Evita considerar el primer resultado visible como la mejor coincidencia solo porque es más fácil acceder a él; el orden y la prominencia visual no son evaluaciones independientes de productos."
+          ]
+        },
+        {
+          "heading": "Termina la búsqueda con una acción siguiente clara",
+          "paragraphs": [
+            "Para cada candidato, elige un resultado práctico: listo para verificar en Pikobuy, necesita un detalle concreto o ya no es adecuado. Una medida que falta requiere una aclaración; un precio que supera el presupuesto requiere otra elección. Ninguno de los problemas se resuelve abriendo más tarjetas casi idénticas. Reducir la lista es avanzar, porque facilita comprobar el pedido final y disminuye la posibilidad de pagar por una opción no deseada.",
+            "Cuando utilices el botón de compra, confirma que el destino sea la página oficial del producto en Pikobuy y compara el artículo y sus opciones con tus notas. La propia guía de Pikobuy describe el uso de enlaces o palabras clave para localizar productos y después seleccionar los detalles de compra. Mantén el registro, el pago y la asistencia de pedidos en esa plataforma oficial. La hoja de cálculo independiente sigue siendo una ayuda para descubrir y comparar, mientras que tus identificadores guardados y preguntas pendientes aportan continuidad entre la exploración y una compra deliberada."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "home"
+      ],
+      "related": [
+        "pikobuy-ordering-guide",
+        "pikobuy-weidian-links",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-ordering-guide",
+      "category": "Guía de compra",
+      "title": "Guía de pedidos de Pikobuy: del primer enlace de producto a la solicitud de envío",
+      "description": "Comprende las etapas de compra y envío internacional, con comprobaciones prácticas de variantes, pruebas del almacén y costes del paquete.",
+      "intro": "Un pedido a través de un agente contiene varias decisiones que se toman en momentos diferentes. Elegir un producto, comprarlo a un vendedor, revisar su llegada a un almacén y organizar la entrega internacional están relacionados, pero no son la misma acción. La guía pública de compras de Pikobuy describe primero el pago de compra y, más adelante, el pago del envío internacional. Entender esa secuencia resulta más útil que memorizar un número prometido de días de entrega. Este artículo sigue el recorrido del comprador y explica qué comprobar antes de avanzar. Es una guía de preparación basada en información pública y listas originales de decisiones, no el relato de una compra de prueba. La pantalla actual de tu pedido y las condiciones aplicables a los servicios elegidos siguen siendo el lugar donde confirmar cargos y opciones específicos.",
+      "sections": [
+        {
+          "heading": "Prepara el destino y los requisitos del artículo",
+          "paragraphs": [
+            "Antes de realizar un pedido, comprueba los datos de destino necesarios para la entrega. Mantén el nombre del destinatario, los componentes de la dirección y la información de contacto en un formato que puedas revisar detenidamente. No improvises una abreviatura solo para que quepa en un campo. Si la dirección incluye un edificio, una vivienda u otro detalle local esencial, determina dónde debe ir antes de llegar a la etapa de solicitud del paquete. Una preparación precisa evita intentar corregir varias incertidumbres a la vez más adelante.",
+            "Prepara el artículo por separado. Anota su enlace original, la versión deseada, la talla o dimensiones previstas y cualquier cuestión que deba confirmarse antes de comprar. Un primer pedido hipotético con un artículo claramente especificado resulta más fácil de revisar que un conjunto de alternativas ambiguas, aunque la cantidad adecuada depende de tus necesidades. Considera esta preparación una forma de reducir errores, no una garantía frente a cualquier problema del vendedor o la logística."
+          ]
+        },
+        {
+          "heading": "Utiliza la información de descubrimiento para llegar a la página oficial del producto",
+          "paragraphs": [
+            "En Pikobuy Sheet, busca o explora el catálogo y abre la página local de detalle del artículo que quieras examinar. La información de productos de este sitio independiente procede de findspreadsheet.com. El enlace de compra es el paso a Pikobuy, no una confirmación de que ya hayas hecho un pedido. Después de abrirlo, compara la identidad del producto, las imágenes y las opciones relevantes con tus notas. Una página que simplemente se parece no basta si su identificador original es diferente.",
+            "Si un anuncio no carga o falta la opción esperada, detente ahí y resuelve la discrepancia. Repetir un intento de pago no puede reparar un enlace de producto incorrecto. La guía de Pikobuy describe cómo introducir enlaces de productos o palabras clave y dirige a los usuarios a la asistencia cuando no encuentran un artículo. Utiliza esa ayuda oficial para consultar la disponibilidad de compra. Distingue la función de exploración del sitio independiente de las preguntas que solo pueden responder la plataforma o el vendedor."
+          ]
+        },
+        {
+          "heading": "Revisa las especificaciones antes del primer pago",
+          "paragraphs": [
+            "Lee cada selección que afecte a lo que llegará: color, talla, modelo, cantidad y cualquier componente vendido por separado. Comprueba que la opción activa coincida con la imagen en la que te basaste. En un anuncio hipotético que ofrezca tanto un accesorio individual como un conjunto, una foto destacada del grupo no determinaría qué opción has seleccionado. Lo más prudente es comparar directamente el texto de la opción con la compra prevista y aclarar cualquier ambigüedad antes de pagar.",
+            "Después revisa el importe y los cargos indicados en la pantalla real de compra. Guarda para tu referencia un registro del artículo confirmado y de las opciones seleccionadas. La guía de Pikobuy indica que se aplica el precio real de compra y describe reembolsos cuando los productos están agotados. Eso no convierte un precio anterior de descubrimiento en un presupuesto vinculante. Si el importe o la disponibilidad difieren de tu plan, toma una nueva decisión en lugar de suponer que debe prevalecer la información anterior."
+          ]
+        },
+        {
+          "heading": "Sigue por separado la etapa del vendedor al almacén",
+          "paragraphs": [
+            "Tras la compra, sigue el estado del artículo como pedido en lugar de esperar inmediatamente el seguimiento del paquete internacional. El movimiento del vendedor al almacén es una etapa diferente del viaje posterior a tu dirección. Utiliza la redacción que aparece en tu cuenta para entender qué ha ocurrido. Evita convertir un estado desconocido en una fecha firme de expedición, salvo que la plataforma proporcione realmente esa información para tu pedido.",
+            "Mantén los mensajes centrados cuando necesites aclaraciones. Incluye el identificador del pedido, el artículo o la opción seleccionada afectada, el estado que ves y el punto concreto que necesitas resolver. Por ejemplo, pregunta si se ha confirmado una especificación solicitada en lugar de enviar solo una imagen y una queja general. Este es un método editorial de comunicación, no una afirmación sobre los tiempos de respuesta de la asistencia. Crea un registro más fácil de seguir si el pedido contiene varios productos que avanzan a ritmos distintos."
+          ]
+        },
+        {
+          "heading": "Contrasta las pruebas del almacén con el pedido",
+          "paragraphs": [
+            "Cuando el artículo llegue al almacén, compara las pruebas disponibles con tus especificaciones originales. La guía de Pikobuy incluye en esta etapa el registro de llegada, las fotografías y la comprobación de defectos. Empieza por la identidad: ¿son el artículo, el color y la cantidad esperados? Después examina los detalles visibles importantes para su uso. Si se ve la etiqueta de talla, compárala con la talla pedida, recordando que la etiqueta por sí sola no demuestra cómo quedará realmente.",
+            "Distingue un problema visible de algo que las pruebas no pueden responder. Un color claramente diferente es una preocupación distinta de la duda sobre el tacto de la tela, y cada una requiere una aclaración diferente. Conserva la información pertinente del pedido y plantea pronto cualquier problema concreto. No solicites el envío internacional simplemente para eliminar una tarea pendiente cuando siga sin resolverse una discrepancia importante. Revisar pronto también ofrece más posibilidades de preguntar por las opciones aplicables antes de que posteriores manipulaciones cambien el estado del artículo."
+          ]
+        },
+        {
+          "heading": "Elige el embalaje y el escenario de envío de forma deliberada",
+          "paragraphs": [
+            "Una vez que sepas qué artículos quieres conservar, revisa el paquete propuesto. Considera conjuntamente la protección, las dimensiones embaladas, el peso y el destino. Un paquete más pequeño no es automáticamente mejor si deja un objeto frágil insuficientemente protegido. En cambio, mantener volumen innecesario puede afectar a qué opciones de entrega tienen sentido. Pide una aclaración cuando una elección de embalaje no esté clara, en lugar de suponer que un nombre familiar implica un servicio concreto.",
+            "El estimador oficial ofrece campos para destino, tipo de producto, peso y dimensiones. Utiliza la información pertinente del paquete para comparar escenarios actuales y comprueba las condiciones de cada resultado. En una comparación hipotética, una ruta podría encajar con tu preferencia de plazo y otra con un perfil diferente de paquete; esto es un marco de decisión, no una afirmación sobre rutas disponibles actualmente. No elijas solo por un importe destacado sin entender los supuestos sobre el paquete que lo sustentan."
+          ]
+        },
+        {
+          "heading": "Considera el envío internacional una segunda decisión de pago",
+          "paragraphs": [
+            "Al solicitar el envío, vuelve a revisar los datos del destinatario y comprueba el servicio seleccionado, el contenido del paquete y el desglose del importe a pagar. Esta es la segunda gran decisión de la secuencia descrita en la guía pública. Haber comprado antes los artículos no significa que ya estén pagados todos los posibles gastos de entrega. Mantén los costes confirmados separados de los importes que siguen siendo estimaciones o dependen de requisitos del destino, y evita utilizar la tarjeta del catálogo como registro del coste total.",
+            "Detente si un cargo nuevo, un cambio de embalaje o una condición de la ruta modifica significativamente tu presupuesto. Una comprobación personal útil consiste en explicar la decisión en una frase: qué envías, adónde va, qué servicio elegiste y qué dudas quedan. Si no puedes hacerlo, revisa la pantalla o formula una pregunta concreta. Este método ayuda a detectar información pendiente sin inventar una ruta universalmente más barata ni prometer que un paquete concreto evitará retrasos."
+          ]
+        },
+        {
+          "heading": "Mantén un registro claro hasta la entrega",
+          "paragraphs": [
+            "Tras la expedición, conserva el identificador del paquete y sigue el seguimiento disponible para ese envío internacional. No confundas el número de seguimiento nacional del vendedor con el registro del paquete final. Un intervalo sin actualizaciones no revela por sí mismo la causa; utiliza el último estado real y el canal de asistencia de la plataforma cuando necesites una explicación. Evita aceptar una instrucción de pago no solicitada solo porque mencione una entrega que esperas; verifícala a través del servicio que utilizas.",
+            "Cuando llegue el paquete, examina el embalaje y el contenido y conserva pruebas útiles si algo difiere del pedido. Mantén vinculados el registro del artículo, las observaciones del almacén y la información de entrega para poder describir el problema con precisión. El objetivo de todo el proceso es la continuidad: cada decisión debe utilizar la información establecida en la etapa anterior. Un proceso cuidadoso no elimina toda incertidumbre, pero facilita identificar errores y plantear preguntas a la parte adecuada."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "contact"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-weidian-links",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-weidian-links",
+      "category": "Enlaces de productos",
+      "title": "Enlaces Weidian de Pikobuy: conserva el identificador correcto desde el descubrimiento hasta el pedido",
+      "description": "Aprende a reconocer un identificador original de Weidian, evitar confundirlo con los registros del catálogo y verificar el producto después de abrir Pikobuy.",
+      "intro": "Un enlace de producto es una referencia a un anuncio específico, no simplemente una forma cómoda de abrir una imagen conocida. Cuando un catálogo independiente y un agente de compras muestran el mismo artículo, sus direcciones pueden contener números diferentes por motivos distintos. Confundir esos números puede llevarte al producto equivocado aunque el resto del enlace parezca plausible. La distinción útil es sencilla: un registro de catálogo identifica una entrada del sitio de descubrimiento, mientras que el identificador de artículo de Weidian identifica el anuncio original del vendedor. Esta guía explica cómo conservar esa identidad al pasar de Pikobuy Sheet a la plataforma oficial, sin necesidad de escribir código ni comprender la implementación interna del sitio.",
+      "sections": [
+        {
+          "heading": "Identifica el anuncio original antes de comparar direcciones",
+          "paragraphs": [
+            "Empieza por establecer a qué se refiere el enlace del producto. En la dirección de un artículo de Weidian, el valor asociado a itemID identifica el anuncio original. Por ejemplo, considera https://weidian.com/item.html?itemID=7857789312, donde 7857789312 es el identificador original. Este ejemplo explica el formato del enlace; no afirma nada sobre la disponibilidad, calidad, precio o idoneidad actuales del producto. Esos detalles siguen teniendo que comprobarse en el anuncio y la página de compra actuales.",
+            "Conserva la dirección original completa al guardar un artículo en vez de anotar solo el título. Los títulos pueden cambiar, repetirse entre vendedores o describir varias opciones similares. Las imágenes también pueden reutilizarse. Un identificador ofrece una referencia más precisa al preguntar si se ha abierto el mismo anuncio. Sin embargo, no garantiza que su contenido permanezca inalterado para siempre, así que compara la información actual del producto además del número."
+          ]
+        },
+        {
+          "heading": "Distingue un registro del catálogo de un identificador de artículo de Weidian",
+          "paragraphs": [
+            "Un catálogo independiente puede asignar su propio número de registro a la página donde presenta un hallazgo. Ese número pertenece a la organización del catálogo. No debe introducirse en la dirección de un producto de Weidian solo porque aparezca al final de la URL de una página local. El identificador original del producto debe proceder de la información real de la fuente, no de una suposición basada en el número más fácil de ver.",
+            "Considera un caso claramente hipotético en el que una página de descubrimiento termina en el registro 120 mientras que el anuncio de Weidian lleva un itemID mucho más largo. Ambos números pueden referirse correctamente a sus respectivas páginas, pero cumplen funciones diferentes. Guardar la página local permite volver a la descripción del catálogo; guardar la dirección original permite identificar el anuncio del vendedor. Mantener ambos en tus notas facilita comparar cuando regreses más adelante o debas comunicar que un enlace de compra abre un artículo inesperado."
+          ]
+        },
+        {
+          "heading": "Entiende el enlace de compra como un traspaso",
+          "paragraphs": [
+            "Una dirección de producto de Pikobuy puede contener la dirección original como parte de su información de destino. El ejemplo proporcionado sigue esta forma: https://www.pikobuy.com/product/detail?productUrl=https://weidian.com/item.html?itemID=7857789312. Su finalidad es indicar a Pikobuy qué anuncio original debe abrir. Un botón operativo del sitio puede mostrar algunos signos como caracteres codificados en la barra de direcciones; esto puede ser una forma normal de incluir una dirección dentro de otra, y no una prueba de que haya cambiado el identificador original.",
+            "Para el uso cotidiano, prefiere el botón de compra preparado en lugar de reconstruir el enlace manualmente. Después de abrirlo, confirma el dominio oficial e inspecciona el producto cargado. La dirección es una vía hacia una decisión, no una prueba de que todos los detalles sean correctos. Si compartes un enlace con otra persona, consérvalo como una dirección completa en la que se pueda hacer clic y evita insertar espacios, omitir el final o sustituir el identificador por un número de registro del catálogo."
+          ]
+        },
+        {
+          "heading": "Comprueba el producto y la opción después de abrir Pikobuy",
+          "paragraphs": [
+            "Que coincida el identificador original es una comprobación importante, pero no selecciona por ti la variante correcta. Revisa el título, la información visible del producto y las opciones disponibles después de cargar la página. A continuación, compara el color, la talla, el modelo y la cantidad activos con el artículo que pretendías comprar. Un anuncio puede contener varias opciones relacionadas, incluidas opciones con precios distintos o nombres difíciles de interpretar sin la imagen correspondiente.",
+            "Utiliza el identificador original para establecer el anuncio y el texto de la opción para establecer la compra prevista. Si tus notas indican una versión y la página se abre con otra selección activa, cámbiala y verifícala deliberadamente. No supongas que la primera fotografía o una opción elegida en una visita anterior siguen determinando el pedido actual. La guía pública de Pikobuy sitúa la selección de especificaciones antes del pago; un enlace correcto es solo el punto de partida para esa comprobación."
+          ]
+        },
+        {
+          "heading": "Trata con cautela las redirecciones y los enlaces incompletos",
+          "paragraphs": [
+            "Los enlaces copiados desde aplicaciones de mensajería o notas pueden perder parte del final o incorporar signos de puntuación del texto que los rodea. Antes de concluir que el vendedor retiró un producto, compara la dirección copiada con la fuente original guardada. Busca espacios involuntarios, un identificador que falte o caracteres adicionales procedentes de una frase. No cambies repetidamente dígitos al azar hasta que cargue una página: encontrar cualquier producto no equivale a encontrar el producto deseado.",
+            "Si un enlace abreviado o redirigido se abre correctamente, examina la información final del producto y conserva una referencia original clara cuando la plataforma la ofrezca. Si no se abre, guarda el enlace original y pide una aclaración al servicio oficial de compras. Evita depender de un conversor ajeno que no pueda explicar qué anuncio resolvió. El objetivo práctico es una conexión rastreable entre el hallazgo elegido y el producto por el que estás considerando pagar."
+          ]
+        },
+        {
+          "heading": "Reconoce cuándo ha cambiado la disponibilidad o el contenido",
+          "paragraphs": [
+            "Un enlace guardado puede seguir siendo sintácticamente correcto aunque el producto no esté disponible, el vendedor haya cambiado el anuncio o haya desaparecido la opción deseada. Considera estos casos problemas de información del producto en lugar de suponer que todos los fallos se deben a la URL. Compara lo que ves ahora con tus notas anteriores, incluida la fecha en que las registraste. Si las opciones o las imágenes difieren de forma importante, detente antes de continuar aunque el identificador siga coincidiendo.",
+            "Registra la discrepancia en términos concretos. Por ejemplo, una nota hipotética podría indicar que la opción de talla mediana seleccionada anteriormente ya no aparece, en lugar de afirmar que todo el enlace está roto. Eso aclara el siguiente paso: comprobar otra talla solo si se ajusta a tus medidas, pedir una aclaración o retirar el artículo de tu selección. No utilices una captura antigua como prueba de que el vendedor debe seguir ofreciendo una versión concreta al precio anterior."
+          ]
+        },
+        {
+          "heading": "Mantén separados los formatos de cada mercado",
+          "paragraphs": [
+            "Una plantilla de Weidian debe utilizarse con un identificador original auténtico de Weidian. Otros mercados tienen sus propias estructuras de direcciones e identificadores. Un número de un anuncio de Taobao o una URL original de otra plataforma no deben introducirse en la posición itemID de Weidian solo porque ambos sean referencias de productos. Esa sustitución cambia el significado del enlace y puede abrir un artículo sin relación o fallar por completo.",
+            "La guía de Pikobuy menciona varios mercados, pero esa descripción oficial general de abastecimiento no establece que cada botón de un catálogo independiente admita todos los formatos. Para el proceso de compra de Weidian de este sitio, verifica la fuente real de Weidian. Cuando explores otro mercado, conserva su enlace original y confirma la vía de compra compatible en Pikobuy en lugar de adaptar un formato por intuición. La compatibilidad de la plataforma, la disponibilidad del anuncio individual y la corrección de un enlace generado concreto son cuestiones que deben comprobarse por separado."
+          ]
+        },
+        {
+          "heading": "Guarda una referencia útil para preguntas posteriores",
+          "paragraphs": [
+            "Una buena referencia de producto reúne la página local de descubrimiento, el enlace original completo, la opción prevista y una descripción breve de la duda pendiente. Si una página de compra abre el artículo equivocado, incluye qué esperabas y qué apareció. Si el anuncio es correcto pero una opción no está clara, identifica el texto de la opción. Esto resulta más útil que enviar una captura que contenga solo la fotografía de un producto o un número sin explicar a qué sistema pertenece.",
+            "Antes de pagar, compara una vez más el artículo que querías comprar con la página donde estás a punto de pedirlo. Mantén las credenciales de la cuenta y los datos de pago fuera de notas compartidas o capturas públicas. La disciplina es sencilla: conservar identificadores, verificar el anuncio actual y confirmar la variante seleccionada. Así se evita que un registro interno del sitio de descubrimiento, una imagen antigua o una dirección copiada incompleta sustituyan silenciosamente al producto real que pretendías comprar."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-ordering-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-qc-photo-guide",
+      "category": "Controles de calidad",
+      "title": "Guía de fotos de control de calidad de Pikobuy: interpreta las pruebas del almacén sin exagerar",
+      "description": "Compara las imágenes del anuncio con tus propias fotos del almacén, comprueba la identidad y los detalles visibles, e identifica qué sigue necesitando una aclaración.",
+      "intro": "Las fotos de control de calidad resultan más útiles si las abordas con una lista concreta y una comprensión clara de sus límites. Pueden ayudar a revelar una discrepancia visible o documentar el estado de un artículo determinado, pero una fotografía no es una prueba completa del producto. También importa de quién es el artículo fotografiado y cuándo se tomó la imagen. La conexión de control de calidad en tiempo real de Pikobuy Sheet no está disponible actualmente; las imágenes de las galerías de productos no deben confundirse con fotos verificadas de tu propio pedido. La guía oficial de Pikobuy describe por separado la confirmación mediante fotos y la comprobación de defectos cuando las compras llegan a su almacén. Este artículo explica cómo revisar cuidadosamente ese tipo de pruebas, separando lo observable de lo que aún requiere aclaración.",
+      "sections": [
+        {
+          "heading": "Determina qué tipo de imagen estás viendo",
+          "paragraphs": [
+            "Empieza por clasificar las pruebas. Una fotografía del anuncio ilustra lo que el vendedor presenta para la venta. Una foto de un comprador anterior, si se conoce su contexto, muestra el artículo de otra persona en un momento concreto. Una fotografía del almacén vinculada a tu pedido es más directamente pertinente para el artículo cuyo envío vas a decidir. Estas fuentes pueden complementarse, pero no son intercambiables y no deben etiquetarse como si probaran lo mismo.",
+            "Anota la referencia del producto y cualquier contexto visible del pedido antes de examinar los detalles. Una imagen sin conexión fiable con el anuncio deseado puede resultar visualmente interesante, pero constituye una prueba débil para decidir. Del mismo modo, varias imágenes similares no son necesariamente varias comprobaciones independientes. Si el sitio solo ofrece una galería, descríbela como galería. No conviertas la ausencia de control de calidad en una señal positiva ni supongas que la imagen de un producto parecido cubre esa carencia."
+          ]
+        },
+        {
+          "heading": "Confirma primero la identidad, la cantidad y las opciones elegidas",
+          "paragraphs": [
+            "Empieza por las comprobaciones que pueden evitar los errores de pedido más claros. Compara el artículo recibido con el color, modelo, etiqueta de talla y cantidad de tu pedido. Busca accesorios o componentes incluidos si formaban parte de la opción seleccionada. Un par de guantes hipotético, por ejemplo, debe comprobarse como el conjunto pedido, no aceptarse simplemente porque un guante de la imagen se parezca al del anuncio. La comparación debe utilizar tu opción seleccionada real, no solo la foto promocional principal del producto.",
+            "Distingue entre una etiqueta visible y la propiedad que describe. Una etiqueta de talla puede mostrar que la talla indicada coincide con tu pedido, pero no establece las medidas de la prenda. Una descripción impresa del material no es un resultado de laboratorio independiente. Las comprobaciones de identidad son, por tanto, la primera capa de revisión: ayudan a establecer si el almacén muestra el artículo previsto antes de dedicar tiempo a evaluar detalles visibles más finos."
+          ]
+        },
+        {
+          "heading": "Utiliza un orden de inspección visual repetible",
+          "paragraphs": [
+            "Revisa el artículo siguiendo una secuencia constante en lugar de saltar entre los detalles más llamativos. Para una prenda, podrías examinar la forma general, el frente y la espalda, los cierres, las costuras, las marcas visibles en la superficie y las etiquetas. Para un accesorio, la secuencia puede centrarse en el cuerpo, los puntos de fijación, las piezas incluidas y las zonas de manipulación habitual. Adapta la lista al artículo en vez de copiar una lista genérica que ignore su uso real.",
+            "Describe las observaciones con precisión. Una marca oscura visible cerca de un puño es una afirmación más clara que declarar que todo el artículo es de mala calidad. Indica si la fotografía tiene suficiente resolución y cobertura para distinguir una marca de una sombra o de tela doblada. Si no, clasifícala como cuestión pendiente. Este enfoque evita dos errores opuestos: aceptar una discrepancia evidente porque la imagen general resulta atractiva y tratar cada detalle incierto como un defecto probado sin pruebas suficientes."
+          ]
+        },
+        {
+          "heading": "Ten en cuenta la iluminación, la perspectiva y las vistas que faltan",
+          "paragraphs": [
+            "Las fotografías reducen un objeto tridimensional a una vista condicionada por la iluminación, la posición de la cámara y el encuadre. El color puede parecer diferente bajo distintas luces, mientras que los pliegues o la perspectiva pueden hacer que un borde recto parezca irregular. Antes de concluir, compara el mismo rasgo en las vistas disponibles. Una preocupación que aparece consistentemente en fotografías claras merece una respuesta diferente de un efecto presente solo en una esquina sombreada.",
+            "Las vistas ausentes son, en sí mismas, un límite para las conclusiones. Una vista frontal limpia no establece el estado de la parte posterior, y un paquete cerrado no revela todo su interior. Anota qué vista resolvería tu duda. Por ejemplo, solicita una imagen más clara de una costura o etiqueta concreta en lugar de pedir vagamente mejores fotos. Una solicitud dirigida ayuda a centrar la atención en un punto relevante para decidir, sin suponer que el almacén puede realizar cualquier tipo de examen."
+          ]
+        },
+        {
+          "heading": "Lee las fotos de medidas como mediciones, no como impresiones",
+          "paragraphs": [
+            "Si hay una foto de medición, identifica el punto inicial, el final, la unidad y la posición del artículo. Una cinta colocada en diagonal sobre una prenda no responde a la misma pregunta que una medición recta de anchura. Del mismo modo, una cintura estirada y una relajada describen condiciones distintas. Compara la foto con tu método de referencia antes de utilizar el número para decidir si te quedará bien.",
+            "Utiliza una prenda conocida como comparación cuando corresponda y distingue las medidas en plano de las medidas corporales. En un ejemplo hipotético, una camisa que mide 56 centímetros de ancho en el pecho debe compararse con una camisa de referencia medida entre los mismos puntos. No debe interpretarse como un contorno corporal de 56 centímetros. Si no se ven los extremos o la unidad, pide una aclaración en lugar de considerar exacta una cinta parcialmente visible. La prueba de medición solo es útil si se entiende su método."
+          ]
+        },
+        {
+          "heading": "Convierte las dudas en solicitudes concretas de aclaración",
+          "paragraphs": [
+            "Una solicitud útil vincula una observación con una decisión. Indica la referencia del pedido o artículo, identifica la zona afectada, explica qué no está claro y describe la vista o información que ayudaría. Por ejemplo, una solicitud explícitamente hipotética podría pedir un primer plano de la zona de la cremallera porque la imagen disponible no muestra si la tela está atrapada. Esto es más preciso que pedir una garantía general de que el artículo sea perfecto.",
+            "Las condiciones de reexpedición de Pikobuy mencionan fotos detalladas adicionales y limitan la inspección profesional de productos especiales. Confirma qué ayuda está disponible para tu pedido real y si tiene un coste. No supongas que pedir una fotografía incluye pruebas de funcionamiento, autenticación o desmontaje. Mantén la respuesta vinculada a la duda original para decidir si resuelve el problema, deja una incertidumbre importante o revela una discrepancia que necesita otro procedimiento."
+          ]
+        },
+        {
+          "heading": "Decide entre conservar o consultar antes de otras manipulaciones",
+          "paragraphs": [
+            "Revisa las pruebas importantes mientras aún tengas una elección significativa sobre el siguiente paso. Si el artículo difiere visiblemente de la opción seleccionada, conserva las fotografías pertinentes y la información del pedido y pregunta por la solución aplicable. Si el problema es una duda en lugar de una discrepancia confirmada, dilo. Una pregunta documentada sobre una medida no es lo mismo que acusar al vendedor de enviar la talla incorrecta.",
+            "Evita retirar etiquetas, cambiar el embalaje o aprobar otras manipulaciones sin considerar si afectan a las opciones disponibles para ese artículo. La respuesta correcta depende del estado actual del pedido y de las condiciones aplicables, así que no deduzcas una solución universal a partir de la experiencia de otro comprador. Cuando se resuelva tu duda, registra el motivo de tu decisión. La nota puede ser breve, pero facilita entender después si aceptaste una característica visible, recibiste una aclaración o pasaste por alto una pregunta nunca respondida."
+          ]
+        },
+        {
+          "heading": "Mantén las conclusiones dentro de lo que permiten las pruebas",
+          "paragraphs": [
+            "Termina con una conclusión limitada: el color visible coincide con la opción prevista, la cantidad fotografiada es correcta, una medida parece coherente con tu método de referencia o una cuestión concreta sigue sin resolverse. Evita etiquetas generales como autenticado, durabilidad garantizada o impecable salvo que tengas pruebas adecuadas más allá de una fotografía básica. Una imagen del almacén no demuestra el desgaste a largo plazo, la construcción oculta, cada componente interno ni cómo se sentirá el artículo al utilizarlo.",
+            "La misma prudencia se aplica al hablar de productos con otros compradores. Explica qué imágenes revisaste y qué mostraban, sin presentar la unidad de otra persona como prueba de la consistencia futura del vendedor. Una revisión cuidadosa de control de calidad no pretende eliminar todas las incógnitas. Es un método para identificar errores visibles, formular mejores preguntas y decidir conscientemente sobre la incertidumbre restante. Combinado con detalles exactos del pedido y un presupuesto sensato, ese método resulta más valioso que una puntuación de calidad sin fundamento."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "shipping"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-ordering-guide",
+        "pikobuy-sizing-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-sizing-guide",
+      "category": "Tallas",
+      "title": "Guía de tallas de Pikobuy: compara medidas antes de elegir ropa o calzado",
+      "description": "Utiliza una prenda de referencia fiable, métodos de medición coherentes e información de calzado específica del anuncio en lugar de conversiones universales de tallas.",
+      "intro": "Una etiqueta de talla conocida es un punto de partida, no una descripción completa del ajuste. Dos prendas marcadas como medianas pueden tener cortes diferentes, y una talla de calzado impresa en un sistema no determina cómo se sentirá un modelo concreto. La tarea práctica consiste en comparar información medida de formas compatibles y decidir qué características de ajuste te importan. La guía de compras de Pikobuy pide confirmar especificaciones, color y talla antes de pedir; no establece una conversión universal para todos los vendedores. Esta guía ofrece un procedimiento original de medición para decidir con más cuidado. No puede prometer que algo te quede bien y no debe sustituir las instrucciones específicas de medición del vendedor ni una aclaración cuando el anuncio sea ambiguo.",
+      "sections": [
+        {
+          "heading": "Elige una referencia que encaje con el uso previsto",
+          "paragraphs": [
+            "Empieza con un artículo que ya tengas y que sepas llevar cómodamente. Elige una referencia que cumpla una función similar a la del producto considerado. Una camiseta ajustada es una mala comparación para una sobrecamisa estructurada que piensas llevar sobre otras capas. Asimismo, una cintura elástica se comporta de manera distinta de una fija aunque sus medidas en reposo sean parecidas. Registra tanto las dimensiones como lo que te gusta o no del ajuste de la referencia.",
+            "Define el resultado deseado en términos concretos. Quizá quieras el mismo alcance de manga, más espacio en el torso o un largo total menor. Esas preferencias ayudan a interpretar una diferencia de medidas sin tratar cada diferencia como un error. Ten a mano el artículo de referencia mientras comparas anuncios para poder volver a medir un punto sin depender de la memoria. El objetivo es una comparación repetible, no afirmar que una referencia puede predecir cualquier tejido o confección."
+          ]
+        },
+        {
+          "heading": "Distingue las medidas corporales de las medidas de la prenda",
+          "paragraphs": [
+            "Lee la descripción de la tabla de tallas antes de utilizar sus números. Algunas tablas describen la medida corporal prevista, mientras que otras dan las dimensiones de la prenda terminada. Una anchura en plano también difiere de un contorno. Si la tabla no explica el método utilizado, pide una aclaración en vez de elegir la interpretación que produzca la talla esperada. Mezclar estos métodos puede crear un error grande incluso si copias correctamente todos los números.",
+            "Utiliza unidades coherentes en tus notas e identifica el tipo de medida. En un ejemplo hipotético, una anchura de pecho en plano de 55 centímetros y un contorno corporal de pecho de 100 centímetros no son campos directamente equivalentes. Duplicar una anchura en plano ofrece un contorno aproximado de esa sección de la prenda, pero no contempla la forma, la elasticidad ni la holgura que prefieres. Considera esa operación una forma de entender la tabla, no una fórmula universal de ajuste."
+          ]
+        },
+        {
+          "heading": "Mide las prendas superiores entre puntos de referencia comparables",
+          "paragraphs": [
+            "Para las prendas superiores, empieza por las medidas más importantes para su diseño: anchura de pecho, largo total, posición del hombro y largo de manga. Coloca la prenda de referencia de forma constante y evita tirar de la tela salvo que el anuncio defina expresamente una medición estirada. Anota dónde empieza y termina cada medida. Una manga medida desde la costura del hombro no es la misma medición que una tomada desde el centro posterior del cuello.",
+            "Presta atención a la confección. Un hombro caído puede desplazar la costura hacia abajo del brazo, haciendo que la medida entre costura y puño parezca menor mientras el alcance total sigue siendo amplio. Un bajo curvo o largos diferentes delante y detrás también complican una única cifra de largo. Compara el diagrama o las instrucciones de la tabla cuando estén disponibles. Si el anuncio solo da una etiqueta de talla y ninguna dimensión útil, reconoce que la decisión es menos segura en lugar de inventar una tabla a partir de un producto visualmente parecido."
+          ]
+        },
+        {
+          "heading": "Compara pantalones utilizando varias dimensiones a la vez",
+          "paragraphs": [
+            "La cintura por sí sola no basta para describir el ajuste de un pantalón. Revisa el tiro, el espacio de cadera o asiento, la anchura del muslo, la entrepierna y la abertura de la pernera cuando existan esas medidas. Un pantalón cuya cintura coincida con tu referencia puede sentirse diferente en el asiento o quedar a otra altura. Decide qué dimensiones son esenciales para la comodidad y el uso previsto y compruébalas juntas, en vez de escoger la talla con la etiqueta de cintura más familiar.",
+            "Para cinturas elásticas o ajustables, distingue las medidas relajadas y extendidas y sigue el método indicado por el vendedor. No supongas que la extensión máxima describe un ajuste cómodo para el día a día. En una comparación hipotética, dos pantalones con la misma cintura relajada podrían diferir mucho en tiro y espacio de muslo; la mejor elección depende de tu referencia y preferencias. Anota cualquier dimensión ausente que pudiera cambiar la decisión, especialmente si una fotografía dificulta juzgar el corte."
+          ]
+        },
+        {
+          "heading": "Interpreta el corte y el tejido sin adivinar su comportamiento",
+          "paragraphs": [
+            "Las dimensiones describen la forma bajo determinadas condiciones de medición; no describen por completo la caída, elasticidad o tacto de una tela. Considera la información de material del anuncio algo que comprobar, no la prueba de una propiedad no ensayada. Una fotografía que parece holgada puede deberse al estilismo, a otra talla del modelo o a una pose que cambia la silueta aparente. Compara las dimensiones disponibles con tu referencia antes de confiar en esa impresión visual.",
+            "Deja margen para la incertidumbre cuando las pruebas sean limitadas. Si una prenda está pensada para quedar ceñida y faltan medidas relevantes, esa duda puede importar más que un precio bajo. Si prefieres un ajuste relajado, especifica qué zonas necesitan más espacio en lugar de elegir automáticamente una etiqueta mayor. No existe una instrucción universal de subir o bajar una talla que funcione con todos los vendedores, cortes y materiales. La pregunta correcta es si esta opción concreta permite el ajuste que buscas."
+          ]
+        },
+        {
+          "heading": "Utiliza información específica del anuncio para el calzado",
+          "paragraphs": [
+            "Para el calzado, registra la longitud de ambos pies con un método constante y los calcetines adecuados al uso previsto. Mide sobre una superficie estable y repite el proceso si el resultado no está claro. Mantén visible en tus notas el resultado mayor, junto con las preferencias de ajuste o dificultades de anchura que ya conozcas de zapatos que lleves cómodamente. Estas medidas ayudan a interpretar la orientación del vendedor; por sí solas no identifican una talla garantizada.",
+            "Comprueba qué representa realmente la tabla de calzado del anuncio: longitud del pie, longitud de la plantilla u otra referencia. Esas cifras no son intercambiables. Evita convertir etiquetas UK, US y EU con una tabla genérica y suponer que el resultado sirve para todos los modelos. Si el vendedor proporciona una tabla específica o instrucciones de ajuste, compáralas cuidadosamente con tu información. Cuando no estén claras la anchura, la forma interior o las indicaciones de talla, pide una aclaración antes de pagar en vez de considerar suficiente una etiqueta impresa conocida."
+          ]
+        },
+        {
+          "heading": "Comprueba etiquetas y medidas cuando lleguen las pruebas del almacén",
+          "paragraphs": [
+            "Cuando tu artículo llegue al almacén, compara cualquier etiqueta de talla visible con la opción que pediste. Esto puede identificar una discrepancia de selección o preparación del pedido, pero una etiqueta coincidente no resuelve si el artículo encaja con tus necesidades. Si hay pruebas de medición o pueden solicitarse, utiliza los mismos extremos y condiciones de tu comparación original. Una cinta colocada de otra forma puede hacer que dos fotografías válidas parezcan contradictorias.",
+            "Interpreta las pruebas con prudencia. Para una camisa hipotética, una fotografía con una anchura de pecho en plano clara solo resulta útil si se ven la unidad y los extremos y la posición de la prenda se entiende. Aun así, no muestra todos los aspectos del movimiento o la comodidad. Si una dimensión importante difiere de lo esperado, documenta la diferencia y pregunta por las opciones aplicables antes de continuar. No conviertas una medida poco clara en un defecto confirmado solo para describir más fácilmente la incertidumbre."
+          ]
+        },
+        {
+          "heading": "Crea una nota de tallas reutilizable para futuras elecciones",
+          "paragraphs": [
+            "Conserva un registro compacto con el artículo de referencia, el método de medición, las unidades, las dimensiones relevantes, la opción elegida y las dudas restantes. Después de recibir y probar un artículo, añade tu observación real sobre el ajuste para tu propio uso. Distingue esas notas de primera mano de las expectativas formadas antes de comprar. Con el tiempo, ese registro se convierte en una referencia personal mejor que una lista de etiquetas de marcas, porque explica por qué un corte concreto te funcionó o no.",
+            "Utiliza el registro para mejorar la siguiente comparación sin suponer que el próximo producto de un vendedor quedará igual. La confección y los materiales pueden variar incluso dentro de una categoría similar. Una decisión cuidadosa de talla combina información específica del anuncio, una referencia bien elegida y una preferencia clara de ajuste. Cuando falta información esencial, detenerse es un resultado válido. El objetivo es reducir errores evitables de selección, no crear la falsa promesa de que las medidas pueden eliminar toda incertidumbre de comprar sin probarse un artículo."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "shipping"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-ordering-guide",
+        "pikobuy-qc-photo-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-shipping-cost",
+      "category": "Envíos",
+      "title": "Coste de envío de Pikobuy: prepara una estimación útil antes de comprar",
+      "description": "Prepara los datos de la calculadora de envíos de Pikobuy, compara escenarios realistas de paquetes y distingue el transporte estimado de un presupuesto final confirmado.",
+      "intro": "Una estimación útil de envío de Pikobuy es un registro de un paquete, un destino y unas suposiciones concretos. No es un precio permanente por kilogramo. Antes de comparar rutas, consigue que la descripción del paquete sea lo bastante coherente para que la comparación tenga sentido. Esta guía ofrece una hoja de datos, una forma de comparar escenarios de embalaje y un proceso de revisión final. Todos los ejemplos siguientes son hipotéticos y muestran un método; no son presupuestos de Pikobuy ni predicciones sobre tu envío.",
+      "sections": [
+        {
+          "heading": "Empieza por los datos del estimador oficial",
+          "paragraphs": [
+            "El formulario público de estimación de envíos de Pikobuy pide el destino, el tipo de producto, el peso en kilogramos y las dimensiones del paquete en centímetros. Esos campos son el punto de partida de una estimación. El precio de un producto en un anuncio no aporta las medidas del paquete que faltan, y una captura del total de otra persona no establece un precio para tu dirección. Abre el estimador oficial con una descripción clara de lo que quieres enviar. Anota la fecha porque las opciones disponibles y los precios mostrados son observaciones de ese momento.",
+            "Crea una nota breve que contenga el destino, los tipos de artículos, el contenido previsto, las suposiciones sobre embalaje y la fuente de cada medida. Identifica un peso aproximado como aproximado. Identifica una medida del almacén como medida, indicando si describe el artículo o el paquete terminado. Estas distinciones evitan que una conjetura preliminar se copie en una comparación posterior como si estuviera confirmada. Si desconoces un dato, deja una pregunta visible en tus notas y averigua quién puede proporcionar la información pendiente."
+          ]
+        },
+        {
+          "heading": "Separa el peso del producto del paquete embalado",
+          "paragraphs": [
+            "Un artículo y su paquete de envío son objetos diferentes. El embalaje puede añadir peso y la caja exterior puede ocupar bastante más espacio que el artículo. La descripción del vendedor puede indicar un peso sin explicar si incluye el embalaje comercial. Considera ese número una pista hasta aclarar su significado. Cuando el almacén proporcione información, comprueba que incluya todos los artículos seleccionados y que las dimensiones correspondan a la configuración de embalaje que realmente quieras utilizar.",
+            "Considera un pedido hipotético con dos camisas y una caja rígida de presentación. Sumar los pesos de las camisas no describe el paquete terminado, porque no se están contando la caja ni el material protector. Del mismo modo, quitar la caja de la estimación no es válido salvo que hayas decidido que es innecesaria y confirmado que puede retirarse. Escribe la suposición junto al número. Una buena estimación consiste menos en encontrar un total optimista y más en poder explicar cada componente importante del total."
+          ]
+        },
+        {
+          "heading": "Mantén coherentes las unidades y los métodos de medición",
+          "paragraphs": [
+            "Utiliza las unidades solicitadas por el formulario y convierte con cuidado. Una cifra registrada en gramos no debe introducirse sin cambios en un campo marcado como kilogramos. Asimismo, comprueba si una dimensión proviene de la descripción de un artículo, una fotografía o una medición del paquete exterior. Si tres dimensiones describen objetos diferentes o etapas distintas de embalaje, no pueden formar una estimación fiable del paquete. Guarda la medida original junto a cualquier conversión para poder rastrear un resultado inesperado sin empezar de nuevo la investigación.",
+            "Como ejemplo aritmético, un paquete imaginario de 40 por 30 por 20 centímetros ocupa 24,000 centímetros cúbicos. Ese cálculo describe solo el volumen; no establece un peso facturable ni una factura de envío. Si una ruta concreta publica una fórmula volumétrica, aplica el divisor y las reglas de redondeo de esa ruta. No supongas que otra utiliza la misma fórmula. El objetivo práctico es entender la regla asociada al presupuesto considerado, no inventar una fórmula universal."
+          ]
+        },
+        {
+          "heading": "Compara escenarios cambiando una sola suposición",
+          "paragraphs": [
+            "Una comparación útil empieza con una base. Guarda el destino, el contenido, las medidas y la elección de embalaje del primer escenario. Después cambia un factor relevante, como el embalaje exterior propuesto, manteniendo constantes los demás datos. Esto facilita interpretar la diferencia. Si cambias simultáneamente destino, contenido y embalaje, un total menor dice muy poco sobre qué decisión lo produjo. Evita comparar una estimación preliminar con un presupuesto de embalaje final sin señalar las distintas pruebas que sustentan cada uno.",
+            "Por ejemplo, compara un escenario ilustrativo que conserve una caja comercial no esencial con otro que la retire, siempre que sea apropiado para el artículo. No supongas que el segundo paquete será más barato antes de obtener sus dimensiones y presupuesto. El material protector adicional podría cambiar el resultado. Si ninguna de las dimensiones está medida todavía, el ejercicio sigue ayudando a identificar preguntas útiles para el almacén, pero continúa siendo una comparación de planificación. Registra la suposición pendiente en lugar de considerar la cifra menor dinero ya ahorrado."
+          ]
+        },
+        {
+          "heading": "Lee el resultado completo de cada ruta",
+          "paragraphs": [
+            "Cuando aparezcan resultados, lee las condiciones junto al precio. Una ruta no disponible para el tipo de producto seleccionado no es una alternativa real, aunque un nombre de servicio parecido aparezca en la captura de otra persona. Comprueba la cobertura del destino y cualquier restricción mostrada frente al paquete real. Conserva el nombre completo de la ruta y los detalles del presupuesto en lugar de reducirlo todo a una marca de transportista. Los distintos servicios asociados al mismo transportista pueden tener condiciones diferentes, así que un logotipo conocido no basta para comparar.",
+            "Mantén un registro breve del importe, la moneda, las medidas del paquete presupuestado, los suplementos mostrados y la información que aún debe confirmarse. Si la interfaz ofrece servicios opcionales, anota si están incluidos en cada escenario. Un intervalo estimado de entrega debe mantenerse separado de una fecha de llegada necesaria. Si necesitas los productos para un evento concreto, evalúa las consecuencias de un retraso en lugar de tratar una estimación aparentemente más rápida como garantía. Pregunta a la plataforma por las condiciones de ruta poco claras antes de confirmar el paquete."
+          ]
+        },
+        {
+          "heading": "Prepara un presupuesto total junto a la estimación de transporte",
+          "paragraphs": [
+            "El envío es una línea del presupuesto de compra. Mantén separados, en distintas filas, el importe del producto, cualquier entrega nacional, los servicios opcionales y el presupuesto internacional. Utiliza la moneda real de la transacción en cada fila en vez de combinar silenciosamente importes distintos. Una conversión mostrada sirve para comparar, pero conserva la moneda original y comprueba el importe presentado al pagar. Esta estructura ayuda a detectar costes ausentes sin suponer que todas las compras tienen las mismas categorías de cargos ni que un servicio concreto sea gratuito.",
+            "Añade una columna de incertidumbre al presupuesto. Marca un importe pagado como liquidado, un presupuesto actual como presupuestado y un cargo sin confirmar como desconocido. Tu total máximo aceptable debe ir en una columna separada para no confundirse con una estimación de la plataforma. Si el proyecto solo funciona cuando todas las incógnitas se vuelven cero, el plan deja muy poco margen para cambios. Reduce la selección u obtén mejor información antes de ampliar el pedido. Los cargos específicos del destino requieren información actual adecuada a tu envío; este artículo no proporciona un cálculo de impuestos."
+          ],
+          "bullets": [
+            "Mantén el transporte presupuestado separado de los pagos de productos y los servicios opcionales.",
+            "Guarda la moneda y la fecha junto a cada importe que compares.",
+            "Revisa los costes desconocidos antes de considerar asequible una selección."
+          ]
+        },
+        {
+          "heading": "Sustituye las suposiciones antes de pagar el envío",
+          "paragraphs": [
+            "Vuelve a la hoja de datos cuando el paquete esté listo. Compara el contenido seleccionado con la lista original y elimina los artículos cancelados o devueltos. Comprueba las instrucciones finales de embalaje frente a cualquier solicitud anterior de conservar o retirar embalajes. Sustituye las medidas provisionales por las cifras actuales del paquete cuando estén disponibles. Si cambia el importe presupuestado, examina primero esos datos. Un cambio de tamaño de caja, una selección distinta de artículos o un servicio adicional pueden explicar una diferencia que inicialmente parece un aumento de precio inexplicable.",
+            "No apruebes un total poco claro solo porque ya hayas dedicado tiempo a preparar el pedido. Guarda el desglose pertinente y plantea una pregunta específica: qué medida, servicio o condición de ruta explica el cambio. Es más fácil responder a eso que a una queja general de que el envío parece caro. Una vez que la información esté clara, compara el total con tu presupuesto y decide si continúas. Guarda la confirmación final junto a la referencia del paquete para que el seguimiento y las consultas de asistencia posteriores utilicen el mismo registro."
+          ]
+        },
+        {
+          "heading": "Conserva una estimación que puedas actualizar",
+          "paragraphs": [
+            "El resultado más reutilizable es una hoja de datos clara, no un precio recordado. Guarda el nombre del escenario, la fecha del presupuesto, el destino, el contenido, la elección de embalaje, las medidas y las preguntas pendientes. Si vuelves más adelante, actualiza el presupuesto en tiempo real y cambia los datos obsoletos. Una pequeña cantidad de pruebas organizadas permite comparar la siguiente decisión sin fingir que las condiciones de envío permanecen fijas.",
+            "Utiliza la guía de embalaje de paquetes para decidir qué suposiciones de embalaje merecen comparación. Utiliza la guía de seguimiento después de solicitar el envío para mantener separados el avance de la compra y el del envío. El estimador oficial de Pikobuy sigue siendo el lugar donde obtener el resultado actual de la plataforma basado en tu escenario; este artículo independiente explica cómo preparar e interpretar la información sin aportar tarifas inventadas."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-parcel-packing",
+        "pikobuy-tracking-guide",
+        "pikobuy-returns-refunds"
+      ]
+    },
+    {
+      "slug": "pikobuy-parcel-packing",
+      "category": "Envíos",
+      "title": "Embalaje de paquetes de Pikobuy: compara la agrupación y la protección",
+      "description": "Prepara un paquete de Pikobuy con instrucciones claras de embalaje, compara envíos conjuntos y separados y mantén visibles las decisiones de inspección y devolución.",
+      "intro": "Preparar un paquete conecta los artículos seleccionados con el bulto que estás dispuesto a enviar. La pregunta útil es si la configuración propuesta protege el contenido, se ajusta a la ruta disponible y encaja en tu presupuesto. Una caja más pequeña no es automáticamente un paquete mejor, y agrupar artículos no es automáticamente más barato. Esta guía utiliza ejemplos hipotéticos de embalaje y una lista de pruebas para ayudarte a comparar alternativas antes de aprobar un envío.",
+      "sections": [
+        {
+          "heading": "Cierra la lista de contenido antes de embalar",
+          "paragraphs": [
+            "Empieza con una lista de los artículos concretos del almacén que quieras incluir. Vincula cada artículo con la referencia de su pedido y la variante seleccionada, y registra si la decisión de inspección está completa. Un artículo pendiente de comprobar una talla o de una respuesta del vendedor debe permanecer visiblemente sin resolver. Este es un método práctico de organización, no una afirmación sobre las etiquetas de la interfaz de Pikobuy. El objetivo es evitar solicitar un paquete suponiendo que una pregunta pendiente sobre el producto se resolverá de algún modo durante el envío.",
+            "Revisa tanto la cantidad como la identidad. Dos anuncios similares pueden producir un duplicado que ya no quieres, mientras que un conjunto puede contener varias piezas que deben permanecer juntas. Registra las piezas previstas para que la solicitud de embalaje sea comprensible. Si estás considerando devolver un artículo, resuelve esa decisión antes de pedir cambios de embalaje que puedan afectar a su estado o integridad. Guarda la lista final de contenido con las notas del paquete; será la referencia para comprobar el presupuesto y confirmar después lo entregado."
+          ]
+        },
+        {
+          "heading": "Define la finalidad de cada solicitud de embalaje",
+          "paragraphs": [
+            "La guía para principiantes de Pikobuy menciona solicitudes de embalaje mínimo y reforzado, y su página de contacto describe la agrupación de compras de distintos vendedores. Esas descripciones establecen opciones que consultar, no una recomendación universal ni una promesa de ahorro. Antes de pedir un cambio, indica el resultado que necesitas. Una solicitud para proteger un borde frágil informa más que simplemente pedir el mejor embalaje. Pedir conservar una caja de presentación tiene una finalidad distinta de pedir mantener cajas de transporte innecesarias.",
+            "Separa el embalaje esencial de las preferencias. Un requisito esencial podría ser mantener juntas las piezas de un conjunto; una preferencia podría ser conservar una caja decorativa. Explica cualquier requisito que no puedas verificar con las fotos existentes y pregunta si el servicio propuesto lo contempla. No supongas que una instrucción breve garantiza un material o procedimiento concreto. Si la elección de embalaje importa para tu decisión, busca una descripción clara de lo que se hará y revisa cualquier coste mostrado antes de confirmarla."
+          ]
+        },
+        {
+          "heading": "Compara un paquete conjunto con alternativas realistas",
+          "paragraphs": [
+            "La agrupación merece una comparación porque cambia tanto el contenido como el paquete. El cálculo relevante es el total actual de un paquete conjunto propuesto frente al total de los paquetes alternativos reales. Mantén coherentes el destino, la selección de artículos y los servicios necesarios. No compares un paquete conjunto medido con cajas separadas imaginariamente ligeras para llamar ahorro a la diferencia. Si alguna opción sigue sin medirse, describe el resultado como un ejercicio de planificación y registra las medidas necesarias para mejorarlo.",
+            "Imagina un pedido hipotético con ropa y una caja rígida de colección. Una sola caja exterior podría necesitar adaptarse a la forma de esa caja, mientras que una configuración separada crea dos paquetes. Ninguna puede declararse más barata solo por el número de artículos. Compara presupuestos disponibles y decide si te importa la comodidad de una sola entrega. Considera también si un artículo pendiente retrasaría todo lo demás. Esa es una preferencia de plazos que puedes evaluar sin inventar una velocidad de procesamiento prometida para ninguna configuración."
+          ]
+        },
+        {
+          "heading": "Equilibra la reducción de espacio con la protección y el estado",
+          "paragraphs": [
+            "Retirar embalaje implica una compensación, no una instrucción predeterminada. Parte del embalaje es de presentación, otra mantiene organizadas las piezas y otra protege superficies o formas. Observa el artículo real y pregunta qué cambia con la retirada propuesta. Si no sabes si un inserto es protector o decorativo, solicita una descripción más clara en vez de pedir que se deseche todo. La decisión adecuada puede variar entre dos productos de la misma categoría, así que una instrucción universal como quitar todas las cajas pierde detalles importantes.",
+            "Como comparación ilustrativa, una prenda suave y un sombrero estructurado tienen necesidades diferentes aunque ambos sean ligeros. Una configuración compacta adecuada para la prenda puede aplastar el sombrero. Un artículo rígido junto a una superficie delicada puede necesitar separación en vez de mayor compresión. Estos ejemplos explican las preguntas que conviene hacer; no especifican un servicio de embalaje que Pikobuy prometa ofrecer. Conserva embalajes o etiquetas mientras esté pendiente una decisión de devolución y confirma las condiciones específicas del artículo antes de autorizar cambios irreversibles."
+          ]
+        },
+        {
+          "heading": "Escribe instrucciones que puedan comprobarse",
+          "paragraphs": [
+            "Una instrucción útil identifica el artículo, el cambio solicitado y lo que debe conservarse. Mantén cada solicitud lo bastante breve para revisarla sin interpretar una conversación larga. Por ejemplo, una nota ilustrativa podría pedir mantener un accesorio identificado con su artículo correspondiente y retirar solo la caja exterior de transporte si resulta adecuado. La precisión importa: el almacén no debería adivinar si querías retirar el embalaje comercial, los insertos protectores o componentes del producto. Pide una aclaración cuando la descripción del servicio sea ambigua.",
+            "Evita enviar mensajes contradictorios por distintos canales. Si cambias de opinión, identifica la instrucción anterior e indica qué versión debe aplicarse. Guarda la última solicitud y cualquier respuesta con la referencia del paquete. Un registro claro no garantiza que puedan atenderse todas las instrucciones, pero facilita identificar una discrepancia. Antes de aprobar, comprueba que el servicio presupuestado y la información de embalaje disponible coincidan con la solicitud que realmente aceptaste, en lugar de una idea anterior que haya quedado en la conversación."
+          ],
+          "bullets": [
+            "Identifica el artículo del almacén o la referencia del pedido en cada solicitud especial.",
+            "Indica qué debe cambiar y qué debe permanecer con el artículo.",
+            "Confirma la viabilidad y el coste antes de suponer que la solicitud está incluida."
+          ]
+        },
+        {
+          "heading": "Comprueba el paquete frente a la ruta que puedes utilizar",
+          "paragraphs": [
+            "Las decisiones de embalaje y la selección de ruta deben revisarse juntas. Un paquete propuesto solo es útil si un servicio disponible acepta su destino, contenido y dimensiones. Lee la información actual de la ruta y pregunta por restricciones poco claras utilizando una descripción precisa del artículo. No supongas que una ruta utilizada para la ropa de otra persona también acepta tu contenido diferente. Del mismo modo, un nombre de transportista reconocible no indica qué servicio específico ni qué condiciones se aplican al presupuesto de tu cuenta.",
+            "Mantén el peso embalado y las dimensiones exteriores junto a la comparación de rutas. Si otra configuración cambia esas medidas, actualiza la estimación en lugar de reutilizar un presupuesto del paquete anterior. Registra de forma coherente los servicios opcionales en las alternativas. Esto convierte una búsqueda vaga de envío barato en una comparación entre configuraciones que realmente podrían solicitarse. Si no aparece ninguna opción adecuada, detente y pregunta a la plataforma por la restricción concreta. Cambiar la descripción de un artículo para ocultar su naturaleza no resolvería el problema subyacente de admisibilidad."
+          ]
+        },
+        {
+          "heading": "Revisa la solicitud final como una sola decisión",
+          "paragraphs": [
+            "Antes de pagar, abre juntas la lista de contenido, las notas de embalaje y el resultado de la ruta. Comprueba cuidadosamente la dirección de entrega, incluidos los detalles que requiera el servicio. Confirma que los artículos elegidos y los componentes restantes coincidan con la lista. Revisa el importe final y la moneda en lugar de confiar en una estimación anterior. Si el paquete cambió después de una devolución o de un artículo no disponible, asegúrate de que el presupuesto refleje el contenido restante. Unos pocos registros coherentes son más útiles que una carpeta grande de capturas sin relación.",
+            "Haz explícitas las preguntas pendientes. Una confirmación de embalaje que falta, un cargo inexplicado o una dirección incorrecta justifican pedir aclaraciones antes de solicitar el envío. Describe el problema exacto y la respuesta necesaria para avanzar. Una vez aclarada la información, guarda la confirmación final y la referencia del paquete. Este registro ayuda a distinguir una pregunta posterior de seguimiento de una de embalaje y evita pedir a la asistencia que reconstruya la decisión con mensajes dispersos. También proporciona una lista fiable para comprobar el contenido entregado."
+          ]
+        },
+        {
+          "heading": "Conserva la utilidad del registro de embalaje después de la expedición",
+          "paragraphs": [
+            "Después de solicitar el paquete, conserva la lista de contenido y las instrucciones de embalaje aceptadas. Son una referencia, no una prueba de que la entrega futura no tendrá problemas. Si surge una pregunta, empieza por la referencia real del paquete y explica la diferencia entre lo solicitado, lo confirmado y lo observado. Mantén separadas las observaciones de las suposiciones sobre la causa.",
+            "Utiliza la guía de costes de envío para introducir datos coherentes en los presupuestos y la guía de seguimiento para el progreso del envío. Si un artículo todavía espera una decisión de devolución, lee la guía de devoluciones antes de cambiar su embalaje. La finalidad de este procedimiento es una decisión de paquete que puedas explicar: qué productos contiene, por qué el embalaje es adecuado y qué presupuesto actual aceptaste."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "contact",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-returns-refunds",
+        "pikobuy-tracking-guide"
+      ]
+    },
+    {
+      "slug": "pikobuy-returns-refunds",
+      "category": "Posventa",
+      "title": "Devoluciones y reembolsos de Pikobuy: prepara una decisión en el almacén",
+      "description": "Comprueba los requisitos de devolución, conserva pruebas del artículo y aclara los costes antes de solicitar una devolución desde el almacén o una cancelación en Pikobuy.",
+      "intro": "Una solicitud de devolución útil empieza por el artículo real, la etapa actual del pedido y una descripción precisa del problema. Un encabezado general de política no puede decidir todos los casos. Esta guía explica cómo organizar pruebas y pedir un resultado claro sin suponer que una devolución sea gratuita o esté garantizada. Se basa en la política pública revisada junto con una lista práctica original; no es el relato de una devolución que hayamos solicitado personalmente.",
+      "sections": [
+        {
+          "heading": "Identifica el pedido y su etapa actual",
+          "paragraphs": [
+            "Abre el pedido concreto antes de redactar una solicitud. Guarda su referencia, la variante seleccionada, la cantidad, el estado actual y la hora mostrada para el cambio relevante. Comprueba si estás considerando cancelar antes de que el vendedor expida, devolver desde el almacén o preguntar por mercancía ya enviada internacionalmente. Esas situaciones implican pruebas y acciones disponibles distintas. No permitas que la palabra reembolso oculte la etapa de la transacción. Un reembolso describe un posible movimiento de dinero; no explica qué acción se ha solicitado o aceptado.",
+            "Si tienes varias compras parecidas, vincula el problema con la referencia correcta del artículo en lugar de confiar en una miniatura. Registra la selección original y lo que crees que llegó. Esto resulta especialmente útil cuando dos colores o tallas comparten la misma fotografía del anuncio. Conserva la confirmación de compra junto a las observaciones del almacén para que la asistencia pueda ver la diferencia. Si la interfaz y un mensaje reciente parecen incompatibles, pregunta qué estado actual determina el siguiente paso en vez de elegir la versión que parezca más conveniente."
+          ]
+        },
+        {
+          "heading": "Considera el plazo del almacén un motivo para actuar",
+          "paragraphs": [
+            "La página de devoluciones de Pikobuy describe un periodo condicional de solicitud de cinco días, expresado como 120 horas y contado desde la hora siguiente a que el pedido pase a En almacén. Importan la participación y el consentimiento del vendedor, así como el estado necesario para la reventa. Utiliza el plazo real de la cuenta y pide aclaraciones pronto si no está claro cómo se calcula. El plazo publicado no es motivo para posponer la inspección hasta el último momento ni establece que todos los artículos sean admisibles o que una solicitud vaya a aceptarse necesariamente.",
+            "Organiza tu propio recordatorio de revisión en torno al evento observado del almacén, no a una fecha de entrega prevista. Reúne las pruebas de inspección, identifica cualquier pregunta pendiente y decide quién debe aclararla. Si una fotografía es insuficiente, solicita la vista adicional concreta que necesitas y mantén visible la cuestión del plazo. No supongas que preguntar suspende un plazo. En un caso hipotético en que un artículo llegue antes de un fin de semana, revísalo cuando veas el evento del almacén en vez de esperar a un día más cómodo."
+          ]
+        },
+        {
+          "heading": "Describe el problema como una diferencia observable",
+          "paragraphs": [
+            "Una descripción clara del problema compara el pedido con lo observado. Indica la talla, el color o la cantidad seleccionados y después identifica la fotografía o registro pertinente. Si hay daños visibles, describe dónde están sin adivinar cómo ocurrieron. Si el problema es un cambio de preferencia, dilo claramente en lugar de inventar un defecto. Una clasificación exacta ayuda a orientar la solicitud y evita obligar a la asistencia a separar el problema real de afirmaciones sin fundamento sobre el vendedor o el almacén.",
+            "Como solicitud ilustrativa, un comprador podría escribir que el pedido especifica una variante azul mientras que la etiqueta del almacén parece identificar otro color, adjuntando la selección del pedido y una imagen clara de la etiqueta. Esto comunica pruebas y deja margen para aclarar si la iluminación o la traducción provocaron confusión. Una afirmación vaga de que el artículo parece incorrecto ofrece mucho menos que investigar. Mantén separado cada problema si hay varios y explica qué resultado solicitas en lugar de suponer que una queja inicia automáticamente una devolución."
+          ]
+        },
+        {
+          "heading": "Conserva el estado necesario para decidir",
+          "paragraphs": [
+            "Evita pedir cambios innecesarios mientras se evalúan los requisitos de devolución. El embalaje, las etiquetas, los precintos y los accesorios incluidos pueden importar para las condiciones del vendedor. Conserva una lista de lo prometido en el anuncio y de lo que muestran las fotografías del almacén. Si antes pediste retirar una etiqueta o caja, incluye ese hecho en la conversación para evaluar la solicitud según el estado real. Ocultar un cambio pertinente haría menos útiles las pruebas y podría producir una respuesta basada en una suposición incorrecta.",
+            "Separa la inspección de la modificación. Una imagen más clara o la explicación de una etiqueta no equivale a pedir que se abra un componente precintado o se modifique un producto. Si una inspección propuesta puede cambiar el estado del artículo, pregunta por las consecuencias antes de autorizarla. El enfoque correcto depende del producto y de los requisitos aplicables del vendedor. Un registro cuidadoso ayuda a entender qué sigue siendo posible; no puede restaurar un embalaje retirado ni convertir un artículo excluido en admisible."
+          ]
+        },
+        {
+          "heading": "Confirma el desglose de costes de la solicitud real",
+          "paragraphs": [
+            "El texto oficial de devoluciones describe cargos de envío y servicio, pero sus pasajes no son coherentes sobre el gasto de entrega original en una compra inicialmente con envío gratuito. No consideres una breve etiqueta de política una promesa universal de precio. Pide el desglose aplicable a tu pedido, incluida cualquier deducción y el importe esperado de devolución. Pregunta qué cargos están confirmados y cuáles dependen del acuerdo del vendedor. Este artículo evita deliberadamente convertir esa redacción inconsistente en una tarifa fija de devolución que incluya todo.",
+            "Escribe el reembolso propuesto y cada coste indicado en la misma moneda antes de compararlos. Mantén separado el importe del producto del dinero pagado por otros artículos o servicios sin relación. Si un ajuste no está claro, pregunta cómo se calculó y a qué transacción corresponde. Una comparación debe explicar el resultado, no mostrar simplemente dos totales que no coinciden. Cuando se confirme un importe, conserva el mensaje o registro de cuenta para poder distinguir después una deducción acordada de una diferencia inexplicada."
+          ],
+          "bullets": [
+            "Pide por separado el importe del reembolso y cada cargo aplicable.",
+            "Confirma qué costes dependen de la respuesta del vendedor o de la gestión final.",
+            "Mantén juntos la moneda, la referencia del pedido y la explicación escrita."
+          ]
+        },
+        {
+          "heading": "Presenta una solicitud concisa por el canal oficial",
+          "paragraphs": [
+            "Utiliza la acción disponible para el pedido o el canal de asistencia oficial. Incluye la referencia del artículo, la etapa actual, la opción seleccionada, el problema observado y el siguiente paso deseado. Adjunta solo las pruebas necesarias para explicar el problema. No necesitas incluir contraseñas, datos de tarjetas de pago ni información personal ajena al asunto en una reclamación de producto. Una solicitud concisa puede seguir siendo completa: explica qué ocurrió, por qué las pruebas lo respaldan y qué decisión necesitas de la plataforma o del vendedor.",
+            "Una estructura útil de mensaje es una frase que identifique el pedido, otra que explique la discrepancia o el motivo y otra que pida confirmar la admisibilidad y los costes antes de la siguiente acción. Si la devolución es urgente por el plazo, indica el evento de almacén o fecha límite mostrados sin afirmar que tu propio cálculo prevalece sobre la cuenta. Guarda la hora de solicitud y cualquier confirmación. Si necesitas corregir información, remítete a la misma solicitud para que las pruebas sigan conectadas en lugar de abrir varias explicaciones contradictorias."
+          ]
+        },
+        {
+          "heading": "Distingue solicitud, aprobación y liquidación",
+          "paragraphs": [
+            "Registra las etapas de respuesta en lenguaje sencillo. Una solicitud enviada, el acuerdo del vendedor, un envío de devolución y un reembolso completado son eventos diferentes. No marques el proceso como terminado solo porque se haya acusado recibo del primer mensaje. Mantén visibles el último evento confirmado y la siguiente acción. Si te piden una foto que falta o confirmar un coste, anota ese requisito y responde por el canal pertinente. Esto evita pedir repetidamente actualizaciones mientras sigue pendiente una acción clara.",
+            "Cuando aparezca un reembolso, compáralo con el desglose confirmado y el registro real de la transacción. Conserva cualquier discrepancia como pregunta en lugar de suponer una causa concreta. Pregunta qué importe se abonó, dónde se abonó y qué deducciones acordadas se aplican. Esta guía no ofrece un plazo garantizado de liquidación ni una promesa del proveedor de pagos. Si se rechaza la solicitud, pregunta por el motivo indicado y cualquier opción restante adecuada al pedido. Una respuesta documentada resulta más útil que una suposición basada en la compra diferente de otra persona."
+          ]
+        },
+        {
+          "heading": "Mantén vinculadas las decisiones de devolución al plan del paquete",
+          "paragraphs": [
+            "Retira un artículo de la lista prevista de envío solo cuando la decisión pertinente esté clara, y actualiza de nuevo la lista si cambia el resultado. Una devolución pendiente puede afectar a los productos que quieras enviar y a si una estimación anterior de embalaje sigue describiendo el paquete. Actualiza el contenido y el presupuesto antes de aprobar el envío en lugar de utilizar un cálculo que incluya un artículo que ya no está previsto enviar.",
+            "Utiliza la guía de control de calidad para reunir pruebas visuales concretas y la guía de embalaje para conservar el artículo mientras decides. La asistencia oficial y el pedido actual siguen siendo las fuentes para la admisibilidad y el resultado final. Esta guía independiente ayuda a organizar esa conversación; no puede aprobar una devolución, negociar con un vendedor ni inspeccionar un registro privado de reembolso."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "returns",
+        "contact"
+      ],
+      "related": [
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing",
+        "pikobuy-shipping-cost"
+      ]
+    },
+    {
+      "slug": "pikobuy-tracking-guide",
+      "category": "Envíos",
+      "title": "Seguimiento de Pikobuy: identifica la etapa y registra las pruebas",
+      "description": "Distingue la entrega del vendedor, el procesamiento del almacén y el seguimiento internacional, y prepara una solicitud clara de asistencia cuando falte una actualización de Pikobuy.",
+      "intro": "Una compra de Pikobuy puede tener varias referencias y varios periodos de espera antes de llegar a ti. El primer paso útil cuando el seguimiento parece detenido es identificar qué etapa observas. El registro de entrega nacional del vendedor, la recepción del almacén y una actualización del paquete internacional describen eventos diferentes. Esta guía proporciona un registro práctico de estados y comprobaciones específicas de cada etapa sin inventar una fecha de llegada ni afirmar que tiene acceso a tu pedido privado.",
+      "sections": [
+        {
+          "heading": "Elige la referencia que corresponda a la pregunta",
+          "paragraphs": [
+            "Empieza por el registro del pedido o paquete en tu cuenta oficial. Identifica si el número utilizado pertenece a una compra de producto, un envío del vendedor o un paquete internacional. Conserva la etiqueta mostrada junto a la referencia en lugar de copiar una cadena sin explicación en tus notas. Si se agrupan varias compras, un paquete puede relacionarse con más de un pedido de producto. Esa relación debe quedar escrita para no confundir una entrega nacional completada con la entrega a tu propia dirección.",
+            "Utiliza un registro pequeño con la referencia, su finalidad, el último evento visible y la hora de consulta. Conserva un enlace a la página oficial pertinente o al canal del transportista proporcionado por la cuenta. No supongas que un mensaje no solicitado es válido solo porque contiene un número conocido. Abre por tu cuenta la cuenta o el canal conocido del transportista al comprobar una notificación. El objetivo es conectar cada observación con un registro identificable, no acumular capturas de páginas de seguimiento sin relación."
+          ]
+        },
+        {
+          "heading": "Distingue la compra de la expedición del vendedor",
+          "paragraphs": [
+            "El pago de un producto registra un paso de compra; no es prueba de que el vendedor haya entregado mercancías a un transportista. Lee el evento actual del pedido y anota cualquier solicitud de información o confirmación. Si el pedido espera una opción seleccionada, un mensaje sin responder puede importar más que las búsquedas repetidas de seguimiento. Describe el estado observado en tus notas sin inventar un nombre exacto de estado de la plataforma. Distintas pantallas o traducciones pueden utilizar expresiones diferentes, así que conserva el texto que aparezca en tu cuenta.",
+            "Como ejemplo hipotético, un comprador ha pagado dos artículos, pero solo uno muestra una referencia de envío del vendedor. Esos registros deben mantenerse separados. La referencia del primer artículo no establece el progreso del segundo. Pregunta por la compra pendiente utilizando su propio número de pedido y el último evento confirmado. Evita aplicar la experiencia de otro comprador con los tiempos del vendedor como fecha límite. La pregunta útil es si la plataforma necesita una acción tuya o tiene una explicación actual para ese pedido concreto."
+          ]
+        },
+        {
+          "heading": "Trata la recepción en almacén como un evento propio",
+          "paragraphs": [
+            "Cuando un transportista nacional informa de una entrega, compara ese evento con el registro del almacén en lugar de suponer que son idénticos. Un evento del transportista y una actualización de cuenta describen partes diferentes del proceso. Registra ambos si están disponibles e identifica qué confirmación falta. No deduzcas una pérdida de la ausencia de una foto inmediata ni que la inspección esté completa solo porque el seguimiento del vendedor indique entregado. Utiliza la información actual de la plataforma para establecer qué se ha recibido y procesado realmente.",
+            "Este es también el momento en que cobran importancia las preguntas sobre el producto. Si las fotos del almacén muestran una opción incorrecta o pruebas insuficientes de talla, resuelve el problema antes de considerar el artículo listo para un paquete internacional. Mantén separadas las notas de inspección y de movimiento para que una consulta de envío no oculte un plazo de devolución. Un artículo puede haber llegado correctamente y seguir necesitando una decisión tuya. El progreso, por tanto, no es solo una secuencia de escaneos de seguimiento; incluye las confirmaciones necesarias para la siguiente acción."
+          ]
+        },
+        {
+          "heading": "Distingue la solicitud del paquete del movimiento internacional",
+          "paragraphs": [
+            "Comprueba si realmente se ha creado y solicitado un paquete internacional, en lugar de suponer que todos los artículos del almacén avanzarán automáticamente. Revisa el contenido, la ruta y la dirección seleccionados y cualquier pago o solicitud pendiente que aparezca en la cuenta. Guarda la referencia del paquete cuando esté disponible. Si modificaste el contenido o el embalaje, conserva la última versión para que una consulta posterior se refiera al paquete aceptado. Esto evita basar una conversación sobre el envío en una configuración provisional que nunca se finalizó.",
+            "La guía pública para principiantes de Pikobuy indica que la información de seguimiento está disponible en los tres días posteriores al envío. Esa es la expectativa publicada sobre la disponibilidad del seguimiento tras la expedición, no una promesa de que el paquete llegue en tres días. Tampoco establece que cada evento del transportista aparezca inmediatamente. Registra la información real de expedición mostrada para tu paquete y compárala con el registro oficial. Si sigue faltando la información de seguimiento esperada, utiliza esas fechas y la referencia del paquete al pedir una aclaración a la plataforma."
+          ]
+        },
+        {
+          "heading": "Interpreta un periodo sin novedades en su contexto",
+          "paragraphs": [
+            "La ausencia de un escaneo nuevo indica que el registro visible no ha cambiado; por sí sola no explica el motivo. Empieza por el último evento confirmado, su ubicación si aparece y el servicio seleccionado. Comprueba si existe un aviso oficial o una solicitud que requiera respuesta. Mantén separada cualquier explicación de la plataforma o transportista de tu propia interpretación. Si solo tienes una estimación general, no la conviertas en un compromiso preciso de llegada ni supongas que otra ruta sigue el mismo patrón.",
+            "Compara el tiempo transcurrido con la información actual proporcionada para tu envío real y plantea una pregunta concreta si el intervalo necesita investigación. Actualizar repetidamente varias páginas de seguimiento puede crear más contradicciones aparentes que claridad, especialmente cuando sus actualizaciones llegan en momentos diferentes. Registra la fuente y la hora de cada observación relevante. Si dos registros oficiales discrepan, aporta ambos y pregunta qué evento es el válido para el siguiente paso. Este enfoque conserva la incertidumbre sin declarar perdido el paquete ni prometer que se mueve normalmente."
+          ]
+        },
+        {
+          "heading": "Envía una solicitud de asistencia que identifique el evento ausente",
+          "paragraphs": [
+            "Una solicitud útil de asistencia identifica el paquete o pedido, el último evento confirmado y la información concreta que falta. Indica cuándo consultaste el registro e incluye la captura pertinente si ayuda. Pregunta por la siguiente acción, no solo por una predicción general. Por ejemplo, una consulta ilustrativa podría preguntar si un paquete mostrado como expedido tiene una referencia de seguimiento internacional asignada. Es una solicitud más precisa y fácil de responder que preguntar por qué todo el pedido tarda demasiado.",
+            "Si el problema implica un intento de entrega o información de dirección, describe qué dice el registro real y qué necesita corregirse. No publiques una dirección completa ni datos privados de cuenta en una conversación pública para obtener ayuda habitual de seguimiento. Utiliza el canal de contacto oficial enlazado desde Pikobuy para consultas de tu cuenta. Guarda la solicitud y la respuesta junto al registro del paquete. Al dar seguimiento, remítete al punto pendiente y a las nuevas pruebas en lugar de empezar de nuevo la historia con otro conjunto de fechas."
+          ],
+          "bullets": [
+            "Proporciona la referencia pertinente del pedido o paquete y el último evento confirmado.",
+            "Explica qué actualización o acción necesitas que aclare la plataforma.",
+            "Mantén la información privada de entrega dentro del canal oficial adecuado."
+          ]
+        },
+        {
+          "heading": "Registra las observaciones de entrega antes de cerrar el historial",
+          "paragraphs": [
+            "Cuando aparezca un evento de entrega, verifica qué has recibido realmente. Contrasta la referencia del paquete y el contenido con tu lista guardada. Si el paquete está presente pero algo parece incorrecto, describe el problema observable y conserva las pruebas pertinentes. Una página de seguimiento marcada como entregado y una comprobación de contenido completo y sin daños son observaciones distintas. No borres los registros anteriores en cuanto cambie el estado del transportista; pueden ayudar a explicar una discrepancia o identificar el servicio y paquete implicados.",
+            "Como ejemplo ilustrativo, un paquete conjunto podría contener dos artículos esperados mientras que un tercero pertenecía a otro paquete que todavía no ha llegado. La lista original de contenido resuelve esa aparente falta antes de presentar una reclamación incorrecta. Si persiste una discrepancia real, contacta pronto con el canal oficial responsable indicando la referencia del paquete y una descripción clara. Esta guía no establece plazos de reclamación, indemnizaciones ni cobertura de seguro. Esas preguntas dependen del servicio y las condiciones reales asociados a la transacción y requieren confirmación directa."
+          ]
+        },
+        {
+          "heading": "Mantén un registro breve de los cambios relevantes",
+          "paragraphs": [
+            "Un buen registro solo necesita fecha, fuente, evento, pregunta pendiente y siguiente acción. Añade una fila cuando cambie algo significativo en lugar de registrar cada actualización de pantalla. Utiliza secciones separadas para el pedido de producto y el paquete internacional, con un vínculo claro entre ellos. Así resulta más fácil ver si el siguiente paso corresponde al vendedor, al almacén, al transportista o a ti.",
+            "Utiliza la guía de embalaje antes de solicitar el envío y la de devoluciones si sigue sin resolverse un problema de inspección. Cuando el paquete esté en movimiento, la cuenta oficial y la información del transportista proporcionada para él son las fuentes pertinentes. Esta guía independiente explica cómo interpretar las pruebas y comunicar con claridad; no puede ver un envío privado ni prometer una entrega."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "contact"
+      ],
+      "related": [
+        "pikobuy-parcel-packing",
+        "pikobuy-returns-refunds",
+        "pikobuy-shipping-cost"
+      ]
+    },
+    {
+      "slug": "pikobuy-review-checklist",
+      "category": "Investigación",
+      "title": "Lista de evaluación de Pikobuy: examina las pruebas antes de pagar",
+      "description": "Evalúa la información de Pikobuy, los anuncios de productos, los detalles de pago, los límites del control de calidad y las suposiciones de envío sin depender de reseñas ni puntuaciones inventadas.",
+      "intro": "Las búsquedas sobre si Pikobuy es legítimo o seguro suelen pedir un veredicto único, pero implican decisiones diferentes: identificar el servicio oficial, comprobar el artículo del vendedor, entender el pago y examinar el plan de envío. Este artículo es una lista de pruebas, no una reseña basada en una compra personal ni una puntuación. Explica qué puede establecer la información pública, qué necesita confirmación específica del pedido y cómo decidir qué preguntas pendientes importan antes de pagar.",
+      "sections": [
+        {
+          "heading": "Distingue la plataforma, el vendedor y la guía independiente",
+          "paragraphs": [
+            "La página de inicio de Pikobuy describe asistencia de compra, inspección en almacén y envío internacional. Esas funciones son diferentes del descubrimiento independiente de productos ofrecido aquí. Pikobuy Sheet utiliza datos de productos de FindSpreadsheet para ayudarte a explorar; el registro y las compras se realizan en el dominio oficial de Pikobuy. Una evaluación útil debe mantener claros esos papeles. Una página operativa de directorio no prueba la calidad del producto de un vendedor, y un logotipo conocido de plataforma no convierte cada página que lo utiliza en un canal oficial de asistencia o pago.",
+            "Antes de evaluar una afirmación, identifica quién la hace y qué puede saber razonablemente. Un vendedor puede describir un anuncio; una foto del almacén puede mostrar rasgos visibles de un artículo recibido; un artículo independiente puede explicar un método de investigación. Ninguno establece automáticamente lo demás. Anota la decisión concreta que estás tomando, como si la variante seleccionada está clara o si el presupuesto de envío está completo. Esto es más útil que permitir que una impresión positiva general responda varias preguntas sin relación."
+          ]
+        },
+        {
+          "heading": "Verifica el destino antes de introducir datos de cuenta",
+          "paragraphs": [
+            "Comprueba la dirección de la página donde vas a registrarte, iniciar sesión o pagar. Utiliza el dominio oficial proporcionado en el proceso de cuenta y examina cambios inesperados antes de continuar. Una captura, el título de un resultado de búsqueda o el nombre de un perfil social no equivalen a la dirección de tu navegador. Si un mensaje te dirige a otro sitio para resolver un problema de cuenta, vuelve a la cuenta o página de contacto oficial conocida y verifica allí la solicitud. No permitas que la urgencia sustituya esta sencilla comprobación de identidad.",
+            "Aplica la misma separación a la asistencia. Este sitio independiente no necesita tu contraseña de Pikobuy, credenciales de pago ni información privada de pedidos para explicar su catálogo. Una pregunta específica de cuenta corresponde al servicio que la gestiona. Mantén las capturas utilizadas en conversaciones públicas libres de direcciones de entrega y otros datos personales innecesarios. Son hábitos prácticos de gestión de cuentas, no pruebas de que un mensaje concreto sea fraudulento ni de que toda interacción oficial carezca de riesgos. Cuando el destino o la solicitud no estén claros, busca confirmación antes de proporcionar información sensible."
+          ]
+        },
+        {
+          "heading": "Lee las reseñas como pruebas con un alcance concreto",
+          "paragraphs": [
+            "Una reseña resulta más útil cuando identifica la fecha, el servicio utilizado, el tipo de compra y la parte del proceso realmente experimentada. Un relato de entrega satisfactoria no evalúa necesariamente la gestión de devoluciones. Un comentario sobre una importación fallida de producto no establece el resultado de un envío. Busca detalles suficientes para comprender el alcance sin exigir que la persona publique registros privados. Mantén las descripciones promocionales, las observaciones de usuarios y las declaraciones formales de políticas en categorías separadas al compararlas.",
+            "Presta atención a la certeza sin fundamento. Una puntuación de estrellas sin contexto, una colección de fotografías impresionantes de paquetes o un supuesto descuento permanente pueden llamar la atención sin responder tu pregunta. Si quien escribe recibe una recompensa por recomendación, indicarlo ayuda a entender la relación comercial; no convierte automáticamente cada afirmación en verdadera o falsa. Evalúa las pruebas asociadas a la afirmación específica. Este artículo no ofrece una puntuación inventada, un pedido de prueba completado ni la afirmación de que unos comentarios anónimos demuestren un resultado universal del servicio."
+          ]
+        },
+        {
+          "heading": "Comprueba el producto real y la opción seleccionada",
+          "paragraphs": [
+            "Abre el anuncio original y compara su identidad con el artículo mostrado en el agente. Comprueba el identificador del artículo cuando esté disponible, el título, el color, la talla y la cantidad seleccionados y los componentes incluidos. Una misma fotografía puede aparecer en varias opciones, así que la imagen de portada por sí sola no basta. Conserva la selección exacta antes de pagar. Si el anuncio está incompleto, formula la pregunta que cambiaría tu decisión en lugar de llenar el vacío con suposiciones basadas en otro producto de nombre parecido.",
+            "Considera un anuncio hipotético de bolso con varios tamaños fotografiados juntos. El bolso grande de la foto de portada puede no ser la opción seleccionada actualmente. Una comparación fiable utiliza la opción seleccionada y sus dimensiones y después comprueba si el precio le corresponde. El mismo principio se aplica a un conjunto cuyos accesorios aparecen fotografiados, pero no claramente incluidos. Tu tarea es establecer qué contendría el pedido. Que un producto sea fácil de importar demuestra legibilidad técnica, no existencias, autenticidad ni consistencia entre distintos vendedores."
+          ]
+        },
+        {
+          "heading": "Examina el registro de pago y coste total",
+          "paragraphs": [
+            "Revisa el importe y la moneda presentados antes de pagar, junto con la selección de artículos y los cargos mostrados. Guarda la referencia de transacción y el desglose facilitado por el servicio. No utilices el logotipo de un método de pago en un pie de página como prueba de que esté disponible para tu ubicación o compra. La disponibilidad corresponde al proceso real de pago. Asimismo, un precio mostrado convertido no sustituye leer el importe que autorizas. Si un cálculo no está claro, resuélvelo antes de aprobar la transacción.",
+            "Mantén un presupuesto más amplio junto al registro de pago. Incluye el importe conocido del producto, cualquier importe indicado de entrega nacional o servicio y la estimación del envío internacional, marcando lo no confirmado. La finalidad no es afirmar que se aplique todo cargo posible, sino mantener visibles las incógnitas. Un artículo hipotético de bajo precio puede seguir siendo inadecuado si sus supuestos de embalaje y envío superan tu presupuesto. No juzgues la asequibilidad solo por una tarjeta de producto, un anuncio de cupón o el total de otro comprador para un destino y paquete diferentes."
+          ]
+        },
+        {
+          "heading": "Utiliza las fotos de inspección para las preguntas que pueden responder",
+          "paragraphs": [
+            "Una fotografía clara del almacén puede ayudar a comparar la identidad visible, las etiquetas, la cantidad y el estado con el pedido. No puede establecer por sí sola todas las propiedades del material, funciones internas o durabilidad futura. Las condiciones de reexpedición de Pikobuy distinguen expresamente la inspección ordinaria de la profesional de productos especiales. Al revisar pruebas, pregunta qué es realmente visible y qué sigue sin probarse. Mantén separadas las imágenes de galería del vendedor, las fotos históricas de referencia de control de calidad y las fotografías de tu propio artículo recibido para no confundir un ejemplo útil con una prueba sobre tu pedido.",
+            "Convierte un detalle ausente en una solicitud concreta cuando corresponda. Si el ajuste depende de una medida, identifica los puntos de medición en lugar de preguntar si el artículo se ve bien. Si un componente incluido no aparece en el encuadre disponible, pide confirmación de ese componente en vez de suponer que falta. Registra la respuesta y la decisión que respalda. Evita convertir una foto favorable en una aprobación general del vendedor. Las pruebas pueden resolver una pregunta limitada mientras otras incertidumbres del producto y del servicio permanecen iguales."
+          ],
+          "bullets": [
+            "Identifica qué artículo y variante representa realmente cada fotografía.",
+            "Separa una observación visible de una afirmación no probada sobre el producto.",
+            "Solicita las pruebas ausentes que cambiarían tu siguiente decisión."
+          ]
+        },
+        {
+          "heading": "Lee la política aplicable a tu próxima acción",
+          "paragraphs": [
+            "Una reseña favorable general no sustituye las condiciones asociadas a una acción concreta. Antes de contar con una devolución, revisa los requisitos pertinentes del artículo y del vendedor. Antes de cambiar el embalaje, entiende qué estado debe conservarse. Antes de solicitar un paquete, examina la ruta y los servicios presupuestados. Guarda el enlace de la política y la fecha de revisión con tus notas, pero utiliza el pedido actual y la asistencia oficial cuando su aplicación no esté clara. Un artículo guardado puede explicar el proceso y aun así quedar desactualizado respecto a un cargo cambiante o un detalle operativo.",
+            "Centra tu pregunta en la incertidumbre. En vez de preguntar si el servicio es seguro en todos los aspectos, pregunta si este producto es admisible en la ruta seleccionada, qué costes están incluidos o qué pruebas hacen falta para la devolución propuesta. Una respuesta precisa puede respaldar una decisión sin pretender eliminar todos los riesgos. Si falta la respuesta y la consecuencia te importa, pausa esa acción. Esta es una regla práctica de decisión, no una afirmación de que la plataforma o el vendedor hayan hecho algo incorrecto."
+          ]
+        },
+        {
+          "heading": "Toma una decisión acorde con las pruebas",
+          "paragraphs": [
+            "Termina la revisión con tres listas breves: detalles confirmados, preguntas abiertas y la acción que estás dispuesto a realizar. Un enlace original y una variante claros podrían respaldar más investigación mientras un presupuesto de envío incierto impide pagar. Un artículo recibido que coincide con el pedido todavía puede necesitar una decisión de embalaje. Trata esas conclusiones por separado en lugar de forzarlo todo en una única puntuación.",
+            "Utiliza la guía de la hoja de cálculo para comparar productos, la guía de control de calidad para comprobaciones visibles y la de costes de envío para las suposiciones del paquete. Mantén las preguntas sobre cuentas oficiales con Pikobuy. El resultado útil es un siguiente paso informado respaldado por pruebas identificables, no una garantía inventada, una recomendación automática ni una puntuación de reseña que oculte lo que nunca se ha probado."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "home",
+        "shipping",
+        "contact"
+      ],
+      "related": [
+        "how-to-use-pikobuy-spreadsheet",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ]
+    }
+  ]
+}

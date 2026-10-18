@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-17",
+  "origin": "https://pikobuysheet-preview.hehaize88.workers.dev",
+  "locales": [
+    {
+      "lang": "en",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "de",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "es",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "fr",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "it",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "pl",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "pt",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "ro",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "sv",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "nl",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "da",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "fi",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "el",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "cs",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "hu",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "bg",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "sk",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "hr",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "sl",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "lt",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "lv",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "et",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "ga",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    },
+    {
+      "lang": "mt",
+      "faq": 28,
+      "articles": 10,
+      "sections": 80,
+      "bodyParagraphs": 160,
+      "routes": 13
+    }
+  ],
+  "totalEditorialRoutes": 312,
+  "errors": [],
+  "result": "passed",
+  "browser": {
+    "cloudflareActiveVersion": "8a9e7f35",
+    "sourceReadbackExact": true,
+    "sourceCharacters": 1847933,
+    "publicHomeNewNavigation": true,
+    "publicFaqCount": 28,
+    "faqSearch120AndGuideLink": "passed",
+    "articleSections": 8,
+    "sameArticleGermanSwitch": "passed",
+    "publicArticleCards": 10,
+    "mobileGerman": {
+      "viewport": [
+        390,
+        844
+      ],
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "menu": "passed"
+    },
+    "greekArticles": {
+      "viewport": [
+        900,
+        844
+      ],
+      "clientWidth": 885,
+      "scrollWidth": 885
+    },
+    "viewportRestored": true,
+    "finalPage": "https://pikobuysheet-preview.hehaize88.workers.dev/articles/"
+  }
+}

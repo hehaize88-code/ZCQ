@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pikobuysheet-cc",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "preview_urls": true,
+  "assets": {
+    "directory": "./dist/client"
+  },
+  "routes": [
+    {
+      "pattern": "pikobuysheet.cc",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.pikobuysheet.cc",
+      "custom_domain": true
+    }
+  ]
+}

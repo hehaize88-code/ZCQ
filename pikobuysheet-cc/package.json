@@ -1,0 +1,21 @@
+{
+  "name": "pikobuysheet-cc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/pack-editorial.mjs && astro build && node scripts/finalize.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "astro": "7.4.0",
+    "linkedom": "0.18.12"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "wrangler": "4.151.1"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

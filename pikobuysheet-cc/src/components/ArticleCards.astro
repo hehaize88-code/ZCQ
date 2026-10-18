@@ -1,0 +1,10 @@
+---
+import {localized} from '../lib/i18n';
+import {readingMinutes} from '../lib/editorial';
+import Icon from './Icon.astro';
+const {articles,lang,ui,compact=false}=Astro.props;
+---
+<div class:list={['article-cards',{compact}]}>{articles.map((article:any,index:number)=><a class="article-card" href={localized(lang,'/articles/'+article.slug+'/')}>
+ <div class="article-card-top"><span>{article.category}</span><span class="article-number">{String(index+1).padStart(2,'0')}</span></div>
+ <h3>{article.title}</h3><p>{article.description}</p><div class="article-card-foot"><span>{readingMinutes(article)} {ui.minRead}</span><span>{ui.readArticle}<Icon name="arrow" size={17}/></span></div>
+</a>)}</div>
