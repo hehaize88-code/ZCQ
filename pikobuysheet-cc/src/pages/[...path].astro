@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from '../components/Analytics.astro';
 import {SITE_ORIGIN,isProductionHost} from '../lib/site';
 import Icon from '../components/Icon.astro';
 import EditorialPage from '../components/EditorialPage.astro';
@@ -61,7 +62,7 @@ const attrs=sku?.specifications?.attrs||[];
 const pageDescription=article?article.description:faq?ui.faqIntro:articleIndex?ui.articlesIntro:guide?ui.guideIntro:c.intro;
 const canonical=new URL(url(currentPath),SITE_ORIGIN).href;
 ---
-<!doctype html><html lang={lang}><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content={robots}/><meta name="description" content={pageDescription}/><meta name="theme-color" content="#7de8de"/><title>{title}</title><link rel="icon" href="/brand/favicon.png" type="image/png"/><link rel="canonical" href={canonical}/>{!invalid&&languages.map(([id])=><link rel="alternate" hreflang={id} href={new URL(localized(id,currentPath),SITE_ORIGIN).href}/>)}{!invalid&&<link rel="alternate" hreflang="x-default" href={new URL(currentPath,SITE_ORIGIN).href}/>}<meta property="og:title" content={title}/><meta property="og:description" content={pageDescription}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/></head>
+<!doctype html><html lang={lang}><head>{production&&<Analytics/>}<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content={robots}/><meta name="description" content={pageDescription}/><meta name="theme-color" content="#7de8de"/><title>{title}</title><link rel="icon" href="/brand/favicon.png" type="image/png"/><link rel="canonical" href={canonical}/>{!invalid&&languages.map(([id])=><link rel="alternate" hreflang={id} href={new URL(localized(id,currentPath),SITE_ORIGIN).href}/>)}{!invalid&&<link rel="alternate" hreflang="x-default" href={new URL(currentPath,SITE_ORIGIN).href}/>}<meta property="og:title" content={title}/><meta property="og:description" content={pageDescription}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/></head>
 <body>
 <div class="topline"><div class="wrap"><span><span class="status-dot"></span> {!production&&<>{t.preview} · </>}pikobuysheet.cc</span><span class="source-credit">FindSpreadsheet <span>×</span> Pikobuy</span></div></div>
 <header class="header"><div class="wrap nav">
