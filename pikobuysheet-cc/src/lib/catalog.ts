@@ -1,10 +1,11 @@
 import { parseHTML } from 'linkedom';
 import { createSourceReader } from './source-cache';
 import { edgeSourceCache } from './edge-source-cache';
+import { publicSourceSnapshot } from './source-public-snapshot';
 export const ORIGIN='https://findspreadsheet.com';
 export const REGISTER='https://www.pikobuy.com/?mode=register&redirect=/home';
 export const categories=['shoes','hoodies-sweaters','t-shirts','jackets','pants-shorts','headwear','accessories','ShortSets','electronics','other-stuff','jersey'];
-export const upstream=createSourceReader(ORIGIN,fetch,Date.now,edgeSourceCache);
+export const upstream=createSourceReader(ORIGIN,fetch,Date.now,edgeSourceCache,publicSourceSnapshot);
 export function imageUrl(raw:string|null) {
   if(!raw)return '';try {const u=new URL(raw,ORIGIN);return u.protocol==='https:'?u.href:'';}catch{return '';}
 }

@@ -1,13 +1,13 @@
 import type {SharedSourceCache} from './source-cache';
 
-// Bounded, temporary public HTML cache. Locale requests share source URLs.
+// Bounded, temporary public catalog snapshots. Locale requests share source URLs.
 // Two fixed resources plus 88 replaceable slots: no persistent catalog,
 // user searches, cookies, SKU/QC responses, or public proxy route.
 function cacheKey(source:string){
   const url=new URL(source);
   if(url.origin!=='https://findspreadsheet.com')return;
   const resource=url.pathname+url.search;
-  const base='https://pikobuysheet.cc/__internal-source-cache/v1/';
+  const base='https://pikobuysheet.cc/__internal-source-cache/v2/';
   if(resource==='/AllProducts/'||resource==='/template/cnbuynew/pc/static/js/script.js?v=4.7.9')return {key:base+encodeURIComponent(resource),resource,bucket:false};
   if(url.search)return;
   const category='(?:AllProducts|shoes|hoodies-sweaters|t-shirts|jackets|pants-shorts|headwear|accessories|ShortSets|electronics|other-stuff|jersey)';
