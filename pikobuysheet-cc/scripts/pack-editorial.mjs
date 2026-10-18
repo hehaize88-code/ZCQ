@@ -29,4 +29,8 @@ await mkdir('.generated',{recursive:true});
 await writeFile('.generated/editorial-packs.ts','// Generated from tracked editorial JSON.\nexport const EDITORIAL_PACKS:Record<string,string>='+JSON.stringify(packs)+';\n');
 const sitemapPaths=['/','/spreadsheet/','/guide/','/faq/','/articles/',...slugs.map(slug=>'/articles/'+slug+'/')];
 await writeFile('.generated/sitemap-paths.ts','// Generated at build time from tracked editorial JSON.\nexport const SITEMAP_PATHS: readonly string[]='+JSON.stringify(sitemapPaths)+';\n');
+const escapeXml=value=>value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
+const sitemapUrls=sitemapPaths.flatMap(path=>locales.map(locale=>'https://pikobuysheet.cc'+(locale==='en'?'':'/'+locale)+path));
+const sitemapXml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+sitemapUrls.map(url=>'  <url><loc>'+escapeXml(url)+'</loc></url>').join('\n')+'\n</urlset>\n';
+await writeFile('.generated/sitemap-response.mjs','// Generated at build time; served directly by the Worker entrypoint.\nexport const SITEMAP_XML='+JSON.stringify(sitemapXml)+';\nexport const SITEMAP_BYTES='+Buffer.byteLength(sitemapXml)+';\n');
 console.log('Editorial locales packed:',Object.keys(packs).length);
