@@ -52,6 +52,9 @@ et:'Jalatsid|Pusad ja kampsunid|T-särgid|Jakid|Püksid ja lühikesed püksid|Pe
 ga:'Bróga|Húdaí agus geansaithe|T-léinte|Seaicéid|Bríste agus brístí gearra|Ceannbhearta|Oiriúintí|Tacair|Leictreonaic|Táirgí eile|Geansaithe spóirt',
 mt:'Żraben|Hoodies u ġersijiet|T-shirts|Ġkieket|Qliezet u xorts|Kpiepel|Aċċessorji|Settijiet|Elettronika|Prodotti oħra|Flokkijiet sportivi'
 };
-export function translate(lang: string) { return Object.fromEntries(keys.map((key,i)=>[key,rows[lang].split('|')[i]])) as Record<string,string>; }
+const qcActions:Record<string,string>={
+ en:'Load QC photos',de:'QC-Fotos laden',es:'Cargar fotos QC',fr:'Charger les photos QC',it:'Carica foto QC',pl:'Wczytaj zdjęcia QC',pt:'Carregar fotografias QC',ro:'Încarcă fotografiile QC',sv:'Ladda QC-bilder',nl:'QC-foto’s laden',da:'Indlæs QC-billeder',fi:'Lataa QC-kuvat',el:'Φόρτωση φωτογραφιών QC',cs:'Načíst fotografie QC',hu:'QC-fotók betöltése',bg:'Зареди QC снимки',sk:'Načítať fotografie QC',hr:'Učitaj QC fotografije',sl:'Naloži fotografije QC',lt:'Įkelti QC nuotraukas',lv:'Ielādēt QC fotoattēlus',et:'Laadi QC-fotod',ga:'Lódáil grianghraif QC',mt:'Tagħbija tar-ritratti QC'
+};
+export function translate(lang: string) { return {...Object.fromEntries(keys.map((key,i)=>[key,rows[lang].split('|')[i]])),loadQc:qcActions[lang]||qcActions.en} as Record<string,string>; }
 export function categoryNames(lang:string) {return categoryRows[lang].split('|');}
 export function localized(lang:string,path='/') {return (lang==='en'?'':`/${lang}`)+path;}
