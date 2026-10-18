@@ -1,5 +1,6 @@
 export type SourceEntry={at:number,value:string};
-export type SharedSourceCache={get(key:string):Promise<SourceEntry|undefined>,set(key:string,entry:SourceEntry,retentionMs:number):Promise<void>,retryAt?():Promise<number|undefined>,backoff?(until:number):Promise<void>};
+export type SourceBackoffScope='origin'|'qc';
+export type SharedSourceCache={get(key:string):Promise<SourceEntry|undefined>,set(key:string,entry:SourceEntry,retentionMs:number):Promise<void>,retryAt?(scope?:SourceBackoffScope):Promise<number|undefined>,backoff?(until:number,scope?:SourceBackoffScope):Promise<void>};
 export class SourceRetryError extends Error {
   retryAt:number;
   constructor(message:string,retryAt:number){super(message);this.name='SourceRetryError';this.retryAt=retryAt;}
@@ -8,6 +9,26 @@ export class SourceHttpError extends SourceRetryError {
   status:number;
   constructor(status:number,retryAt=0){super(`Source ${status}`,retryAt);this.name='SourceHttpError';this.status=status;}
 }
+// The inspected FindSpreadsheet PHP endpoint forwards QC Radar's status with
+// this exact JSON error. Only that contract proves a delegated QC quota limit;
+// HTML challenges, unknown errors and every other endpoint remain origin-wide.
+async function isDelegatedQcLimit(url:URL,response:Response){
+  if(url.origin!=='https://findspreadsheet.com'||url.pathname!=='/qcradar-qc.php'||!/^application\/json\b/i.test(response.headers.get('Content-Type')||'')||!response.body)return false;
+  const reader=response.body.getReader();
+  const decoder=new TextDecoder();
+  let size=0,body='';
+  try {
+    while(true){
+      const {done,value}=await reader.read();
+      if(done)break;
+      size+=value.byteLength;
+      if(size>1024)return false;
+      body+=decoder.decode(value,{stream:true});
+    }
+    const data=JSON.parse(body+decoder.decode());
+    return data?.status==='error'&&data?.message==='QC API request failed';
+  }catch{return false;}finally{try{await reader.cancel();}catch{}reader.releaseLock();}
+}
 // Ephemeral cache only. Never retry a rate-limited source immediately.
 // Stale data is allowed only for transient errors and retains its original age.
 export function createSourceReader(origin:string, transport:typeof fetch=fetch, now=Date.now,shared?:SharedSourceCache) {
@@ -15,6 +36,7 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
   const pending=new Map<string,Promise<string>>();
   const failures=new Map<string,{until:number,error:Error,transient:boolean}>();
   let originRetryAt=0;
+  let qcRetryAt=0;
   const limit=90;
   function trim(map:Map<string,unknown>){while(map.size>limit)map.delete(map.keys().next().value!);}
   function retryAt(raw:string|null, fallback:number){
@@ -30,6 +52,7 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
     const url=new URL(path,origin);
     if(url.origin!==origin)throw new Error('Invalid source');
     const key=url.href;
+    const isQc=url.pathname==='/qcradar-qc.php';
     let hit=cache.get(key);
     if(hit&&now()-hit.at<ttl)return hit.value;
     if(shared&&staleMs>0){
@@ -42,15 +65,17 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
       if(hit&&now()-hit.at<ttl)return hit.value;
     }
     try {originRetryAt=Math.max(originRetryAt,await shared?.retryAt?.()||0);}catch{/* Local backoff remains active. */}
+    if(isQc)try {qcRetryAt=Math.max(qcRetryAt,await shared?.retryAt?.('qc')||0);}catch{/* Local QC backoff remains active. */}
+    const activeRetryAt=Math.max(originRetryAt,isQc?qcRetryAt:0);
     const stale=()=>hit&&now()-hit.at<ttl+staleMs?hit.value:undefined;
     const failure=failures.get(key);
-    if(now()<originRetryAt||(failure&&now()<failure.until)){
+    if(now()<activeRetryAt||(failure&&now()<failure.until)){
       const value=(!failure||failure.transient)?stale():undefined;
       if(value!==undefined)return value;
       // Carry the real shared cooldown to the response and browser recovery.
       // A fixed 60-second retry can otherwise run before a longer Retry-After.
-      if(now()<originRetryAt){
-        const until=Math.max(originRetryAt,failure?.until||0);
+      if(now()<activeRetryAt){
+        const until=Math.max(activeRetryAt,failure?.until||0);
         if(failure?.error instanceof SourceHttpError)throw new SourceHttpError(failure.error.status,until);
         throw new SourceRetryError('Source rate-limit cooldown',until);
       }
@@ -70,14 +95,16 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
         if(!response.ok){
           const until=retryAt(response.headers.get('Retry-After'),response.status===429?60000:30000);
           const error=new SourceHttpError(response.status,until);
+          const scope:SourceBackoffScope=response.status===429&&await isDelegatedQcLimit(url,response)?'qc':'origin';
           if(response.status===429||response.status>=500)console.warn('FindSpreadsheet upstream response',{
-            path:url.pathname,status:response.status,
+            path:url.pathname,status:response.status,scope,
             server:response.headers.get('server'),retryAfter:response.headers.get('Retry-After'),
             requestId:response.headers.get('x-hcdn-request-id')
           });
           if(response.status===429){
-            originRetryAt=until;
-            try {await shared?.backoff?.(until);}catch{/* Local backoff remains active. */}
+            if(scope==='qc')qcRetryAt=Math.max(qcRetryAt,until);
+            else originRetryAt=Math.max(originRetryAt,until);
+            try {await shared?.backoff?.(until,scope);}catch{/* Local backoff remains active. */}
           }
           failures.set(key,{until,error,transient:response.status===429||response.status>=500});trim(failures);
           await response.body?.cancel();

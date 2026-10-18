@@ -17,18 +17,18 @@ function cacheKey(source:string){
   return {key:base+'slot-'+(hash%88),resource,bucket:true};
 }
 export const edgeSourceCache:SharedSourceCache={
-  async retryAt(){
+  async retryAt(scope='origin'){
     if(typeof caches==='undefined')return;
     const cache=await caches.open('pikobuysheet-source-v1');
-    const response=await cache.match('https://pikobuysheet.cc/__internal-source-cache/v1/retry-after');
+    const response=await cache.match('https://pikobuysheet.cc/__internal-source-cache/v1/retry-after'+(scope==='qc'?'-qc':''));
     if(!response)return;
     const until=Number(await response.text());
     return Number.isFinite(until)?until:undefined;
   },
-  async backoff(until){
+  async backoff(until,scope='origin'){
     if(typeof caches==='undefined'||until<=Date.now())return;
     const cache=await caches.open('pikobuysheet-source-v1');
-    await cache.put('https://pikobuysheet.cc/__internal-source-cache/v1/retry-after',new Response(String(until),{headers:{
+    await cache.put('https://pikobuysheet.cc/__internal-source-cache/v1/retry-after'+(scope==='qc'?'-qc':''),new Response(String(until),{headers:{
       'Content-Type':'text/plain',
       'Cache-Control':`public, max-age=${Math.ceil((until-Date.now())/1000)}`
     }}));
