@@ -11,8 +11,13 @@
   "observability": {
     "enabled": true,
     "redact_query_string": true,
-    "logs": {"enabled": true, "invocation_logs": false},
-    "traces": {"enabled": false}
+    "logs": {
+      "enabled": true,
+      "invocation_logs": false
+    },
+    "traces": {
+      "enabled": false
+    }
   },
   "assets": {
     "directory": "./dist/client"
@@ -26,5 +31,16 @@
       "pattern": "www.pikobuysheet.cc",
       "custom_domain": true
     }
-  ]
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "SOURCE_CACHE",
+      "id": "482b2f82d5674983bbbe59a261f17983"
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "*/10 * * * *"
+    ]
+  }
 }

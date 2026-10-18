@@ -1,9 +1,9 @@
-import type {SharedSourceCache} from './source-cache';
+import type {SharedSourceCache,SourceEntry} from './source-cache';
 
 // Bounded, temporary public catalog snapshots. Locale requests share source URLs.
 // Two fixed resources plus 88 replaceable slots: no persistent catalog,
 // user searches, cookies, SKU/QC responses, or public proxy route.
-function cacheKey(source:string){
+export function sourceCacheKey(source:string){
   const url=new URL(source);
   if(url.origin!=='https://findspreadsheet.com')return;
   const resource=url.pathname+url.search;
@@ -34,7 +34,7 @@ export const edgeSourceCache:SharedSourceCache={
     }}));
   },
   async get(source){
-    const item=cacheKey(source);
+    const item=sourceCacheKey(source);
     if(!item||typeof caches==='undefined')return;
     const cache=await caches.open('pikobuysheet-source-v1');
     const response=await cache.match(item.key);
@@ -46,7 +46,7 @@ export const edgeSourceCache:SharedSourceCache={
     return {at,value:await response.text()};
   },
   async set(source,entry,retentionMs){
-    const item=cacheKey(source);
+    const item=sourceCacheKey(source);
     if(!item||typeof caches==='undefined')return;
     // Prevent a challenge/login page with status 200 from becoming the shared catalog.
     if(!item.resource.includes('/static/')){
@@ -62,3 +62,65 @@ export const edgeSourceCache:SharedSourceCache={
     }}));
   }
 };
+
+// KV holds the same bounded public projections, with an absolute expiry.
+// Unlike Cache API, a successful snapshot is available to a cold region too.
+// It is not a catalog database: no searches, API data, cookies or images; at
+// most 90 replaceable responses plus two short-lived cooldown markers.
+export type SourceKV={
+  get(key:string,options:{type:'json',cacheTtl:number}):Promise<any>;
+  put(key:string,value:string,options:{expiration:number}):Promise<void>;
+};
+export function createSharedSourceCache(kv?:SourceKV,local:SharedSourceCache=edgeSourceCache,now=Date.now):SharedSourceCache {
+  if(!kv)return local;
+  const cooldownKey=(scope='origin')=>'cooldown:v1:'+scope;
+  const key=(source:string)=>sourceCacheKey(source);
+  const valid=(value:any,resource:string):value is SourceEntry&{resource:string,expiresAt:number,needsExpiry?:boolean}=>
+    value?.resource===resource&&typeof value.value==='string'&&Number.isFinite(value.at)&&value.at>0&&value.at<=now()&&
+    Number.isFinite(value.expiresAt)&&value.expiresAt>now()&&value.expiresAt<=value.at+86400000;
+  return {
+    async get(source){
+      const item=key(source);if(!item)return;
+      let hit:SourceEntry|undefined;
+      try{hit=await local.get(source);}catch{}
+      // A fresh local projection avoids unnecessary global storage reads.
+      if(hit&&now()-hit.at<180000)return hit;
+      try{
+        const saved=await kv.get(item.key,{type:'json',cacheTtl:60});
+        if(valid(saved,item.resource)&&(!hit||saved.at>hit.at)){
+          hit={at:saved.at,value:saved.value};
+          // The dashboard's one-time warmup form has no TTL field. Adopt its
+          // original expiry in KV on first read, without making the data newer.
+          if(saved.needsExpiry&&saved.expiresAt-now()>=60000){
+            try{await kv.put(item.key,JSON.stringify({...saved,needsExpiry:false}),{expiration:Math.ceil(saved.expiresAt/1000)});}catch{}
+          }
+          try{await local.set(source,hit,saved.expiresAt-now());}catch{}
+        }
+      }catch{/* A cache outage must not discard a local successful response. */}
+      return hit;
+    },
+    async set(source,entry,retentionMs){
+      const item=key(source);if(!item)return;
+      const expiresAt=entry.at+Math.min(retentionMs,86400000);
+      if(!Number.isFinite(entry.at)||entry.at<=0||entry.at>now()||expiresAt<=now())return;
+      // Validate again at the storage boundary, including manual warmup inputs.
+      if(!item.resource.includes('/static/')){
+        const expected=item.resource.endsWith('.html')?'product-detail':'product-card';
+        if(!new RegExp('class=["\'][^"\']*\\b'+expected+'\\b').test(entry.value))return;
+      }
+      try{await local.set(source,entry,expiresAt-now());}catch{}
+      if(expiresAt-now()<60000)return;
+      await kv.put(item.key,JSON.stringify({...entry,resource:item.resource,expiresAt}),{expiration:Math.ceil(expiresAt/1000)});
+    },
+    async retryAt(scope='origin'){
+      let until=0;
+      try{until=await local.retryAt?.(scope)||0;}catch{}
+      try{const saved=await kv.get(cooldownKey(scope),{type:'json',cacheTtl:60});if(Number.isFinite(saved?.until))until=Math.max(until,saved.until);}catch{}
+      return until;
+    },
+    async backoff(until,scope='origin'){
+      try{await local.backoff?.(until,scope);}catch{}
+      if(until>now())await kv.put(cooldownKey(scope),JSON.stringify({until}),{expiration:Math.ceil(Math.max(until,now()+60000)/1000)});
+    }
+  };
+}

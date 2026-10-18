@@ -32,3 +32,5 @@ Only the apex production hostname permits indexing. Error pages, image-search st
 The independent preview Worker is maintained separately and is not modified by this production configuration.
 
 Live check note (2026-10-18): deployment and SEO routes are live. The upstream site returned HTTP429 to Cloudflare during search/detail checks; the UI reports temporary unavailability. This limitation also affected the original preview.
+
+Production resilience: the `SOURCE_CACHE` KV binding stores at most 90 expiring public response projections. Only the main catalog may fall back to a verified snapshot up to 24 hours old during transient failures; other resources keep their existing bounds. A ten-minute scheduled refresh respects source backoff. No searches, source sessions, SKU/QC data, or images are stored.

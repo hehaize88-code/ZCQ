@@ -41,7 +41,7 @@ async function inspectSourceLimit(url:URL,response:Response){
 }
 // Ephemeral cache only. Never retry a rate-limited source immediately.
 // Stale data is allowed only for transient errors and retains its original age.
-export function createSourceReader(origin:string, transport:typeof fetch=fetch, now=Date.now,shared?:SharedSourceCache,publicSnapshot?:(key:string,value:string)=>string|undefined) {
+export function createSourceReader(origin:string, transport:typeof fetch=fetch, now=Date.now,shared?:SharedSourceCache,publicSnapshot?:(key:string,value:string)=>string|undefined,requiresSnapshot?:(key:string)=>boolean) {
   const cache=new Map<string,{at:number,value:string}>();
   const pending=new Map<string,Promise<string>>();
   const failures=new Map<string,{until:number,error:Error,transient:boolean}>();
@@ -151,6 +151,15 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
           failures.set(key,{until:failure.retryAt,error:failure,transient:true});trim(failures);
           throw failure;
         }
+        let projected:string|undefined;
+        try{projected=publicSnapshot?.(key,value);}catch{}
+        if(requiresSnapshot?.(key)&&projected===undefined){
+          // A challenge/error document with HTTP 200 must not erase the last
+          // verified catalog or turn a cached product page into an empty list.
+          const failure=new SourceRetryError('Source returned invalid public data',now()+30000);
+          failures.set(key,{until:failure.retryAt,error:failure,transient:true});trim(failures);
+          throw failure;
+        }
         failures.delete(key);
         const entry={at:now(),value};
         cache.delete(key);cache.set(key,entry);trim(cache);
@@ -158,7 +167,7 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
           try {
             // An explicit projection retains only public catalog facts.
             // Generic readers never share private/no-store/session responses.
-            const projected=publicSnapshot?publicSnapshot(key,value):(!/\b(private|no-store|no-cache)\b/i.test(response.headers.get('Cache-Control')||'')&&!response.headers.has('Set-Cookie')?value:undefined);
+            if(!publicSnapshot)projected=!/\b(private|no-store|no-cache)\b/i.test(response.headers.get('Cache-Control')||'')&&!response.headers.has('Set-Cookie')?value:undefined;
             if(projected!==undefined)await shared.set(key,{at:entry.at,value:projected},ttl+staleMs);
           }catch{/* Memory cache still works. */}
         }

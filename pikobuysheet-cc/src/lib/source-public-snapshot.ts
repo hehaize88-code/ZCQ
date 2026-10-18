@@ -1,5 +1,13 @@
 import {parseHTML} from 'linkedom';
 
+export function isPublicSnapshotSource(source:string){
+  const url=new URL(source);
+  return url.origin==='https://findspreadsheet.com'&&(
+    url.pathname==='/template/cnbuynew/pc/static/js/script.js'&&url.search==='?v=4.7.9'||
+    !url.search&&/^\/(AllProducts|shoes|hoodies-sweaters|t-shirts|jackets|pants-shorts|headwear|accessories|ShortSets|electronics|other-stuff|jersey)\/(?:list_\d+_\d+\/|[a-zA-Z0-9-]+-\d+\.html)?$/.test(url.pathname)
+  );
+}
+
 // Cache only the public fields this site already displays, never the origin's
 // session-bearing HTML, scripts, forms, cookies, account widgets or API data.
 // The source owner's public catalog is retained temporarily, not copied to a DB.
