@@ -8,6 +8,12 @@
   ],
   "workers_dev": true,
   "preview_urls": true,
+  "observability": {
+    "enabled": true,
+    "redact_query_string": true,
+    "logs": {"enabled": true, "invocation_logs": false},
+    "traces": {"enabled": false}
+  },
   "assets": {
     "directory": "./dist/client"
   },

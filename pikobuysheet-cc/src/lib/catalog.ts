@@ -33,7 +33,11 @@ function cards(doc:any):Product[]{return [...doc.querySelectorAll('.product-card
   const im=el.querySelector('.product-image img');return {path,title:el.querySelector('.product-name')?.textContent.trim()||im?.getAttribute('alt')||'',image:imageUrl(im?.getAttribute('data-src')||im?.getAttribute('src')),rawPrice:el.querySelector('.product-price')?.textContent.trim()||'',id:el.querySelector('[data-cart-weidian]')?.getAttribute('data-cart-weidian')||'',category:path.split('/')[1]};
 }).filter(Boolean);}
 export async function getCatalog(path='/AllProducts/'){
- const {document}=parseHTML(await upstream(safeCatalog(path)));
+ const source=safeCatalog(path);
+ // Refresh every three minutes. Only during transient failures may the fixed,
+ // public landing-page list use its last real response, up to one hour old.
+ // Searches and all other resources retain their existing shorter limits.
+ const {document}=parseHTML(await upstream(source,180000,source==='/AllProducts/'?3420000:720000));
  return {products:cards(document),sorts:[...document.querySelectorAll('.sort-btn')].map((el:any)=>({path:navigation(el),active:el.classList.contains('active'),key:new URL(navigation(el)||'/',ORIGIN).searchParams.get('sort')})).filter(x=>x.path),pages:[...document.querySelectorAll('.pagination a')].map((el:any)=>({path:navigation(el),text:el.textContent.trim(),active:el.parentElement.classList.contains('active')})),activeCategory:document.querySelector('.filter-btn.active')?navigation(document.querySelector('.filter-btn.active')):''};
 }
 let lastRate:number|undefined;

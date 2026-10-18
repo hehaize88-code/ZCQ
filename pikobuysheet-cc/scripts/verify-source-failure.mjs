@@ -94,9 +94,11 @@ try {
     assert.ok(document.querySelector('.home-articles'));
     assert.equal(document.querySelectorAll('.faqs details').length,4);
     assert.equal(document.querySelectorAll('.product-card').length,0,'no invented products');
+    const delay=Number(document.querySelector('main').dataset.catalogRetry);
+    assert.ok(delay>60&&delay<=120,'browser recovery honors the source Retry-After');
     const catalog=await app.fetch(new Request(site+prefix+'/spreadsheet/'),{},{});
     assert.equal(catalog.status,503);
-    assert.equal(catalog.headers.get('retry-after'),'60');
+    assert.ok(Number(catalog.headers.get('retry-after'))>60&&Number(catalog.headers.get('retry-after'))<=120);
     assert.equal(catalog.headers.get('cache-control'),'no-store');
     await catalog.arrayBuffer();
   }

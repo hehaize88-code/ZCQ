@@ -9,7 +9,7 @@ import Card from '../components/Card.astro';
 import {languages,translate,categoryNames,localized} from '../lib/i18n';
 import {editorial} from '../lib/copy';
 import {getCatalog,getProduct,getRate,getSku,getQc,price,categories,REGISTER,buyLink,ORIGIN,safeCatalog,safeProduct} from '../lib/catalog';
-import {SourceHttpError} from '../lib/source-cache';
+import {SourceHttpError,SourceRetryError} from '../lib/source-cache';
 // Astro may normalize .html when matching catch-all params; upstream product
 // URLs require that suffix. Preserve the actual request path for data and locales.
 const segments=new URL(Astro.request.url).pathname.split('/').filter(Boolean);
@@ -25,7 +25,7 @@ let source='/AllProducts/';
 try {source=query?'/search.html?'+new URLSearchParams({keywords:query,channelid:'2'}):safeCatalog(Astro.url.searchParams.get('source')||'/AllProducts/');}catch{invalid=true;}
 if(!query)query=new URL(source,ORIGIN).searchParams.get('keywords')||'';
 if(detail){try{safeProduct(route.slice('/products'.length));}catch{invalid=true;}}
-let rate:number|undefined;
+let rate:number|undefined;let retryAfter=60;
 try {
  if(!invalid&&(home||catalog))listing=await getCatalog(home?'/AllProducts/':source);
  if(!invalid&&detail){product=await getProduct(route.slice('/products'.length));[sku,qc]=await Promise.all([getSku(product.id),getQc(product.id)]);}
@@ -34,13 +34,13 @@ try {
  if(!invalid&&(home||catalog||detail))rate=await getRate();
 }catch(e){
  if(e instanceof SourceHttpError&&(e.status===404||e.status===410)){invalid=true;}
- else {error=true;console.error("FindSpreadsheet source unavailable",e instanceof Error?e.message:'Unknown source error');}
+ else {error=true;if(e instanceof SourceRetryError)retryAfter=Math.max(1,Math.ceil((e.retryAt-Date.now())/1000));console.error("FindSpreadsheet source unavailable",{path:Astro.url.pathname,reason:e instanceof Error?e.message:'Unknown source error',retryAfter});}
 }
 if(invalid)Astro.response.status=404;
 // Product recommendations are optional on the editorial homepage. A source
 // outage must not remove its independent guides, articles and FAQs from search.
 const unavailable=error&&!home;
-if(unavailable){Astro.response.status=503;Astro.response.headers.set('Retry-After','60');}
+if(unavailable){Astro.response.status=503;Astro.response.headers.set('Retry-After',String(retryAfter));}
 if(error)Astro.response.headers.set('Cache-Control','no-store');
 const production=isProductionHost(Astro.url);
 const indexable=production&&!invalid&&!unavailable&&!visual&&!Astro.url.search;
@@ -66,7 +66,7 @@ const canonical=new URL(url(currentPath),SITE_ORIGIN).href;
  <nav id="primary-nav" aria-label="Pikobuy"><a class:list={{active:home||catalog||detail}} href={url('/spreadsheet/')}>{t.browse}</a><a class:list={{active:guide}} href={url('/guide/')}>{t.guide}</a><a class:list={{active:faq}} href={url('/faq/')}>{t.faq}</a><a class:list={{active:articleIndex||!!article}} href={url('/articles/')}>{ui.articlesLabel}</a></nav>
  <div class="nav-actions"><button class="menu-toggle" id="menu-toggle" aria-label={ui.menu} aria-expanded="false" aria-controls="primary-nav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div class="language-picker"><Icon name="globe" size={17}/><select id="language" aria-label={t.language}>{languages.map(([id,name])=><option value={localized(id,currentPath)+Astro.url.search} selected={id===lang}>{name}</option>)}</select></div><a class="button dark small register" href={REGISTER} target="_blank" rel="noopener noreferrer">{t.register}<Icon name="external" size={14}/></a></div>
 </div></header>
-<main>
+<main data-catalog-retry={error&&(home||catalog)?retryAfter:undefined}>
 {home&&<>
 <section class="hero wrap"><div class="hero-copy"><span class="eyebrow"><span class="mini-line"></span> PIKOBUY SPREADSHEET</span><h1>Pikobuy<br/><span>spreadsheet.</span></h1><h2>{c.tagline}</h2><p>{c.intro}</p>
 <form class="search-box" action={url('/spreadsheet/')} method="get"><Icon name="search"/><input name="q" aria-label={t.search} placeholder={t.placeholder} maxlength="120" required/><button aria-label={t.search} type="submit"><Icon name="arrow"/></button></form>
@@ -93,6 +93,8 @@ const canonical=new URL(url(currentPath),SITE_ORIGIN).href;
 </main>
 <footer><div class="wrap footer-main"><div><a class="brand" href={url('/')}><img src="/brand/logo.png" alt="Pikobuy" width="140" height="40"/><span class="brand-sheet">SHEET</span></a><p>{c.disclosure}</p></div><div class="footer-links"><a href={url('/spreadsheet/')}>{t.browse}</a><a href={url('/guide/')}>{t.guide}</a><a href={url('/faq/')}>{t.faq}</a><a href={url('/articles/')}>{ui.articlesLabel}</a><a href="https://www.pikobuy.com/shipping-cost" target="_blank" rel="noopener noreferrer">Pikobuy ↗</a><a href="https://findspreadsheet.com/" target="_blank" rel="noopener noreferrer">FindSpreadsheet ↗</a></div></div><div class="wrap footer-bottom"><span>© {new Date().getFullYear()} pikobuysheet.cc</span><span>{!production&&<>{t.preview} · </>}{t.price}</span><a href={url('/')}>{t.home} ↑</a></div></footer>
 <script>
+ import {scheduleCatalogRecovery} from '../lib/catalog-recovery';
+ scheduleCatalogRecovery(document,window);
  document.querySelector<HTMLButtonElement>('#menu-toggle')?.addEventListener('click',event=>{const b=event.currentTarget as HTMLButtonElement;const expanded=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!expanded));document.querySelector('#primary-nav')?.classList.toggle('is-open',!expanded);});
  document.querySelector('#language')?.addEventListener('change',(event)=>{window.location.assign((event.target as HTMLSelectElement).value);});
  document.querySelectorAll<HTMLButtonElement>('[data-image]').forEach(button=>button.addEventListener('click',()=>{const main=document.querySelector<HTMLImageElement>('#main-image');if(main){main.src=button.dataset.image!;document.querySelectorAll('[data-image]').forEach(b=>b.classList.toggle('selected',b===button));}}));

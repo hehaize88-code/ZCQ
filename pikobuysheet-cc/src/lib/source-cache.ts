@@ -1,8 +1,12 @@
 export type SourceEntry={at:number,value:string};
 export type SharedSourceCache={get(key:string):Promise<SourceEntry|undefined>,set(key:string,entry:SourceEntry,retentionMs:number):Promise<void>,retryAt?():Promise<number|undefined>,backoff?(until:number):Promise<void>};
-export class SourceHttpError extends Error {
+export class SourceRetryError extends Error {
+  retryAt:number;
+  constructor(message:string,retryAt:number){super(message);this.name='SourceRetryError';this.retryAt=retryAt;}
+}
+export class SourceHttpError extends SourceRetryError {
   status:number;
-  constructor(status:number){super(`Source ${status}`);this.name='SourceHttpError';this.status=status;}
+  constructor(status:number,retryAt=0){super(`Source ${status}`,retryAt);this.name='SourceHttpError';this.status=status;}
 }
 // Ephemeral cache only. Never retry a rate-limited source immediately.
 // Stale data is allowed only for transient errors and retains its original age.
@@ -43,7 +47,14 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
     if(now()<originRetryAt||(failure&&now()<failure.until)){
       const value=(!failure||failure.transient)?stale():undefined;
       if(value!==undefined)return value;
-      throw failure?.error||new Error('Source rate-limit cooldown');
+      // Carry the real shared cooldown to the response and browser recovery.
+      // A fixed 60-second retry can otherwise run before a longer Retry-After.
+      if(now()<originRetryAt){
+        const until=Math.max(originRetryAt,failure?.until||0);
+        if(failure?.error instanceof SourceHttpError)throw new SourceHttpError(failure.error.status,until);
+        throw new SourceRetryError('Source rate-limit cooldown',until);
+      }
+      throw failure!.error;
     }
     let request=pending.get(key);
     if(!request){
@@ -52,13 +63,13 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
         try {
           response=await transport(url,{signal:AbortSignal.timeout(12000),headers:{Accept:'text/html,application/json;q=0.9'}});
         } catch(error){
-          const failure=error instanceof Error?error:new Error('Source network failure');
-          failures.set(key,{until:now()+30000,error:failure,transient:true});trim(failures);
+          const failure=new SourceRetryError(error instanceof Error?error.message:'Source network failure',now()+30000);
+          failures.set(key,{until:failure.retryAt,error:failure,transient:true});trim(failures);
           throw failure;
         }
         if(!response.ok){
-          const error=new SourceHttpError(response.status);
           const until=retryAt(response.headers.get('Retry-After'),response.status===429?60000:30000);
+          const error=new SourceHttpError(response.status,until);
           if(response.status===429||response.status>=500)console.warn('FindSpreadsheet upstream response',{
             path:url.pathname,status:response.status,
             server:response.headers.get('server'),retryAfter:response.headers.get('Retry-After'),
@@ -74,8 +85,8 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
         }
         let value:string;
         try {value=await response.text();} catch(error){
-          const failure=error instanceof Error?error:new Error('Source body failure');
-          failures.set(key,{until:now()+30000,error:failure,transient:true});trim(failures);
+          const failure=new SourceRetryError(error instanceof Error?error.message:'Source body failure',now()+30000);
+          failures.set(key,{until:failure.retryAt,error:failure,transient:true});trim(failures);
           throw failure;
         }
         failures.delete(key);
