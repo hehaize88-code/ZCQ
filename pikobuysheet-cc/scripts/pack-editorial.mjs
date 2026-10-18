@@ -27,4 +27,6 @@ const missing=locales.filter(locale=>!packs[locale]);
 if(missing.length)throw new Error('Editorial locale content is missing: '+missing.join(', '));
 await mkdir('.generated',{recursive:true});
 await writeFile('.generated/editorial-packs.ts','// Generated from tracked editorial JSON.\nexport const EDITORIAL_PACKS:Record<string,string>='+JSON.stringify(packs)+';\n');
+const sitemapPaths=['/','/spreadsheet/','/guide/','/faq/','/articles/',...slugs.map(slug=>'/articles/'+slug+'/')];
+await writeFile('.generated/sitemap-paths.ts','// Generated at build time from tracked editorial JSON.\nexport const SITEMAP_PATHS: readonly string[]='+JSON.stringify(sitemapPaths)+';\n');
 console.log('Editorial locales packed:',Object.keys(packs).length);

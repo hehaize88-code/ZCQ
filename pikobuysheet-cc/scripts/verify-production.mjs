@@ -22,7 +22,7 @@ for(const lang of langs)for(const path of paths){
  passed++;
 }
 const sitemap=await app.fetch(new Request(origin+'/sitemap.xml'),{},{});const xml=await sitemap.text();assert.equal(sitemap.status,200);assert.equal((xml.match(/<loc>/g)||[]).length,360);assert.ok(!xml.includes('workers.dev'));
-const robots=await (await app.fetch(new Request(origin+'/robots.txt'),{},{})).text();assert.ok(robots.includes('Allow: /'));assert.ok(robots.includes(origin+'/sitemap-index.xml'));
+const robots=await (await app.fetch(new Request(origin+'/robots.txt'),{},{})).text();assert.ok(robots.includes('Allow: /'));assert.ok(robots.includes(origin+'/sitemap.txt'));
 const preview=await app.fetch(new Request('https://pikobuysheet-cc.hehaize88.workers.dev/articles/'),{},{});assert.equal(preview.headers.get('x-robots-tag'),'noindex, follow');
 const previewRobots=await (await app.fetch(new Request('https://pikobuysheet-cc.hehaize88.workers.dev/robots.txt'),{},{})).text();assert.ok(previewRobots.includes('Disallow: /'));
 const missing=await app.fetch(new Request(origin+'/articles/not-a-real-article/'),{},{});assert.equal(missing.status,404);assert.equal(missing.headers.get('x-robots-tag'),'noindex, follow');

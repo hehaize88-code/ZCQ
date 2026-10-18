@@ -1,9 +1,7 @@
-import { loadEditorial } from './editorial';
+import { SITEMAP_PATHS } from '../../.generated/sitemap-paths';
 
-export async function getSitemapPaths() {
-  const data = await loadEditorial('en');
-  return ['/', '/spreadsheet/', '/guide/', '/faq/', '/articles/',
-    ...data.articles.map(article => '/articles/' + article.slug + '/')];
+export function getSitemapPaths() {
+  return SITEMAP_PATHS;
 }
 
 export function escapeXml(value: string) {
