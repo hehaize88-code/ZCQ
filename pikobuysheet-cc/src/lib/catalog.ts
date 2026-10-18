@@ -1,18 +1,9 @@
 import { parseHTML } from 'linkedom';
+import { createSourceReader } from './source-cache';
 export const ORIGIN='https://findspreadsheet.com';
 export const REGISTER='https://www.pikobuy.com/?mode=register&redirect=/home';
 export const categories=['shoes','hoodies-sweaters','t-shirts','jackets','pants-shorts','headwear','accessories','ShortSets','electronics','other-stuff','jersey'];
-const cache=new Map<string,{at:number,value:string}>();
-export async function upstream(path:string,ttl=180000) {
-  const url=new URL(path,ORIGIN);
-  if(url.origin!==ORIGIN) throw new Error('Invalid source');
-  const hit=cache.get(url.href); if(hit&&Date.now()-hit.at<ttl)return hit.value;
-  const response=await fetch(url,{signal:AbortSignal.timeout(12000),headers:{Accept:'text/html,application/json;q=0.9'}});
-  if(!response.ok)throw new Error(`Source ${response.status}`);
-  const value=await response.text();
-  if(cache.size>90)cache.delete(cache.keys().next().value!);
-  cache.set(url.href,{at:Date.now(),value});return value;
-}
+export const upstream=createSourceReader(ORIGIN);
 export function imageUrl(raw:string|null) {
   if(!raw)return '';try {const u=new URL(raw,ORIGIN);return u.protocol==='https:'?u.href:'';}catch{return '';}
 }
@@ -54,5 +45,5 @@ export async function getProduct(path:string){
  const images=[...new Set([...detail.querySelectorAll('.product-gallery img')].map((im:any)=>imageUrl(im.getAttribute('data-src')||im.getAttribute('src'))).filter(Boolean))];
  return {path,id,title:detail.querySelector('.product-title')?.textContent.trim()||'',images,rawPrice:detail.querySelector('.product-price')?.textContent.trim()||'',related:cards(document)};
 }
-export async function getSku(id:string){if(!/^\d{5,20}$/.test(id))return null;try{return JSON.parse(await upstream('/api/Goods/getSkuData?weidian_id='+id,300000));}catch{return null;}}
-export async function getQc(id:string){if(!/^\d{5,20}$/.test(id))return {status:'unavailable',images:[]};try {const data=JSON.parse(await upstream('/qcradar-qc.php?item='+id,60000));return {status:data.status,images:Array.isArray(data.images)?data.images.filter((im:any)=>imageUrl(im.display)&&!im.isVideo).map((im:any)=>({url:imageUrl(im.display),label:[im.skuLabel,im.agentPlatform,im.takenAt].filter(Boolean).join(' · ')})):[]};}catch{return {status:'unavailable',images:[]};}}
+export async function getSku(id:string){if(!/^\d{5,20}$/.test(id))return null;try{return JSON.parse(await upstream('/api/Goods/getSkuData?weidian_id='+id,300000,0));}catch{return null;}}
+export async function getQc(id:string){if(!/^\d{5,20}$/.test(id))return {status:'unavailable',images:[]};try {const data=JSON.parse(await upstream('/qcradar-qc.php?item='+id,60000,0));return {status:data.status,images:Array.isArray(data.images)?data.images.filter((im:any)=>imageUrl(im.display)&&!im.isVideo).map((im:any)=>({url:imageUrl(im.display),label:[im.skuLabel,im.agentPlatform,im.takenAt].filter(Boolean).join(' · ')})):[]};}catch{return {status:'unavailable',images:[]};}}

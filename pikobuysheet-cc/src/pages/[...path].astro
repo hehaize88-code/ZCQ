@@ -30,9 +30,13 @@ try {
 }catch(e){error=true; console.error("FindSpreadsheet source unavailable", e instanceof Error ? e.message : 'Unknown source error');}
 const rate=await ratePromise;
 if(invalid)Astro.response.status=404;
-if(error)Astro.response.status=503;
+// Product recommendations are optional on the editorial homepage. A source
+// outage must not remove its independent guides, articles and FAQs from search.
+const unavailable=error&&!home;
+if(unavailable){Astro.response.status=503;Astro.response.headers.set('Retry-After','60');}
+if(error)Astro.response.headers.set('Cache-Control','no-store');
 const production=isProductionHost(Astro.url);
-const indexable=production&&!invalid&&!error&&!visual&&!Astro.url.search;
+const indexable=production&&!invalid&&!unavailable&&!visual&&!Astro.url.search;
 const robots=indexable?'index, follow':'noindex, follow';
 Astro.response.headers.set('X-Robots-Tag',robots);
 const url=(path:string)=>localized(lang,path);
