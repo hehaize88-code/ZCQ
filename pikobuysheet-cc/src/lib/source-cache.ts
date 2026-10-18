@@ -1,6 +1,8 @@
-// Ephemeral, per-isolate cache only. Never persist product data or retry a
-// rate-limited source immediately. Stale data is allowed only for transient errors.
-export function createSourceReader(origin:string, transport:typeof fetch=fetch, now=Date.now) {
+export type SourceEntry={at:number,value:string};
+export type SharedSourceCache={get(key:string):Promise<SourceEntry|undefined>,set(key:string,entry:SourceEntry,retentionMs:number):Promise<void>};
+// Ephemeral cache only. Never retry a rate-limited source immediately.
+// Stale data is allowed only for transient errors and retains its original age.
+export function createSourceReader(origin:string, transport:typeof fetch=fetch, now=Date.now,shared?:SharedSourceCache) {
   const cache=new Map<string,{at:number,value:string}>();
   const pending=new Map<string,Promise<string>>();
   const failures=new Map<string,{until:number,error:Error,transient:boolean}>();
@@ -19,8 +21,18 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
   return async function read(path:string,ttl=180000,staleMs=720000):Promise<string>{
     const url=new URL(path,origin);
     if(url.origin!==origin)throw new Error('Invalid source');
-    const key=url.href,hit=cache.get(key);
+    const key=url.href;
+    let hit=cache.get(key);
     if(hit&&now()-hit.at<ttl)return hit.value;
+    if(shared&&staleMs>0){
+      try {
+        const entry=await shared.get(key);
+        if(entry&&entry.at<=now()&&now()-entry.at<ttl+staleMs&&(!hit||entry.at>hit.at)){
+          hit=entry;cache.delete(key);cache.set(key,entry);trim(cache);
+        }
+      }catch{/* Cache service failure must not fail the source request. */}
+      if(hit&&now()-hit.at<ttl)return hit.value;
+    }
     const stale=()=>hit&&now()-hit.at<ttl+staleMs?hit.value:undefined;
     const failure=failures.get(key);
     if(now()<originRetryAt||(failure&&now()<failure.until)){
@@ -54,7 +66,11 @@ export function createSourceReader(origin:string, transport:typeof fetch=fetch, 
           throw failure;
         }
         failures.delete(key);
-        cache.delete(key);cache.set(key,{at:now(),value});trim(cache);
+        const entry={at:now(),value};
+        cache.delete(key);cache.set(key,entry);trim(cache);
+        if(shared&&staleMs>0&&!/\b(private|no-store|no-cache)\b/i.test(response.headers.get('Cache-Control')||'')){
+          try {await shared.set(key,entry,ttl+staleMs);}catch{/* Memory cache still works. */}
+        }
         return value;
       })().finally(()=>pending.delete(key));
       pending.set(key,request);

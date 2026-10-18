@@ -34,6 +34,28 @@ assert.equal(await networkRead('/AllProducts/',100,300),'verified data');
 assert.equal(await networkRead('/AllProducts/',100,300),'verified data');
 assert.equal(networkCalls,2);
 
+// A new Worker isolate must reuse an existing public source response rather
+// than immediately hitting the same rate-limited origin for another locale.
+let sharedTime=100000,sharedFetches=0;
+const sharedEntries=new Map();
+const shared={get:async key=>sharedEntries.get(key),set:async(key,value)=>{sharedEntries.set(key,value);}};
+const warm=createSourceReader(origin,async()=>new Response('real shared catalog'),()=>sharedTime,shared);
+assert.equal(await warm('/AllProducts/',100,300),'real shared catalog');
+const cold=createSourceReader(origin,async()=>{sharedFetches++;return new Response('limited',{status:429});},()=>sharedTime,shared);
+assert.equal(await cold('/AllProducts/',100,300),'real shared catalog');
+assert.equal(sharedFetches,0,'cold isolate uses fresh edge response');
+sharedTime+=101;
+assert.equal(await cold('/AllProducts/',100,300),'real shared catalog');
+assert.equal(sharedFetches,1,'transient failure can use shared stale response');
+assert.equal(sharedEntries.get(origin+'/AllProducts/').at,100000,'reads never reset source age');
+sharedTime=100401;
+await assert.rejects(cold('/AllProducts/',100,300),/Source 429/,'shared data cannot outlive its stale bound');
+const privateRead=createSourceReader(origin,async()=>new Response('private',{headers:{'Cache-Control':'private, no-store'}}),()=>sharedTime,shared);
+await privateRead('/private/');assert.equal(sharedEntries.has(origin+'/private/'),false);
+const brokenCache={get:async()=>{throw new Error('cache unavailable');},set:async()=>{throw new Error('cache unavailable');}};
+const uncached=createSourceReader(origin,async()=>new Response('real uncached catalog'),()=>sharedTime,brokenCache);
+assert.equal(await uncached('/AllProducts/'),'real uncached catalog');
+
 // Exercise the actual production bundle with an unavailable, cold source.
 const previousFetch=globalThis.fetch,previousError=console.error;
 let sourceCalls=0,sourceErrors=0;
@@ -77,8 +99,10 @@ try {
   assert.equal(detail.status,503);await detail.arrayBuffer();
   const preview=await app.fetch(new Request('https://pikobuysheet-cc.hehaize88.workers.dev/'),{},{});
   assert.equal(preview.headers.get('x-robots-tag'),'noindex, follow');await preview.arrayBuffer();
-  const invalid=await app.fetch(new Request(site+'/not-found/'),{},{});
-  assert.equal(invalid.status,404);await invalid.arrayBuffer();
+  for(const path of ['/not-found/','/__internal-source-cache/v1/%2FAllProducts%2F']){
+    const invalid=await app.fetch(new Request(site+path),{},{});
+    assert.equal(invalid.status,404);await invalid.arrayBuffer();
+  }
   assert.equal(sourceCalls,2,'a cold outage triggers only initial catalog and rate requests');
   assert.ok(sourceErrors>=48);
 } finally {globalThis.fetch=previousFetch;console.error=previousError;}
