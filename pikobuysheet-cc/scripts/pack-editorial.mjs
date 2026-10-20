@@ -32,5 +32,5 @@ await writeFile('.generated/sitemap-paths.ts','// Generated at build time from t
 const escapeXml=value=>value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
 const sitemapUrls=sitemapPaths.flatMap(path=>locales.map(locale=>'https://pikobuysheet.cc'+(locale==='en'?'':'/'+locale)+path));
 const sitemapXml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+sitemapUrls.map(url=>'  <url><loc>'+escapeXml(url)+'</loc></url>').join('\n')+'\n</urlset>\n';
-await writeFile('.generated/sitemap-response.mjs','// Generated at build time; served directly by the Worker entrypoint.\nexport const SITEMAP_XML='+JSON.stringify(sitemapXml)+';\nexport const SITEMAP_BYTES='+Buffer.byteLength(sitemapXml)+';\n');
+await writeFile('.generated/sitemap-response.mjs','// Generated at build time for the Worker fallback and static crawler files.\nexport const SITEMAP_XML='+JSON.stringify(sitemapXml)+';\nexport const SITEMAP_BYTES='+Buffer.byteLength(sitemapXml)+';\nexport const SITEMAP_URLS='+JSON.stringify(sitemapUrls)+';\n');
 console.log('Editorial locales packed:',Object.keys(packs).length);
