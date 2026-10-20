@@ -49,3 +49,12 @@ Updated: 2026-10-18
 - Browser showed the complete homepage with real source product photos, 24 languages and all primary navigation.
 - Important live data limitation: search and product details returned 503 during final checks. Cloudflare's real-time logs identified upstream FindSpreadsheet HTTP429 rate limiting. The original preview search also returned503, while a normal direct source request returned200/60 products. Do not describe search/details as fully verified or change main-site security rules without a separately authorized plan.
 - QC and image search retain their existing honest unavailable states. No new data store or admin was created.
+
+
+## Connectivity recheck, 2026-10-20
+
+- Responding to the user's report that the site could not connect. The supplied screenshot could not be recovered from its attachment path; the affected URL/error screen is therefore not yet identified.
+- Independent current HTTP checks: apex homepage 200, FAQ 200, www/faq/ 301 to the apex FAQ, production workers.dev FAQ 200. Google public DNS returned Status0 and two A records for the apex.
+- One search request for socks returned503 with the honest source-unavailable message. The known Orb Graphic Crew Socks detail returned200. Do not conflate this search failure with an inability to connect to the entire domain, or assume all commerce routes are failing.
+- No root cause for the user's specific connection error is established. Current Cloudflare connector did not complete; the browser connector reported that the originating connected browser context was unavailable. A fresh screenshot containing the URL or the exact URL/error code is needed to match the user's failure.
+- No DNS, TLS, security rule, application source, existing cache binding, or sitemap configuration was changed during this check.
