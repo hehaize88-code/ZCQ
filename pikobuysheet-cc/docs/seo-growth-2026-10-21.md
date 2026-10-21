@@ -42,3 +42,7 @@ No fabricated ratings, product tests, delivery promises or live fee quotations. 
 Compare impressions and clicks by page/query after new data arrives. Watch non-homepage organic landing pages, the two category groups, and the three intent events. Tiny initial samples do not establish an uplift. Event delivery depends on the visitor's browser and analytics availability; local tests do not establish GA4 ingestion.
 
 The prior GSC sitemap processing error remains unresolved: public fetch success and deploy validation do not prove Google's background processing or indexing. Bing's last research snapshot reported the stable sitemap successful with 360 discovered URLs from its earlier crawl. Do not describe all 504 URLs as indexed, and do not keep renaming sitemap endpoints.
+
+## Live deployment verification
+
+Source commit: `6b6ca48c335f5358fcf6ac3dc98d01fc8f3010fa`. Remote tree matches the validated local tree exactly. Public primary sitemap returned HTTP200 and all 504 expected URLs, byte-for-byte matching the build. A further 45 live page checks passed, covering every locale's new fee guide, six homepages, twelve category pages and selected new/revised English guides. Actual localized content, canonical, hreflang and robots were checked. Desktop and 390px mobile article views passed; English-to-German language switching retained the article, and its category link opened the correct localized shoe page with 60 live source cards. This verifies publication, not Google indexing or GA4 ingestion.
