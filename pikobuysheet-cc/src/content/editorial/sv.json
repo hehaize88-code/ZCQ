@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Artiklar",
     "articlesTitle": "Köpguider för Pikobuy",
-    "articlesIntro": "Tio praktiska guider för att hitta produkter, kontrollera detaljer och planera din beställning. Börja med beslutet du står inför.",
+    "articlesIntro": "Praktiska Pikobuy-guider om produkter, storlekar, kostnader, frakt och returer. Välj ämne, kontrollera uppgifterna och planera nästa steg.",
     "faqTitle": "Vanliga frågor om Pikobuy",
     "faqIntro": "Tydliga svar om produktlänkar, lagerbilder, frakt och returer. Plattformens uppgifter kontrolleras mot Pikobuys egna sidor; funktionerna på vår webbplats förklaras separat.",
     "faqSearch": "Sök bland vanliga frågor",
@@ -76,7 +76,18 @@
         "body": "Spara paketreferensen och skilj säljarleverans, lagermottagning och internationell spårning åt. Kontakta officiell support med relevant beställnings- eller paket-ID om en uppdatering behöver förklaras."
       }
     ],
-    "menu": "Meny"
+    "menu": "Meny",
+    "homeTitle": "Pikobuy Spreadsheet — Skor, huvtröjor och köpguider",
+    "quickAnswer": "Börja här",
+    "categoryTitles": [
+      "Pikobuy: skor och sneakers i produktkatalogen",
+      "Pikobuy: huvtröjor och tröjor i produktkatalogen"
+    ],
+    "categoryIntros": [
+      "Bläddra bland skor från FindSpreadsheet och jämför exakt storlek, originallänk och tillgängliga bilder. Katalogpriser är uppskattningar; bekräfta paret och frakten separat hos Pikobuy.",
+      "Utforska huvtröjor och tröjor från FindSpreadsheet. Jämför plaggmått, materialuppgifter och färg innan du öppnar annonsen i Pikobuy. En storleksetikett räcker inte för att avgöra passformen."
+    ],
+    "homeHeadline": "Produktkatalog."
   },
   "faq": [
     {
@@ -431,13 +442,15 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Köpguide",
-      "title": "Pikobuys beställningsguide: från första produktlänken till paketbeställningen",
-      "description": "Förstå inköpsstegen och den internationella frakten med praktiska kontroller av varianter, lagerunderlag och paketkostnader.",
-      "intro": "En beställning via en inköpsagent innehåller flera beslut vid olika tidpunkter. Att välja en produkt, köpa den från en säljare, granska ankomsten till lagret och ordna internationell leverans hänger ihop men är inte samma handling. Pikobuys offentliga köpguide beskriver köpbetalning först och internationell fraktbetalning senare. Att förstå ordningen är mer användbart än att memorera ett utlovat antal leveransdagar. Artikeln följer köparens väg och förklarar vad som ska kontrolleras före nästa steg. Det är en förberedelseguide baserad på offentlig information och egna beslutschecklistor, inte en redogörelse för ett testköp. Din aktuella beställningsvy och villkoren för valda tjänster är fortfarande platsen för att bekräfta specifika avgifter och alternativ.",
+      "title": "Så beställer du på Pikobuy: produktlänkar, QC och frakt",
+      "description": "Hitta produkten, kontrollera länken och varianten och beställ hos Pikobuy.",
+      "intro": "Hitta produkten, kontrollera länken och varianten och beställ hos Pikobuy. Granska dina egna lagerbilder innan du väljer emballage och betalar internationell frakt. Betalningen för produkten och den senare paketbetalningen är separata beslut.",
       "sections": [
         {
           "heading": "Förbered destinationen och artikelkraven",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Förbered destinationen och artikelkraven",
+        "Använd sökinformationen för att nå den officiella produktsidan",
+        "Granska specifikationen före första betalningen"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Kvalitetskontroller",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Storlekar",
@@ -728,14 +752,18 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Frakt",
-      "title": "Pikobuys fraktkostnader: skapa en användbar uppskattning före köpet",
-      "description": "Förbered indata till Pikobuys fraktkalkylator, jämför realistiska paketscenarier och skilj uppskattad frakt från en bekräftad slutlig offert.",
-      "intro": "En användbar Pikobuy-fraktuppskattning dokumenterar ett visst paket, en destination och en uppsättning antaganden. Den är inget permanent kilopris. Gör paketbeskrivningen tillräckligt konsekvent för en meningsfull jämförelse innan du jämför rutter. Guiden ger ett arbetsblad för indata, ett sätt att jämföra packningsscenarier och en slutlig granskningsprocess. Alla exempel nedan är hypotetiska och visar en metod; de är inte Pikobuy-offerter eller förutsägelser om din försändelse.",
+      "title": "Pikobuy fraktkostnad: kalkylator, vikt, mått och avgifter",
+      "description": "Ange destination, produkttyp, vikt i kilogram och det packade paketets mått i centimeter i den officiella kalkylatorn.",
+      "intro": "Ange destination, produkttyp, vikt i kilogram och det packade paketets mått i centimeter i den officiella kalkylatorn. Jämför fraktalternativ med samma uppgifter. Produktpriset och en tidig fraktuppskattning är inte den slutliga kostnaden fram till leverans.",
       "sections": [
         {
           "heading": "Börja med den officiella kalkylatorns indata",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Börja med den officiella kalkylatorns indata",
+        "Skilj produktvikt från det packade paketet",
+        "Använd konsekventa enheter och mätmetoder"
       ]
     },
     {
@@ -887,13 +923,15 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Efter köpet",
-      "title": "Returer och återbetalningar hos Pikobuy: förbered ett lagerbeslut",
-      "description": "Kontrollera returmöjlighet, bevara artikelunderlag och klargör kostnader innan du begär lagerretur eller avbeställning hos Pikobuy.",
-      "intro": "En användbar returbegäran börjar med den faktiska artikeln, aktuellt beställningssteg och en precis problembeskrivning. En allmän policyrubrik avgör inte varje fall. Guiden förklarar hur du organiserar underlag och begär ett tydligt resultat utan att anta gratis eller garanterad retur. Den bygger på den offentliga policy som granskats för guiden och en egen praktisk checklista; den är inte en rapport om en retur vi själva genomfört.",
+      "title": "Pikobuy returer och återbetalningar: villkor, avgifter och steg",
+      "description": "Kontrollera ordersteg, säljarens returvillkor och lagerfristen innan du ansöker.",
+      "intro": "Kontrollera ordersteg, säljarens returvillkor och lagerfristen innan du ansöker. Behåll etiketter, emballage och tydliga belägg för problemet. Be om en uppdelning av kostnad och återbetalning; en inskickad begäran är inte säljarens godkännande.",
       "sections": [
         {
           "heading": "Identifiera beställningen och dess aktuella steg",
@@ -966,13 +1004,20 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Identifiera beställningen och dess aktuella steg",
+        "Se lagerfristen som en uppmaning att agera",
+        "Beskriv problemet som en observerbar skillnad"
       ]
     },
     {
       "category": "Frakt",
-      "title": "Pikobuy-spårning: identifiera steget och dokumentera underlaget",
-      "description": "Skilj säljarleverans, lagerbehandling och internationell spårning åt och förbered en tydlig supportfråga när en Pikobuy-uppdatering saknas.",
-      "intro": "Ett Pikobuy-köp kan ha flera referenser och väntetider innan det når dig. Första användbara steget när spårningen är tyst är att identifiera vilket skede du ser. Säljarens inrikesleverans, en lagermottagning och en internationell paketuppdatering beskriver olika händelser. Guiden ger en praktisk statuslogg och stegvisa kontroller utan att hitta på ankomstdatum eller hävda tillgång till din privata beställning.",
+      "title": "Pikobuy-spårning utan uppdatering? Order- och paketstatus",
+      "description": "Identifiera först steget: säljarleverans, lagerhantering eller internationell transport.",
+      "intro": "Identifiera först steget: säljarleverans, lagerhantering eller internationell transport. Ett ordernummer är inte alltid transportörens spårningsnummer. Spara senaste händelsen och tiden, kontrollera rätt officiellt register och fråga supporten om det specifika steg som saknas.",
       "sections": [
         {
           "heading": "Välj referensen som motsvarar frågan",
@@ -1045,13 +1090,20 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Välj referensen som motsvarar frågan",
+        "Skilj inköp från säljarens avsändning",
+        "Behandla lagermottagning som en egen händelse"
       ]
     },
     {
       "category": "Efterforskning",
-      "title": "Checklista för att bedöma Pikobuy: granska underlaget innan du betalar",
-      "description": "Bedöm Pikobuy-information, produktannonser, betalningsdetaljer, kontrollbegränsningar och fraktantaganden utan påhittade recensioner eller betyg.",
-      "intro": "Sökningar om huruvida Pikobuy är legitimt eller säkert efterfrågar ofta ett enda omdöme, men flera olika beslut ingår: identifiera den officiella tjänsten, kontrollera säljarens artikel, förstå betalningen och granska fraktplanen. Artikeln är en underlagschecklista, inte en recension av ett eget köp eller ett betyg. Den förklarar vad offentlig information kan fastställa, vad som behöver beställningsspecifik bekräftelse och hur du avgör vilka obesvarade frågor som är viktiga före betalning.",
+      "title": "Är Pikobuy pålitligt? Kontrollera detta före köp",
+      "description": "En katalogannons eller positiv recension garanterar inte din beställning.",
+      "intro": "En katalogannons eller positiv recension garanterar inte din beställning. Kontrollera officiell domän, säljarens artikel, betalningsvillkor, lagerunderlag och returvillkor var för sig. Guiden är en checklista, inte ett personligt test eller säkerhetsbetyg.",
       "sections": [
         {
           "heading": "Skilj plattform, säljare och oberoende guide",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Skilj plattform, säljare och oberoende guide",
+        "Verifiera målsidan innan du anger kontouppgifter",
+        "Läs omdömen som underlag med begränsad räckvidd"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Produkter och beställningar",
+      "title": "Hitta sneakers på Pikobuy: storlekar, bilder och länkar",
+      "description": "Använd Pikobuys skokatalog för en kortlista och kontrollera varje par i originalannonsen.",
+      "intro": "Använd Pikobuys skokatalog för en kortlista och kontrollera varje par i originalannonsen. Börja med passform, exakt variant och fraktbudget. Fina bilder och ett lågt katalogpris besvarar inte de frågorna på egen hand.",
+      "checks": [
+        "Matcha originalets artikel-ID, färg och storlek.",
+        "Jämför måtten med ett par som passar.",
+        "Granska dina lagerbilder innan emballaget ändras."
+      ],
+      "sections": [
+        {
+          "heading": "Hitta rätt skoannons",
+          "paragraphs": [
+            "Öppna skokollektionen och välj några alternativ med tydliga produktlänkar. Anteckna artikel-ID, färg och prisets valuta. Liknande bilder kan avse olika säljare eller varianter. Öppna originalannonsen igen före köp eftersom tillgänglighet och alternativ kan ändras."
+          ]
+        },
+        {
+          "heading": "Välj storlek med jämförbara mått",
+          "paragraphs": [
+            "Mät båda fötterna och använd den större som referens, och läs sedan tabellen för just annonsen. Anta inte att EU-storlekar omräknas lika hos alla säljare. Om innersulans längd anges, fråga hur den mättes; den är inte automatiskt rekommenderad fotlängd."
+          ]
+        },
+        {
+          "heading": "Tolka bilder inom deras begränsningar",
+          "paragraphs": [
+            "Jämför båda skorna, storleksetiketter, beställd färg, sömmar och synliga sulkanter. Be om en närbild av otydliga områden. Katalogbilder visar annonsen; lagerbilder ska motsvara din egen order. Inga av dem bevisar långvarig komfort, äkthet eller hållbarhet."
+          ]
+        },
+        {
+          "heading": "Bestäm om kartongen efter kontrollen",
+          "paragraphs": [
+            "En skokartong påverkar paketmåtten och kan skydda skorna. Kontrollera returvillkor och krav på intakta etiketter, förseglingar eller tillbehör innan den tas bort. Jämför kostnad med kartong och mindre emballage utifrån verkliga mått när de finns, utan att anta en bestämd besparing."
+          ]
+        },
+        {
+          "heading": "Jämför hela kostnaden",
+          "paragraphs": [
+            "Håll produktpris, inrikesleverans, internationell frakt och visade tillval i separata kolumner. Använd samma destination och packningsantaganden för båda paren. Om frakten för ett blandat paket delas lika måste det framgå att detta endast är din budgetmetod."
+          ]
+        },
+        {
+          "heading": "Köp, fråga eller sök vidare",
+          "paragraphs": [
+            "Gå vidare när artikel och storlek är tydliga och summan ryms i budgeten. Ställ en konkret fråga om ett mått eller en bild saknas. Om annonsen ändras eller svaret förblir oklart, sök vidare. Spara originallänken och det slutliga variantvalet för senare jämförelse."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Produkter och beställningar",
+      "title": "Pikobuy huvtröjor: mått, material och passform",
+      "description": "En användbar kortlista jämför plaggmått, materialuppgifter och önskad passform.",
+      "intro": "En användbar kortlista jämför plaggmått, materialuppgifter och önskad passform. Börja med en huvtröja du redan gillar, inte bara din vanliga S, M eller L. Spara annons och variant tillsammans så att lagerkontrollen gäller samma plagg.",
+      "checks": [
+        "Mät en referenströja plant utan att sträcka den.",
+        "Skilj fibersammansättning från tygets ytvikt.",
+        "Jämför beställd färg och mått på lagret."
+      ],
+      "sections": [
+        {
+          "heading": "Bestäm vilken modell du vill ha",
+          "paragraphs": [
+            "Bläddra bland huvtröjor och tröjor och skilj dragkedjemodeller från överdragströjor samt smala från vida snitt. Bestäm användning: lager på lager, kort silhuett eller vardag. Att jämföra olika snitt enbart efter storleksetiketten ger en missvisande kortlista."
+          ]
+        },
+        {
+          "heading": "Anteckna fyra referensmått",
+          "paragraphs": [
+            "Lägg en välpassande tröja plant utan att dra ut den. Mät bröstbredd, kroppslängd, axelbredd och ärmlängd och ange mätpunkterna. Jämför med säljarens skiss. Bröstbredd tvärs över plagget är inte samma värde som bröstomkrets."
+          ]
+        },
+        {
+          "heading": "Oversize beskriver form",
+          "paragraphs": [
+            "Nedhasade axlar och en bred kropp ändrar hur ärmlängden ska förstås. Kontrollera också kroppslängden: en större storlek kan bli längre än önskat. Om ett viktigt mått saknas, be om förtydligande i stället för att alltid välja en storlek större."
+          ]
+        },
+        {
+          "heading": "Läs vad materialuppgifterna betyder",
+          "paragraphs": [
+            "Sammansättningen beskriver fibrer; GSM anger tygets massa per yta. Inget av detta bevisar ensamt värme, mjukhet eller krymptålighet. Fråga om angiven vikt avser GSM eller hela plagget. Följ tillgänglig tvättetikett och dra inte slutsatser om tvättresultat från bilder."
+          ]
+        },
+        {
+          "heading": "Kontrollera tröjan före avsändning",
+          "paragraphs": [
+            "Matcha färg och storleksetikett och granska sömmar, muddar, nederkant, huva och eventuell dragkedja. Jämför måttbilder med din metod. Ljus kan förändra färgintrycket; fråga om en konkret avvikelse. Behåll etiketter och emballage medan retur eller byte övervägs."
+          ]
+        },
+        {
+          "heading": "Budgetera för det packade plagget",
+          "paragraphs": [
+            "En skrymmande huvtröja kan påverka både paketets mått och vikt. Jämför den officiella uppskattningen med andra artiklar under samma destinations- och packningsantaganden. Bestäm först när passformen är utredd; ett lägre pris är inte bättre värde om måtten är okända."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Frakt och spårning",
+      "title": "Pikobuy avgifter: produktpris, betalning och frakt",
+      "description": "Produktpriset är bara en del av Pikobuy-budgeten.",
+      "intro": "Produktpriset är bara en del av Pikobuy-budgeten. Skilj köpet från internationell frakt och kontrollera varje avgift och valuta. Ingen totalsumma passar alla säljare, destinationer, betalningsmetoder och paket.",
+      "checks": [
+        "Anteckna belopp, valuta och steg för varje kostnad.",
+        "Skilj fraktuppskattningar från betalda belopp.",
+        "Räkna varje post en gång, även redan inkluderade tjänster."
+      ],
+      "sections": [
+        {
+          "heading": "Skilj de två betalningsstegen",
+          "paragraphs": [
+            "Den officiella guiden skiljer köpet från betalning för internationell transport. För en enkel lista över planerade, offererade och betalda belopp. En kontopåfyllning är inte automatiskt ytterligare produktkostnad; stäm av den mot vad saldot faktiskt används till."
+          ]
+        },
+        {
+          "heading": "Läs beställningens kostnadsrader",
+          "paragraphs": [
+            "Anteckna variantens pris, antal och visade inrikes- eller serviceavgifter för ordern. Kontrollera om totalen redan omfattar en post innan du lägger till den igen. Spara aktuell uppdelning; ett katalogestimat eller omräknat pris är ingen faktura."
+          ]
+        },
+        {
+          "heading": "Kontrollera växling och betalningsavgifter",
+          "paragraphs": [
+            "Jämför debiteringsvaluta, växelkurs och avgifter som plattformen eller betaltjänsten visar före bekräftelse. Katalogens omräkning kan avvika från bankens slutliga debitering. Jämför betalningsmetoder för samma köpbelopp och anteckna när respektive offert hämtades."
+          ]
+        },
+        {
+          "heading": "Lägg till en konsekvent fraktuppskattning",
+          "paragraphs": [
+            "Använd destination, produkttyp, kilogram och packade mått i centimeter i den officiella kalkylatorn. Redovisa valbart emballage eller skydd separat när det visas. Läs vad fraktalternativet omfattar; ett lockande namn innebär inte att alla destinationsavgifter ingår."
+          ]
+        },
+        {
+          "heading": "Ett budgetexempel är ingen prisuppgift",
+          "paragraphs": [
+            "Påhittat exempel i samma valuta: produkt 200 + inrikesleverans 10 + internationell frakt 120 + visad betalningsavgift 5 = 335. Siffrorna visar addition, inte Pikobuys priser. Lägg bara till kostnader som faktiskt gäller och markera obekräftade belopp som okända."
+          ]
+        },
+        {
+          "heading": "Stäm av ändringar och återbetalningar",
+          "paragraphs": [
+            "Ersätt uppskattningarna med slutliga avgifter när ordern fortskrider. Registrera återbetalningar separat och kontrollera var de krediteras innan de räknas som återförda till ursprungligt betalningssätt. Jämför nettokostnaden med budgeten och identifiera skillnader i pris, emballage, valuta eller tillval."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

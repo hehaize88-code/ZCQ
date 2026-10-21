@@ -106,7 +106,7 @@ try {
     const response=await app.fetch(new Request(site+path),{},{});
     assert.equal(response.status,200,path);
     const text=await response.text();
-    if(path==='/sitemap-main.xml')assert.equal((text.match(/<loc>/g)||[]).length,384);
+    if(path==='/sitemap-main.xml')assert.equal((text.match(/<loc>/g)||[]).length,504);
   }
   const detail=await app.fetch(new Request(site+'/products/shoes/test-product-123.html'),{},{});
   assert.equal(detail.status,503);await detail.arrayBuffer();

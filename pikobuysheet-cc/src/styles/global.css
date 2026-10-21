@@ -191,3 +191,10 @@
 }
 
 .detail-summary-notice{font-size:.875rem;line-height:1.5;padding:12px 14px;margin:12px 0;background:#fff6df;border-left:3px solid #d4a934;color:#57451d;border-radius:4px}
+
+/* Decision summaries and indexable category introductions, shared by all locales. */
+.quick-answer{background:#e9f5f0;border:1px solid #c5dfd2;border-radius:10px;padding:20px;margin-bottom:28px}
+.quick-answer h2{font-size:21px}.quick-answer ul{margin:10px 0 16px}.quick-answer .text-link{font-size:14px}
+.collection-intro{padding-top:30px;padding-bottom:10px}.collection-intro h1{font-size:clamp(28px,4vw,43px);line-height:1.18;max-width:850px;margin-bottom:14px;overflow-wrap:anywhere}
+.collection-intro>p{max-width:800px;line-height:1.7}.collection-intro ul{display:flex;gap:12px 30px;flex-wrap:wrap;padding-left:18px;max-width:1020px;font-size:14px}.collection-intro .text-link{margin-top:8px}
+@media(max-width:650px){.quick-answer{padding:13px 12px;margin-bottom:20px}.quick-answer h2{font-size:19px}.quick-answer li{font-size:14px}.collection-intro{padding-top:18px}.collection-intro h1{font-size:27px;margin-bottom:10px}.collection-intro>p{font-size:14px;line-height:1.6}.collection-intro ul{display:block;font-size:13px}.collection-intro li{margin-bottom:6px}.hero h1{font-size:clamp(30px,8vw,44px);overflow-wrap:anywhere}}

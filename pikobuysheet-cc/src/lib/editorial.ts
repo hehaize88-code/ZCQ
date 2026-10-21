@@ -1,7 +1,7 @@
 import { EDITORIAL_PACKS } from '../../.generated/editorial-packs';
 export const SOURCE_URLS:Record<string,string>={guide:'https://www.pikobuy.com/guide',home:'https://www.pikobuy.com/home',shipping:'https://www.pikobuy.com/protocol/shipping',returns:'https://www.pikobuy.com/protocol/returns',estimate:'https://www.pikobuy.com/shipping-cost',contact:'https://www.pikobuy.com/contact',about:'https://www.pikobuy.com/About',terms:'https://www.pikobuy.com/protocol/terms',privacy:'https://www.pikobuy.com/protocol/privacy'};
 export type EditorialSection={heading:string,paragraphs:string[],bullets?:string[]};
-export type EditorialArticle={slug:string,category:string,title:string,description:string,intro:string,sections:EditorialSection[],sourceIds:string[],related:string[]};
+export type EditorialArticle={slug:string,category:string,title:string,description:string,intro:string,sections:EditorialSection[],sourceIds:string[],related:string[],checks?:string[],published?:string,modified?:string,collection?:string|null};
 export type Faq={id:string,group:string,q:string,a:string,sourceIds:string[],related?:string};
 export type EditorialData={ui:Record<string,any>,faq:Faq[],articles:EditorialArticle[]};
 const decoded=new Map<string,Promise<EditorialData>>();

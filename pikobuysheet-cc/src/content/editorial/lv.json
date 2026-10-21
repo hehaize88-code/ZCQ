@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Raksti",
     "articlesTitle": "Pikobuy pirkšanas ceļveži",
-    "articlesIntro": "Desmit praktiski ceļveži preču atrašanai, informācijas pārbaudei un pasūtījuma plānošanai. Sāciet ar lēmumu, kas jāpieņem tagad.",
+    "articlesIntro": "Praktiski Pikobuy ceļveži par precēm, izmēriem, izmaksām, piegādi un atgriešanu. Izvēlies tēmu, pārbaudi informāciju un plāno nākamo soli.",
     "faqTitle": "Pikobuy biežāk uzdotie jautājumi",
     "faqIntro": "Skaidras atbildes par preču saitēm, noliktavas fotoattēliem, sūtīšanu un atgriešanu. Platformas informācija tiek pārbaudīta Pikobuy lapās; mūsu vietnes funkcijas skaidrojam atsevišķi.",
     "faqSearch": "Meklēt jautājumos",
@@ -76,7 +76,18 @@
         "body": "Saglabājiet sūtījuma numuru un nošķiriet pārdevēja piegādi, saņemšanu noliktavā un starptautisko izsekošanu. Ja atjauninājumam vajadzīgs skaidrojums, sazinieties ar oficiālo atbalstu un norādiet attiecīgo pasūtījuma vai sūtījuma ID."
       }
     ],
-    "menu": "Izvēlne"
+    "menu": "Izvēlne",
+    "homeTitle": "Pikobuy Spreadsheet — Apavi, džemperi un pirkšanas ceļveži",
+    "quickAnswer": "Sāc šeit",
+    "categoryTitles": [
+      "Pikobuy: apavu un sporta apavu katalogs",
+      "Pikobuy: džemperu un jaku ar kapuci katalogs"
+    ],
+    "categoryIntros": [
+      "Apskati FindSpreadsheet apavus un salīdzini precīzu izmēru, sākotnējo saiti un fotogrāfijas. Kataloga cenas ir aplēses; izvēlēto pāri un piegādi atsevišķi apstiprini Pikobuy.",
+      "Apskati FindSpreadsheet džemperus un jakas ar kapuci. Pirms piedāvājuma atvēršanas Pikobuy salīdzini apģērba mērījumus, audumu un krāsu. Izmēra etiķete viena pati nenosaka piegulumu."
+    ],
+    "homeHeadline": "Preču katalogs."
   },
   "faq": [
     {
@@ -431,14 +442,16 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-ordering-guide",
       "category": "Pirkšanas ceļvedis",
-      "title": "Pikobuy pasūtīšanas ceļvedis: no pirmās preces saites līdz sūtījuma iesniegšanai",
-      "description": "Izprotiet pirkšanas un starptautiskās piegādes posmus ar praktiskām variantu, noliktavas pierādījumu un sūtījuma izmaksu pārbaudēm.",
-      "intro": "Pasūtījums caur starpnieku ietver vairākus lēmumus, kas notiek dažādos laikos. Preces izvēle, pirkšana no pārdevēja, tās ierašanās noliktavā pārskatīšana un starptautiskās piegādes organizēšana ir saistītas, bet nav viena un tā pati darbība. Pikobuy publiskais iepirkšanās ceļvedis vispirms apraksta pirkuma maksājumu un vēlāk starptautiskās piegādes maksājumu. Izprast šo secību ir noderīgāk nekā iegaumēt solītu piegādes dienu skaitu. Raksts seko pircēja ceļam un skaidro, ko pārbaudīt pirms turpināšanas. Tas ir sagatavošanās ceļvedis, kas balstīts publiskā informācijā un oriģinālos lēmumu pārbaudes sarakstos, nevis izmēģinājuma pirkuma apraksts. Konkrētas maksas un variantus joprojām jāapstiprina pašreizējā pasūtījuma ekrānā un izvēlētajiem pakalpojumiem piemērojamajos noteikumos.",
+      "title": "Kā pasūtīt Pikobuy: preču saites, QC un piegāde",
+      "description": "Atrodi preci, pārbaudi saiti un variantu un pasūti Pikobuy.",
+      "intro": "Atrodi preci, pārbaudi saiti un variantu un pasūti Pikobuy. Pirms iepakojuma izvēles un starptautiskās piegādes apmaksas apskati sava pasūtījuma noliktavas fotogrāfijas. Preces apmaksa un vēlākā pakas apmaksa ir atsevišķi lēmumi.",
       "sections": [
         {
           "heading": "Sagatavojiet galamērķi un preces prasības",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Sagatavojiet galamērķi un preces prasības",
+        "Ar meklēšanas informāciju sasniedziet oficiālo preces lapu",
+        "Pirms pirmā maksājuma pārskatiet specifikāciju"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-qc-photo-guide",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-sizing-guide",
@@ -728,15 +752,19 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-shipping-cost",
       "category": "Piegāde",
-      "title": "Pikobuy piegādes izmaksas: pirms pirkšanas izveidojiet noderīgu aplēsi",
-      "description": "Sagatavojiet Pikobuy piegādes kalkulatora datus, salīdziniet reālistiskus sūtījumu scenārijus un nošķiriet aplēsto pārvadāšanu no apstiprināta galīgā piedāvājuma.",
-      "intro": "Noderīga Pikobuy piegādes aplēse ir konkrētas pakas, galamērķa un pieņēmumu kopuma ieraksts. Tā nav nemainīga cena kilogramā. Pirms maršrutu salīdzināšanas padariet pakas aprakstu pietiekami konsekventu, lai salīdzinājumam būtu nozīme. Ceļvedis dod ievaddatu darblapu, iepakošanas scenāriju salīdzināšanas metodi un galīgās pārskatīšanas procesu. Katrs turpmākais piemērs ir hipotētisks un demonstrē metodi; tas nav Pikobuy piedāvājums vai jūsu sūtījuma prognoze.",
+      "title": "Pikobuy piegādes cena: kalkulators, svars, izmēri un maksas",
+      "description": "Oficiālajā kalkulatorā ievadi galamērķi, preces veidu, svaru kilogramos un iepakota sūtījuma izmērus centimetros.",
+      "intro": "Oficiālajā kalkulatorā ievadi galamērķi, preces veidu, svaru kilogramos un iepakota sūtījuma izmērus centimetros. Maršrutus salīdzini ar vienādiem datiem. Preces cena un sākotnējā transporta aplēse nav piegādāta pasūtījuma galīgā kopsumma.",
       "sections": [
         {
           "heading": "Sāciet ar oficiālajiem aplēses ievaddatiem",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Sāciet ar oficiālajiem aplēses ievaddatiem",
+        "Nošķiriet preces svaru no iepakotas pakas",
+        "Saglabājiet konsekventas mērvienības un mērīšanas metodes"
       ]
     },
     {
@@ -887,14 +923,16 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-returns-refunds",
       "category": "Pēcpārdošana",
-      "title": "Pikobuy atgriešana un atmaksa: sagatavojiet noliktavas lēmumu",
-      "description": "Pirms Pikobuy noliktavas atgriešanas vai atcelšanas pieprasījuma pārbaudiet atbilstību, saglabājiet preces pierādījumus un noskaidrojiet izmaksas.",
-      "intro": "Noderīgs atgriešanas pieprasījums sākas ar faktisko preci, pašreizējo pasūtījuma posmu un precīzu problēmas aprakstu. Vispārīgs noteikumu virsraksts nevar izlemt katru gadījumu. Ceļvedis skaidro pierādījumu sakārtošanu un skaidra iznākuma pieprasīšanu, nepieņemot, ka atgriešana ir bezmaksas vai garantēta. Tas balstās pārskatītajos publiskajos noteikumos un oriģinālā praktiskā pārbaudes sarakstā; tas nav ziņojums par mūsu personīgi iesniegtu atgriešanu.",
+      "title": "Pikobuy atgriešana un naudas atmaksa: noteikumi, maksas un soļi",
+      "description": "Pirms pieprasījuma pārbaudi pasūtījuma posmu, pārdevēja nosacījumus un noliktavas termiņu.",
+      "intro": "Pirms pieprasījuma pārbaudi pasūtījuma posmu, pārdevēja nosacījumus un noliktavas termiņu. Saglabā etiķetes, iepakojumu un skaidrus problēmas pierādījumus. Pieprasi izmaksu un atmaksas sadalījumu; iesniegts pieprasījums vēl nav pārdevēja piekrišana.",
       "sections": [
         {
           "heading": "Identificējiet pasūtījumu un tā pašreizējo posmu",
@@ -966,14 +1004,21 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Identificējiet pasūtījumu un tā pašreizējo posmu",
+        "Noliktavas termiņu uzskatiet par aicinājumu rīkoties",
+        "Problēmu aprakstiet kā novērojamu atšķirību"
       ]
     },
     {
       "slug": "pikobuy-tracking-guide",
       "category": "Piegāde",
-      "title": "Pikobuy izsekošana: identificējiet posmu un pierakstiet pierādījumus",
-      "description": "Nošķiriet pārdevēja piegādi, noliktavas apstrādi un starptautisko izsekošanu, pēc tam sagatavojiet skaidru atbalsta pieprasījumu, ja trūkst Pikobuy atjauninājuma.",
-      "intro": "Pikobuy pirkumam pirms nonākšanas pie jums var būt vairākas atsauces un vairāki gaidīšanas periodi. Ja izsekošanā nav kustības, pirmais noderīgais solis ir identificēt novēroto posmu. Pārdevēja vietējās piegādes ieraksts, noliktavas saņemšana un starptautiskās pakas atjauninājums apraksta dažādus notikumus. Ceļvedis piedāvā praktisku statusa žurnālu un posmam atbilstošas pārbaudes, neizdomājot ierašanās datumu un neapgalvojot piekļuvi jūsu privātajam pasūtījumam.",
+      "title": "Pikobuy izsekošana neatjaunojas? Pasūtījuma un pakas statusi",
+      "description": "Vispirms nosaki posmu: pārdevēja piegāde, noliktavas apstrāde vai starptautisks transports.",
+      "intro": "Vispirms nosaki posmu: pārdevēja piegāde, noliktavas apstrāde vai starptautisks transports. Pasūtījuma numurs ne vienmēr ir pārvadātāja izsekošanas numurs. Saglabā pēdējo notikumu un laiku, pārbaudi pareizo oficiālo ierakstu un jautā par konkrēto trūkstošo soli.",
       "sections": [
         {
           "heading": "Izvēlieties jautājumam atbilstošo atsauci",
@@ -1045,14 +1090,21 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Izvēlieties jautājumam atbilstošo atsauci",
+        "Nošķiriet pirkumu no pārdevēja nosūtīšanas",
+        "Saņemšanu noliktavā uzskatiet par atsevišķu notikumu"
       ]
     },
     {
       "slug": "pikobuy-review-checklist",
       "category": "Izpēte",
-      "title": "Pikobuy vērtēšanas saraksts: pirms maksāšanas izvērtējiet pierādījumus",
-      "description": "Novērtējiet Pikobuy informāciju, preču sludinājumus, maksājumu detaļas, QC robežas un piegādes pieņēmumus, nepaļaujoties uz izdomātām atsauksmēm vai vērtējumiem.",
-      "intro": "Meklējot, vai Pikobuy ir uzticams vai drošs, bieži prasa vienu spriedumu, bet iesaistīti vairāki atšķirīgi lēmumi: oficiālā pakalpojuma noteikšana, pārdevēja preces pārbaude, maksājuma izpratne un sūtījuma plāna apskate. Raksts ir pierādījumu pārbaudes saraksts, nevis praktiska pirkuma atsauksme vai vērtējums. Tas skaidro, ko publiska informācija var noteikt, kam nepieciešams pasūtījumam specifisks apstiprinājums un kā izlemt, kuri neatbildētie jautājumi svarīgi pirms maksāšanas.",
+      "title": "Vai Pikobuy ir uzticams? Pārbaudes pirms pirmā pirkuma",
+      "description": "Kataloga ieraksts vai pozitīva atsauksme negarantē pasūtījumu.",
+      "intro": "Kataloga ieraksts vai pozitīva atsauksme negarantē pasūtījumu. Atsevišķi pārbaudi oficiālo domēnu, pārdevēja preci, maksājuma noteikumus, noliktavas pierādījumus un atgriešanu. Šis ir pārbaudes saraksts, ne personisks tests vai drošības vērtējums.",
       "sections": [
         {
           "heading": "Nošķiriet platformu, pārdevēju un neatkarīgo ceļvedi",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Nošķiriet platformu, pārdevēju un neatkarīgo ceļvedi",
+        "Pirms konta datu ievades pārbaudiet galamērķi",
+        "Atsauksmes lasiet kā pierādījumus ar noteiktu tvērumu"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Preces un pasūtījumi",
+      "title": "Pikobuy sporta apavi: izmēri, foto un preču saites",
+      "description": "Pikobuy apavu katalogā izveido īsu izvēles sarakstu un katru pāri pārbaudi sākotnējā sludinājumā.",
+      "intro": "Pikobuy apavu katalogā izveido īsu izvēles sarakstu un katru pāri pārbaudi sākotnējā sludinājumā. Sāc ar piegulumu, precīzu variantu un piegādes budžetu. Skaistas bildes un zema cena pašas šos jautājumus neatrisina.",
+      "checks": [
+        "Salīdzini sākotnējo preces ID, krāsu un izmēru.",
+        "Pārbaudi mērījumus pret labi derošu pāri.",
+        "Pirms iepakojuma maiņas apskati savus noliktavas foto."
+      ],
+      "sections": [
+        {
+          "heading": "Atrodi pareizo sludinājumu",
+          "paragraphs": [
+            "Atver apavu kolekciju un izvēlies dažas preces ar skaidru saiti. Pieraksti ID, krāsu un cenas valūtu. Līdzīgas bildes var piederēt dažādiem pārdevējiem vai variantiem. Pirms pirkšanas atver oriģinālu vēlreiz, jo pieejamība un izvēles var mainīties."
+          ]
+        },
+        {
+          "heading": "Izvēlies izmēru ar salīdzināmiem mērījumiem",
+          "paragraphs": [
+            "Izmēri abas pēdas un lielāko izmanto kā atskaites punktu, tad lasi konkrētā sludinājuma tabulu. Nepieņem vienādu EU izmēru pārrēķinu pie visiem pārdevējiem. Ja dots zolītes garums, jautā, kā tas mērīts; tas automātiski nenozīmē ieteikto pēdas garumu."
+          ]
+        },
+        {
+          "heading": "Foto vērtē to iespēju robežās",
+          "paragraphs": [
+            "Salīdzini abus apavus, izmēra etiķetes, pasūtīto krāsu, šuves un redzamās zoļu malas. Neskaidrai vietai lūdz tuvplānu. Kataloga foto rāda piedāvājumu; noliktavas attēliem jāatbilst tavam pasūtījumam. Neviens nepierāda ilgtermiņa komfortu, autentiskumu vai izturību."
+          ]
+        },
+        {
+          "heading": "Par kasti lem pēc pārbaudes",
+          "paragraphs": [
+            "Apavu kaste maina sūtījuma izmērus un var aizsargāt apavus. Pirms noņemšanas pārbaudi atgriešanas noteikumus un prasības veselām etiķetēm, plombām vai piederumiem. Salīdzini aplēses ar kasti un mazāku iepakojumu pēc pieejamiem faktiskajiem izmēriem, nepieņemot fiksētu ietaupījumu."
+          ]
+        },
+        {
+          "heading": "Salīdzini visas izmaksas",
+          "paragraphs": [
+            "Atsevišķi pieraksti preces cenu, vietējo piegādi, starptautisko transportu un norādītās papildiespējas. Abiem pāriem izmanto to pašu galamērķi un iepakojuma pieņēmumus. Ja jauktas pakas transportu sadali vienādi, skaidri norādi, ka tā ir tikai tava budžeta metode."
+          ]
+        },
+        {
+          "heading": "Pērc, precizē vai meklē tālāk",
+          "paragraphs": [
+            "Turpini, kad prece un izmērs ir skaidri un summa iekļaujas budžetā. Ja trūkst mēra vai foto, uzdod konkrētu jautājumu. Ja sludinājums mainās vai atbilde paliek neskaidra, meklē tālāk. Saglabā sākotnējo saiti un galīgo variantu vēlākam salīdzinājumam."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Preces un pasūtījumi",
+      "title": "Pikobuy džemperi ar kapuci: mēri, audums un piegulums",
+      "description": "Noderīgs džemperu saraksts salīdzina apģērba mērījumus, auduma datus un vēlamo piegulumu.",
+      "intro": "Noderīgs džemperu saraksts salīdzina apģērba mērījumus, auduma datus un vēlamo piegulumu. Sāc ar džemperi, kas jau patīk, ne tikai ierasto S, M vai L. Glabā sludinājumu un variantu kopā, lai noliktavā pārbaudītu to pašu preci.",
+      "checks": [
+        "Izmēri atsauces džemperi, noliktu līdzeni.",
+        "Atšķir šķiedru sastāvu un auduma svaru uz laukumu.",
+        "Noliktavā salīdzini pasūtīto krāsu un mērījumus."
+      ],
+      "sections": [
+        {
+          "heading": "Nosaki vēlamo piegriezumu",
+          "paragraphs": [
+            "Džemperu un jaku kolekcijā atdali modeļus ar rāvējslēdzēju no pārvelkamiem un pieguļošus no brīviem. Izvēlies lietojumu: slāņi, īss siluets vai ikdiena. Ļoti atšķirīgu piegriezumu salīdzināšana tikai pēc izmēra etiķetes rada maldinošu sarakstu."
+          ]
+        },
+        {
+          "heading": "Pieraksti četrus atsauces mērījumus",
+          "paragraphs": [
+            "Noliec labi derošu džemperi līdzeni bez stiepšanas. Izmēri krūšu platumu, korpusa garumu, plecu platumu un piedurkni, norādot sākuma un beigu punktus. Salīdzini ar pārdevēja shēmu. Šķērsām mērīts apģērba krūšu platums nav krūšu apkārtmērs."
+          ]
+        },
+        {
+          "heading": "Oversized apraksta formu",
+          "paragraphs": [
+            "Nolaisti pleci un plats korpuss maina piedurknes garuma nozīmi. Pārbaudi arī kopgarumu: lielāks izmērs var pievienot nevēlamu garumu. Ja svarīgs mērs trūkst, jautā precizējumu, nevis automātiski izvēlies par vienu izmēru lielāku."
+          ]
+        },
+        {
+          "heading": "Saprotami lasi auduma datus",
+          "paragraphs": [
+            "Sastāvs raksturo šķiedras; GSM norāda auduma masu uz laukumu. Neviens pats nepierāda siltumu, mīkstumu vai izturību pret saraušanos. Jautā, vai svars nozīmē GSM vai visu apģērbu. Ievēro kopšanas etiķeti un neprognozē mazgāšanas rezultātu pēc bildēm."
+          ]
+        },
+        {
+          "heading": "Pārbaudi džemperi pirms nosūtīšanas",
+          "paragraphs": [
+            "Salīdzini krāsu un izmēru, pēc tam šuves, aproces, apakšmalu, kapuci un rāvējslēdzēju. Mērījumu foto salīdzini ar savu metodi. Apgaismojums maina krāsas uztveri; norādi konkrētu atšķirību. Saglabā etiķetes un iepakojumu, kamēr apsver atgriešanu vai maiņu."
+          ]
+        },
+        {
+          "heading": "Budžetā ietver iepakoto apģērbu",
+          "paragraphs": [
+            "Apjomīgs džemperis var mainīt gan pakas svaru, gan izmērus. Oficiālo aplēsi salīdzini ar citām precēm pie vienāda galamērķa un iepakojuma. Lem pēc pieguluma jautājumu atrisināšanas: zemāka cena nav labāka vērtība, ja mēri paliek nezināmi."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Sūtīšana un izsekošana",
+      "title": "Pikobuy maksas: preces cena, maksājumi un piegāde",
+      "description": "Preces cena ir tikai daļa no Pikobuy budžeta.",
+      "intro": "Preces cena ir tikai daļa no Pikobuy budžeta. Atdali pirkumu no starptautiskās piegādes un pārbaudi katru maksu un valūtu. Nav vienas kopsummas visiem pārdevējiem, galamērķiem, maksāšanas veidiem un pakām.",
+      "checks": [
+        "Pieraksti katras maksas summu, valūtu un posmu.",
+        "Piegādes aplēses atdali no samaksātām summām.",
+        "Katru pozīciju skaiti vienu reizi, arī jau ietvertos pakalpojumus."
+      ],
+      "sections": [
+        {
+          "heading": "Atdali divus maksāšanas posmus",
+          "paragraphs": [
+            "Oficiālais ceļvedis nošķir maksājumu par pirkumu un starptautisko nosūtīšanu. Veido vienkāršu plānoto, piedāvāto un samaksāto summu sarakstu. Konta papildināšana nav automātiski otra preces maksa; salīdzini to ar izdevumiem, ko atlikums faktiski apmaksā."
+          ]
+        },
+        {
+          "heading": "Lasi pirkuma sadalījumu pa rindām",
+          "paragraphs": [
+            "Pieraksti varianta cenu, daudzumu un pasūtījumam rādītās vietējās vai pakalpojumu maksas. Pirms pieskaitīšanas pārbaudi, vai kopsumma tās jau ietver. Saglabā aktuālo sadalījumu; kataloga aplēse vai pārrēķināta cena nav rēķins."
+          ]
+        },
+        {
+          "heading": "Pārbaudi valūtas maiņu un komisijas",
+          "paragraphs": [
+            "Pirms apstiprināšanas salīdzini debetējamo valūtu, kursu un platformas vai maksājumu sniedzēja norādītās komisijas. Kataloga pārrēķins var atšķirties no bankas galīgā debeta. Salīdzini metodes vienādai pirkuma summai un pieraksti katra piedāvājuma laiku."
+          ]
+        },
+        {
+          "heading": "Pievieno saskaņotu transporta aplēsi",
+          "paragraphs": [
+            "Oficiālajā kalkulatorā izmanto galamērķi, preces tipu, kilogramus un iepakotos izmērus centimetros. Papildu iepakojumu vai aizsardzību pieraksti atsevišķi, ja tie parādīti. Izlasi maršruta saturu; pievilcīgs nosaukums negarantē visu galamērķa izmaksu iekļaušanu."
+          ]
+        },
+        {
+          "heading": "Aprēķina piemērs nav piedāvājums",
+          "paragraphs": [
+            "Izdomāts piemērs vienā valūtā: prece 200 + vietējā piegāde 10 + starptautiskais transports 120 + norādīta maksājuma komisija 5 = 335. Skaitļi rāda saskaitīšanu, ne Pikobuy tarifus. Pievieno tikai piemērojamās pozīcijas un neapstiprinātu summu atzīmē kā nezināmu."
+          ]
+        },
+        {
+          "heading": "Saskaņo izmaiņas un atmaksas",
+          "paragraphs": [
+            "Pasūtījumam virzoties, aizstāj aplēses ar galīgajām maksām. Atmaksas reģistrē atsevišķi un pārbaudi ieskaitīšanas vietu, pirms tās uzskati par atgrieztām sākotnējā maksājuma veidā. Salīdzini neto izdevumus ar budžetu un nosaki cenu, iepakojuma, valūtas vai pakalpojuma atšķirības."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

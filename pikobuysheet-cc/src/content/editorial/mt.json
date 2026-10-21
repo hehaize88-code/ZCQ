@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Artikli",
     "articlesTitle": "Gwidi tax-xiri ta’ Pikobuy",
-    "articlesIntro": "Għaxar gwidi prattiċi biex issib prodotti, tiċċekkja d-dettalji u tippjana l-ordni tiegħek. Ibda bid-deċiżjoni li għandek quddiemek.",
+    "articlesIntro": "Gwidi prattiċi ta’ Pikobuy dwar prodotti, daqsijiet, spejjeż, tbaħħir u ritorni. Agħżel suġġett, iċċekkja l-informazzjoni u ppjana l-pass li jmiss.",
     "faqTitle": "Mistoqsijiet frekwenti dwar Pikobuy",
     "faqIntro": "Tweġibiet ċari dwar links tal-prodotti, ritratti tal-maħżen, trasport u ritorni. L-informazzjoni tal-pjattaforma tiġi ċċekkjata mal-paġni ta’ Pikobuy stess; il-karatteristiċi tas-sit tagħna huma spjegati separatament.",
     "faqSearch": "Fittex fil-mistoqsijiet frekwenti",
@@ -76,7 +76,18 @@
         "body": "Żomm ir-referenza tal-pakkett u ddistingwi bejn il-kunsinna tal-bejjiegħ, ir-riċeviment fil-maħżen u t-traċċar internazzjonali. Ikkuntattja l-appoġġ uffiċjali bl-identifikatur rilevanti tal-ordni jew tal-pakkett jekk aġġornament jeħtieġ kjarifika."
       }
     ],
-    "menu": "Menù"
+    "menu": "Menù",
+    "homeTitle": "Pikobuy Spreadsheet — Żraben, hoodies u gwidi tax-xiri",
+    "quickAnswer": "Ibda hawn",
+    "categoryTitles": [
+      "Pikobuy: katalgu ta’ żraben u sneakers",
+      "Pikobuy: katalgu ta’ hoodies u ġersijiet"
+    ],
+    "categoryIntros": [
+      "Fittex żraben minn FindSpreadsheet u qabbel id-daqs eżatt, il-link oriġinali u r-ritratti disponibbli. Il-prezzijiet huma stimi; ikkonferma l-par magħżul u t-tbaħħir separatament f’Pikobuy.",
+      "Fittex hoodies u ġersijiet minn FindSpreadsheet. Qabbel il-kejl tal-ilbies, id-drapp u l-kulur qabel tiftaħ l-offerta f’Pikobuy. Tikketta tad-daqs waħedha ma tiddeterminax kif joqgħod l-ilbies."
+    ],
+    "homeHeadline": "Katalgu tal-prodotti."
   },
   "faq": [
     {
@@ -431,14 +442,16 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-ordering-guide",
       "category": "Gwida tax-xiri",
-      "title": "Gwida għall-ordnijiet ta’ Pikobuy: mill-ewwel link ta’ prodott sas-sottomissjoni tal-pakkett",
-      "description": "Ifhem l-istadji tax-xiri u tat-trasport internazzjonali, b’kontrolli prattiċi tal-varjanti, l-evidenza fil-maħżen u l-ispejjeż tal-pakkett.",
-      "intro": "Ordni permezz ta’ aġent tinvolvi diversi deċiżjonijiet f’ħinijiet differenti. Li tagħżel prodott, tixtrih mingħand bejjiegħ, tirrevedi l-wasla tiegħu fil-maħżen u tirranġa kunsinna internazzjonali huma azzjonijiet marbuta, iżda mhumiex l-istess azzjoni. Il-gwida pubblika tax-xiri ta’ Pikobuy tiddeskrivi l-ħlas għax-xiri l-ewwel u l-ħlas għat-trasport internazzjonali aktar tard. Li tifhem din is-sekwenza huwa aktar utli milli timmemorizza numru mwiegħed ta’ ġranet għall-kunsinna. Dan l-artiklu jsegwi l-mixja tax-xerrej u jispjega x’għandek tiċċekkja qabel tkompli. Huwa gwida ta’ tħejjija bbażata fuq informazzjoni pubblika u listi oriġinali biex jgħinu fid-deċiżjonijiet, mhux rapport ta’ xiri ta’ prova. L-iskrin attwali tal-ordni tiegħek u t-termini tas-servizzi magħżula jibqgħu l-post fejn tikkonferma ħlasijiet u għażliet speċifiċi.",
+      "title": "Kif tordna minn Pikobuy: links, QC u tbaħħir",
+      "description": "Sib prodott, iċċekkja l-link u l-varjant u ordna f’Pikobuy.",
+      "intro": "Sib prodott, iċċekkja l-link u l-varjant u ordna f’Pikobuy. Ara r-ritratti tal-ordni tiegħek fil-maħżen qabel tagħżel l-ippakkjar u tħallas għat-trasport internazzjonali. Il-ħlas tal-prodott u l-ħlas tal-pakkett aktar tard huma deċiżjonijiet separati.",
       "sections": [
         {
           "heading": "Ipprepara d-destinazzjoni u r-rekwiżiti tal-oġġett",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Ipprepara d-destinazzjoni u r-rekwiżiti tal-oġġett",
+        "Uża l-informazzjoni tat-tfittxija biex tasal għall-paġna uffiċjali tal-prodott",
+        "Irrevedi l-ispeċifikazzjoni qabel l-ewwel ħlas"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-qc-photo-guide",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-sizing-guide",
@@ -728,15 +752,19 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-shipping-cost",
       "category": "Trasport",
-      "title": "L-ispiża tat-trasport ta’ Pikobuy: agħmel stima utli qabel tixtri",
-      "description": "Ipprepara d-data għall-kalkolatur tat-trasport ta’ Pikobuy, qabbel xenarji realistiċi ta’ pakketti u ssepara t-trasport stmat minn kwotazzjoni finali kkonfermata.",
-      "intro": "Stima utli tat-trasport ta’ Pikobuy hija rekord ta’ pakkett partikolari, destinazzjoni u sett ta’ suppożizzjonijiet. Mhijiex prezz permanenti għal kull kilogramma. Qabel tqabbel ir-rotot, agħmel id-deskrizzjoni tal-pakkett konsistenti biżżejjed biex il-paragun ikollu sens. Din il-gwida tagħtik folja għad-data meħtieġa, mod kif tqabbel xenarji tal-ippakkjar u proċess ta’ reviżjoni finali. Kull eżempju hawn taħt huwa ipotetiku u juri metodu; mhuwiex kwotazzjoni ta’ Pikobuy jew tbassir dwar il-konsenja tiegħek.",
+      "title": "Tbaħħir Pikobuy: kalkulatur, piż, dimensjonijiet u tariffi",
+      "description": "Daħħal id-destinazzjoni, it-tip ta’ prodott, il-piż f’kilogrammi u d-dimensjonijiet tal-pakkett f’ċentimetri fil-kalkulatur uffiċjali.",
+      "intro": "Daħħal id-destinazzjoni, it-tip ta’ prodott, il-piż f’kilogrammi u d-dimensjonijiet tal-pakkett f’ċentimetri fil-kalkulatur uffiċjali. Qabbel rotot bl-istess dejta. Il-prezz tal-prodott u stima bikrija tat-trasport mhumiex l-ispiża finali tal-ordni kkonsenjata.",
       "sections": [
         {
           "heading": "Ibda bid-data meħtieġa għall-istima uffiċjali",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Ibda bid-data meħtieġa għall-istima uffiċjali",
+        "Issepara l-piż tal-prodott mill-pakkett ippakkjat",
+        "Żomm l-unitajiet u l-metodi tal-kejl konsistenti"
       ]
     },
     {
@@ -887,14 +923,16 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-returns-refunds",
       "category": "Wara l-bejgħ",
-      "title": "Ritorni u rifużjonijiet ta’ Pikobuy: ipprepara deċiżjoni fil-maħżen",
-      "description": "Iċċekkja l-eliġibbiltà tar-ritorn, żomm l-evidenza tal-oġġett u ċċara l-ispejjeż qabel titlob ritorn mill-maħżen jew kanċellazzjoni ma’ Pikobuy.",
-      "intro": "Talba utli għal ritorn tibda bl-oġġett attwali, l-istadju preżenti tal-ordni u deskrizzjoni preċiża tal-problema. Titlu ġenerali ta’ politika ma jistax jiddeċiedi kull każ. Din il-gwida tispjega kif torganizza l-evidenza u titlob riżultat ċar mingħajr ma tassumi li ritorn huwa bla ħlas jew garantit. Hija bbażata fuq il-politika pubblika riveduta għal dan il-proġett, flimkien ma’ lista prattika oriġinali ta’ kontroll; mhijiex rapport ta’ ritorn li ssottomettejna personalment.",
+      "title": "Ritorni u rifużjonijiet Pikobuy: kundizzjonijiet, tariffi u passi",
+      "description": "Qabel it-talba iċċekkja l-istadju tal-ordni, l-eliġibbiltà tal-bejjiegħ u l-iskadenza tal-maħżen.",
+      "intro": "Qabel it-talba iċċekkja l-istadju tal-ordni, l-eliġibbiltà tal-bejjiegħ u l-iskadenza tal-maħżen. Żomm tikketti, ippakkjar u evidenza ċara tal-problema. Itlob tqassim tal-ispejjeż u tar-rifużjoni; talba mibgħuta ma tfissirx approvazzjoni.",
       "sections": [
         {
           "heading": "Identifika l-ordni u l-istadju attwali tagħha",
@@ -966,14 +1004,21 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Identifika l-ordni u l-istadju attwali tagħha",
+        "Ittratta l-perjodu tal-maħżen bħala sinjal biex taġixxi",
+        "Iddeskrivi l-problema bħala differenza osservabbli"
       ]
     },
     {
       "slug": "pikobuy-tracking-guide",
       "category": "Trasport",
-      "title": "It-traċċar ta’ Pikobuy: identifika l-istadju u rreġistra l-evidenza",
-      "description": "Issepara l-kunsinna tal-bejjiegħ, l-ipproċessar fil-maħżen u t-traċċar internazzjonali, imbagħad ipprepara talba ċara għall-appoġġ meta jkun nieqes aġġornament ta’ Pikobuy.",
-      "intro": "Xiri minn Pikobuy jista’ jkollu diversi referenzi u diversi perjodi ta’ stennija qabel jasal għandek. L-ewwel pass utli meta t-traċċar jidher kwiet huwa li tidentifika liema stadju qed tosserva. Rekord tal-kunsinna domestika tal-bejjiegħ, riċeviment fil-maħżen u aġġornament ta’ pakkett internazzjonali jiddeskrivu avvenimenti differenti. Din il-gwida tipprovdi reġistru prattiku tal-istatus u kontrolli speċifiċi għal kull stadju mingħajr ma tivvinta data tal-wasla jew tippretendi aċċess għall-ordni privata tiegħek.",
+      "title": "It-traċċar ta’ Pikobuy mhux jaġġorna? Stati tal-ordni u tal-pakkett",
+      "description": "L-ewwel identifika l-istadju: kunsinna tal-bejjiegħ, ipproċessar fil-maħżen jew trasport internazzjonali.",
+      "intro": "L-ewwel identifika l-istadju: kunsinna tal-bejjiegħ, ipproċessar fil-maħżen jew trasport internazzjonali. Numru tal-ordni mhux dejjem numru tat-traċċar tat-trasportatur. Żomm l-aħħar avveniment u l-ħin, iċċekkja r-rekord uffiċjali korrett u staqsi dwar il-pass speċifiku nieqes.",
       "sections": [
         {
           "heading": "Agħżel ir-referenza li taqbel mal-mistoqsija",
@@ -1045,14 +1090,21 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Agħżel ir-referenza li taqbel mal-mistoqsija",
+        "Issepara x-xiri mill-bgħit tal-bejjiegħ",
+        "Ittratta r-riċeviment fil-maħżen bħala avveniment separat"
       ]
     },
     {
       "slug": "pikobuy-review-checklist",
       "category": "Riċerka",
-      "title": "Lista ta’ kontroll għar-reviżjoni ta’ Pikobuy: evalwa l-evidenza qabel tħallas",
-      "description": "Evalwa l-informazzjoni ta’ Pikobuy, il-listings tal-prodotti, id-dettalji tal-ħlas, il-limiti tal-QC u s-suppożizzjonijiet tat-trasport mingħajr ma tiddependi fuq reviżjonijiet jew klassifikazzjonijiet ivvintati.",
-      "intro": "Tfittxijiet dwar jekk Pikobuy huwiex leġittimu jew sikur spiss ifittxu verdett wieħed, iżda hemm diversi deċiżjonijiet differenti: tidentifika s-servizz uffiċjali, tiċċekkja l-oġġett tal-bejjiegħ, tifhem il-ħlas u tispezzjona l-pjan tal-konsenja. Dan l-artiklu huwa lista ta’ kontroll tal-evidenza, mhux reviżjoni ta’ xiri li għamilna aħna jew klassifikazzjoni. Jispjega x’tista’ tistabbilixxi informazzjoni pubblika, x’jeħtieġ konferma speċifika għall-ordni u kif tiddeċiedi liema mistoqsijiet bla tweġiba huma importanti qabel tħallas.",
+      "title": "Pikobuy huwa affidabbli? X’għandek tiċċekkja qabel tixtri",
+      "description": "Avviż fil-katalgu jew reviżjoni pożittiva ma jiggarantix l-ordni tiegħek.",
+      "intro": "Avviż fil-katalgu jew reviżjoni pożittiva ma jiggarantix l-ordni tiegħek. Iċċekkja separatament id-dominju uffiċjali, il-prodott tal-bejjiegħ, il-ħlas, l-evidenza tal-maħżen u l-kundizzjonijiet tar-ritorn. Din hija lista ta’ kontroll, mhux test personali jew klassifikazzjoni tas-sigurtà.",
       "sections": [
         {
           "heading": "Issepara l-pjattaforma, il-bejjiegħ u l-gwida indipendenti",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Issepara l-pjattaforma, il-bejjiegħ u l-gwida indipendenti",
+        "Ivverifika d-destinazzjoni qabel iddaħħal id-dettalji tal-kont",
+        "Aqra r-reviżjonijiet bħala evidenza b’ambitu definit"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Prodotti u ordnijiet",
+      "title": "Sneakers fuq Pikobuy: daqsijiet, ritratti u links",
+      "description": "Uża l-katalgu taż-żraben Pikobuy biex tagħmel lista qasira u vverifika kull par fl-avviż oriġinali.",
+      "intro": "Uża l-katalgu taż-żraben Pikobuy biex tagħmel lista qasira u vverifika kull par fl-avviż oriġinali. Ibda b’kif joqgħod, il-varjant eżatt u l-baġit tat-tbaħħir. Ritratti sbieħ u prezz baxx waħedhom ma jsolvux dawn il-mistoqsijiet.",
+      "checks": [
+        "Qabbel l-ID oriġinali, il-kulur u d-daqs.",
+        "Iċċekkja l-kejl ma’ par li joqgħod tajjeb.",
+        "Ara r-ritratti tiegħek tal-maħżen qabel tibdel l-ippakkjar."
+      ],
+      "sections": [
+        {
+          "heading": "Sib l-avviż korrett",
+          "paragraphs": [
+            "Iftaħ il-kollezzjoni taż-żraben u agħżel ftit għażliet b’link ċar. Ikteb l-ID, il-kulur u l-munita tal-prezz. Stampi simili jistgħu jkunu ta’ bejjiegħa jew varjanti differenti. Erġa’ iftaħ l-avviż oriġinali qabel tixtri, għax id-disponibbiltà u l-għażliet jistgħu jinbidlu."
+          ]
+        },
+        {
+          "heading": "Agħżel daqs b’kejl komparabbli",
+          "paragraphs": [
+            "Kejjel iż-żewġ saqajn u uża l-akbar bħala referenza, imbagħad aqra t-tabella tal-avviż speċifiku. Tassumix konverżjoni identika tad-daqsijiet EU fost il-bejjiegħa. Jekk hemm tul tas-suletta, staqsi kif tkejjel; mhux awtomatikament it-tul tas-sieq rakkomandat."
+          ]
+        },
+        {
+          "heading": "Interpreta r-ritratti fil-limiti tagħhom",
+          "paragraphs": [
+            "Qabbel iż-żewġ żraben, it-tikketti, il-kulur ordnat, il-ħjata u t-truf viżibbli tal-qigħan. Itlob ritratt mill-qrib ta’ żona mhux ċara. Ritratti tal-katalgu juru l-offerta; dawk tal-maħżen għandhom jaqblu mal-ordni tiegħek. Ebda wieħed ma jipprova kumdità fit-tul, awtentiċità jew durabilità."
+          ]
+        },
+        {
+          "heading": "Iddeċiedi dwar il-kaxxa wara l-ispezzjoni",
+          "paragraphs": [
+            "Kaxxa taż-żraben tibdel id-dimensjonijiet tal-pakkett u tista’ tipproteġi. Qabel tneħħiha, iċċekkja r-regoli tar-ritorn u jekk tikketti, siġilli jew aċċessorji għandhom jibqgħu intatti. Qabbel stimi b’kaxxa u b’inqas ippakkjar permezz ta’ kejl reali disponibbli, mingħajr ma tassumi tfaddil fiss."
+          ]
+        },
+        {
+          "heading": "Qabbel l-ispiża sħiħa",
+          "paragraphs": [
+            "Żomm separat il-prezz tal-prodott, il-kunsinna domestika, it-trasport internazzjonali u l-għażliet murija. Uża l-istess destinazzjoni u suppożizzjonijiet tal-ippakkjar għaż-żewġ pari. Jekk taqsam it-trasport ta’ pakkett imħallat indaqs, indika li dan huwa biss il-metodu tiegħek għall-baġit."
+          ]
+        },
+        {
+          "heading": "Ixtri, iċċara jew kompli fittex",
+          "paragraphs": [
+            "Kompli meta l-prodott u d-daqs ikunu ċari u t-total jidħol fil-baġit. Staqsi mistoqsija speċifika jekk jonqos kejl jew ritratt. Jekk jinbidel l-avviż jew it-tweġiba tibqa’ mhux ċara, kompli r-riċerka. Żomm il-link oriġinali u l-varjant finali għal tqabbil aktar tard."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Prodotti u ordnijiet",
+      "title": "Hoodies Pikobuy: kejl, drapp u kif joqogħdu",
+      "description": "Lista utli ta’ hoodies tqabbel il-kejl tal-ilbies, l-informazzjoni tad-drapp u kif tixtiequ joqgħod.",
+      "intro": "Lista utli ta’ hoodies tqabbel il-kejl tal-ilbies, l-informazzjoni tad-drapp u kif tixtiequ joqgħod. Ibda b’hoodie li diġà jogħġbok, mhux biss S, M jew L tas-soltu. Żomm l-avviż u l-varjant flimkien biex tivverifika l-istess oġġett fil-maħżen.",
+      "checks": [
+        "Kejjel hoodie ta’ referenza mifrux ċatt.",
+        "Iddistingwi l-kompożizzjoni mill-grammaġġ tad-drapp.",
+        "Qabbel il-kulur ordnat u l-kejl fil-maħżen."
+      ],
+      "sections": [
+        {
+          "heading": "Iddefinixxi l-qatgħa mixtieqa",
+          "paragraphs": [
+            "Fil-kollezzjoni tal-hoodies u ġersijiet issepara mudelli biż-żipp minn dawk magħluqa, u qatgħat issikkati minn wesgħin. Agħżel l-użu: saffi, siluwett qasir jew kuljum. Tqabbil ta’ qatgħat differenti biss bit-tikketta tad-daqs jagħti lista qarrieqa."
+          ]
+        },
+        {
+          "heading": "Ikteb erba’ kejlijiet ta’ referenza",
+          "paragraphs": [
+            "Qiegħed hoodie li joqgħod tajjeb ċatt mingħajr ma tiġbdu. Kejjel il-wisa’ tas-sider, it-tul tal-ġisem, il-wisa’ tal-ispallejn u t-tul tal-kmiem bil-punti tal-bidu u t-tmiem. Qabbel mad-disinn tal-bejjiegħ. Il-wisa’ tas-sider fuq l-ilbies mhijiex iċ-ċirkonferenza."
+          ]
+        },
+        {
+          "heading": "Oversized jiddeskrivi forma",
+          "paragraphs": [
+            "Spallejn baxxi u ġisem wiesa’ jbiddlu kif jinqara t-tul tal-kmiem. Iċċekkja wkoll it-tul kollu: daqs akbar jista’ jżid tul mhux mixtieq. Jekk jonqos kejl importanti, itlob kjarifika minflok awtomatikament tagħżel daqs wieħed akbar."
+          ]
+        },
+        {
+          "heading": "Aqra t-tifsira tad-dejta tad-drapp",
+          "paragraphs": [
+            "Il-kompożizzjoni tiddeskrivi l-fibri; GSM ifisser massa tad-drapp għal kull erja. Ebda wieħed waħdu ma jipprova sħana, irtubija jew reżistenza għat-tiċkin. Staqsi jekk il-piż huwiex GSM jew tal-ilbies kollu. Uża t-tikketta tal-kura u tbassarx riżultati tal-ħasil mir-ritratti."
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-hoodie qabel jintbagħat",
+          "paragraphs": [
+            "Qabbel il-kulur u t-tikketta, imbagħad il-ħjatat, il-pulzieri, ix-xifer, il-barnuża u ż-żipp jekk hemm. Qabbel ritratti tal-kejl mal-metodu tiegħek. Id-dawl jista’ jbiddel id-dehra tal-kulur; semmi differenza speċifika. Żomm tikketti u pakkett waqt li tqis ritorn jew skambju."
+          ]
+        },
+        {
+          "heading": "Ippjana għall-ilbies ippakkjat",
+          "paragraphs": [
+            "Hoodie goff jista’ jbiddel kemm il-piż kif ukoll id-dimensjonijiet tal-pakkett. Qabbel l-istima uffiċjali mal-oġġetti l-oħra bl-istess destinazzjoni u ippakkjar. Iddeċiedi wara li tiċċara l-qagħda tal-ilbies; prezz inqas mhuwiex valur aħjar jekk il-kejl jibqa’ mhux magħruf."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Trasport u traċċar",
+      "title": "Tariffi Pikobuy: prezz tal-prodott, ħlasijiet u tbaħħir",
+      "description": "Il-prezz tal-prodott huwa biss parti mill-baġit Pikobuy.",
+      "intro": "Il-prezz tal-prodott huwa biss parti mill-baġit Pikobuy. Issepara x-xiri mit-trasport internazzjonali u ċċekkja kull tariffa u munita. M’hemmx total wieħed għal kull bejjiegħ, destinazzjoni, metodu ta’ ħlas u pakkett.",
+      "checks": [
+        "Ikteb l-ammont, il-munita u l-istadju ta’ kull spiża.",
+        "Issepara stimi tat-tbaħħir minn ammonti mħallsa.",
+        "Għodd kull spiża darba, inklużi servizzi diġà inklużi."
+      ],
+      "sections": [
+        {
+          "heading": "Issepara ż-żewġ stadji tal-ħlas",
+          "paragraphs": [
+            "Il-gwida uffiċjali tiddistingwi l-ħlas għax-xiri minn dak għat-tbaħħir internazzjonali. Żomm lista sempliċi ta’ ammonti ppjanati, ikkwotati u mħallsa. Żieda fil-bilanċ mhijiex awtomatikament it-tieni spiża tal-prodott; qabbel magħha dak li l-bilanċ fil-fatt iħallas."
+          ]
+        },
+        {
+          "heading": "Aqra t-tqassim linja b’linja",
+          "paragraphs": [
+            "Ikteb il-prezz tal-varjant, il-kwantità u kwalunkwe kunsinna domestika jew servizz muri għall-ordni. Qabel iżżid komponent, iċċekkja jekk it-total diġà jinkludihx. Żomm it-tqassim attwali; stima tal-katalgu jew prezz konvertit mhuwiex fattura."
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-kambju u t-tariffi tal-ħlas",
+          "paragraphs": [
+            "Qabel tikkonferma, qabbel il-munita ddebitata, ir-rata tal-kambju u t-tariffi żvelati mill-pjattaforma jew fornitur. Il-konverżjoni tal-katalgu tista’ tkun differenti mid-debitu bankarju finali. Qabbel metodi għall-istess ammont tax-xiri u niżżel il-ħin ta’ kull kwotazzjoni."
+          ]
+        },
+        {
+          "heading": "Żid stima konsistenti tat-trasport",
+          "paragraphs": [
+            "Fil-kalkulatur uffiċjali uża destinazzjoni, tip ta’ prodott, kilogrammi u dimensjonijiet ippakkjati f’ċentimetri. Irreġistra separatament ippakkjar jew protezzjoni opzjonali meta jidhru. Aqra x’tinkludi r-rotta; isem attraenti ma jiggarantix li l-ispejjeż kollha fid-destinazzjoni huma inklużi."
+          ]
+        },
+        {
+          "heading": "Eżempju ta’ kalkolu mhuwiex kwotazzjoni",
+          "paragraphs": [
+            "Eżempju ivvintat f’munita waħda: prodott 200 + kunsinna domestika 10 + trasport internazzjonali 120 + tariffa murija 5 = 335. In-numri jispjegaw l-addizzjoni, mhux rati ta’ Pikobuy. Żid biss spejjeż applikabbli u mmarka ammont mhux ikkonfermat bħala mhux magħruf."
+          ]
+        },
+        {
+          "heading": "Qabbel bidliet u rifużjonijiet",
+          "paragraphs": [
+            "Ibdel l-istimi bl-ammonti finali hekk kif tavvanza l-ordni. Irreġistra r-rifużjonijiet separatament u ċċekkja fejn jiġu kkreditati qabel tqishom lura fil-metodu oriġinali tal-ħlas. Qabbel l-ispiża netta mal-baġit biex issib differenzi fil-prezz, ippakkjar, munita jew servizz magħżul."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

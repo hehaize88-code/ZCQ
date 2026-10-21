@@ -7,7 +7,7 @@ Updated: 2026-10-21
 - This project serves only Pikobuy at https://pikobuysheet.cc.
 - GitHub destination: hehaize88-code/ZCQ/pikobuysheet-cc. Keep each future domain in its own folder.
 - User explicitly authorized formal GitHub and Cloudflare deployment on 2026-10-18, after reviewing the public preview.
-- Reuse the confirmed Astro 7.4.0 SSR source, including 24 locales, 28 FAQ entries and 10 complete researched articles.
+- Reuse the confirmed Astro 7.4.0 SSR source, including 24 locales, 28 FAQ entries and 13 complete researched articles per locale (10 original long guides plus 3 focused guides).
 - All commerce data and product photography must come from findspreadsheet.com. No database or admin backend.
 - Use official Pikobuy branding. This is an independent site; retain the independence disclosure.
 - Registration: https://www.pikobuy.com/?mode=register&redirect=/home
@@ -71,3 +71,13 @@ Updated: 2026-10-21
 - Deployed via GitHub commit 7cf861fe85a6a57c9c81404070302e02ba83c196 and existing automatic build d239b0fa-f7c9-460b-b97a-36ad619f5323. Live main XML returned HTTP200, static-v2, 28,814 bytes and all 384 URLs. Legacy XML/text/robots endpoints also returned HTTP200/static-v2. English/German directories and the article footer directory link are live; workers.dev directory correctly returns X-Robots-Tag:noindex. Desktop and 390px mobile visual checks passed.
 - Resubmitted the same sitemap-main.xml once after deployment. GSC confirmed submission accepted, but the table still showed Unknown/Could not fetch/0 discovered. The background sitemap processing issue remains unresolved; do not describe it as fixed or merely a confirmed delay.
 - Requested indexing of the newly deployed /sitemap/ directory. GSC confirmed it was added to the priority crawl queue. This is acceptance of a crawl request, not confirmation that the directory or all linked pages are indexed.
+
+## Multilingual SEO growth release, 2026-10-21
+
+- User authorized implementation and deployment of the platform/competitor research in every language. No Cloudflare connection is required; use GitHub main's existing automatic build.
+- Added 3 fully localized guides × 24 locales (sneakers, hoodies, fee budgeting); total 13 articles per locale. Improved titles, direct introductions and quick answers on 5 existing guides × 24. Preserved every original detailed body section, FAQ and article URL.
+- Added 2 category landing pages × 24 (shoes and hoodies), with real source products, localized selection copy, related guides, stable canonicals/hreflang and independent useful content during upstream failure. Search/sort query URLs remain noindex.
+- Localized homepage title/H1, six current homepage articles, newest-first article directories and truthful article publication/review dates. New HTML/XML/text maps agree on 504 canonical URLs, retaining sitemap-main.xml as primary.
+- Added article_catalog_click, registration_click and purchase_click to the existing GA4 property. These report clicks only, never completed sales; custom parameters omit query text and account data.
+- Build, 384 editorial-page checks, 504-URL discovery agreement, 24 homepage/48 category/72 new article checks, executed event instrumentation, and existing source/category/product regression checks passed. The original long article bodies were compared with origin/main and are intact in all 24 languages.
+- Research evidence, exact implementation scope and validation commands are recorded in docs/seo-growth-2026-10-21.md. GSC processing/indexing and GA4 ingestion remain distinct from successful deployment; do not promise click increases or claim all URLs indexed.

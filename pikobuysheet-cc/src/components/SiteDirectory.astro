@@ -12,7 +12,8 @@ const href = (path: string) => localized(lang, path);
 const canonical = SITE_ORIGIN + href('/sitemap/');
 const pages = [
   ['/', t.home], ['/spreadsheet/', t.browse], ['/guide/', content.ui.guideTitle],
-  ['/faq/', content.ui.faqTitle], ['/articles/', content.ui.articlesTitle]
+  ['/faq/', content.ui.faqTitle], ['/articles/', content.ui.articlesTitle],
+  ['/categories/shoes/', content.ui.categoryTitles[0]], ['/categories/hoodies/', content.ui.categoryTitles[1]]
 ];
 ---
 <!doctype html>

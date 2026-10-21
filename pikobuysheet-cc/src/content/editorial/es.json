@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Artículos",
     "articlesTitle": "Guías de compra de Pikobuy",
-    "articlesIntro": "Diez guías prácticas para encontrar productos, comprobar detalles y planificar tu pedido. Empieza por la decisión que tengas por delante.",
+    "articlesIntro": "Guías prácticas de Pikobuy sobre productos, tallas, costes, envíos y devoluciones. Elige un tema, comprueba la información y planifica el siguiente paso.",
     "faqTitle": "Preguntas frecuentes de Pikobuy",
     "faqIntro": "Respuestas claras sobre enlaces de productos, fotos del almacén, envíos y devoluciones. La información de la plataforma se contrasta con las propias páginas de Pikobuy; las funciones de nuestro sitio se explican por separado.",
     "faqSearch": "Buscar en las preguntas frecuentes",
@@ -76,7 +76,18 @@
         "body": "Conserva la referencia del paquete y distingue la entrega del vendedor, la recepción en almacén y el seguimiento internacional. Contacta con la asistencia oficial indicando el identificador del pedido o paquete correspondiente si necesitas aclarar una actualización."
       }
     ],
-    "menu": "Menú"
+    "menu": "Menú",
+    "homeTitle": "Pikobuy Spreadsheet — Calzado, sudaderas y guías de compra",
+    "quickAnswer": "Por dónde empezar",
+    "categoryTitles": [
+      "Pikobuy: catálogo de calzado y zapatillas",
+      "Pikobuy: catálogo de sudaderas y jerséis"
+    ],
+    "categoryIntros": [
+      "Explora calzado de FindSpreadsheet y compara la talla exacta, el enlace original y las fotos disponibles. Los precios del catálogo son estimaciones; confirma el par elegido y el envío por separado en Pikobuy.",
+      "Explora sudaderas y jerséis de FindSpreadsheet. Compara medidas, información del tejido y color antes de abrir la oferta en Pikobuy. La etiqueta de talla por sí sola no confirma el ajuste."
+    ],
+    "homeHeadline": "Catálogo de productos."
   },
   "faq": [
     {
@@ -431,14 +442,16 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-ordering-guide",
       "category": "Guía de compra",
-      "title": "Guía de pedidos de Pikobuy: del primer enlace de producto a la solicitud de envío",
-      "description": "Comprende las etapas de compra y envío internacional, con comprobaciones prácticas de variantes, pruebas del almacén y costes del paquete.",
-      "intro": "Un pedido a través de un agente contiene varias decisiones que se toman en momentos diferentes. Elegir un producto, comprarlo a un vendedor, revisar su llegada a un almacén y organizar la entrega internacional están relacionados, pero no son la misma acción. La guía pública de compras de Pikobuy describe primero el pago de compra y, más adelante, el pago del envío internacional. Entender esa secuencia resulta más útil que memorizar un número prometido de días de entrega. Este artículo sigue el recorrido del comprador y explica qué comprobar antes de avanzar. Es una guía de preparación basada en información pública y listas originales de decisiones, no el relato de una compra de prueba. La pantalla actual de tu pedido y las condiciones aplicables a los servicios elegidos siguen siendo el lugar donde confirmar cargos y opciones específicos.",
+      "title": "Cómo comprar en Pikobuy: enlaces, QC y envío",
+      "description": "Encuentra un producto, verifica el enlace y la variante y realiza el pedido en Pikobuy.",
+      "intro": "Encuentra un producto, verifica el enlace y la variante y realiza el pedido en Pikobuy. Revisa las fotos de tu propio pedido en el almacén antes de elegir embalaje y pagar el transporte internacional. El pago del producto y el del paquete son decisiones separadas.",
       "sections": [
         {
           "heading": "Prepara el destino y los requisitos del artículo",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Prepara el destino y los requisitos del artículo",
+        "Utiliza la información de descubrimiento para llegar a la página oficial del producto",
+        "Revisa las especificaciones antes del primer pago"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-qc-photo-guide",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-sizing-guide",
@@ -728,15 +752,19 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-shipping-cost",
       "category": "Envíos",
-      "title": "Coste de envío de Pikobuy: prepara una estimación útil antes de comprar",
-      "description": "Prepara los datos de la calculadora de envíos de Pikobuy, compara escenarios realistas de paquetes y distingue el transporte estimado de un presupuesto final confirmado.",
-      "intro": "Una estimación útil de envío de Pikobuy es un registro de un paquete, un destino y unas suposiciones concretos. No es un precio permanente por kilogramo. Antes de comparar rutas, consigue que la descripción del paquete sea lo bastante coherente para que la comparación tenga sentido. Esta guía ofrece una hoja de datos, una forma de comparar escenarios de embalaje y un proceso de revisión final. Todos los ejemplos siguientes son hipotéticos y muestran un método; no son presupuestos de Pikobuy ni predicciones sobre tu envío.",
+      "title": "Envíos de Pikobuy: calculadora, peso, medidas y costes",
+      "description": "Para estimar el envío, introduce el destino, tipo de producto, peso en kilogramos y medidas del paquete en centímetros en la calculadora oficial.",
+      "intro": "Para estimar el envío, introduce el destino, tipo de producto, peso en kilogramos y medidas del paquete en centímetros en la calculadora oficial. Compara rutas con los mismos datos. El precio del producto y una estimación inicial del transporte no son el total final entregado.",
       "sections": [
         {
           "heading": "Empieza por los datos del estimador oficial",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Empieza por los datos del estimador oficial",
+        "Separa el peso del producto del paquete embalado",
+        "Mantén coherentes las unidades y los métodos de medición"
       ]
     },
     {
@@ -887,14 +923,16 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-returns-refunds",
       "category": "Posventa",
-      "title": "Devoluciones y reembolsos de Pikobuy: prepara una decisión en el almacén",
-      "description": "Comprueba los requisitos de devolución, conserva pruebas del artículo y aclara los costes antes de solicitar una devolución desde el almacén o una cancelación en Pikobuy.",
-      "intro": "Una solicitud de devolución útil empieza por el artículo real, la etapa actual del pedido y una descripción precisa del problema. Un encabezado general de política no puede decidir todos los casos. Esta guía explica cómo organizar pruebas y pedir un resultado claro sin suponer que una devolución sea gratuita o esté garantizada. Se basa en la política pública revisada junto con una lista práctica original; no es el relato de una devolución que hayamos solicitado personalmente.",
+      "title": "Devoluciones y reembolsos de Pikobuy: requisitos, gastos y pasos",
+      "description": "Comprueba el estado del pedido, los requisitos del vendedor y el plazo del almacén antes de solicitar la devolución.",
+      "intro": "Comprueba el estado del pedido, los requisitos del vendedor y el plazo del almacén antes de solicitar la devolución. Conserva etiquetas, embalaje y pruebas claras del problema. Pide un desglose de costes y reembolso; enviar una solicitud no significa que el vendedor la haya aprobado.",
       "sections": [
         {
           "heading": "Identifica el pedido y su etapa actual",
@@ -966,14 +1004,21 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Identifica el pedido y su etapa actual",
+        "Considera el plazo del almacén un motivo para actuar",
+        "Describe el problema como una diferencia observable"
       ]
     },
     {
       "slug": "pikobuy-tracking-guide",
       "category": "Envíos",
-      "title": "Seguimiento de Pikobuy: identifica la etapa y registra las pruebas",
-      "description": "Distingue la entrega del vendedor, el procesamiento del almacén y el seguimiento internacional, y prepara una solicitud clara de asistencia cuando falte una actualización de Pikobuy.",
-      "intro": "Una compra de Pikobuy puede tener varias referencias y varios periodos de espera antes de llegar a ti. El primer paso útil cuando el seguimiento parece detenido es identificar qué etapa observas. El registro de entrega nacional del vendedor, la recepción del almacén y una actualización del paquete internacional describen eventos diferentes. Esta guía proporciona un registro práctico de estados y comprobaciones específicas de cada etapa sin inventar una fecha de llegada ni afirmar que tiene acceso a tu pedido privado.",
+      "title": "¿El seguimiento de Pikobuy no cambia? Estados del pedido y paquete",
+      "description": "Identifica primero la etapa: entrega del vendedor, gestión del almacén o transporte internacional.",
+      "intro": "Identifica primero la etapa: entrega del vendedor, gestión del almacén o transporte internacional. Un número de pedido no siempre es un código del transportista. Guarda el último evento y su fecha, revisa el registro oficial correspondiente y pregunta por el paso concreto que falta.",
       "sections": [
         {
           "heading": "Elige la referencia que corresponda a la pregunta",
@@ -1045,14 +1090,21 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Elige la referencia que corresponda a la pregunta",
+        "Distingue la compra de la expedición del vendedor",
+        "Trata la recepción en almacén como un evento propio"
       ]
     },
     {
       "slug": "pikobuy-review-checklist",
       "category": "Investigación",
-      "title": "Lista de evaluación de Pikobuy: examina las pruebas antes de pagar",
-      "description": "Evalúa la información de Pikobuy, los anuncios de productos, los detalles de pago, los límites del control de calidad y las suposiciones de envío sin depender de reseñas ni puntuaciones inventadas.",
-      "intro": "Las búsquedas sobre si Pikobuy es legítimo o seguro suelen pedir un veredicto único, pero implican decisiones diferentes: identificar el servicio oficial, comprobar el artículo del vendedor, entender el pago y examinar el plan de envío. Este artículo es una lista de pruebas, no una reseña basada en una compra personal ni una puntuación. Explica qué puede establecer la información pública, qué necesita confirmación específica del pedido y cómo decidir qué preguntas pendientes importan antes de pagar.",
+      "title": "¿Es fiable Pikobuy? Qué comprobar antes de comprar",
+      "description": "Un producto en un catálogo o una reseña positiva no garantiza tu pedido.",
+      "intro": "Un producto en un catálogo o una reseña positiva no garantiza tu pedido. Comprueba por separado el dominio oficial, el artículo del vendedor, las condiciones de pago, las pruebas del almacén y las devoluciones. Esta guía ofrece comprobaciones, no una prueba personal ni una puntuación de seguridad.",
       "sections": [
         {
           "heading": "Distingue la plataforma, el vendedor y la guía independiente",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Distingue la plataforma, el vendedor y la guía independiente",
+        "Verifica el destino antes de introducir datos de cuenta",
+        "Lee las reseñas como pruebas con un alcance concreto"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Productos y pedidos",
+      "title": "Zapatillas en Pikobuy: tallas, fotos y enlaces de productos",
+      "description": "Usa el catálogo de calzado de Pikobuy para seleccionar opciones y verifica cada par en su anuncio original.",
+      "intro": "Usa el catálogo de calzado de Pikobuy para seleccionar opciones y verifica cada par en su anuncio original. Empieza por el ajuste, la variante exacta y el presupuesto de envío. Las fotos atractivas y un precio bajo no resuelven esas tres cuestiones.",
+      "checks": [
+        "Comprueba el ID original, el color y la talla.",
+        "Compara las medidas del vendedor con un par que te quede bien.",
+        "Revisa tus fotos del almacén antes de cambiar el embalaje."
+      ],
+      "sections": [
+        {
+          "heading": "Encuentra el anuncio correcto",
+          "paragraphs": [
+            "Abre la colección de calzado y selecciona algunas opciones con enlaces claros. Anota el ID del artículo, color elegido y moneda del precio. Dos imágenes parecidas pueden corresponder a vendedores o variantes distintos. Abre de nuevo el anuncio original antes de comprar: las opciones y la disponibilidad pueden cambiar."
+          ]
+        },
+        {
+          "heading": "Elige talla con medidas comparables",
+          "paragraphs": [
+            "Mide ambos pies y utiliza el mayor como referencia; consulta la tabla de ese anuncio concreto. No supongas que una talla europea se convierte igual entre vendedores. Si aparece la longitud de la plantilla, pregunta cómo se midió: no equivale automáticamente a la longitud recomendada del pie."
+          ]
+        },
+        {
+          "heading": "Interpreta las fotos con límites claros",
+          "paragraphs": [
+            "Compara ambos zapatos, etiquetas de talla, color solicitado, costuras y bordes visibles de la suela. Pide una imagen cercana de las zonas dudosas. Las fotos del catálogo muestran la oferta; las del almacén deben corresponder a tu pedido. Ninguna demuestra comodidad prolongada, autenticidad o durabilidad."
+          ]
+        },
+        {
+          "heading": "Decide sobre la caja después de revisar",
+          "paragraphs": [
+            "La caja cambia las dimensiones del paquete y puede proteger el calzado. Antes de retirarla, revisa las condiciones de devolución y si deben conservarse etiquetas, precintos o accesorios. Compara presupuestos con caja y embalaje reducido utilizando medidas reales cuando existan, sin dar por hecho un ahorro fijo."
+          ]
+        },
+        {
+          "heading": "Compara el coste completo",
+          "paragraphs": [
+            "Separa precio del producto, entrega nacional, transporte internacional y extras indicados en columnas distintas. Usa el mismo destino y los mismos supuestos de embalaje para ambos pares. Si repartes por igual el envío de un paquete mixto, aclara que es solo tu método de presupuesto."
+          ]
+        },
+        {
+          "heading": "Decide comprar, preguntar o seguir buscando",
+          "paragraphs": [
+            "Continúa cuando puedas identificar artículo y talla y el total encaje en tu presupuesto. Haz una pregunta concreta si falta una medida o foto. Si cambia la oferta o la respuesta sigue siendo ambigua, busca más. Guarda el enlace original y la variante final para comparaciones posteriores."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Productos y pedidos",
+      "title": "Sudaderas en Pikobuy: medidas, tejido y ajuste",
+      "description": "Una buena selección de sudaderas compara medidas de la prenda, información del tejido y ajuste deseado.",
+      "intro": "Una buena selección de sudaderas compara medidas de la prenda, información del tejido y ajuste deseado. Empieza con una sudadera que ya te guste, no solo con S, M o L. Guarda juntos el anuncio y la variante para revisar el mismo artículo en el almacén.",
+      "checks": [
+        "Mide una sudadera de referencia extendida en plano.",
+        "Distingue composición del tejido y gramaje.",
+        "Comprueba color y medidas del pedido en el almacén."
+      ],
+      "sections": [
+        {
+          "heading": "Define el corte que buscas",
+          "paragraphs": [
+            "Explora sudaderas y jerséis y separa modelos con cremallera de los cerrados, y cortes ajustados de amplios. Decide si quieres vestir por capas, una silueta corta o uso diario. Comparar prendas con cortes muy diferentes únicamente por la etiqueta de talla genera una selección engañosa."
+          ]
+        },
+        {
+          "heading": "Anota cuatro medidas de referencia",
+          "paragraphs": [
+            "Extiende una sudadera que te quede bien sin estirarla. Anota ancho de pecho, largo del cuerpo, ancho de hombros y largo de manga, indicando sus puntos de inicio y fin. Compáralos con el esquema del vendedor. El ancho del pecho de la prenda no es su contorno."
+          ]
+        },
+        {
+          "heading": "Oversize es una forma, no una regla de talla",
+          "paragraphs": [
+            "Los hombros caídos y un cuerpo ancho cambian la interpretación del largo de manga. Revisa también el largo del cuerpo: subir de talla puede añadir longitud indeseada. Si falta una medida importante, pide aclaraciones en vez de aplicar una regla universal de comprar una talla más."
+          ]
+        },
+        {
+          "heading": "Lee lo que realmente indica el tejido",
+          "paragraphs": [
+            "La composición describe fibras; GSM indica masa del tejido por superficie. Ninguno demuestra por sí solo abrigo, suavidad o resistencia al encogimiento. Pregunta si el peso indicado corresponde al gramaje o a toda la prenda. Consulta la etiqueta de cuidado y no deduzcas resultados de lavado de las fotos."
+          ]
+        },
+        {
+          "heading": "Revisa la sudadera antes del envío",
+          "paragraphs": [
+            "Comprueba color y etiqueta de talla, después costuras, puños, bajo, capucha y cremallera si existe. Compara las fotos de medidas con tu método. La iluminación puede alterar el color; pregunta por una diferencia concreta. Conserva etiquetas y embalaje mientras consideres devolver o cambiar el artículo."
+          ]
+        },
+        {
+          "heading": "Presupuesta la prenda embalada",
+          "paragraphs": [
+            "Una sudadera voluminosa puede cambiar tanto el peso como las dimensiones del paquete. Compara la estimación oficial con otros artículos usando el mismo destino y embalaje previsto. Decide después de resolver las dudas de ajuste: una oferta barata no es mejor compra si desconoces sus medidas."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Envíos y seguimiento",
+      "title": "Gastos de Pikobuy: precio del producto, pagos y envío",
+      "description": "El precio de un producto de Pikobuy es solo una parte del presupuesto.",
+      "intro": "El precio de un producto de Pikobuy es solo una parte del presupuesto. Separa la compra del transporte internacional y revisa cada cargo y moneda. No hay un importe universal para todos los vendedores, destinos, métodos de pago y paquetes.",
+      "checks": [
+        "Anota importe, moneda y etapa de cada cargo.",
+        "Separa estimaciones de envío e importes pagados.",
+        "Cuenta cada cargo una vez, también los servicios incluidos."
+      ],
+      "sections": [
+        {
+          "heading": "Separa las dos etapas de pago",
+          "paragraphs": [
+            "La guía oficial distingue el pago de la compra del pago del transporte internacional. Lleva un registro sencillo de importes previstos, presupuestados y pagados. Recargar el saldo no es automáticamente un segundo coste del producto: comprueba qué gastos se pagan realmente con ese saldo."
+          ]
+        },
+        {
+          "heading": "Lee el desglose de la compra",
+          "paragraphs": [
+            "Anota precio de la variante, cantidad y cualquier entrega nacional o servicio mostrado para el pedido. Antes de sumar un componente, comprueba si ya está incluido en el total. Guarda el desglose actual; una estimación del catálogo o un precio convertido no es una factura."
+          ]
+        },
+        {
+          "heading": "Comprueba conversión y comisiones",
+          "paragraphs": [
+            "Antes de confirmar, compara la moneda del cargo, el cambio y las comisiones comunicadas por la plataforma o el proveedor de pago. La conversión del catálogo no tiene por qué coincidir con el débito bancario final. Compara métodos con el mismo importe y anota cuándo obtuviste cada presupuesto."
+          ]
+        },
+        {
+          "heading": "Añade una estimación coherente del envío",
+          "paragraphs": [
+            "Usa la calculadora oficial con destino, tipo de producto, kilogramos y medidas del paquete en centímetros. Registra aparte embalaje o protección opcionales cuando aparezcan. Lee qué incluye la ruta elegida; un nombre atractivo no significa que incluya todos los cargos en destino."
+          ]
+        },
+        {
+          "heading": "Un ejemplo de presupuesto no es una tarifa",
+          "paragraphs": [
+            "Ejemplo ficticio en una moneda: producto 200 + entrega nacional 10 + envío internacional 120 + comisión de pago indicada 5 = 335. Estos números solo explican la suma; no son tarifas de Pikobuy. Añade únicamente cargos aplicables y marca como desconocido cualquier importe sin confirmar."
+          ]
+        },
+        {
+          "heading": "Concilia cambios y reembolsos",
+          "paragraphs": [
+            "Sustituye cada estimación por el cargo final conforme avance el pedido. Registra los reembolsos aparte y comprueba dónde se abonan antes de considerarlos devueltos al método de pago original. Compara el gasto neto final con el presupuesto e identifica diferencias por precio, embalaje, moneda o servicios seleccionados."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

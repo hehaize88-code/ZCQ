@@ -6,3 +6,25 @@
   gtag('js', new Date());
   gtag('config', 'G-0PZGKFFTL6');
 </script>
+
+<script is:inline>
+  document.addEventListener('click', function (event) {
+    var link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+    if (!link) return;
+    var name = link.getAttribute('data-track');
+    var destination = new URL(link.href, location.href);
+    if (!name && /\/articles\/[^/]+\/?$/.test(location.pathname) && destination.origin === location.origin && /\/(spreadsheet|categories\/(shoes|hoodies))\/?$/.test(destination.pathname)) name = 'article_catalog_click';
+    if (!['article_catalog_click', 'registration_click', 'purchase_click'].includes(name)) return;
+    var parameters = {
+      page_language: document.documentElement.lang,
+      page_path: location.pathname,
+      destination_path: destination.pathname,
+      link_domain: destination.hostname,
+      transport_type: 'beacon'
+    };
+    var item = link.getAttribute('data-item-id');
+    if (item && /^\d+$/.test(item)) parameters.item_id = item;
+    // Do not send search text, account data or full query-bearing URLs.
+    gtag('event', name, parameters);
+  });
+</script>

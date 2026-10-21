@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Artikelen",
     "articlesTitle": "Pikobuy-koopgidsen",
-    "articlesIntro": "Tien praktische gidsen voor het vinden van producten, controleren van details en plannen van je bestelling. Begin bij de beslissing die nu voor je ligt.",
+    "articlesIntro": "Praktische Pikobuy-gidsen over producten, maten, kosten, verzending en retouren. Kies een onderwerp, controleer de informatie en plan je volgende stap.",
     "faqTitle": "Veelgestelde vragen over Pikobuy",
     "faqIntro": "Duidelijke antwoorden over productlinks, magazijnfoto's, verzending en retouren. Platforminformatie wordt gecontroleerd aan de hand van Pikobuy's eigen pagina's; de functies van onze website leggen we apart uit.",
     "faqSearch": "Zoek in de veelgestelde vragen",
@@ -76,7 +76,18 @@
         "body": "Bewaar het pakketnummer en onderscheid levering door de verkoper, magazijnontvangst en internationale tracking. Neem met de relevante bestel- of pakket-ID contact op met de officiële ondersteuning als een update toelichting nodig heeft."
       }
     ],
-    "menu": "Menu"
+    "menu": "Menu",
+    "homeTitle": "Pikobuy Spreadsheet — Schoenen, hoodies en koopgidsen",
+    "quickAnswer": "Begin hier",
+    "categoryTitles": [
+      "Pikobuy: schoenen- en sneakercatalogus",
+      "Pikobuy: hoodies- en truiencatalogus"
+    ],
+    "categoryIntros": [
+      "Bekijk schoenen van FindSpreadsheet en vergelijk de exacte maat, originele link en beschikbare foto’s. Catalogusprijzen zijn schattingen; bevestig het gekozen paar en de verzending afzonderlijk bij Pikobuy.",
+      "Bekijk hoodies en truien van FindSpreadsheet. Vergelijk kledingmaten, stofinformatie en kleur voordat je de aanbieding in Pikobuy opent. Een maatlabel alleen bepaalt de pasvorm niet."
+    ],
+    "homeHeadline": "Productcatalogus."
   },
   "faq": [
     {
@@ -431,13 +442,15 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Koopgids",
-      "title": "Pikobuy-bestelgids: van je eerste productlink tot het indienen van je pakket",
-      "description": "Begrijp de aankoop- en internationale verzendstappen, met praktische controles van varianten, magazijnbewijs en pakketkosten.",
-      "intro": "Een bestelling via een aankoopagent bevat verschillende beslissingen op verschillende momenten. Een product kiezen, het bij een verkoper kopen, de aankomst in een magazijn beoordelen en internationale levering regelen hangen samen, maar zijn niet dezelfde handeling. Pikobuy's openbare winkelgids beschrijft eerst de aankoopbetaling en later de betaling voor internationale verzending. Die volgorde begrijpen is nuttiger dan een beloofd aantal bezorgdagen onthouden. Dit artikel volgt de route van de koper en legt uit wat vóór de volgende stap moet worden gecontroleerd. Het is een voorbereidingsgids op basis van openbare informatie en eigen beslischecklists, geen verslag van een testaankoop. Je actuele bestelscherm en de voorwaarden voor de gekozen diensten blijven de plek om concrete kosten en opties te bevestigen.",
+      "title": "Bestellen bij Pikobuy: productlinks, QC en verzending",
+      "description": "Zoek een product, controleer link en variant en bestel vervolgens in Pikobuy.",
+      "intro": "Zoek een product, controleer link en variant en bestel vervolgens in Pikobuy. Bekijk de magazijnfoto’s van je eigen bestelling voordat je verpakking kiest en internationale verzending betaalt. De productbetaling en latere pakketbetaling zijn aparte beslissingen.",
       "sections": [
         {
           "heading": "Bereid bestemming en artikeleisen voor",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Bereid bestemming en artikeleisen voor",
+        "Gebruik zoekinformatie om de officiële productpagina te bereiken",
+        "Controleer de specificatie vóór de eerste betaling"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Kwaliteitscontroles",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Maten",
@@ -728,14 +752,18 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Verzending",
-      "title": "Pikobuy-verzendkosten: maak vóór aankoop een bruikbare schatting",
-      "description": "Bereid invoer voor de Pikobuy-verzendcalculator voor, vergelijk realistische pakketscenario's en onderscheid geschatte vrachtkosten van een bevestigde definitieve offerte.",
-      "intro": "Een bruikbare Pikobuy-verzendschatting legt een specifiek pakket, een bestemming en aannames vast. Het is geen vaste prijs per kilogram. Maak de pakketomschrijving vóór routevergelijking consistent genoeg voor een betekenisvolle vergelijking. Deze gids biedt een invoerwerkblad, een methode voor verpakkingsscenario's en een eindcontrole. Alle voorbeelden hieronder zijn hypothetisch en tonen een methode; het zijn geen Pikobuy-offertes of voorspellingen over jouw zending.",
+      "title": "Pikobuy verzendkosten: calculator, gewicht, maten en toeslagen",
+      "description": "Vul in de officiële calculator bestemming, producttype, gewicht in kilogram en verpakte afmetingen in centimeters in.",
+      "intro": "Vul in de officiële calculator bestemming, producttype, gewicht in kilogram en verpakte afmetingen in centimeters in. Vergelijk routes met dezelfde gegevens. De productprijs en een eerste vrachtschatting vormen niet het definitieve totaal tot aan bezorging.",
       "sections": [
         {
           "heading": "Begin met de officiële schattingsinvoer",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Begin met de officiële schattingsinvoer",
+        "Onderscheid productgewicht van het verpakte pakket",
+        "Houd eenheden en meetmethoden consistent"
       ]
     },
     {
@@ -887,13 +923,15 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Nazorg",
-      "title": "Pikobuy-retouren en terugbetalingen: bereid een magazijnbeslissing voor",
-      "description": "Controleer retourvoorwaarden, bewaar artikelbewijs en verduidelijk kosten voordat je een Pikobuy-magazijnretour of annulering aanvraagt.",
-      "intro": "Een bruikbaar retourverzoek begint bij het werkelijke artikel, de huidige bestelfase en een nauwkeurige probleembeschrijving. Een algemene beleidstitel beslist niet ieder geval. Deze gids legt uit hoe je bewijs ordent en om een duidelijke uitkomst vraagt zonder een gratis of gegarandeerde retour aan te nemen. Hij is gebaseerd op het voor deze gids bekeken openbare beleid en een eigen praktische checklist; het is geen verslag van een persoonlijk door ons ingediend retourverzoek.",
+      "title": "Pikobuy retouren en terugbetalingen: voorwaarden, kosten en stappen",
+      "description": "Controleer bestelstatus, retourmogelijkheden bij de verkoper en magazijntermijn voordat je een aanvraag indient.",
+      "intro": "Controleer bestelstatus, retourmogelijkheden bij de verkoper en magazijntermijn voordat je een aanvraag indient. Bewaar labels, verpakking en duidelijk bewijs. Vraag een uitsplitsing van kosten en terugbetaling; een ingediende aanvraag is nog geen toestemming van de verkoper.",
       "sections": [
         {
           "heading": "Identificeer de bestelling en de huidige fase",
@@ -966,13 +1004,20 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Identificeer de bestelling en de huidige fase",
+        "Zie de magazijntermijn als aanleiding om te handelen",
+        "Beschrijf het probleem als waarneembaar verschil"
       ]
     },
     {
       "category": "Verzending",
-      "title": "Pikobuy-tracking: herken de fase en leg het bewijs vast",
-      "description": "Onderscheid verkoperslevering, magazijnverwerking en internationale tracking en bereid een duidelijke ondersteuningsvraag voor als een Pikobuy-update ontbreekt.",
-      "intro": "Een Pikobuy-aankoop kan verschillende referenties en wachttijden hebben voordat hij je bereikt. Wanneer tracking stil lijkt, bepaal je eerst welke fase je bekijkt. Een binnenlandse verkoperslevering, magazijnontvangst en internationale pakketupdate beschrijven andere gebeurtenissen. Deze gids biedt een praktisch statuslogboek en controles per fase zonder een aankomstdatum te verzinnen of toegang tot je privébestelling te claimen.",
+      "title": "Pikobuy tracking blijft staan? Bestel- en pakketstatus uitgelegd",
+      "description": "Bepaal eerst de fase: verkoperslevering, magazijnverwerking of internationaal vervoer.",
+      "intro": "Bepaal eerst de fase: verkoperslevering, magazijnverwerking of internationaal vervoer. Een bestelnummer is niet altijd een trackingnummer van de vervoerder. Bewaar de laatste gebeurtenis en tijd, bekijk het juiste officiële overzicht en vraag naar de concrete ontbrekende stap.",
       "sections": [
         {
           "heading": "Kies de referentie die bij de vraag past",
@@ -1045,13 +1090,20 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Kies de referentie die bij de vraag past",
+        "Onderscheid aankoop van verzending door de verkoper",
+        "Behandel magazijnontvangst als eigen gebeurtenis"
       ]
     },
     {
       "category": "Onderzoek",
-      "title": "Pikobuy-beoordelingschecklist: beoordeel het bewijs vóór betaling",
-      "description": "Beoordeel Pikobuy-informatie, productaanbiedingen, betaalgegevens, controlebeperkingen en verzendaannames zonder verzonnen recensies of scores.",
-      "intro": "Zoekvragen over of Pikobuy betrouwbaar of veilig is verlangen vaak één oordeel, maar omvatten verschillende beslissingen: de officiële dienst herkennen, het verkopersartikel controleren, betaling begrijpen en het verzendplan beoordelen. Dit artikel is een bewijschecklist, geen eigen aankoopervaring of score. Het verklaart wat openbare informatie kan vaststellen, wat bestellingsspecifieke bevestiging nodig heeft en hoe je vóór betalen bepaalt welke open vragen tellen.",
+      "title": "Is Pikobuy betrouwbaar? Controlepunten vóór je eerste aankoop",
+      "description": "Een catalogusaanbieding of positieve review garandeert je bestelling niet.",
+      "intro": "Een catalogusaanbieding of positieve review garandeert je bestelling niet. Controleer officiële domeinnaam, verkopersartikel, betaalvoorwaarden, magazijnbewijs en retourregels afzonderlijk. Deze gids biedt controlepunten, geen persoonlijke praktijktest of veiligheidsscore.",
       "sections": [
         {
           "heading": "Scheid platform, verkoper en onafhankelijke gids",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Scheid platform, verkoper en onafhankelijke gids",
+        "Controleer de bestemming vóór invoer van accountgegevens",
+        "Lees recensies als bewijs met een begrensde reikwijdte"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Producten en bestellingen",
+      "title": "Pikobuy sneakers vinden: maten, foto’s en productlinks",
+      "description": "Gebruik de Pikobuy-schoenencatalogus voor een shortlist en controleer ieder paar in de originele aanbieding.",
+      "intro": "Gebruik de Pikobuy-schoenencatalogus voor een shortlist en controleer ieder paar in de originele aanbieding. Begin met pasvorm, exacte variant en verzendbudget. Mooie foto’s en een lage catalogusprijs beantwoorden die vragen niet vanzelf.",
+      "checks": [
+        "Controleer oorspronkelijk artikel-ID, kleur en maat.",
+        "Vergelijk verkopersmaten met een goed passend paar.",
+        "Bekijk je magazijnfoto’s vóór aanpassing van de verpakking."
+      ],
+      "sections": [
+        {
+          "heading": "Vind de juiste aanbieding",
+          "paragraphs": [
+            "Open de schoenencollectie en kies enkele opties met een duidelijke productlink. Noteer artikel-ID, kleur en prijsvaluta. Vergelijkbare foto’s kunnen bij andere verkopers of varianten horen. Open de originele aanbieding opnieuw vóór aankoop, want voorraad en opties kunnen veranderen."
+          ]
+        },
+        {
+          "heading": "Kies met vergelijkbare afmetingen",
+          "paragraphs": [
+            "Meet beide voeten en gebruik de grootste als referentie; lees daarna de maattabel van precies die aanbieding. Ga niet uit van dezelfde EU-maatomrekening bij elke verkoper. Vraag bij een binnenzoollengte hoe die is gemeten; dit is niet automatisch de aanbevolen voetlengte."
+          ]
+        },
+        {
+          "heading": "Beoordeel foto’s binnen hun grenzen",
+          "paragraphs": [
+            "Vergelijk beide schoenen, maatlabels, bestelde kleur, naden en zichtbare zoolranden. Vraag om een detailfoto van onduidelijke delen. Catalogusfoto’s tonen de aanbieding; magazijnfoto’s moeten je eigen order betreffen. Geen van beide bewijst langdurig comfort, echtheid of slijtvastheid."
+          ]
+        },
+        {
+          "heading": "Beslis na controle over de doos",
+          "paragraphs": [
+            "Een schoenendoos verandert pakketafmetingen en kan bescherming bieden. Controleer vóór verwijdering retourvoorwaarden en of labels, zegels of accessoires intact moeten blijven. Vergelijk verzending met doos en minder verpakking aan de hand van beschikbare echte maten, zonder een vaste besparing te veronderstellen."
+          ]
+        },
+        {
+          "heading": "Vergelijk de volledige kosten",
+          "paragraphs": [
+            "Zet productprijs, binnenlandse levering, internationale vracht en getoonde opties in aparte kolommen. Gebruik dezelfde bestemming en verpakkingsaannames voor beide paren. Verdeel je de vracht van een gemengd pakket gelijkmatig, vermeld dan dat dit alleen je eigen budgetmethode is."
+          ]
+        },
+        {
+          "heading": "Kopen, navragen of verder zoeken",
+          "paragraphs": [
+            "Ga verder wanneer artikel en maat herkenbaar zijn en het totaal binnen je budget valt. Stel een gerichte vraag als een maat of foto ontbreekt. Verandert de aanbieding of blijft het antwoord onduidelijk, zoek dan verder. Bewaar de originele link en definitieve variant voor later vergelijkingswerk."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Producten en bestellingen",
+      "title": "Pikobuy hoodies: afmetingen, stof en pasvorm",
+      "description": "Een bruikbare hoodie-shortlist vergelijkt kledingmaten, stofinformatie en de gewenste pasvorm.",
+      "intro": "Een bruikbare hoodie-shortlist vergelijkt kledingmaten, stofinformatie en de gewenste pasvorm. Begin met een hoodie die je al prettig vindt, niet alleen je gebruikelijke S, M of L. Bewaar aanbieding en variant samen voor controle van hetzelfde artikel in het magazijn.",
+      "checks": [
+        "Meet een passende hoodie plat zonder uitrekken.",
+        "Maak onderscheid tussen vezelsamenstelling en stofgewicht.",
+        "Vergelijk bestelde kleur en maten in het magazijn."
+      ],
+      "sections": [
+        {
+          "heading": "Bepaal het gewenste model",
+          "paragraphs": [
+            "Bekijk hoodies en truien en scheid modellen met rits van overtrekmodellen, en aansluitende van ruime snitten. Kies het gebruik: laagjes, een kort silhouet of dagelijks dragen. Sterk verschillende modellen uitsluitend op maatlabel vergelijken levert een misleidende shortlist op."
+          ]
+        },
+        {
+          "heading": "Noteer vier referentiematen",
+          "paragraphs": [
+            "Leg een passende hoodie plat zonder te rekken. Meet borstbreedte, lichaamslengte, schouderbreedte en mouwlengte met hun begin- en eindpunten. Vergelijk die met het schema van de verkoper. Borstbreedte dwars over het kledingstuk is niet dezelfde waarde als borstomtrek."
+          ]
+        },
+        {
+          "heading": "Oversized is een vorm",
+          "paragraphs": [
+            "Afhangende schouders en een breed lijf veranderen de interpretatie van mouwlengte. Controleer ook de totale lengte: een grotere maat kan ongewenste lengte toevoegen. Vraag om uitleg als een belangrijke afmeting ontbreekt in plaats van standaard een maat groter te kopen."
+          ]
+        },
+        {
+          "heading": "Lees wat de stofomschrijving zegt",
+          "paragraphs": [
+            "Samenstelling beschrijft vezels; GSM beschrijft stofmassa per oppervlakte. Geen van beide bewijst zelfstandig warmte, zachtheid of krimpbestendigheid. Vraag of een gewicht over GSM of het hele kledingstuk gaat. Gebruik het waslabel indien beschikbaar en leid wasresultaten niet uit foto’s af."
+          ]
+        },
+        {
+          "heading": "Inspecteer de hoodie vóór verzending",
+          "paragraphs": [
+            "Controleer kleur en maatlabel, daarna naden, manchetten, zoom, capuchon en eventuele rits. Vergelijk meetfoto’s met je referentiemethode. Licht kan kleuren anders laten lijken; benoem een concrete afwijking. Bewaar labels en verpakking zolang retour of ruil wordt overwogen."
+          ]
+        },
+        {
+          "heading": "Begroot het verpakte kledingstuk",
+          "paragraphs": [
+            "Een volumineuze hoodie kan zowel afmetingen als gewicht van het pakket veranderen. Vergelijk de officiële schatting met andere artikelen bij dezelfde bestemming en verpakkingsaannames. Beslis nadat pasvormvragen zijn beantwoord; een lagere prijs is geen betere koop zolang maten onbekend blijven."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Verzending en volgen",
+      "title": "Pikobuy kosten uitgelegd: productprijs, betaling en verzending",
+      "description": "De productprijs is maar een deel van je Pikobuy-budget.",
+      "intro": "De productprijs is maar een deel van je Pikobuy-budget. Scheid aankoop en internationale verzending en controleer elke toeslag en valuta. Er bestaat geen vast totaal voor alle verkopers, bestemmingen, betaalmethoden en pakketten.",
+      "checks": [
+        "Noteer bedrag, valuta en fase van iedere kostenpost.",
+        "Scheid verzendschattingen van betaalde bedragen.",
+        "Tel iedere post eenmaal, inclusief al inbegrepen diensten."
+      ],
+      "sections": [
+        {
+          "heading": "Scheid de twee betaalmomenten",
+          "paragraphs": [
+            "De officiële koopgids maakt onderscheid tussen betalen voor de aankoop en internationale pakketverzending. Houd geplande, aangeboden en betaalde bedragen bij. Een saldo-opwaardering is niet automatisch een tweede productkost; vergelijk deze met de uitgaven die daadwerkelijk uit dat saldo worden betaald."
+          ]
+        },
+        {
+          "heading": "Lees de afrekening per regel",
+          "paragraphs": [
+            "Noteer variantprijs, aantal en eventuele getoonde binnenlandse bezorg- of servicekosten. Controleer vóór optellen of een totaal de betreffende post al bevat. Bewaar de actuele uitsplitsing; een catalogusschatting of omgerekende prijs is geen factuur."
+          ]
+        },
+        {
+          "heading": "Controleer wisselkoers en betaaltoeslagen",
+          "paragraphs": [
+            "Vergelijk vóór bevestiging de afschrijfvaluta, wisselkoers en door platform of betaalprovider vermelde kosten. De catalogusomrekening hoeft niet gelijk te zijn aan de uiteindelijke bankafschrijving. Vergelijk twee betaalmethoden voor hetzelfde aankoopbedrag en noteer wanneer je de offertes kreeg."
+          ]
+        },
+        {
+          "heading": "Voeg een consistente vrachtschatting toe",
+          "paragraphs": [
+            "Gebruik bestemming, producttype, kilogrammen en verpakte maten in centimeters in de officiële calculator. Zet optionele verpakking of bescherming apart wanneer getoond. Lees wat de route omvat; een aantrekkelijke naam betekent niet dat alle bestemmingskosten inbegrepen zijn."
+          ]
+        },
+        {
+          "heading": "Een rekenvoorbeeld is geen offerte",
+          "paragraphs": [
+            "Fictief voorbeeld in één valuta: product 200 + binnenlandse levering 10 + internationale verzending 120 + getoonde betaalkosten 5 = 335. De getallen demonstreren de optelsom, geen Pikobuy-tarieven. Voeg alleen toepasselijke posten toe en markeer onbevestigde bedragen als onbekend."
+          ]
+        },
+        {
+          "heading": "Verwerk wijzigingen en terugbetalingen",
+          "paragraphs": [
+            "Vervang iedere schatting door het definitieve bedrag naarmate de order vordert. Registreer restituties apart en controleer waar ze worden bijgeschreven voordat je ze als terugontvangen op de oorspronkelijke betaalmethode ziet. Vergelijk netto-uitgaven met je budget en verklaar verschillen in prijs, verpakking, valuta of opties."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

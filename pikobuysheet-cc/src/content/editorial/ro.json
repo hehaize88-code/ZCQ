@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Articole",
     "articlesTitle": "Ghiduri de cumpărături Pikobuy",
-    "articlesIntro": "Zece ghiduri practice pentru găsirea produselor, verificarea detaliilor și planificarea comenzii. Începe cu decizia pe care trebuie să o iei.",
+    "articlesIntro": "Ghiduri practice Pikobuy despre produse, mărimi, costuri, livrare și retururi. Alege un subiect, verifică informațiile și planifică pasul următor.",
     "faqTitle": "Întrebări frecvente despre Pikobuy",
     "faqIntro": "Răspunsuri clare despre linkurile produselor, fotografiile din depozit, expediere și retururi. Informațiile despre platformă sunt verificate în paginile Pikobuy; funcțiile site-ului nostru sunt explicate separat.",
     "faqSearch": "Caută în întrebările frecvente",
@@ -76,7 +76,18 @@
         "body": "Păstrează referința coletului și distinge între livrarea vânzătorului, primirea în depozit și urmărirea internațională. Contactează asistența oficială cu identificatorul comenzii sau al coletului dacă o actualizare necesită clarificare."
       }
     ],
-    "menu": "Meniu"
+    "menu": "Meniu",
+    "homeTitle": "Pikobuy Spreadsheet — Încălțăminte, hanorace și ghiduri",
+    "quickAnswer": "Începe aici",
+    "categoryTitles": [
+      "Pikobuy: catalog de încălțăminte și sneakers",
+      "Pikobuy: catalog de hanorace și pulovere"
+    ],
+    "categoryIntros": [
+      "Explorează încălțămintea din FindSpreadsheet și compară mărimea exactă, linkul original și fotografiile disponibile. Prețurile sunt estimative; confirmă perechea aleasă și transportul separat în Pikobuy.",
+      "Explorează hanorace și pulovere din FindSpreadsheet. Compară dimensiunile, materialul și culoarea înainte să deschizi oferta în Pikobuy. Eticheta cu mărimea nu stabilește singură potrivirea."
+    ],
+    "homeHeadline": "Catalog de produse."
   },
   "faq": [
     {
@@ -431,14 +442,16 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-ordering-guide",
       "category": "Ghid de cumpărare",
-      "title": "Ghid de comandă Pikobuy: de la primul link de produs la trimiterea coletului",
-      "description": "Înțelege etapele cumpărării și expedierii internaționale, cu verificări practice pentru variante, dovezi din depozit și costurile coletului.",
-      "intro": "O comandă prin intermediar cuprinde mai multe decizii luate în momente diferite. Alegerea unui produs, cumpărarea lui de la vânzător, verificarea sosirii în depozit și organizarea livrării internaționale sunt conectate, dar nu reprezintă aceeași acțiune. Ghidul public de cumpărături Pikobuy descrie mai întâi plata cumpărării și ulterior plata expedierii internaționale. Înțelegerea acestei succesiuni este mai utilă decât memorarea unui număr promis de zile de livrare. Acest articol urmărește traseul cumpărătorului și explică ce trebuie verificat înainte de a continua. Este un ghid de pregătire bazat pe informații publice și liste originale de verificare a deciziilor, nu relatarea unei cumpărături de test. Ecranul comenzii actuale și condițiile serviciilor alese rămân locul în care confirmi taxele și opțiunile specifice.",
+      "title": "Cum comanzi pe Pikobuy: linkuri, QC și transport",
+      "description": "Găsește produsul, verifică linkul și varianta, apoi comandă în Pikobuy.",
+      "intro": "Găsește produsul, verifică linkul și varianta, apoi comandă în Pikobuy. Examinează fotografiile propriei comenzi din depozit înainte să alegi ambalarea și să plătești transportul internațional. Plata produsului și plata ulterioară a coletului sunt decizii separate.",
       "sections": [
         {
           "heading": "Pregătește destinația și cerințele articolului",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Pregătește destinația și cerințele articolului",
+        "Folosește informațiile descoperite pentru a ajunge la pagina oficială a produsului",
+        "Verifică specificația înainte de prima plată"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-qc-photo-guide",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-sizing-guide",
@@ -728,15 +752,19 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-shipping-cost",
       "category": "Expediere",
-      "title": "Costul expedierii Pikobuy: construiește o estimare utilă înainte de a cumpăra",
-      "description": "Pregătește datele pentru calculatorul de expediere Pikobuy, compară scenarii realiste de colet și separă transportul estimat de oferta finală confirmată.",
-      "intro": "O estimare utilă a expedierii Pikobuy este evidența unui anumit colet, a unei destinații și a unui set de presupuneri. Nu este un preț permanent pe kilogram. Înainte de compararea rutelor, fă descrierea coletului suficient de consecventă încât comparația să aibă sens. Acest ghid oferă o fișă de date de intrare, o modalitate de comparare a scenariilor de ambalare și un proces final de verificare. Orice exemplu de mai jos este ipotetic și demonstrează o metodă; nu este o ofertă Pikobuy și nici o predicție despre expedierea ta.",
+      "title": "Transport Pikobuy: calculator, greutate, dimensiuni și costuri",
+      "description": "Introdu în calculatorul oficial destinația, tipul produsului, greutatea în kilograme și dimensiunile coletului în centimetri.",
+      "intro": "Introdu în calculatorul oficial destinația, tipul produsului, greutatea în kilograme și dimensiunile coletului în centimetri. Compară rutele folosind aceleași date. Prețul produsului și prima estimare de transport nu reprezintă costul final până la livrare.",
       "sections": [
         {
           "heading": "Începe cu datele cerute de calculatorul oficial",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Începe cu datele cerute de calculatorul oficial",
+        "Separă greutatea produsului de coletul ambalat",
+        "Păstrează consecvente unitățile și metodele de măsurare"
       ]
     },
     {
@@ -887,14 +923,16 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-returns-refunds",
       "category": "Asistență după vânzare",
-      "title": "Retururi și rambursări Pikobuy: pregătește o decizie în depozit",
-      "description": "Verifică eligibilitatea pentru retur, păstrează dovezile articolului și clarifică costurile înainte să soliciți un retur din depozitul Pikobuy sau o anulare.",
-      "intro": "O cerere utilă de retur începe cu articolul efectiv, etapa actuală a comenzii și descrierea precisă a problemei. Un titlu general al politicii nu poate decide fiecare caz. Acest ghid explică organizarea dovezilor și solicitarea unui rezultat clar fără a presupune că returul este gratuit sau garantat. Se bazează pe politica publică verificată pentru acest proiect și pe o listă practică originală; nu este relatarea unui retur solicitat personal de noi.",
+      "title": "Retururi și rambursări Pikobuy: condiții, taxe și pași",
+      "description": "Verifică etapa comenzii, eligibilitatea la vânzător și termenul depozitului înainte de cerere.",
+      "intro": "Verifică etapa comenzii, eligibilitatea la vânzător și termenul depozitului înainte de cerere. Păstrează etichetele, ambalajul și dovezi clare ale problemei. Cere costurile și rambursarea defalcate; trimiterea cererii nu înseamnă aprobarea vânzătorului.",
       "sections": [
         {
           "heading": "Identifică comanda și etapa ei actuală",
@@ -966,14 +1004,21 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Identifică comanda și etapa ei actuală",
+        "Tratează intervalul din depozit ca pe un îndemn la acțiune",
+        "Descrie problema ca pe o diferență observabilă"
       ]
     },
     {
       "slug": "pikobuy-tracking-guide",
       "category": "Expediere",
-      "title": "Urmărirea Pikobuy: identifică etapa și înregistrează dovezile",
-      "description": "Separă livrarea vânzătorului, procesarea în depozit și urmărirea internațională, apoi pregătește o cerere clară de asistență când lipsește o actualizare Pikobuy.",
-      "intro": "O cumpărătură Pikobuy poate avea mai multe referințe și mai multe perioade de așteptare înainte să ajungă la tine. Primul pas util când urmărirea pare inactivă este identificarea etapei observate. Evidența livrării interne a vânzătorului, primirea în depozit și actualizarea unui colet internațional descriu evenimente diferite. Ghidul oferă un jurnal practic al stărilor și verificări specifice fiecărei etape, fără a inventa o dată de sosire sau a pretinde acces la comanda ta privată.",
+      "title": "Urmărirea Pikobuy nu se actualizează? Stările comenzii și coletului",
+      "description": "Identifică întâi etapa: livrarea vânzătorului, procesarea în depozit sau transportul internațional.",
+      "intro": "Identifică întâi etapa: livrarea vânzătorului, procesarea în depozit sau transportul internațional. Numărul comenzii nu este neapărat numărul curierului. Salvează ultimul eveniment și ora, consultă înregistrarea oficială potrivită și întreabă asistența despre pasul concret lipsă.",
       "sections": [
         {
           "heading": "Alege referința care corespunde întrebării",
@@ -1045,14 +1090,21 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Alege referința care corespunde întrebării",
+        "Separă cumpărarea de expedierea vânzătorului",
+        "Tratează primirea în depozit ca pe un eveniment distinct"
       ]
     },
     {
       "slug": "pikobuy-review-checklist",
       "category": "Documentare",
-      "title": "Lista de evaluare Pikobuy: analizează dovezile înainte de plată",
-      "description": "Evaluează informațiile Pikobuy, anunțurile de produse, detaliile plății, limitele QC și presupunerile de expediere fără să te bazezi pe recenzii sau evaluări inventate.",
-      "intro": "Căutările despre legitimitatea sau siguranța Pikobuy cer adesea un verdict unic, dar implică mai multe decizii diferite: identificarea serviciului oficial, verificarea articolului vânzătorului, înțelegerea plății și examinarea planului de expediere. Articolul este o listă de verificare a dovezilor, nu o recenzie bazată pe o cumpărare efectivă sau un calificativ. Explică ce pot stabili informațiile publice, ce necesită confirmare specifică unei comenzi și cum decizi ce întrebări fără răspuns contează înainte de plată.",
+      "title": "Este Pikobuy de încredere? Verificări înainte de comandă",
+      "description": "O ofertă din catalog sau o recenzie pozitivă nu garantează comanda.",
+      "intro": "O ofertă din catalog sau o recenzie pozitivă nu garantează comanda. Verifică separat domeniul oficial, produsul vânzătorului, plata, dovezile din depozit și condițiile de retur. Acest ghid oferă o listă de verificare, nu un test personal sau un scor de siguranță.",
       "sections": [
         {
           "heading": "Separă platforma, vânzătorul și ghidul independent",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Separă platforma, vânzătorul și ghidul independent",
+        "Verifică destinația înainte să introduci datele contului",
+        "Citește recenziile ca dovezi cu un domeniu limitat"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Produse și comenzi",
+      "title": "Sneakers pe Pikobuy: mărimi, fotografii și linkuri",
+      "description": "Folosește catalogul Pikobuy pentru o listă scurtă, apoi verifică fiecare pereche în oferta originală.",
+      "intro": "Folosește catalogul Pikobuy pentru o listă scurtă, apoi verifică fiecare pereche în oferta originală. Începe cu potrivirea, varianta exactă și bugetul transportului. Fotografiile atrăgătoare și prețul mic nu răspund singure acestor întrebări.",
+      "checks": [
+        "Compară ID-ul original, culoarea și mărimea.",
+        "Verifică măsurătorile față de o pereche potrivită.",
+        "Examinează fotografiile tale din depozit înainte de schimbarea ambalajului."
+      ],
+      "sections": [
+        {
+          "heading": "Găsește oferta corectă",
+          "paragraphs": [
+            "Deschide colecția de încălțăminte și alege câteva produse cu link clar. Notează ID-ul, culoarea și moneda prețului. Imagini similare pot aparține unor vânzători sau variante diferite. Redeschide oferta înainte de cumpărare: disponibilitatea și opțiunile se pot schimba."
+          ]
+        },
+        {
+          "heading": "Alege mărimea prin măsurători comparabile",
+          "paragraphs": [
+            "Măsoară ambele picioare și folosește-l pe cel mai mare ca reper, apoi citește tabelul ofertei exacte. Nu presupune conversii identice ale mărimilor EU la toți vânzătorii. Pentru lungimea branțului întreabă metoda de măsurare; nu este automat lungimea recomandată a piciorului."
+          ]
+        },
+        {
+          "heading": "Interpretează fotografiile fără concluzii excesive",
+          "paragraphs": [
+            "Compară ambii pantofi, etichetele, culoarea comandată, cusăturile și marginile vizibile ale tălpilor. Cere un prim-plan pentru zonele neclare. Fotografiile catalogului descriu oferta; cele din depozit trebuie să corespundă comenzii tale. Niciunele nu dovedesc confortul îndelungat, autenticitatea sau durabilitatea."
+          ]
+        },
+        {
+          "heading": "Decide asupra cutiei după inspecție",
+          "paragraphs": [
+            "Cutia modifică dimensiunile coletului și poate proteja încălțămintea. Înainte de eliminare verifică regulile de retur și dacă etichetele, sigiliile sau accesoriile trebuie păstrate intacte. Compară estimări cu și fără cutie folosind dimensiuni reale disponibile, fără să presupui o economie fixă."
+          ]
+        },
+        {
+          "heading": "Compară costul complet",
+          "paragraphs": [
+            "Separă prețul produsului, livrarea internă, transportul internațional și opțiunile afișate. Folosește aceeași destinație și aceleași ipoteze de ambalare pentru ambele perechi. Dacă împarți egal transportul unui colet mixt, precizează că este doar metoda ta de calcul al bugetului."
+          ]
+        },
+        {
+          "heading": "Cumpără, clarifică sau continuă căutarea",
+          "paragraphs": [
+            "Continuă când produsul și mărimea sunt identificabile, iar totalul încape în buget. Pune o întrebare concretă dacă lipsește o măsură sau o fotografie. Dacă oferta se schimbă ori răspunsul rămâne neclar, caută în continuare. Păstrează linkul original și varianta finală pentru verificări ulterioare."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Produse și comenzi",
+      "title": "Hanorace Pikobuy: dimensiuni, material și croială",
+      "description": "O selecție utilă compară dimensiunile hainei, informațiile despre material și croiala dorită.",
+      "intro": "O selecție utilă compară dimensiunile hainei, informațiile despre material și croiala dorită. Pornește de la un hanorac care îți place deja, nu doar de la S, M sau L. Păstrează oferta și varianta împreună pentru verificarea aceluiași articol în depozit.",
+      "checks": [
+        "Măsoară un hanorac de referință întins pe o suprafață plană.",
+        "Separă compoziția de gramajul materialului.",
+        "Compară culoarea și dimensiunile comenzii în depozit."
+      ],
+      "sections": [
+        {
+          "heading": "Definește croiala dorită",
+          "paragraphs": [
+            "În colecția de hanorace și pulovere separă modelele cu fermoar de cele închise și croielile strâmte de cele largi. Stabilește utilizarea: straturi, siluetă scurtă sau purtare zilnică. Compararea unor croieli foarte diferite doar prin eticheta mărimii creează o selecție înșelătoare."
+          ]
+        },
+        {
+          "heading": "Notează patru măsurători de referință",
+          "paragraphs": [
+            "Întinde un hanorac potrivit fără să-l întinzi forțat. Notează lățimea pieptului, lungimea corpului, lățimea umerilor și lungimea mânecii, cu punctele de început și sfârșit. Compară-le cu desenul vânzătorului. Lățimea pieptului măsurată pe haină nu este circumferința pieptului."
+          ]
+        },
+        {
+          "heading": "Oversized descrie forma",
+          "paragraphs": [
+            "Umerii căzuți și corpul lat schimbă interpretarea lungimii mânecii. Verifică și lungimea totală: o mărime mai mare poate adăuga lungime nedorită. Dacă lipsește o dimensiune importantă, cere explicații în loc să aplici automat regula de a cumpăra o mărime mai mare."
+          ]
+        },
+        {
+          "heading": "Verifică sensul informațiilor despre material",
+          "paragraphs": [
+            "Compoziția descrie fibrele; GSM reprezintă masa materialului pe suprafață. Niciuna nu demonstrează singură căldura, finețea sau rezistența la micșorare. Întreabă dacă greutatea indicată este gramajul ori masa întregii haine. Consultă eticheta de îngrijire și nu deduce comportamentul la spălare din poze."
+          ]
+        },
+        {
+          "heading": "Inspectează hanoracul înainte de expediere",
+          "paragraphs": [
+            "Compară culoarea și eticheta, apoi cusăturile, manșetele, tivul, gluga și eventualul fermoar. Raportează pozele cu măsurători la metoda ta. Lumina poate schimba culoarea aparentă; indică o diferență precisă. Păstrează etichetele și ambalajul cât timp analizezi un retur sau schimb."
+          ]
+        },
+        {
+          "heading": "Bugetează haina ambalată",
+          "paragraphs": [
+            "Un hanorac voluminos poate modifica atât greutatea, cât și dimensiunile coletului. Compară estimarea oficială cu celelalte articole folosind aceeași destinație și ambalare. Decide după clarificarea potrivirii: un preț mai mic nu înseamnă valoare mai bună dacă măsurile rămân necunoscute."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Expediere și urmărire",
+      "title": "Taxe Pikobuy explicate: produs, plăți și transport",
+      "description": "Prețul produsului reprezintă doar o parte a bugetului Pikobuy.",
+      "intro": "Prețul produsului reprezintă doar o parte a bugetului Pikobuy. Separă cumpărarea de transportul internațional și verifică fiecare cost și monedă. Nu există un total universal pentru toți vânzătorii, destinațiile, metodele de plată și coletele.",
+      "checks": [
+        "Notează suma, moneda și etapa fiecărui cost.",
+        "Separă estimările de transport de sumele plătite.",
+        "Numără fiecare cost o singură dată, inclusiv serviciile incluse."
+      ],
+      "sections": [
+        {
+          "heading": "Separă cele două etape de plată",
+          "paragraphs": [
+            "Ghidul oficial distinge plata cumpărării de plata expedierii internaționale. Ține o evidență simplă cu sume planificate, ofertate și plătite. Alimentarea contului nu este automat un al doilea cost al produsului; confrunt-o cu cheltuielile achitate efectiv din sold."
+          ]
+        },
+        {
+          "heading": "Citește fiecare rând al plății",
+          "paragraphs": [
+            "Notează prețul variantei, cantitatea și costurile de livrare internă sau servicii afișate pentru comandă. Verifică dacă totalul include deja o componentă înainte de a o adăuga. Salvează defalcarea actuală; estimarea catalogului sau prețul convertit nu este factură."
+          ]
+        },
+        {
+          "heading": "Verifică schimbul valutar și comisioanele",
+          "paragraphs": [
+            "Înainte de confirmare compară moneda debitată, cursul și comisioanele comunicate de platformă sau procesator. Conversia catalogului poate diferi de debitarea bancară finală. Compară metodele pentru aceeași sumă și notează momentul obținerii fiecărei cotații."
+          ]
+        },
+        {
+          "heading": "Adaugă o estimare consecventă a transportului",
+          "paragraphs": [
+            "Folosește calculatorul oficial cu destinație, tip de produs, kilograme și dimensiuni ambalate în centimetri. Trece separat ambalarea ori protecția opțională când apar. Citește ce include ruta; un nume atractiv nu garantează includerea tuturor costurilor la destinație."
+          ]
+        },
+        {
+          "heading": "Un exemplu nu este o ofertă",
+          "paragraphs": [
+            "Exemplu fictiv într-o singură monedă: produs 200 + livrare internă 10 + transport internațional 120 + comision afișat 5 = 335. Numerele explică adunarea, nu tarifele Pikobuy. Adaugă doar costuri aplicabile și marchează orice sumă neconfirmată drept necunoscută."
+          ]
+        },
+        {
+          "heading": "Reconciliază schimbările și rambursările",
+          "paragraphs": [
+            "Înlocuiește estimările cu sumele finale pe măsură ce avansează comanda. Notează rambursările separat și verifică unde sunt creditate înainte să le consideri întoarse la metoda inițială. Compară cheltuiala netă cu bugetul pentru a identifica diferențele de preț, ambalare, monedă sau serviciu ales."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

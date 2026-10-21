@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Artikler",
     "articlesTitle": "Købsguider til Pikobuy",
-    "articlesIntro": "Ti praktiske guider til at finde produkter, kontrollere detaljer og planlægge din bestilling. Begynd med den beslutning, du står over for.",
+    "articlesIntro": "Praktiske Pikobuy-guider om produkter, størrelser, omkostninger, fragt og returnering. Vælg et emne, kontrollér oplysningerne og planlæg næste skridt.",
     "faqTitle": "Ofte stillede spørgsmål om Pikobuy",
     "faqIntro": "Klare svar om produktlinks, lagerfotos, fragt og returnering. Platformoplysninger kontrolleres mod Pikobuys egne sider; funktionerne på vores hjemmeside forklares separat.",
     "faqSearch": "Søg i spørgsmålene",
@@ -76,7 +76,18 @@
         "body": "Gem pakkereferencen, og skeln mellem sælgerlevering, lagermodtagelse og international sporing. Kontakt officiel support med relevant bestillings- eller pakke-ID, hvis en opdatering kræver forklaring."
       }
     ],
-    "menu": "Menu"
+    "menu": "Menu",
+    "homeTitle": "Pikobuy Spreadsheet — Sko, hættetrøjer og købsguider",
+    "quickAnswer": "Start her",
+    "categoryTitles": [
+      "Pikobuy: katalog med sko og sneakers",
+      "Pikobuy: katalog med hættetrøjer og strik"
+    ],
+    "categoryIntros": [
+      "Se sko fra FindSpreadsheet, og sammenlign præcis størrelse, oprindeligt link og tilgængelige billeder. Katalogpriser er skøn; bekræft det valgte par og fragten separat i Pikobuy.",
+      "Se hættetrøjer og strik fra FindSpreadsheet. Sammenlign tøjets mål, stofoplysninger og farve, før du åbner varen i Pikobuy. Et størrelsesmærke alene afgør ikke pasformen."
+    ],
+    "homeHeadline": "Produktkatalog."
   },
   "faq": [
     {
@@ -431,13 +442,15 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Købsguide",
-      "title": "Pikobuys bestillingsguide: fra første produktlink til indsendelse af pakken",
-      "description": "Forstå køb og international fragt med praktiske kontroller af varianter, lagerdokumentation og pakkeomkostninger.",
-      "intro": "En bestilling gennem en indkøbsagent indeholder flere beslutninger på forskellige tidspunkter. Produktvalg, køb fra sælger, vurdering af lagerankomst og international levering hænger sammen, men er ikke samme handling. Pikobuys offentlige købsguide beskriver købsbetaling først og betaling for international fragt senere. At forstå rækkefølgen er mere nyttigt end at huske et lovet antal leveringsdage. Artiklen følger køberens vej og forklarer, hvad der skal kontrolleres før næste skridt. Det er en forberedelsesguide baseret på offentlige oplysninger og egne beslutningstjeklister, ikke en beretning om et prøvekøb. Den aktuelle bestillingsside og vilkårene for dine valgte tjenester er fortsat stedet, hvor konkrete gebyrer og muligheder bekræftes.",
+      "title": "Sådan bestiller du på Pikobuy: links, QC og fragt",
+      "description": "Find produktet, kontrollér link og variant, og bestil i Pikobuy.",
+      "intro": "Find produktet, kontrollér link og variant, og bestil i Pikobuy. Gennemgå billeder af din egen ordre på lageret, før du vælger emballage og betaler international fragt. Betalingen for varen og den senere pakkebetaling er separate beslutninger.",
       "sections": [
         {
           "heading": "Forbered destination og varekrav",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Forbered destination og varekrav",
+        "Brug søgeoplysningerne til at nå den officielle produktside",
+        "Gennemgå specifikationen før første betaling"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Kvalitetskontrol",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Størrelser",
@@ -728,14 +752,18 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Fragt",
-      "title": "Pikobuys fragtomkostninger: lav et nyttigt skøn før køb",
-      "description": "Forbered oplysninger til Pikobuys fragtberegner, sammenlign realistiske pakkescenarier, og adskil anslået fragt fra et bekræftet endeligt tilbud.",
-      "intro": "Et nyttigt Pikobuy-fragtskøn dokumenterer en bestemt pakke, destination og række antagelser. Det er ikke en permanent pris pr. kilogram. Gør pakkebeskrivelsen tilstrækkeligt ensartet til en meningsfuld sammenligning, før du sammenligner ruter. Guiden giver et indtastningsark, en metode til at sammenligne pakkescenarier og en afsluttende gennemgang. Alle nedenstående eksempler er hypotetiske og viser en metode; de er ikke Pikobuy-tilbud eller forudsigelser om din forsendelse.",
+      "title": "Pikobuy fragtpris: beregner, vægt, mål og gebyrer",
+      "description": "Indtast destination, produkttype, vægt i kilogram og pakkens mål i centimeter i den officielle beregner.",
+      "intro": "Indtast destination, produkttype, vægt i kilogram og pakkens mål i centimeter i den officielle beregner. Sammenlign ruter med samme oplysninger. Produktprisen og et tidligt fragtskøn er ikke det endelige samlede beløb frem til levering.",
       "sections": [
         {
           "heading": "Begynd med den officielle beregners oplysninger",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Begynd med den officielle beregners oplysninger",
+        "Adskil produktvægt fra den pakkede forsendelse",
+        "Hold enheder og målemetoder ensartede"
       ]
     },
     {
@@ -887,13 +923,15 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "category": "Efter købet",
-      "title": "Pikobuy-returnering og refundering: forbered en lagerbeslutning",
-      "description": "Kontrollér returberettigelse, bevar varedokumentation, og afklar omkostninger før en anmodning om lagerretur eller annullering hos Pikobuy.",
-      "intro": "En nyttig returanmodning begynder med den faktiske vare, dens aktuelle bestillingstrin og en præcis problembeskrivelse. En generel politikoverskrift kan ikke afgøre alle sager. Guiden forklarer, hvordan du organiserer dokumentation og beder om et klart resultat uden at antage gratis eller garanteret returnering. Den bygger på den offentlige politik gennemgået til denne guide samt en selvstændig praktisk tjekliste; den er ikke en rapport om en retur, vi personligt har indsendt.",
+      "title": "Pikobuy retur og refundering: vilkår, gebyrer og trin",
+      "description": "Kontrollér ordretrin, sælgerens returmuligheder og lagerfrist før anmodningen.",
+      "intro": "Kontrollér ordretrin, sælgerens returmuligheder og lagerfrist før anmodningen. Gem mærker, emballage og klare beviser på problemet. Bed om en specificering af omkostninger og refundering; en indsendt anmodning er ikke sælgerens godkendelse.",
       "sections": [
         {
           "heading": "Identificér bestillingen og dens aktuelle trin",
@@ -966,13 +1004,20 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Identificér bestillingen og dens aktuelle trin",
+        "Betragt lagerfristen som anledning til at handle",
+        "Beskriv problemet som en observerbar forskel"
       ]
     },
     {
       "category": "Fragt",
-      "title": "Pikobuy-sporing: identificér trinnet, og registrér dokumentationen",
-      "description": "Skeln mellem sælgerlevering, lagerbehandling og international sporing, og forbered en klar supportanmodning, når en Pikobuy-opdatering mangler.",
-      "intro": "Et Pikobuy-køb kan have flere referencer og ventetider, før det når dig. Første nyttige skridt, når sporingen virker stille, er at identificere den fase, du ser. Sælgerens indenlandske leveringsregistrering, lagermodtagelse og en international pakkeopdatering beskriver forskellige hændelser. Guiden giver en praktisk statuslog og fasespecifikke kontroller uden at opfinde ankomstdato eller hævde adgang til din private bestilling.",
+      "title": "Pikobuy-sporing står stille? Ordre- og pakkestatus",
+      "description": "Find først trinnet: sælgerlevering, lagerbehandling eller international transport.",
+      "intro": "Find først trinnet: sælgerlevering, lagerbehandling eller international transport. Et ordrenummer er ikke altid transportørens sporingsnummer. Gem seneste hændelse og tidspunkt, se den relevante officielle registrering, og spørg supporten om det konkrete manglende trin.",
       "sections": [
         {
           "heading": "Vælg referencen, der passer til spørgsmålet",
@@ -1045,13 +1090,20 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Vælg referencen, der passer til spørgsmålet",
+        "Adskil køb fra sælgerens afsendelse",
+        "Behandl lagermodtagelse som en særskilt hændelse"
       ]
     },
     {
       "category": "Undersøgelse",
-      "title": "Pikobuy-vurderingstjekliste: bedøm dokumentationen før betaling",
-      "description": "Vurdér Pikobuy-oplysninger, produktannoncer, betalingsdetaljer, kontrolbegrænsninger og fragtantagelser uden opdigtede anmeldelser eller karakterer.",
-      "intro": "Søgninger om, hvorvidt Pikobuy er legitim eller sikker, efterspørger ofte én dom, men omfatter flere beslutninger: identificere den officielle tjeneste, kontrollere sælgerens vare, forstå betalingen og undersøge fragtplanen. Denne artikel er en dokumentationstjekliste, ikke en anmeldelse af et personligt køb eller en karakter. Den forklarer, hvad offentlige oplysninger kan fastslå, hvad der kræver bestillingsspecifik bekræftelse, og hvordan du før betaling vælger de vigtige ubesvarede spørgsmål.",
+      "title": "Er Pikobuy pålidelig? Tjek før din første bestilling",
+      "description": "En katalogvare eller positiv anmeldelse garanterer ikke din ordre.",
+      "intro": "En katalogvare eller positiv anmeldelse garanterer ikke din ordre. Kontrollér officielt domæne, sælgerens vare, betalingsvilkår, lagerdokumentation og returregler hver for sig. Guiden er en tjekliste, ikke en personlig test eller sikkerhedsvurdering.",
       "sections": [
         {
           "heading": "Adskil platform, sælger og uafhængig guide",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Adskil platform, sælger og uafhængig guide",
+        "Kontrollér destinationen før indtastning af kontodata",
+        "Læs anmeldelser som afgrænset dokumentation"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Produkter og bestillinger",
+      "title": "Find sneakers på Pikobuy: størrelser, fotos og links",
+      "description": "Brug Pikobuys skokatalog til en kortliste, og kontrollér hvert par i den oprindelige annonce.",
+      "intro": "Brug Pikobuys skokatalog til en kortliste, og kontrollér hvert par i den oprindelige annonce. Begynd med pasform, præcis variant og fragtbudget. Flotte fotos og en lav katalogpris besvarer ikke alene de spørgsmål.",
+      "checks": [
+        "Sammenhold oprindeligt vare-ID, farve og størrelse.",
+        "Sammenlign målene med et par, der passer.",
+        "Kontrollér dine lagerfotos før ændring af emballagen."
+      ],
+      "sections": [
+        {
+          "heading": "Find den rigtige annonce",
+          "paragraphs": [
+            "Åbn skokollektionen, og vælg få kandidater med tydelige produktlinks. Notér vare-ID, farve og prisvaluta. Lignende billeder kan tilhøre forskellige sælgere eller varianter. Åbn originalannoncen igen før køb, da lagerstatus og valgmuligheder kan ændres."
+          ]
+        },
+        {
+          "heading": "Vælg størrelse ud fra sammenlignelige mål",
+          "paragraphs": [
+            "Mål begge fødder, og brug den største som reference, før du læser størrelsestabellen for den præcise annonce. Antag ikke samme omregning af EU-størrelser hos alle sælgere. Spørg, hvordan en angivet indersålslængde er målt; den er ikke automatisk den anbefalede fodlængde."
+          ]
+        },
+        {
+          "heading": "Læs billeder uden at overfortolke",
+          "paragraphs": [
+            "Sammenlign begge sko, mærker, bestilt farve, syninger og synlige sålkanter. Bed om et nærbillede af uklare områder. Katalogfotos viser tilbuddet; lagerfotos bør vise din egen ordre. Ingen af delene beviser langvarig komfort, ægthed eller holdbarhed."
+          ]
+        },
+        {
+          "heading": "Beslut om æsken efter kontrollen",
+          "paragraphs": [
+            "En skoæske ændrer pakkens mål og kan beskytte skoene. Kontrollér returvilkår og krav om intakte mærker, plomber eller tilbehør, før den fjernes. Sammenlign fragt med æske og mindre emballage ud fra virkelige mål, når de findes, uden at antage en fast besparelse."
+          ]
+        },
+        {
+          "heading": "Sammenlign den fulde pris",
+          "paragraphs": [
+            "Hold varepris, indenrigslevering, international fragt og viste tilvalg adskilt. Brug samme destination og antagelser om pakning for begge par. Hvis fragten på en blandet pakke fordeles ligeligt, skal det fremgå, at dette blot er din egen budgetmetode."
+          ]
+        },
+        {
+          "heading": "Køb, spørg eller søg videre",
+          "paragraphs": [
+            "Fortsæt, når vare og størrelse er identificeret, og totalen passer til budgettet. Stil et konkret spørgsmål, hvis et mål eller foto mangler. Hvis annoncen ændres eller svaret forbliver uklart, søg videre. Gem originalt link og endelig variant til senere sammenligning."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Produkter og bestillinger",
+      "title": "Pikobuy hættetrøjer: mål, stof og pasform",
+      "description": "En nyttig kortliste sammenligner tøjets mål, stofoplysninger og ønsket pasform.",
+      "intro": "En nyttig kortliste sammenligner tøjets mål, stofoplysninger og ønsket pasform. Start med en hættetrøje, du allerede kan lide, ikke kun din sædvanlige S, M eller L. Gem annonce og variant sammen, så lagerkontrollen gælder samme vare.",
+      "checks": [
+        "Mål en passende hættetrøje lagt fladt.",
+        "Skeln mellem fibersammensætning og stofvægt.",
+        "Sammenlign bestilt farve og mål på lageret."
+      ],
+      "sections": [
+        {
+          "heading": "Vælg det ønskede snit",
+          "paragraphs": [
+            "Se hættetrøjer og strik, og adskil modeller med lynlås fra lukkede samt smalle fra løse snit. Bestem brugen: lag på lag, kort silhuet eller hverdag. At sammenligne meget forskellige snit alene efter størrelsesmærket giver en misvisende kortliste."
+          ]
+        },
+        {
+          "heading": "Notér fire referencemål",
+          "paragraphs": [
+            "Læg en passende trøje fladt uden at strække den. Mål brystbredde, kropslængde, skulderbredde og ærmelængde med start- og slutpunkter. Sammenlign med sælgerens tegning. Brystbredde målt tværs over tøjet er ikke det samme som brystomkreds."
+          ]
+        },
+        {
+          "heading": "Oversized beskriver formen",
+          "paragraphs": [
+            "Sænkede skuldre og bred krop ændrer forståelsen af ærmelængden. Kontrollér også kropslængden: en større størrelse kan give uønsket ekstra længde. Hvis et vigtigt mål mangler, så bed om en præcisering i stedet for altid at vælge en størrelse større."
+          ]
+        },
+        {
+          "heading": "Forstå stofoplysningerne",
+          "paragraphs": [
+            "Sammensætning beskriver fibre; GSM angiver stoffets masse pr. areal. Ingen af delene beviser alene varme, blødhed eller modstand mod krympning. Spørg, om vægten gælder GSM eller hele tøjet. Brug vaskemærket, når det findes, og udled ikke vaskeresultater af fotos."
+          ]
+        },
+        {
+          "heading": "Kontrollér trøjen før afsendelse",
+          "paragraphs": [
+            "Match farve og størrelsesmærke, og undersøg syninger, manchetter, kant, hætte og eventuel lynlås. Sammenlign målefotos med din metode. Lys kan ændre farveindtrykket; beskriv en konkret forskel. Behold mærker og emballage, mens retur eller ombytning overvejes."
+          ]
+        },
+        {
+          "heading": "Budgettér med det pakkede tøj",
+          "paragraphs": [
+            "En fyldig hættetrøje kan påvirke både pakkemål og vægt. Sammenlign det officielle fragtskøn med dine andre varer under samme destinations- og pakningsforudsætninger. Beslut først efter afklaring af pasformen; en lav pris er ikke bedre værdi, hvis målene er ukendte."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Fragt og sporing",
+      "title": "Pikobuy gebyrer: varepris, betaling og fragt",
+      "description": "Vareprisen er kun en del af Pikobuy-budgettet.",
+      "intro": "Vareprisen er kun en del af Pikobuy-budgettet. Adskil købet fra international fragt, og kontrollér hver afgift og valuta. Der findes ikke én samlet pris for alle sælgere, destinationer, betalingsmetoder og pakker.",
+      "checks": [
+        "Notér beløb, valuta og trin for hver omkostning.",
+        "Adskil fragtskøn fra betalte beløb.",
+        "Tæl hver post én gang, også inkluderede ydelser."
+      ],
+      "sections": [
+        {
+          "heading": "Adskil de to betalingstrin",
+          "paragraphs": [
+            "Den officielle guide skelner mellem betaling for købet og international forsendelse. Før en enkel oversigt over planlagte, tilbudte og betalte beløb. En kontooptankning er ikke automatisk en ekstra vareudgift; afstem den med de udgifter, saldoen faktisk betaler."
+          ]
+        },
+        {
+          "heading": "Læs hver linje i betalingen",
+          "paragraphs": [
+            "Notér variantens pris, antal og viste indenrigs- eller servicegebyrer for ordren. Kontrollér, om en total allerede omfatter en post, før du lægger den til igen. Gem den aktuelle opdeling; et katalogskøn eller en omregnet pris er ikke en faktura."
+          ]
+        },
+        {
+          "heading": "Kontrollér valuta og betalingsgebyrer",
+          "paragraphs": [
+            "Sammenlign betalingsvaluta, kurs og gebyrer oplyst af platformen eller udbyderen før godkendelse. Katalogets omregning kan afvige fra bankens endelige træk. Sammenlign betalingsmetoder for samme købsbeløb, og notér tidspunktet for hvert tilbud."
+          ]
+        },
+        {
+          "heading": "Tilføj et ensartet fragtskøn",
+          "paragraphs": [
+            "Brug destination, produkttype, kilogram og pakkemål i centimeter i den officielle beregner. Angiv valgfri emballage eller beskyttelse separat, når det vises. Læs rutens inkluderede ydelser; et tiltalende navn betyder ikke, at alle destinationens omkostninger er dækket."
+          ]
+        },
+        {
+          "heading": "Et regneeksempel er ikke et tilbud",
+          "paragraphs": [
+            "Fiktivt eksempel i én valuta: vare 200 + indenrigslevering 10 + international fragt 120 + vist betalingsgebyr 5 = 335. Tallene demonstrerer addition, ikke Pikobuys priser. Medtag kun relevante afgifter, og markér ubekræftede beløb som ukendte."
+          ]
+        },
+        {
+          "heading": "Afstem ændringer og refunderinger",
+          "paragraphs": [
+            "Erstat skøn med endelige beløb, efterhånden som ordren skrider frem. Registrér refunderinger særskilt, og kontrollér, hvor de indsættes, før de regnes som tilbagebetalt til oprindelig betalingsmetode. Sammenlign nettoudgiften med budgettet og find forskelle i pris, pakning, valuta eller tilvalg."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

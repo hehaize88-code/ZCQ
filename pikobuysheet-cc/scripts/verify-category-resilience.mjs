@@ -35,7 +35,9 @@ try{
   assert.equal(response.status,200,lang+path);
   assert.equal(document.querySelectorAll('article.product-card').length,1,lang+path);
   assert.equal(document.querySelector('.product-card h3').textContent,'Verified '+path);
-  assert.equal(new URL(document.querySelector('.category-options .selected').getAttribute('href'),'https://pikobuysheet.cc').searchParams.get('source'),path);
+  const selected=new URL(document.querySelector('.category-options .selected').getAttribute('href'),'https://pikobuysheet.cc');
+  const collection=path==='/shoes/'?'shoes':path==='/hoodies-sweaters/'?'hoodies':null;
+  if(collection)assert.equal(selected.pathname,(lang==='en'?'':'/'+lang)+'/categories/'+collection+'/');else assert.equal(selected.searchParams.get('source'),path);
   assert.equal(document.querySelector('main[data-catalog-retry]'),null);
  }
  assert.equal(calls.length,1,'264 cold locale/category renders share the original 429 cooldown');

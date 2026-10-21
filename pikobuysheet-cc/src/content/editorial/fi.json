@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Artikkelit",
     "articlesTitle": "Pikobuy-osto-oppaat",
-    "articlesIntro": "Kymmenen käytännön opasta tuotteiden löytämiseen, tietojen tarkistamiseen ja tilauksen suunnitteluun. Aloita juuri sinulle ajankohtaisesta päätöksestä.",
+    "articlesIntro": "Käytännön Pikobuy-oppaat tuotteista, koosta, kustannuksista, toimituksesta ja palautuksista. Valitse aihe, tarkista tiedot ja suunnittele seuraava vaihe.",
     "faqTitle": "Usein kysyttyä Pikobuysta",
     "faqIntro": "Selkeitä vastauksia tuotelinkkejä, varastokuvia, toimituksia ja palautuksia koskeviin kysymyksiin. Palvelua koskevat tiedot on tarkistettu Pikobuyn omilta sivuilta; tämän sivuston ominaisuudet selitetään erikseen.",
     "faqSearch": "Hae kysymyksistä",
@@ -76,7 +76,18 @@
         "body": "Säilytä paketin viite ja erota myyjän toimitus, varaston vastaanotto ja kansainvälinen seuranta toisistaan. Ota tarvittaessa yhteyttä viralliseen tukeen ja ilmoita tilauksen tai paketin tunnus, jos päivitys tarvitsee selvennystä."
       }
     ],
-    "menu": "Valikko"
+    "menu": "Valikko",
+    "homeTitle": "Pikobuy Spreadsheet — Kengät, hupparit ja osto-oppaat",
+    "quickAnswer": "Aloita tästä",
+    "categoryTitles": [
+      "Pikobuy: kenkien ja tennareiden tuoteluettelo",
+      "Pikobuy: hupparien ja neuleiden tuoteluettelo"
+    ],
+    "categoryIntros": [
+      "Selaa FindSpreadsheetin kenkiä ja vertaa tarkkaa kokoa, alkuperäistä linkkiä ja saatavilla olevia kuvia. Luettelohinnat ovat arvioita; varmista valittu pari ja toimitus erikseen Pikobuyssa.",
+      "Selaa FindSpreadsheetin huppareita ja neuleita. Vertaa vaatteen mittoja, materiaalitietoja ja väriä ennen tarjouksen avaamista Pikobuyssa. Kokomerkintä ei yksin kerro istuvuudesta."
+    ],
+    "homeHeadline": "Tuoteluettelo."
   },
   "faq": [
     {
@@ -431,14 +442,16 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-ordering-guide",
       "category": "Osto-opas",
-      "title": "Pikobuy-tilausopas: ensimmäisestä tuotelinkistä paketin vahvistamiseen",
-      "description": "Ymmärrä ostamisen ja kansainvälisen toimituksen vaiheet sekä tarkista vaihtoehdot, varaston näyttö ja paketin kustannukset käytännössä.",
-      "intro": "Ostovälittäjän kautta tehty tilaus sisältää useita eri aikoina tehtäviä päätöksiä. Tuotteen valitseminen, ostaminen myyjältä, varastoon saapumisen tarkistaminen ja kansainvälisen toimituksen järjestäminen liittyvät toisiinsa, mutta eivät ole sama toimi. Pikobuyn julkisessa ostosoppaassa ostomaksu tulee ensin ja kansainvälisen toimituksen maksu myöhemmin. Tämän järjestyksen ymmärtäminen on hyödyllisempää kuin luvatun toimituspäivien määrän muistaminen. Artikkeli seuraa ostajan etenemistä ja selittää, mitä kannattaa tarkistaa ennen jatkamista. Tämä on julkiseen tietoon ja toimituksen omiin päätösmuistilistoihin perustuva valmistautumisopas, ei koeostoksen kuvaus. Tarkat maksut ja vaihtoehdot on edelleen vahvistettava nykyisestä tilausnäkymästä ja valittuihin palveluihin sovellettavista ehdoista.",
+      "title": "Näin tilaat Pikobuysta: tuotelinkit, QC ja toimitus",
+      "description": "Etsi tuote, tarkista linkki ja vaihtoehto ja tilaa Pikobuyssa.",
+      "intro": "Etsi tuote, tarkista linkki ja vaihtoehto ja tilaa Pikobuyssa. Katso oman tilauksesi varastokuvat ennen pakkaustavan valintaa ja kansainvälisen toimituksen maksamista. Tuotteen maksu ja myöhempi pakettimaksu ovat eri päätöksiä.",
       "sections": [
         {
           "heading": "Valmistele kohde ja tuotetta koskevat vaatimukset",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Valmistele kohde ja tuotetta koskevat vaatimukset",
+        "Siirry löytötiedoista viralliselle tuotesivulle",
+        "Tarkista ominaisuudet ennen ensimmäistä maksua"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-qc-photo-guide",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-sizing-guide",
@@ -728,15 +752,19 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-shipping-cost",
       "category": "Toimitus",
-      "title": "Pikobuyn toimituskulut: laadi hyödyllinen arvio ennen ostamista",
-      "description": "Valmistele Pikobuyn toimituslaskurin lähtötiedot, vertaa realistisia pakettivaihtoehtoja ja erota arvioitu rahti vahvistetusta lopullisesta tarjouksesta.",
-      "intro": "Hyödyllinen Pikobuy-toimitusarvio on kirjaus tietystä paketista, kohteesta ja oletuksista. Se ei ole pysyvä kilohinta. Tee paketin kuvauksesta riittävän yhdenmukainen ennen reittien vertailua, jotta vertailu merkitsee jotakin. Opas antaa lähtötietopohjan, tavan vertailla pakkausvaihtoehtoja ja lopputarkistusmenetelmän. Kaikki alla olevat esimerkit ovat kuvitteellisia ja havainnollistavat menetelmää; ne eivät ole Pikobuyn tarjouksia tai ennusteita lähetyksestäsi.",
+      "title": "Pikobuyn toimituskulut: laskuri, paino, mitat ja maksut",
+      "description": "Syötä viralliseen laskuriin kohde, tuotetyyppi, paino kilogrammoina ja pakatun lähetyksen mitat senttimetreinä.",
+      "intro": "Syötä viralliseen laskuriin kohde, tuotetyyppi, paino kilogrammoina ja pakatun lähetyksen mitat senttimetreinä. Vertaa reittejä samoilla tiedoilla. Tuotehinta ja alustava rahtiarvio eivät ole lopullinen perille toimitetun tilauksen kokonaiskulu.",
       "sections": [
         {
           "heading": "Aloita virallisen arvion lähtötiedoista",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Aloita virallisen arvion lähtötiedoista",
+        "Erota tuotteen paino pakatusta lähetyksestä",
+        "Pidä yksiköt ja mittausmenetelmät yhdenmukaisina"
       ]
     },
     {
@@ -887,14 +923,16 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-returns-refunds",
       "category": "Oston jälkeinen tuki",
-      "title": "Pikobuyn palautukset ja hyvitykset: valmistele varastovaiheen päätös",
-      "description": "Tarkista palautuskelpoisuus, säilytä tuotetta koskeva näyttö ja selvitä kulut ennen Pikobuyn varastopalautuksen tai peruutuksen pyytämistä.",
-      "intro": "Hyödyllinen palautuspyyntö alkaa todellisesta tuotteesta, tilauksen nykyvaiheesta ja ongelman täsmällisestä kuvauksesta. Yleinen ehtojen otsikko ei ratkaise jokaista tapausta. Opas selittää näytön järjestämistä ja selkeän lopputuloksen pyytämistä olettamatta palautusta ilmaiseksi tai varmaksi. Se perustuu tätä hanketta varten tarkistettuihin julkisiin ehtoihin ja omaan käytännön muistilistaan; se ei ole kertomus itse tekemästämme palautuksesta.",
+      "title": "Pikobuyn palautukset ja hyvitykset: ehdot, maksut ja vaiheet",
+      "description": "Tarkista tilausvaihe, myyjän palautusehdot ja varaston määräaika ennen pyyntöä.",
+      "intro": "Tarkista tilausvaihe, myyjän palautusehdot ja varaston määräaika ennen pyyntöä. Säilytä laput, pakkaus ja selkeät todisteet ongelmasta. Pyydä kulujen ja hyvityksen erittely; pyynnön lähettäminen ei tarkoita myyjän hyväksyntää.",
       "sections": [
         {
           "heading": "Tunnista tilaus ja sen nykyinen vaihe",
@@ -966,14 +1004,21 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Tunnista tilaus ja sen nykyinen vaihe",
+        "Pidä varastovaiheen määräaikaa kehotuksena toimia",
+        "Kuvaa ongelma havaittavana erona"
       ]
     },
     {
       "slug": "pikobuy-tracking-guide",
       "category": "Toimitus",
-      "title": "Pikobuy-seuranta: tunnista vaihe ja kirjaa näyttö",
-      "description": "Erota myyjän toimitus, varastokäsittely ja kansainvälinen seuranta ja valmistele selkeä tukipyyntö, kun Pikobuy-päivitys puuttuu.",
-      "intro": "Pikobuy-ostoksella voi olla useita viitteitä ja odotusjaksoja ennen saapumista luoksesi. Ensimmäinen hyödyllinen askel seurannan vaikuttaessa hiljaiselta on tunnistaa tarkastelemasi vaihe. Myyjän kotimaan toimitustietue, varaston vastaanotto ja kansainvälisen paketin päivitys kuvaavat eri tapahtumia. Opas tarjoaa käytännöllisen tilalokin ja vaihekohtaiset tarkistukset keksimättä saapumispäivää tai väittämättä pääsyä yksityiseen tilaukseesi.",
+      "title": "Pikobuyn seuranta ei päivity? Tilauksen ja paketin vaiheet",
+      "description": "Tunnista ensin vaihe: myyjän toimitus, varastokäsittely vai kansainvälinen kuljetus.",
+      "intro": "Tunnista ensin vaihe: myyjän toimitus, varastokäsittely vai kansainvälinen kuljetus. Tilausnumero ei välttämättä ole kuljetusyhtiön seurantanumero. Tallenna viimeisin tapahtuma ja aika, katso oikea virallinen tietue ja kysy tuelta täsmällisestä puuttuvasta vaiheesta.",
       "sections": [
         {
           "heading": "Valitse kysymystä vastaava viite",
@@ -1045,14 +1090,21 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Valitse kysymystä vastaava viite",
+        "Erota ostaminen myyjän lähettämisestä",
+        "Käsittele varaston vastaanotto omana tapahtumanaan"
       ]
     },
     {
       "slug": "pikobuy-review-checklist",
       "category": "Taustaselvitys",
-      "title": "Pikobuy-arvioinnin muistilista: arvioi näyttö ennen maksamista",
-      "description": "Arvioi Pikobuy-tietoja, tuoteilmoituksia, maksutietoja, QC:n rajoituksia ja toimitusoletuksia tukeutumatta keksittyihin arvosteluihin tai pisteytyksiin.",
-      "intro": "Haut siitä, onko Pikobuy luotettava tai turvallinen, hakevat usein yhtä tuomiota, mutta kyse on useasta päätöksestä: virallisen palvelun tunnistamisesta, myyjän tuotteen tarkistamisesta, maksamisen ymmärtämisestä ja lähetyssuunnitelman tutkimisesta. Artikkeli on näytön tarkistuslista, ei omaan ostokokemukseen perustuva arvostelu tai pisteytys. Se selittää, mitä julkinen tieto voi osoittaa, mikä tarvitsee tilauskohtaisen vahvistuksen ja miten päätät, mitkä avoimet kysymykset merkitsevät ennen maksamista.",
+      "title": "Onko Pikobuy luotettava? Tarkistukset ennen tilausta",
+      "description": "Luetteloilmoitus tai myönteinen arvio ei takaa tilaustasi.",
+      "intro": "Luetteloilmoitus tai myönteinen arvio ei takaa tilaustasi. Tarkista erikseen virallinen verkkotunnus, myyjän tuote, maksuehdot, varaston näyttö ja palautusehdot. Opas on tarkistuslista, ei henkilökohtainen testi tai turvallisuusluokitus.",
       "sections": [
         {
           "heading": "Erota alusta, myyjä ja riippumaton opas",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Erota alusta, myyjä ja riippumaton opas",
+        "Varmista kohde ennen tilitietojen syöttämistä",
+        "Lue arvosteluja rajallisena näyttönä"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Tuotteet ja tilaukset",
+      "title": "Pikobuyn tennarit: koot, kuvat ja tuotelinkit",
+      "description": "Kokoa ehdokkaat Pikobuyn kenkäluettelosta ja tarkista jokainen pari alkuperäisestä ilmoituksesta.",
+      "intro": "Kokoa ehdokkaat Pikobuyn kenkäluettelosta ja tarkista jokainen pari alkuperäisestä ilmoituksesta. Aloita istuvuudesta, täsmällisestä vaihtoehdosta ja toimitusbudjetista. Houkuttelevat kuvat ja halpa luettelohinta eivät yksin ratkaise näitä kysymyksiä.",
+      "checks": [
+        "Varmista alkuperäinen tuotetunnus, väri ja koko.",
+        "Vertaa mittoja sopivaan kenkäpariin.",
+        "Tarkista omat varastokuvasi ennen pakkauksen muuttamista."
+      ],
+      "sections": [
+        {
+          "heading": "Etsi oikea tuoteilmoitus",
+          "paragraphs": [
+            "Avaa kenkäkokoelma ja valitse muutama tuote, jolla on selkeä linkki. Kirjaa tuotetunnus, väri ja hinnan valuutta. Samankaltaiset kuvat voivat kuulua eri myyjille tai vaihtoehdoille. Avaa alkuperäinen ilmoitus uudelleen ennen ostamista, sillä saatavuus ja valinnat voivat muuttua."
+          ]
+        },
+        {
+          "heading": "Valitse koko vertailukelpoisilla mitoilla",
+          "paragraphs": [
+            "Mittaa molemmat jalat ja käytä suurempaa vertailukohtana. Lue juuri kyseisen ilmoituksen kokotaulukko. EU-kokojen muunnos ei välttämättä ole sama kaikilla myyjillä. Kysy pohjallisen pituuden mittaustapa: se ei automaattisesti tarkoita suositeltua jalan pituutta."
+          ]
+        },
+        {
+          "heading": "Tulkitse kuvia niiden rajoissa",
+          "paragraphs": [
+            "Vertaa molempia kenkiä, kokolappuja, tilattua väriä, ompeleita ja näkyviä pohjan reunoja. Pyydä lähikuva epäselvästä kohdasta. Luettelokuva esittää tarjousta; varastokuvan pitäisi koskea omaa tilaustasi. Kumpikaan ei todista pitkäaikaista mukavuutta, aitoutta tai kestävyyttä."
+          ]
+        },
+        {
+          "heading": "Päätä laatikosta tarkastuksen jälkeen",
+          "paragraphs": [
+            "Kenkälaatikko muuttaa paketin mittoja ja voi suojata kenkiä. Tarkista palautusehdot sekä ehjien lappujen, sinettien ja tarvikkeiden vaatimukset ennen poistamista. Vertaa laatikollista ja vähennettyä pakkausta todellisilla mitoilla, kun ne ovat tiedossa, olettamatta kiinteää säästöä."
+          ]
+        },
+        {
+          "heading": "Vertaa kokonaiskuluja",
+          "paragraphs": [
+            "Kirjaa tuotehinta, kotimaan toimitus, kansainvälinen rahti ja näytetyt lisävalinnat erikseen. Käytä molemmille pareille samaa kohdetta ja pakkausoletuksia. Jos jaat sekapaketin rahdin tasan, kerro selvästi, että kyseessä on vain oma budjetointitapasi."
+          ]
+        },
+        {
+          "heading": "Osta, kysy tai jatka etsimistä",
+          "paragraphs": [
+            "Etene, kun tuote ja koko ovat selvillä ja kokonaissumma sopii budjettiin. Kysy täsmällisesti puuttuvasta mitasta tai kuvasta. Jos ilmoitus muuttuu tai vastaus jää epäselväksi, jatka tutkimista. Säilytä alkuperäinen linkki ja lopullinen vaihtoehto myöhempää vertailua varten."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Tuotteet ja tilaukset",
+      "title": "Pikobuyn hupparit: mitat, materiaali ja istuvuus",
+      "description": "Hyödyllinen hupparivertailu yhdistää vaatteen mitat, materiaalitiedot ja halutun istuvuuden.",
+      "intro": "Hyödyllinen hupparivertailu yhdistää vaatteen mitat, materiaalitiedot ja halutun istuvuuden. Aloita jo sopivasta hupparista, älä pelkästään tavallisesta S-, M- tai L-koosta. Säilytä ilmoitus ja vaihtoehto yhdessä saman vaatteen varastotarkastusta varten.",
+      "checks": [
+        "Mittaa vertailuhuppari tasaisena venyttämättä.",
+        "Erota kuitukoostumus kankaan neliöpainosta.",
+        "Vertaa tilattua väriä ja mittoja varastossa."
+      ],
+      "sections": [
+        {
+          "heading": "Määritä haluamasi leikkaus",
+          "paragraphs": [
+            "Selaa huppareita ja neuleita erottaen vetoketjulliset ja pään yli puettavat sekä vartalonmyötäiset ja väljät mallit. Päätä käyttö: kerrospukeutuminen, lyhyt siluetti tai arki. Hyvin erilaisten leikkausten vertailu vain kokolapun perusteella johtaa harhaan."
+          ]
+        },
+        {
+          "heading": "Kirjaa neljä vertailumittaa",
+          "paragraphs": [
+            "Levitä sopiva huppari tasaiseksi venyttämättä. Mittaa rinnan leveys, vartalon pituus, hartialeveys ja hihan pituus sekä kirjaa alku- ja loppupisteet. Vertaa niitä myyjän piirrokseen. Vaatteen poikittainen rinnan leveys ei ole sama kuin rinnanympärys."
+          ]
+        },
+        {
+          "heading": "Oversize kuvaa muotoa",
+          "paragraphs": [
+            "Lasketut hartiat ja leveä vartalo muuttavat hihan pituuden tulkintaa. Tarkista myös kokonaispituus: suurempi koko voi pidentää vaatetta liikaa. Jos tärkeä mitta puuttuu, pyydä lisätietoa sen sijaan, että valitsisit aina yhtä suuremman koon."
+          ]
+        },
+        {
+          "heading": "Lue materiaalitiedot tarkasti",
+          "paragraphs": [
+            "Koostumus kertoo kuidut; GSM tarkoittaa kankaan massaa pinta-alaa kohden. Kumpikaan ei yksin todista lämpöä, pehmeyttä tai kutistumattomuutta. Kysy, koskeeko paino kankaan neliöpainoa vai koko vaatetta. Käytä hoitolappua äläkä päättele pesutuloksia kuvista."
+          ]
+        },
+        {
+          "heading": "Tarkista huppari ennen lähetystä",
+          "paragraphs": [
+            "Varmista väri ja kokolappu, sitten saumat, hihansuut, helma, huppu ja mahdollinen vetoketju. Vertaa mittauskuvia omaan menetelmääsi. Valaistus voi muuttaa värivaikutelmaa; kysy tietystä poikkeamasta. Säilytä laput ja pakkaus, kun palautus tai vaihto on harkinnassa."
+          ]
+        },
+        {
+          "heading": "Budjetoi pakattu vaate",
+          "paragraphs": [
+            "Tilava huppari voi muuttaa sekä paketin mittoja että painoa. Vertaa virallista arviota muihin tuotteisiin samoilla kohde- ja pakkausoletuksilla. Päätä vasta istuvuuskysymysten selvittyä: alempi hinta ei tarkoita parempaa ostosta, jos mitat jäävät tuntemattomiksi."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Toimitus ja seuranta",
+      "title": "Pikobuyn maksut: tuotehinta, maksaminen ja toimitus",
+      "description": "Tuotehinta on vain osa Pikobuy-budjettia.",
+      "intro": "Tuotehinta on vain osa Pikobuy-budjettia. Erota ostomaksu kansainvälisestä toimituksesta ja tarkista jokainen kulu sekä valuutta. Kaikille myyjille, kohteille, maksutavoille ja paketeille ei ole yhtä yhteistä loppusummaa.",
+      "checks": [
+        "Kirjaa jokaisen kulun summa, valuutta ja vaihe.",
+        "Erota toimitusarviot jo maksetuista summista.",
+        "Laske jokainen erä vain kerran, myös sisältyvät palvelut."
+      ],
+      "sections": [
+        {
+          "heading": "Erota kaksi maksuvaihetta",
+          "paragraphs": [
+            "Virallinen osto-opas erottaa ostoksen maksamisen kansainvälisen lähetyksen maksamisesta. Pidä yksinkertaista luetteloa suunnitelluista, tarjotuista ja maksetuista summista. Tilin saldon lataus ei automaattisesti ole toinen tuotekulu; täsmäytä se menoihin, jotka saldo todellisuudessa kattaa."
+          ]
+        },
+        {
+          "heading": "Lue maksuerittely rivi riviltä",
+          "paragraphs": [
+            "Kirjaa valitun vaihtoehdon hinta, määrä sekä tilaukselle näytetyt kotimaan toimitus- ja palvelukulut. Tarkista ennen lisäämistä, sisältyykö erä jo summaan. Tallenna ajantasainen erittely; luetteloarvio tai muunnettu näyttöhinta ei ole lasku."
+          ]
+        },
+        {
+          "heading": "Tarkista valuuttamuunnos ja maksukulut",
+          "paragraphs": [
+            "Vertaa ennen vahvistusta veloitusvaluuttaa, vaihtokurssia ja alustan tai maksupalvelun ilmoittamia kuluja. Luettelon muunnos voi poiketa lopullisesta pankkiveloituksesta. Vertaa maksutapoja samalla ostosummalla ja merkitse tarjousten ajankohdat."
+          ]
+        },
+        {
+          "heading": "Lisää johdonmukainen toimitusarvio",
+          "paragraphs": [
+            "Käytä virallisessa laskurissa kohdetta, tuotetyyppiä, kilogrammoja ja pakattuja mittoja senttimetreinä. Kirjaa valinnainen pakkaus tai suojaus erikseen, jos ne näytetään. Lue reitin sisältö: houkutteleva nimi ei takaa kaikkien kohdemaan kulujen sisältymistä."
+          ]
+        },
+        {
+          "heading": "Laskuesimerkki ei ole tarjous",
+          "paragraphs": [
+            "Kuvitteellinen esimerkki yhdessä valuutassa: tuote 200 + kotimaan toimitus 10 + kansainvälinen rahti 120 + näytetty maksukulu 5 = 335. Luvut havainnollistavat laskua, eivät Pikobuyn hintoja. Lisää vain soveltuvat erät ja merkitse vahvistamaton summa tuntemattomaksi."
+          ]
+        },
+        {
+          "heading": "Täsmäytä muutokset ja hyvitykset",
+          "paragraphs": [
+            "Korvaa arviot lopullisilla kuluilla tilauksen edetessä. Kirjaa palautukset erikseen ja tarkista hyvityspaikka ennen kuin tulkitset summan palautuneen alkuperäiselle maksutavalle. Vertaa nettomenoa budjettiin ja selvitä, syntyikö ero hinnasta, pakkauksesta, valuutasta vai valitusta palvelusta."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

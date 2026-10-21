@@ -9,10 +9,13 @@ for(const name of (await readdir('src/content/editorial')).filter(x=>x.endsWith(
  const locale=name.replace('.json','');
  const fail=message=>{throw new Error(name+': '+message);};
  if(!locales.includes(locale))fail('Unsupported editorial locale');
- if(value.faq.length!==28||value.articles.length!==10||value.ui.guideSteps.length!==6)fail('Incomplete FAQ, article or guide content');
+ if(value.faq.length!==28||value.articles.length!==13||value.ui.guideSteps.length!==6)fail('Incomplete FAQ, article or guide content');
  for(const [i,article] of value.articles.entries()){
   const reference=english.articles[i];
   if(article.slug!==reference.slug||article.sections.length!==reference.sections.length)fail('Article structure differs: '+article.slug);
+  if(!article.title||!article.intro||!article.description)fail('Empty article metadata');
+  if((article.checks||[]).length!==(reference.checks||[]).length)fail('Missing quick answers');
+  if(locale!=='en'&&(article.title===reference.title||article.intro===reference.intro))fail('Untranslated article metadata');
   if(article.related.some(slug=>!slugs.includes(slug)))fail('Unresolved related article');
   for(const [n,section] of article.sections.entries()){
    const original=reference.sections[n];
@@ -20,6 +23,8 @@ for(const name of (await readdir('src/content/editorial')).filter(x=>x.endsWith(
    if(locale!=='en'&&section.paragraphs.some((p,j)=>p===original.paragraphs[j]))fail('Untranslated article paragraph');
   }
  }
+ if(!value.ui.homeTitle||value.ui.categoryTitles?.length!==2||value.ui.categoryIntros?.length!==2||!value.ui.quickAnswer)fail('Missing SEO or collection translations');
+ if(locale!=='en'&&value.ui.homeTitle===english.ui.homeTitle)fail('Untranslated homepage title');
  if(value.faq.some(item=>item.related&&!slugs.includes(item.related)))fail('Unresolved FAQ article link');
  packs[name.replace('.json','')]=gzipSync(JSON.stringify(value),{level:9}).toString('base64');
 }
@@ -27,7 +32,7 @@ const missing=locales.filter(locale=>!packs[locale]);
 if(missing.length)throw new Error('Editorial locale content is missing: '+missing.join(', '));
 await mkdir('.generated',{recursive:true});
 await writeFile('.generated/editorial-packs.ts','// Generated from tracked editorial JSON.\nexport const EDITORIAL_PACKS:Record<string,string>='+JSON.stringify(packs)+';\n');
-const sitemapPaths=['/','/spreadsheet/','/guide/','/faq/','/articles/','/sitemap/',...slugs.map(slug=>'/articles/'+slug+'/')];
+const sitemapPaths=['/','/spreadsheet/','/guide/','/faq/','/articles/','/sitemap/','/categories/shoes/','/categories/hoodies/',...slugs.map(slug=>'/articles/'+slug+'/')];
 await writeFile('.generated/sitemap-paths.ts','// Generated at build time from tracked editorial JSON.\nexport const SITEMAP_PATHS: readonly string[]='+JSON.stringify(sitemapPaths)+';\n');
 const escapeXml=value=>value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
 const sitemapUrls=sitemapPaths.flatMap(path=>locales.map(locale=>'https://pikobuysheet.cc'+(locale==='en'?'':'/'+locale)+path));

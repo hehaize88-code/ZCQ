@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Články",
     "articlesTitle": "Nákupní průvodci Pikobuy",
-    "articlesIntro": "Deset praktických průvodců hledáním produktů, kontrolou podrobností a plánováním objednávky. Začněte rozhodnutím, které právě řešíte.",
+    "articlesIntro": "Praktické průvodce Pikobuy k produktům, velikostem, nákladům, dopravě a vrácení. Vyberte téma, ověřte údaje a naplánujte další krok.",
     "faqTitle": "Časté dotazy k Pikobuy",
     "faqIntro": "Jasné odpovědi k odkazům na produkty, skladovým fotografiím, dopravě a vrácení. Informace o platformě ověřujeme podle vlastních stránek Pikobuy; funkce našeho webu vysvětlujeme samostatně.",
     "faqSearch": "Hledat v dotazech",
@@ -76,7 +76,18 @@
         "body": "Uchovejte číslo zásilky a rozlišujte doručení prodejcem, přijetí ve skladu a mezinárodní sledování. Pokud aktualizace vyžaduje vysvětlení, kontaktujte oficiální podporu s příslušným ID objednávky nebo zásilky."
       }
     ],
-    "menu": "Nabídka"
+    "menu": "Nabídka",
+    "homeTitle": "Pikobuy Spreadsheet — Boty, mikiny a nákupní průvodce",
+    "quickAnswer": "Začněte zde",
+    "categoryTitles": [
+      "Pikobuy: katalog bot a tenisek",
+      "Pikobuy: katalog mikin a svetrů"
+    ],
+    "categoryIntros": [
+      "Prohlédněte si boty z FindSpreadsheet a porovnejte přesnou velikost, původní odkaz a dostupné fotografie. Ceny jsou orientační; vybraný pár a dopravu potvrďte zvlášť v Pikobuy.",
+      "Prohlédněte si mikiny a svetry z FindSpreadsheet. Před otevřením nabídky v Pikobuy porovnejte rozměry oděvu, materiál a barvu. Samotný štítek velikosti neurčuje, jak oděv padne."
+    ],
+    "homeHeadline": "Katalog produktů."
   },
   "faq": [
     {
@@ -431,14 +442,16 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-ordering-guide",
       "category": "Nákupní průvodce",
-      "title": "Průvodce objednáváním v Pikobuy: od prvního odkazu na produkt k odeslání zásilky",
-      "description": "Pochopte fáze nákupu a mezinárodní dopravy s praktickými kontrolami variant, skladových důkazů a nákladů zásilky.",
-      "intro": "Objednávka přes nákupního zprostředkovatele obsahuje několik rozhodnutí probíhajících v různých časech. Výběr produktu, nákup od prodejce, kontrola příchodu do skladu a zajištění mezinárodního doručení souvisejí, ale nejsou stejnou činností. Veřejný nákupní průvodce Pikobuy popisuje nejprve platbu za nákup a později platbu za mezinárodní dopravu. Pochopení této posloupnosti je užitečnější než zapamatování slíbeného počtu dní doručení. Článek sleduje cestu kupujícího a vysvětluje, co zkontrolovat před pokračováním. Jde o přípravný průvodce založený na veřejných informacích a původních rozhodovacích seznamech, nikoli zprávu o testovacím nákupu. Konkrétní poplatky a možnosti potvrzujte na aktuální obrazovce objednávky a v podmínkách vybraných služeb.",
+      "title": "Jak objednat na Pikobuy: odkazy, QC a doprava",
+      "description": "Najděte produkt, ověřte odkaz a variantu a objednejte v Pikobuy.",
+      "intro": "Najděte produkt, ověřte odkaz a variantu a objednejte v Pikobuy. Před výběrem balení a zaplacením mezinárodní dopravy prohlédněte fotografie vlastní objednávky ve skladu. Platba za produkt a pozdější platba za balík jsou samostatná rozhodnutí.",
       "sections": [
         {
           "heading": "Připravte destinaci a požadavky na předmět",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Připravte destinaci a požadavky na předmět",
+        "Pomocí objevených informací přejděte na oficiální produktovou stránku",
+        "Před první platbou zkontrolujte specifikaci"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-qc-photo-guide",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-sizing-guide",
@@ -728,15 +752,19 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-shipping-cost",
       "category": "Doprava",
-      "title": "Cena dopravy Pikobuy: vytvořte užitečný odhad před nákupem",
-      "description": "Připravte vstupy kalkulátoru dopravy Pikobuy, porovnávejte realistické scénáře zásilky a oddělujte odhad přepravy od potvrzené konečné nabídky.",
-      "intro": "Užitečný odhad dopravy Pikobuy je záznamem konkrétní zásilky, destinace a souboru předpokladů. Není trvalou cenou za kilogram. Před porovnáváním tras sjednoťte popis zásilky natolik, aby porovnání něco znamenalo. Průvodce nabízí vstupní pracovní list, způsob porovnání balicích scénářů a závěrečný kontrolní postup. Každý níže uvedený příklad je hypotetický a předvádí metodu; nejde o nabídku Pikobuy ani předpověď vaší přepravy.",
+      "title": "Doprava Pikobuy: kalkulačka, hmotnost, rozměry a poplatky",
+      "description": "Do oficiální kalkulačky zadejte destinaci, typ produktu, hmotnost v kilogramech a rozměry zabaleného balíku v centimetrech.",
+      "intro": "Do oficiální kalkulačky zadejte destinaci, typ produktu, hmotnost v kilogramech a rozměry zabaleného balíku v centimetrech. Porovnávejte trasy se stejnými údaji. Cena produktu a první odhad dopravy nejsou konečnou cenou celé doručené objednávky.",
       "sections": [
         {
           "heading": "Začněte oficiálními vstupy odhadu",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Začněte oficiálními vstupy odhadu",
+        "Oddělte hmotnost produktu od zabalené zásilky",
+        "Udržujte jednotky a měřicí metody konzistentní"
       ]
     },
     {
@@ -887,14 +923,16 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-returns-refunds",
       "category": "Poprodejní služby",
-      "title": "Vrácení zboží a peněz v Pikobuy: připravte skladové rozhodnutí",
-      "description": "Ověřte možnost vrácení, uchovejte důkazy o předmětu a vyjasněte náklady před žádostí o skladové vrácení nebo zrušení v Pikobuy.",
-      "intro": "Užitečná žádost o vrácení začíná skutečným předmětem, aktuální fází objednávky a přesným popisem problému. Obecný nadpis pravidel nerozhodne každý případ. Průvodce vysvětluje uspořádání důkazů a žádost o jasný výsledek bez předpokladu bezplatného či zaručeného vrácení. Vychází z ověřených veřejných pravidel spolu s původním praktickým seznamem; není zprávou o vrácení, které jsme sami podali.",
+      "title": "Vrácení a refundace Pikobuy: podmínky, poplatky a postup",
+      "description": "Před žádostí ověřte stav objednávky, podmínky prodejce a skladovou lhůtu.",
+      "intro": "Před žádostí ověřte stav objednávky, podmínky prodejce a skladovou lhůtu. Uchovejte štítky, obal a jasné důkazy problému. Vyžádejte rozpis nákladů a vracené částky; podaná žádost ještě neznamená souhlas prodejce.",
       "sections": [
         {
           "heading": "Určete objednávku a její aktuální fázi",
@@ -966,14 +1004,21 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Určete objednávku a její aktuální fázi",
+        "Berte skladovou lhůtu jako podnět jednat",
+        "Popisujte problém jako pozorovatelný rozdíl"
       ]
     },
     {
       "slug": "pikobuy-tracking-guide",
       "category": "Doprava",
-      "title": "Sledování Pikobuy: určete fázi a zaznamenejte důkazy",
-      "description": "Oddělujte doručení prodejcem, skladové zpracování a mezinárodní sledování a připravte jasný dotaz podpoře, pokud chybí aktualizace Pikobuy.",
-      "intro": "Nákup Pikobuy může mít několik referencí a několik období čekání, než k vám dorazí. Prvním užitečným krokem při zdánlivě klidném sledování je určit pozorovanou fázi. Domácí doručovací záznam prodejce, skladový příjem a aktualizace mezinárodního balíku popisují různé události. Průvodce nabízí praktický stavový deník a kontroly jednotlivých fází bez vymýšlení data příchodu či tvrzení o přístupu k soukromé objednávce.",
+      "title": "Sledování Pikobuy se neaktualizuje? Stav objednávky a balíku",
+      "description": "Nejprve určete fázi: doručení prodejce, skladové zpracování nebo mezinárodní přeprava.",
+      "intro": "Nejprve určete fázi: doručení prodejce, skladové zpracování nebo mezinárodní přeprava. Číslo objednávky nemusí být sledovacím číslem dopravce. Uložte poslední událost a čas, zkontrolujte příslušný oficiální záznam a zeptejte se na konkrétní chybějící krok.",
       "sections": [
         {
           "heading": "Vyberte referenci odpovídající otázce",
@@ -1045,14 +1090,21 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Vyberte referenci odpovídající otázce",
+        "Oddělte nákup od odeslání prodejcem",
+        "Berte přijetí ve skladu jako samostatnou událost"
       ]
     },
     {
       "slug": "pikobuy-review-checklist",
       "category": "Průzkum",
-      "title": "Kontrolní seznam hodnocení Pikobuy: před platbou posuďte důkazy",
-      "description": "Posuzujte informace o Pikobuy, produktové nabídky, platební údaje, omezení QC a přepravní předpoklady bez spoléhání na vymyšlené recenze či známky.",
-      "intro": "Hledání odpovědi, zda je Pikobuy důvěryhodné nebo bezpečné, často žádá jediný verdikt, ale zahrnuje několik různých rozhodnutí: určení oficiální služby, kontrolu předmětu prodejce, pochopení platby a posouzení přepravního plánu. Tento článek je kontrolním seznamem důkazů, nikoli recenzí vlastního nákupu ani hodnocením. Vysvětluje, co lze zjistit z veřejných informací, co potřebuje potvrzení konkrétní objednávky a jak před platbou určit důležitost nezodpovězených otázek.",
+      "title": "Je Pikobuy důvěryhodný? Co ověřit před nákupem",
+      "description": "Položka v katalogu ani kladná recenze nezaručí vaši objednávku.",
+      "intro": "Položka v katalogu ani kladná recenze nezaručí vaši objednávku. Ověřte samostatně oficiální doménu, produkt prodejce, platební podmínky, skladové podklady a vrácení. Tento průvodce nabízí kontrolní seznam, nikoli osobní test nebo hodnocení bezpečnosti.",
       "sections": [
         {
           "heading": "Oddělujte platformu, prodejce a nezávislého průvodce",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Oddělujte platformu, prodejce a nezávislého průvodce",
+        "Před zadáním účtových údajů ověřte cíl",
+        "Čtěte recenze jako důkazy s vymezeným rozsahem"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Produkty a objednávky",
+      "title": "Tenisky na Pikobuy: velikosti, fotografie a odkazy",
+      "description": "Pomocí katalogu bot Pikobuy vytvořte užší výběr a každý pár ověřte v původní nabídce.",
+      "intro": "Pomocí katalogu bot Pikobuy vytvořte užší výběr a každý pár ověřte v původní nabídce. Začněte velikostí, přesnou variantou a rozpočtem na dopravu. Pěkné fotografie a nízká cena samy tyto otázky nevyřeší.",
+      "checks": [
+        "Porovnejte původní ID, barvu a velikost.",
+        "Ověřte rozměry podle dobře padnoucího páru.",
+        "Před změnou balení zkontrolujte vlastní skladové fotografie."
+      ],
+      "sections": [
+        {
+          "heading": "Najděte správnou nabídku",
+          "paragraphs": [
+            "Otevřete kolekci bot a vyberte několik možností s jasným odkazem. Zapište ID, barvu a měnu ceny. Podobné obrázky mohou patřit jiným prodejcům či variantám. Před nákupem znovu otevřete původní nabídku, protože dostupnost a možnosti se mohou změnit."
+          ]
+        },
+        {
+          "heading": "Vybírejte podle srovnatelných měření",
+          "paragraphs": [
+            "Změřte obě chodidla a větší použijte jako referenci, potom přečtěte tabulku dané nabídky. Nepředpokládejte stejné převody velikostí EU u všech prodejců. U délky vložky se zeptejte na způsob měření; nejde automaticky o doporučenou délku chodidla."
+          ]
+        },
+        {
+          "heading": "Vyhodnoťte fotografie bez přehnaných závěrů",
+          "paragraphs": [
+            "Porovnejte obě boty, štítky, objednanou barvu, švy a viditelné hrany podrážek. Požádejte o detail nejasného místa. Katalogové fotografie zobrazují nabídku; skladové mají odpovídat vaší objednávce. Ani jedny nedokazují dlouhodobé pohodlí, pravost nebo odolnost."
+          ]
+        },
+        {
+          "heading": "O krabici rozhodněte po kontrole",
+          "paragraphs": [
+            "Krabice mění rozměry zásilky a může boty chránit. Před odstraněním ověřte pravidla vrácení a požadavky na neporušené štítky, plomby či příslušenství. Porovnejte dopravu s krabicí a omezeným balením podle skutečných dostupných rozměrů, bez předpokladu pevné úspory."
+          ]
+        },
+        {
+          "heading": "Porovnejte celkové náklady",
+          "paragraphs": [
+            "Oddělte cenu produktu, vnitrostátní doručení, mezinárodní dopravu a zobrazené příplatky. Pro oba páry použijte stejnou destinaci a předpoklady balení. Pokud náklady smíšeného balíku rozdělíte rovnoměrně, označte to pouze jako vlastní rozpočtovou metodu."
+          ]
+        },
+        {
+          "heading": "Kupte, vyjasněte nebo hledejte dál",
+          "paragraphs": [
+            "Pokračujte, když znáte produkt i velikost a součet odpovídá rozpočtu. Při chybějícím rozměru či snímku položte konkrétní otázku. Pokud se nabídka změní nebo odpověď zůstane nejasná, pokračujte v hledání. Uložte původní odkaz a konečnou variantu pro pozdější porovnání."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Produkty a objednávky",
+      "title": "Mikiny Pikobuy: rozměry, materiál a střih",
+      "description": "Užitečný výběr mikin porovnává rozměry oděvu, materiál a požadovaný střih.",
+      "intro": "Užitečný výběr mikin porovnává rozměry oděvu, materiál a požadovaný střih. Začněte mikinou, kterou už máte rádi, ne jen obvyklým S, M nebo L. Nabídku a variantu uchovávejte společně pro kontrolu stejného kusu ve skladu.",
+      "checks": [
+        "Změřte referenční mikinu položenou naplocho.",
+        "Rozlišujte složení vláken a gramáž látky.",
+        "Ve skladu porovnejte objednanou barvu a rozměry."
+      ],
+      "sections": [
+        {
+          "heading": "Určete požadovaný střih",
+          "paragraphs": [
+            "V kolekci mikin a svetrů oddělte modely na zip a přes hlavu, úzké a volné střihy. Zvolte použití: vrstvení, krátká silueta nebo běžné nošení. Srovnání různých střihů jen podle štítku velikosti vede k zavádějícímu výběru."
+          ]
+        },
+        {
+          "heading": "Zapište čtyři referenční rozměry",
+          "paragraphs": [
+            "Položte dobře padnoucí mikinu naplocho bez natahování. Změřte šířku hrudníku, délku těla, šířku ramen a délku rukávu včetně počátečních a koncových bodů. Porovnejte je s nákresem prodejce. Šířka hrudníku přes oděv není totéž jako obvod."
+          ]
+        },
+        {
+          "heading": "Oversize označuje tvar",
+          "paragraphs": [
+            "Spadlá ramena a široké tělo mění význam délky rukávu. Sledujte také délku oděvu: větší velikost může přidat nežádoucí délku. Chybí-li důležitý rozměr, vyžádejte jej místo automatického nákupu o číslo většího kusu."
+          ]
+        },
+        {
+          "heading": "Čtěte skutečný význam materiálových údajů",
+          "paragraphs": [
+            "Složení uvádí vlákna; GSM hmotnost látky na plochu. Ani jeden údaj sám neprokazuje hřejivost, měkkost či nesrážlivost. Zeptejte se, zda uvedená váha znamená gramáž nebo hmotnost celého oděvu. Použijte štítek údržby a neodvozujte výsledky praní z fotografií."
+          ]
+        },
+        {
+          "heading": "Mikinu zkontrolujte před odesláním",
+          "paragraphs": [
+            "Ověřte barvu a velikost, potom švy, manžety, lem, kapuci a případný zip. Snímky měření porovnejte se svou metodou. Světlo může změnit vnímání barvy; popište konkrétní odchylku. Ponechte štítky i obal, dokud zvažujete vrácení nebo výměnu."
+          ]
+        },
+        {
+          "heading": "Počítejte se zabaleným oděvem",
+          "paragraphs": [
+            "Objemná mikina může změnit rozměry i váhu balíku. Porovnejte oficiální odhad s dalšími věcmi za stejné destinace a balení. Rozhodněte až po vyjasnění střihu: nižší cena není lepší hodnota, pokud rozměry zůstávají neznámé."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Doprava a sledování",
+      "title": "Poplatky Pikobuy: cena produktu, platby a doprava",
+      "description": "Cena produktu je jen část rozpočtu Pikobuy.",
+      "intro": "Cena produktu je jen část rozpočtu Pikobuy. Oddělte nákup od mezinárodní dopravy a ověřte každou položku i měnu. Neexistuje jedna celková částka pro všechny prodejce, země, platební metody a balíky.",
+      "checks": [
+        "Zapište částku, měnu a fázi každého poplatku.",
+        "Oddělte odhady dopravy od uhrazených částek.",
+        "Každou položku počítejte jednou, včetně zahrnutých služeb."
+      ],
+      "sections": [
+        {
+          "heading": "Oddělte dvě fáze platby",
+          "paragraphs": [
+            "Oficiální průvodce rozlišuje platbu za nákup a mezinárodní odeslání. Veďte jednoduchý přehled plánovaných, nabídnutých a zaplacených částek. Dobití účtu není automaticky druhou cenou produktu; porovnejte je s výdaji skutečně hrazenými ze zůstatku."
+          ]
+        },
+        {
+          "heading": "Přečtěte rozpis nákupu",
+          "paragraphs": [
+            "Zapište cenu varianty, počet kusů a zobrazené vnitrostátní či servisní poplatky. Před přičtením ověřte, zda je součet již nezahrnuje. Uložte aktuální rozpis; katalogový odhad ani přepočtená zobrazená cena nejsou fakturou."
+          ]
+        },
+        {
+          "heading": "Ověřte kurz a platební poplatky",
+          "paragraphs": [
+            "Před potvrzením porovnejte účtovanou měnu, kurz a poplatky oznámené platformou či poskytovatelem. Převod v katalogu se může lišit od konečné bankovní platby. Srovnávejte metody při stejné nákupní částce a poznamenejte čas získání jednotlivých nabídek."
+          ]
+        },
+        {
+          "heading": "Přidejte konzistentní odhad přepravy",
+          "paragraphs": [
+            "V oficiální kalkulačce použijte destinaci, typ produktu, kilogramy a zabalené rozměry v centimetrech. Volitelné balení či ochranu zapište zvlášť, pokud jsou uvedeny. Čtěte obsah vybrané trasy; lákavý název nezaručuje zahrnutí všech nákladů v cíli."
+          ]
+        },
+        {
+          "heading": "Výpočet není cenová nabídka",
+          "paragraphs": [
+            "Smyšlený příklad v jedné měně: produkt 200 + domácí doručení 10 + mezinárodní doprava 120 + uvedený platební poplatek 5 = 335. Čísla vysvětlují sčítání, nikoli sazby Pikobuy. Přidávejte pouze skutečně relevantní položky a nepotvrzené částky označte jako neznámé."
+          ]
+        },
+        {
+          "heading": "Srovnejte změny a refundace",
+          "paragraphs": [
+            "Během objednávky nahrazujte odhady konečnými náklady. Refundace zapisujte zvlášť a ověřte místo připsání, než je považujete za vrácené původní platební metodou. Porovnejte čistý výdaj s rozpočtem a určete rozdíly v ceně, balení, měně nebo vybraných službách."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

@@ -2,7 +2,7 @@
   "ui": {
     "articlesLabel": "Cikkek",
     "articlesTitle": "Pikobuy vásárlási útmutatók",
-    "articlesIntro": "Tíz gyakorlati útmutató a termékkereséshez, a részletek ellenőrzéséhez és a rendelés megtervezéséhez. Kezdje azzal a döntéssel, amely éppen Ön előtt áll.",
+    "articlesIntro": "Gyakorlati Pikobuy-útmutatók termékekről, méretekről, költségekről, szállításról és visszaküldésről. Válassz témát, ellenőrizd az adatokat, és tervezd meg a következő lépést.",
     "faqTitle": "Pikobuy gyakori kérdések",
     "faqIntro": "Világos válaszok a termékhivatkozásokról, raktári fényképekről, szállításról és visszaküldésről. A platform adatait a Pikobuy saját oldalai alapján ellenőrizzük; webhelyünk funkcióit külön ismertetjük.",
     "faqSearch": "Keresés a kérdések között",
@@ -76,7 +76,18 @@
         "body": "Őrizze meg a csomag hivatkozási számát, és különböztesse meg az eladói kézbesítést, a raktári átvételt és a nemzetközi nyomkövetést. Ha egy frissítés magyarázatra szorul, a megfelelő rendelés- vagy csomagazonosítóval keresse a hivatalos ügyfélszolgálatot."
       }
     ],
-    "menu": "Menü"
+    "menu": "Menü",
+    "homeTitle": "Pikobuy Spreadsheet — Cipők, pulóverek és vásárlási útmutatók",
+    "quickAnswer": "Itt kezdd",
+    "categoryTitles": [
+      "Pikobuy: cipő- és sneakerkatalógus",
+      "Pikobuy: kapucnis felsők és pulóverek"
+    ],
+    "categoryIntros": [
+      "Böngészd a FindSpreadsheet cipőit, és hasonlítsd össze a pontos méretet, eredeti linket és elérhető képeket. A katalógusár becslés; a párat és a szállítást külön ellenőrizd a Pikobuyon.",
+      "Böngészd a FindSpreadsheet kapucnis felsőit és pulóvereit. A Pikobuy-ajánlat megnyitása előtt vesd össze a ruhaméreteket, anyagadatokat és színt. A méretcímke önmagában nem bizonyítja az illeszkedést."
+    ],
+    "homeHeadline": "Termékkatalógus."
   },
   "faq": [
     {
@@ -431,14 +442,16 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-ordering-guide",
       "category": "Vásárlási útmutató",
-      "title": "Pikobuy rendelési útmutató: az első termékhivatkozástól a csomagfeladásig",
-      "description": "Ismerje meg a vásárlási és nemzetközi szállítási szakaszokat a változatok, raktári bizonyítékok és csomagköltségek gyakorlati ellenőrzésével.",
-      "intro": "A közvetítőn keresztüli rendelés több, különböző időpontban meghozott döntést tartalmaz. A termék kiválasztása, az eladótól való vásárlás, a raktári érkezés ellenőrzése és a nemzetközi kézbesítés megszervezése összefügg, de nem ugyanaz a művelet. A Pikobuy nyilvános vásárlási útmutatója előbb a vásárlási, később a nemzetközi szállítási fizetést írja le. Ennek a sorrendnek a megértése hasznosabb, mint egy megígért szállítási napmennyiség megjegyzése. A cikk a vásárló útját követi, és elmagyarázza, mit kell ellenőrizni továbblépés előtt. Nyilvános információkon és saját döntési ellenőrzőlistákon alapuló felkészülési útmutató, nem tesztvásárlás beszámolója. A konkrét díjak és lehetőségek megerősítésének helye továbbra is az aktuális rendelési képernyő és a választott szolgáltatások feltételei.",
+      "title": "Így rendelj a Pikobuyon: terméklinkek, QC és szállítás",
+      "description": "Keress terméket, ellenőrizd a linket és változatot, majd rendelj a Pikobuyon.",
+      "intro": "Keress terméket, ellenőrizd a linket és változatot, majd rendelj a Pikobuyon. A csomagolás kiválasztása és a nemzetközi szállítás kifizetése előtt nézd meg a saját rendelésed raktári képeit. A termék és a későbbi csomag kifizetése külön döntés.",
       "sections": [
         {
           "heading": "Készítse elő a célállomást és a termék követelményeit",
@@ -507,6 +520,13 @@
         "pikobuy-weidian-links",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Készítse elő a célállomást és a termék követelményeit",
+        "A felfedezett információkkal jusson el a hivatalos termékoldalra",
+        "Az első fizetés előtt nézze át a specifikációt"
       ]
     },
     {
@@ -581,7 +601,9 @@
         "pikobuy-ordering-guide",
         "pikobuy-qc-photo-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-qc-photo-guide",
@@ -655,7 +677,9 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
         "pikobuy-sizing-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-sizing-guide",
@@ -728,15 +752,19 @@
       "related": [
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-ordering-guide",
-        "pikobuy-qc-photo-guide"
-      ]
+        "pikobuy-qc-photo-guide",
+        "pikobuy-sneaker-finds",
+        "pikobuy-hoodie-finds"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-shipping-cost",
       "category": "Szállítás",
-      "title": "Pikobuy szállítási költség: készítsen használható becslést vásárlás előtt",
-      "description": "Készítse elő a Pikobuy szállítási kalkulátorának adatait, hasonlítson össze reális csomagforgatókönyveket, és válassza külön a becsült fuvardíjat a megerősített végleges ajánlattól.",
-      "intro": "A használható Pikobuy-szállítási becslés egy adott csomag, célállomás és feltételezéskészlet feljegyzése. Nem állandó kilogrammonkénti ár. Az útvonalak összevetése előtt a csomagleírást tegye annyira egységessé, hogy az összehasonlítás értelmes legyen. Az útmutató adatlapot, csomagolási forgatókönyveket összevető módszert és végső ellenőrzési folyamatot ad. Minden alábbi példa feltételezett és módszert szemléltet; nem Pikobuy-ajánlat vagy az Ön küldeményére vonatkozó előrejelzés.",
+      "title": "Pikobuy szállítási költség: kalkulátor, súly, méretek és díjak",
+      "description": "A hivatalos kalkulátorban add meg a célországot, terméktípust, kilogrammban mért súlyt és a csomag méreteit centiméterben.",
+      "intro": "A hivatalos kalkulátorban add meg a célországot, terméktípust, kilogrammban mért súlyt és a csomag méreteit centiméterben. Azonos adatokkal hasonlítsd össze az útvonalakat. A termékár és az első fuvardíjbecslés nem a kézbesített rendelés végső összköltsége.",
       "sections": [
         {
           "heading": "Kezdje a hivatalos becslés bemeneti adataival",
@@ -806,7 +834,15 @@
       "related": [
         "pikobuy-parcel-packing",
         "pikobuy-tracking-guide",
-        "pikobuy-returns-refunds"
+        "pikobuy-returns-refunds",
+        "pikobuy-fees"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Kezdje a hivatalos becslés bemeneti adataival",
+        "Válassza külön a termék tömegét a becsomagolt küldeménytől",
+        "Tartsa egységesen az egységeket és mérési módszereket"
       ]
     },
     {
@@ -887,14 +923,16 @@
         "pikobuy-shipping-cost",
         "pikobuy-returns-refunds",
         "pikobuy-tracking-guide"
-      ]
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-17"
     },
     {
       "slug": "pikobuy-returns-refunds",
       "category": "Értékesítés utáni ügyintézés",
-      "title": "Pikobuy visszaküldések és visszatérítések: készüljön fel a raktári döntésre",
-      "description": "Ellenőrizze a visszaküldhetőséget, őrizze meg a termék bizonyítékait, és tisztázza a költségeket Pikobuy-raktári visszaküldés vagy törlés kérése előtt.",
-      "intro": "A hasznos visszaküldési kérés a tényleges termékkel, a rendelés aktuális szakaszával és a probléma pontos leírásával kezdődik. Egy általános szabályzati cím nem dönthet el minden esetet. Ez az útmutató a bizonyítékok rendezését és világos eredmény kérését magyarázza az ingyenes vagy garantált visszaküldés feltételezése nélkül. Az áttekintett nyilvános szabályzaton és saját gyakorlati ellenőrzőlistán alapul; nem egy általunk személyesen benyújtott visszaküldés beszámolója.",
+      "title": "Pikobuy visszaküldés és visszatérítés: feltételek, díjak, lépések",
+      "description": "A kérelem előtt ellenőrizd a rendelés szakaszát, az eladói jogosultságot és a raktári határidőt.",
+      "intro": "A kérelem előtt ellenőrizd a rendelés szakaszát, az eladói jogosultságot és a raktári határidőt. Őrizd meg a címkéket, csomagolást és a probléma világos bizonyítékait. Kérj tételes költség- és visszatérítési számítást; a benyújtás még nem jóváhagyás.",
       "sections": [
         {
           "heading": "Azonosítsa a rendelést és aktuális szakaszát",
@@ -966,14 +1004,21 @@
         "pikobuy-qc-photo-guide",
         "pikobuy-parcel-packing",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Azonosítsa a rendelést és aktuális szakaszát",
+        "A raktári időablakot cselekvési jelzésként kezelje",
+        "Megfigyelhető eltérésként írja le a problémát"
       ]
     },
     {
       "slug": "pikobuy-tracking-guide",
       "category": "Szállítás",
-      "title": "Pikobuy nyomkövetés: azonosítsa a szakaszt és rögzítse a bizonyítékot",
-      "description": "Különítse el az eladói kézbesítést, raktári feldolgozást és nemzetközi nyomkövetést, majd készítsen világos támogatási kérést, ha Pikobuy-frissítés hiányzik.",
-      "intro": "Egy Pikobuy-vásárlásnak több hivatkozási száma és több várakozási szakasza lehet, mire Önhöz ér. Amikor a nyomkövetés csendesnek tűnik, az első hasznos lépés a megfigyelt szakasz azonosítása. Az eladó belföldi kézbesítési adata, a raktári átvétel és a nemzetközi csomagfrissítés külön eseményt ír le. Ez az útmutató gyakorlati állapotnaplót és szakaszonkénti ellenőrzéseket kínál kitalált érkezési dátum vagy a privát rendeléshez való hozzáférés állítása nélkül.",
+      "title": "Nem frissül a Pikobuy-követés? Rendelési és csomagállapotok",
+      "description": "Először azonosítsd a szakaszt: eladói kézbesítés, raktári feldolgozás vagy nemzetközi fuvar.",
+      "intro": "Először azonosítsd a szakaszt: eladói kézbesítés, raktári feldolgozás vagy nemzetközi fuvar. A rendelésszám nem feltétlenül futárkövetési szám. Mentsd az utolsó eseményt és időpontot, nézd meg a megfelelő hivatalos rekordot, és a konkrét hiányzó lépésről kérdezz.",
       "sections": [
         {
           "heading": "A kérdéshez illő referenciát válassza",
@@ -1045,14 +1090,21 @@
         "pikobuy-parcel-packing",
         "pikobuy-returns-refunds",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "A kérdéshez illő referenciát válassza",
+        "Válassza külön a vásárlást és eladói feladást",
+        "A raktári átvételt önálló eseményként kezelje"
       ]
     },
     {
       "slug": "pikobuy-review-checklist",
       "category": "Tájékozódás",
-      "title": "Pikobuy értékelési ellenőrzőlista: fizetés előtt mérlegelje a bizonyítékokat",
-      "description": "Értékelje a Pikobuy-információkat, termékajánlatokat, fizetési részleteket, QC-korlátokat és szállítási feltételezéseket kitalált vélemények vagy pontszámok nélkül.",
-      "intro": "A Pikobuy megbízhatóságát vagy biztonságát kereső kérdések gyakran egyetlen ítéletet várnak, de több külön döntésről van szó: a hivatalos szolgáltatás azonosításáról, az eladói termék ellenőrzéséről, a fizetés megértéséről és a szállítási terv vizsgálatáról. Ez a cikk bizonyíték-ellenőrzőlista, nem saját vásárláson alapuló teszt vagy pontozás. Elmagyarázza, mit állapíthat meg a nyilvános információ, mihez kell rendelésenkénti megerősítés, és hogyan döntse el fizetés előtt, mely nyitott kérdés fontos.",
+      "title": "Megbízható a Pikobuy? Ellenőrzések az első rendelés előtt",
+      "description": "Egy katalógustétel vagy pozitív értékelés nem garantálja a rendelésedet.",
+      "intro": "Egy katalógustétel vagy pozitív értékelés nem garantálja a rendelésedet. Külön ellenőrizd a hivatalos domaint, eladói terméket, fizetési feltételeket, raktári bizonyítékokat és visszaküldést. Ez ellenőrzőlista, nem személyes teszt vagy biztonsági pontszám.",
       "sections": [
         {
           "heading": "Válassza külön a platformot, eladót és független útmutatót",
@@ -1125,7 +1177,204 @@
         "how-to-use-pikobuy-spreadsheet",
         "pikobuy-qc-photo-guide",
         "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-17",
+      "modified": "2026-10-21",
+      "checks": [
+        "Válassza külön a platformot, eladót és független útmutatót",
+        "Fiókadatok beírása előtt ellenőrizze a céloldalt",
+        "A véleményeket meghatározott hatókörű bizonyítékként olvassa"
       ]
+    },
+    {
+      "slug": "pikobuy-sneaker-finds",
+      "category": "Termékek és rendelések",
+      "title": "Pikobuy sneakerek: méretek, fotók és terméklinkek",
+      "description": "A Pikobuy cipőkatalógusával készíts rövid listát, majd minden párat ellenőrizz az eredeti ajánlatban.",
+      "intro": "A Pikobuy cipőkatalógusával készíts rövid listát, majd minden párat ellenőrizz az eredeti ajánlatban. Kezdd az illeszkedéssel, pontos változattal és szállítási kerettel. Szép képek és alacsony katalógusár önmagukban nem válaszolják meg ezeket.",
+      "checks": [
+        "Egyeztesd az eredeti azonosítót, színt és méretet.",
+        "Vesd össze a méréseket egy jól illő párral.",
+        "Csomagolásmódosítás előtt nézd meg saját raktári fotóidat."
+      ],
+      "sections": [
+        {
+          "heading": "Találd meg a helyes ajánlatot",
+          "paragraphs": [
+            "Nyisd meg a cipőkollekciót, és válassz néhány egyértelmű linkű terméket. Írd fel az azonosítót, színt és az ár pénznemét. Hasonló képek különböző eladókat vagy változatokat takarhatnak. Vásárlás előtt nyisd meg újra az eredetit, mert a készlet és lehetőségek változhatnak."
+          ]
+        },
+        {
+          "heading": "Összehasonlítható mérésekből válassz méretet",
+          "paragraphs": [
+            "Mérd meg mindkét lábad, a nagyobbat használd viszonyításként, majd olvasd el az adott ajánlat mérettábláját. Ne feltételezz egységes EU-méretváltást minden eladónál. Talpbetéthossznál kérdezz rá a mérés módjára; az nem automatikusan az ajánlott lábhossz."
+          ]
+        },
+        {
+          "heading": "A képekből csak megalapozottan következtess",
+          "paragraphs": [
+            "Hasonlítsd össze a két cipőt, címkéket, rendelt színt, varrásokat és látható talpszéleket. Kérj közeli képet a bizonytalan részről. A katalóguskép az ajánlatot mutatja, a raktári képnek a saját rendelésedhez kell tartoznia. Egyik sem bizonyít tartós kényelmet, eredetiséget vagy élettartamot."
+          ]
+        },
+        {
+          "heading": "Ellenőrzés után dönts a dobozról",
+          "paragraphs": [
+            "A cipősdoboz módosítja a csomagméretet és védelmet adhat. Eltávolítás előtt nézd meg a visszaküldési feltételeket és az ép címkékre, plombákra vagy tartozékokra vonatkozó előírásokat. Valós méretekkel hasonlítsd össze a dobozos és csökkentett csomagolást, ha elérhetők; ne feltételezz fix megtakarítást."
+          ]
+        },
+        {
+          "heading": "A teljes költséget hasonlítsd össze",
+          "paragraphs": [
+            "Külön oszlopba írd a termékárat, belföldi kézbesítést, nemzetközi fuvart és megjelenített extrákat. Mindkét párnál azonos célországot és csomagolási feltételezést használj. Vegyes csomag fuvardíjának egyenlő felosztásakor jelezd, hogy ez csak saját költségtervezési módszered."
+          ]
+        },
+        {
+          "heading": "Vásárolj, tisztázz vagy keress tovább",
+          "paragraphs": [
+            "Akkor lépj tovább, ha a termék és méret azonosítható, és az összeg belefér a keretbe. Hiányzó mérésről vagy képről kérdezz konkrétan. Változó ajánlat vagy bizonytalan válasz esetén keress tovább. Mentsd az eredeti linket és végleges változatot a későbbi összevetéshez."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-shipping-cost"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "shoes"
+    },
+    {
+      "slug": "pikobuy-hoodie-finds",
+      "category": "Termékek és rendelések",
+      "title": "Pikobuy kapucnis felsők: méretek, anyag és szabás",
+      "description": "Egy hasznos pulóverlista a ruhaméreteket, anyagadatokat és kívánt illeszkedést hasonlítja össze.",
+      "intro": "Egy hasznos pulóverlista a ruhaméreteket, anyagadatokat és kívánt illeszkedést hasonlítja össze. Indulj ki egy már kedvelt darabból, ne csak a megszokott S, M vagy L jelből. Az ajánlatot és változatot együtt őrizd a raktári ellenőrzéshez.",
+      "checks": [
+        "Fektetve mérj meg egy megfelelő referenciadarabot.",
+        "Válaszd külön az összetételt és a szövet tömegét.",
+        "A raktárban vesd össze a rendelt színt és méreteket."
+      ],
+      "sections": [
+        {
+          "heading": "Határozd meg a kívánt szabást",
+          "paragraphs": [
+            "A pulóverek között különítsd el a cipzáras és bebújós, illetve szűk és bő modelleket. Döntsd el a célt: rétegezés, rövid sziluett vagy hétköznapi használat. Nagyon eltérő szabások pusztán méretcímke szerinti összevetése félrevezető listát ad."
+          ]
+        },
+        {
+          "heading": "Rögzíts négy referenciaméretet",
+          "paragraphs": [
+            "Fektesd le a jól illő felsőt nyújtás nélkül. Mérj mellbőségi szélességet, törzshosszt, vállszélességet és ujjhosszt, a kezdő- és végpontokkal. Vesd össze az eladó ábrájával. A ruhán keresztben mért mellrész szélessége nem azonos a mellkas körfogatával."
+          ]
+        },
+        {
+          "heading": "Az oversized formát jelent",
+          "paragraphs": [
+            "Az ejtett váll és széles törzs módosítja az ujjhossz értelmezését. A teljes hosszt is nézd: nagyobb méret nem kívánt hosszúságot adhat. Ha lényeges méret hiányzik, kérj pontosítást ahelyett, hogy automatikusan egy mérettel nagyobbat vennél."
+          ]
+        },
+        {
+          "heading": "Értsd pontosan az anyagadatokat",
+          "paragraphs": [
+            "Az összetétel a szálakat írja le, a GSM az egységnyi felületre jutó szövettömeget. Egyik sem bizonyít önmagában meleget, puhaságot vagy zsugorodásállóságot. Kérdezd meg, hogy a súly GSM vagy teljes ruhatömeg. Kövesd az ápolási címkét, mosási eredményt ne fotóból jósolj."
+          ]
+        },
+        {
+          "heading": "Feladás előtt vizsgáld meg a felsőt",
+          "paragraphs": [
+            "Ellenőrizd a színt és méretcímkét, majd varrásokat, mandzsettákat, szegélyt, kapucnit és cipzárt. A mérési képeket saját módszereddel vesd össze. A világítás megváltoztathatja a színérzetet; konkrét eltérést jelezz. Visszaküldés mérlegelésekor tartsd meg a címkéket és csomagolást."
+          ]
+        },
+        {
+          "heading": "A becsomagolt ruhával tervezz",
+          "paragraphs": [
+            "Egy vastag pulóver a csomag méretét és súlyát is módosíthatja. Hasonlítsd a hivatalos becslést a többi termékhez azonos célországgal és csomagolási feltételekkel. A szabás tisztázása után dönts: az alacsonyabb ár nem jobb érték, ha a méretek ismeretlenek."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "returns",
+        "estimate"
+      ],
+      "related": [
+        "pikobuy-sizing-guide",
+        "pikobuy-qc-photo-guide",
+        "pikobuy-parcel-packing"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": "hoodies"
+    },
+    {
+      "slug": "pikobuy-fees",
+      "category": "Szállítás és nyomkövetés",
+      "title": "Pikobuy díjak: termékár, fizetés és szállítás",
+      "description": "A termékár csak a Pikobuy-költségkeret része.",
+      "intro": "A termékár csak a Pikobuy-költségkeret része. Különítsd el a vásárlást a nemzetközi szállítástól, majd ellenőrizd a díjakat és pénznemeket. Nincs minden eladóra, célországra, fizetési módra és csomagra érvényes összeg.",
+      "checks": [
+        "Írd fel minden díj összegét, pénznemét és szakaszát.",
+        "Válaszd külön a becslést és a kifizetett összeget.",
+        "Minden tételt egyszer számolj, a benne foglalt szolgáltatásokat is."
+      ],
+      "sections": [
+        {
+          "heading": "Válaszd külön a két fizetési szakaszt",
+          "paragraphs": [
+            "A hivatalos útmutató külön kezeli a vásárlás és a nemzetközi feladás kifizetését. Vezess egyszerű listát tervezett, ajánlott és fizetett összegekről. Az egyenlegfeltöltés nem automatikusan második termékköltség; egyeztesd azzal, milyen kiadásokat fedez ténylegesen az egyenleg."
+          ]
+        },
+        {
+          "heading": "Soronként olvasd az elszámolást",
+          "paragraphs": [
+            "Rögzítsd a változat árát, mennyiségét és a rendelésnél jelzett belföldi vagy szolgáltatási díjakat. Hozzáadás előtt nézd meg, szerepelnek-e már a végösszegben. Mentsd az aktuális bontást; katalógusbecslés vagy átváltott kijelzett ár nem számla."
+          ]
+        },
+        {
+          "heading": "Ellenőrizd az átváltást és fizetési díjakat",
+          "paragraphs": [
+            "Jóváhagyás előtt hasonlítsd össze a terhelt pénznemet, árfolyamot és a platform vagy szolgáltató által közölt díjakat. A katalógus átváltása eltérhet a bank végső terhelésétől. Fizetési módokat azonos vásárlási összegnél és rögzített ajánlati időponttal hasonlíts össze."
+          ]
+        },
+        {
+          "heading": "Adj hozzá következetes szállítási becslést",
+          "paragraphs": [
+            "A hivatalos kalkulátorban célországot, terméktípust, kilogrammot és csomagméretet adj meg centiméterben. A választható csomagolást vagy védelmet külön sorban kezeld, ha látható. Olvasd el az útvonal tartalmát; vonzó név nem garantálja minden célországi költség fedezetét."
+          ]
+        },
+        {
+          "heading": "A számítási példa nem árajánlat",
+          "paragraphs": [
+            "Kitalált példa egy pénznemben: termék 200 + belföldi kézbesítés 10 + nemzetközi fuvar 120 + jelzett fizetési díj 5 = 335. Ezek összeadást szemléltető számok, nem Pikobuy-tarifák. Csak ténylegesen alkalmazandó tételeket adj hozzá, a nem megerősített összeget jelöld ismeretlennek."
+          ]
+        },
+        {
+          "heading": "Egyeztesd a változásokat és visszatérítéseket",
+          "paragraphs": [
+            "A rendelés haladtával cseréld a becsléseket végleges díjakra. Külön rögzítsd a visszatérítést és ellenőrizd jóváírásának helyét, mielőtt az eredeti fizetési módra visszaérkezettnek tekintenéd. Vesd össze a nettó kiadást a tervvel, és azonosítsd az ár, csomagolás, pénznem vagy szolgáltatás miatti eltérést."
+          ]
+        }
+      ],
+      "sourceIds": [
+        "guide",
+        "estimate",
+        "shipping",
+        "returns"
+      ],
+      "related": [
+        "pikobuy-shipping-cost",
+        "pikobuy-ordering-guide",
+        "pikobuy-returns-refunds"
+      ],
+      "published": "2026-10-21",
+      "modified": "2026-10-21",
+      "collection": null
     }
   ]
 }

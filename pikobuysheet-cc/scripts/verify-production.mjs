@@ -18,15 +18,15 @@ for(const lang of langs)for(const path of paths){
  assert.ok([...document.querySelectorAll('link[rel="alternate"]')].every(a=>a.href.startsWith(origin+'/')),local);
  assert.equal(document.querySelector('.topline').textContent.trim(),'pikobuysheet.ccFindSpreadsheet × Pikobuy',local);
  if(path==='/faq/')assert.equal(document.querySelectorAll('[data-faq-item]').length,28,local);
- if(path.startsWith('/articles/')&&path!=='/articles/')assert.equal(document.querySelectorAll('.article-body > section').length,8,local);
+ if(path.startsWith('/articles/')&&path!=='/articles/')assert.equal(document.querySelectorAll('.article-body > section').length,english.articles.find(a=>path==='/articles/'+a.slug+'/').sections.length,local);
  passed++;
 }
-const sitemap=await app.fetch(new Request(origin+'/sitemap.xml'),{},{});const xml=await sitemap.text();assert.equal(sitemap.status,200);assert.equal((xml.match(/<loc>/g)||[]).length,384);assert.ok(!xml.includes('workers.dev'));
+const sitemap=await app.fetch(new Request(origin+'/sitemap.xml'),{},{});const xml=await sitemap.text();assert.equal(sitemap.status,200);assert.equal((xml.match(/<loc>/g)||[]).length,504);assert.ok(!xml.includes('workers.dev'));
 const robots=await (await app.fetch(new Request(origin+'/robots.txt'),{},{})).text();assert.ok(robots.includes('Allow: /'));assert.ok(robots.includes(origin+'/sitemap-main.xml'));
 const preview=await app.fetch(new Request('https://pikobuysheet-cc.hehaize88.workers.dev/articles/'),{},{});assert.equal(preview.headers.get('x-robots-tag'),'noindex, follow');
 const previewRobots=await (await app.fetch(new Request('https://pikobuysheet-cc.hehaize88.workers.dev/robots.txt'),{},{})).text();assert.ok(previewRobots.includes('Disallow: /'));
 const missing=await app.fetch(new Request(origin+'/articles/not-a-real-article/'),{},{});assert.equal(missing.status,404);assert.equal(missing.headers.get('x-robots-tag'),'noindex, follow');
 const query=await app.fetch(new Request(origin+'/faq/?q=test'),{},{});assert.equal(query.headers.get('x-robots-tag'),'noindex, follow');
 const www=await app.fetch(new Request('https://www.pikobuysheet.cc/de/faq/?q=test'),{},{});assert.equal(www.status,301);assert.equal(www.headers.get('location'),origin+'/de/faq/?q=test');
-const report={date:new Date().toISOString().slice(0,10),origin,editorialPages:passed,sitemapUrls:384,checks:['production indexable','fixed canonical and hreflang','28 FAQs and full article sections','preview noindex and blocked robots','404 and query noindex','www 301 preserves path and query'],result:'passed'};
+const report={date:new Date().toISOString().slice(0,10),origin,editorialPages:passed,sitemapUrls:504,checks:['production indexable','fixed canonical and hreflang','28 FAQs and full article sections','preview noindex and blocked robots','404 and query noindex','www 301 preserves path and query'],result:'passed'};
 await writeFile('.generated/production-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
