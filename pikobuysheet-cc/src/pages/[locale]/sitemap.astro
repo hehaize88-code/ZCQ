@@ -1,0 +1,10 @@
+---
+import SiteDirectory from '../../components/SiteDirectory.astro';
+import { languages } from '../../lib/i18n';
+export const prerender = true;
+export function getStaticPaths() {
+  return languages.filter(([lang]) => lang !== 'en').map(([locale]) => ({ params: { locale } }));
+}
+const { locale } = Astro.params;
+---
+<SiteDirectory lang={locale} />

@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import { languages, localized, translate } from '../lib/i18n';
+import { loadEditorial } from '../lib/editorial';
+import { sitemapLabel } from '../lib/directory';
+import { SITE_ORIGIN } from '../lib/site';
+const { lang = 'en' } = Astro.props;
+const t = translate(lang);
+const content = await loadEditorial(lang);
+const label = sitemapLabel(lang);
+const href = (path: string) => localized(lang, path);
+const canonical = SITE_ORIGIN + href('/sitemap/');
+const pages = [
+  ['/', t.home], ['/spreadsheet/', t.browse], ['/guide/', content.ui.guideTitle],
+  ['/faq/', content.ui.faqTitle], ['/articles/', content.ui.articlesTitle]
+];
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>{label} | Pikobuy Sheet</title>
+    <meta name="description" content={`${label} · Pikobuy · ${content.ui.articlesTitle} · ${content.ui.faqTitle}`} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/brand/favicon.png" type="image/png" />
+    {languages.map(([id]) => <link rel="alternate" hreflang={id} href={SITE_ORIGIN + localized(id, '/sitemap/')} />)}
+    <link rel="alternate" hreflang="x-default" href={SITE_ORIGIN + '/sitemap/'} />
+  </head>
+  <body>
+    <header class="wrap directory-header">
+      <a class="brand" href={href('/')} aria-label="Pikobuy Sheet"><img src="/brand/logo.png" alt="Pikobuy" width="150" height="42" /><span class="brand-sheet">SHEET</span></a>
+      <a href={href('/')}>{t.home} ↗</a>
+    </header>
+    <main class="wrap directory">
+      <div class="directory-title"><span class="eyebrow">PIKOBUY SHEET</span><h1>{label}</h1></div>
+      <nav aria-label={label} class="page-links">{pages.map(([path, name]) => <a href={href(path)}>{name}<span aria-hidden="true">↗</span></a>)}</nav>
+      <section aria-labelledby="directory-articles">
+        <h2 id="directory-articles">{content.ui.articlesTitle}</h2>
+        <ul class="article-links">{content.articles.map(article => <li><a href={href('/articles/' + article.slug + '/')}>{article.title}<span aria-hidden="true">↗</span></a></li>)}</ul>
+      </section>
+      <details class="directory-languages">
+        <summary>{t.language} · {languages.length}</summary>
+        <nav aria-label={t.language}>{languages.map(([id, name]) => <a lang={id} hreflang={id} href={localized(id, '/sitemap/')} aria-current={id === lang ? 'page' : undefined}>{name}</a>)}</nav>
+      </details>
+    </main>
+    <footer><div class="wrap directory-footer"><a href={href('/')}>pikobuysheet.cc</a><a href="/sitemap-main.xml">XML</a></div></footer>
+  </body>
+</html>
+<style>
+  .directory-header{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px;border-bottom:1px solid #d6dfdc}
+  .directory{max-width:1040px;padding-top:28px;padding-bottom:30px}.directory-title h1{font-size:clamp(28px,4vw,42px);line-height:1.2;margin:8px 0 22px}
+  .page-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:26px}.page-links a{background:#e6f5f0;padding:12px 14px;border-radius:8px}
+  .page-links a,.article-links a{display:flex;justify-content:space-between;align-items:center;gap:16px;color:#17382f;text-decoration:none}.page-links a span,.article-links a span{flex-shrink:0}
+  h2{font-size:22px;margin:0 0 12px}.article-links{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}.article-links li{border-bottom:1px solid #d6dfdc}.article-links a{padding:13px 0;font-size:15px;line-height:1.5;min-height:68px;overflow-wrap:anywhere}
+  a:hover{text-decoration:underline}.directory-languages{margin-top:24px;border:1px solid #d6dfdc;border-radius:8px;padding:12px 14px}.directory-languages summary{cursor:pointer;font-weight:650}.directory-languages nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:14px}.directory-languages a{padding:7px 0;color:#17382f}.directory-languages [aria-current]{font-weight:700}.directory-footer{display:flex;justify-content:space-between;padding-top:16px;padding-bottom:16px}
+  @media(max-width:650px){.directory-header{padding-top:12px;padding-bottom:12px}.directory{padding-top:18px;padding-bottom:18px}.directory-title h1{margin-bottom:16px}.page-links{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:20px}.page-links a{padding:10px;font-size:14px}.article-links{grid-template-columns:1fr}.article-links a{min-height:0;padding:10px 0;font-size:14px}.directory-languages nav{grid-template-columns:repeat(3,minmax(0,1fr))}h2{font-size:19px}}
+</style>

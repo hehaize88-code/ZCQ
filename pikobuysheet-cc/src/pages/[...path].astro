@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Analytics from '../components/Analytics.astro';
 import {SITE_ORIGIN,isProductionHost} from '../lib/site';
+import {sitemapLabel} from '../lib/directory';
 import Icon from '../components/Icon.astro';
 import EditorialPage from '../components/EditorialPage.astro';
 import ArticleCards from '../components/ArticleCards.astro';
@@ -97,7 +98,7 @@ const canonical=new URL(url(currentPath),SITE_ORIGIN).href;
 {visual&&<section class="visual-page wrap"><span class="eyebrow">PIKOBUY SPREADSHEET</span><h1>{t.visual}</h1><div class="visual-panel"><Icon name="camera" size={48}/><h2>{t.unavailable}</h2><p>{c.visualNote}</p><form class="search-box" action={url('/spreadsheet/')}><Icon name="search"/><input name="q" placeholder={t.placeholder} aria-label={t.search} required/><button type="submit" aria-label={t.search}><Icon name="arrow"/></button></form></div></section>}
 {(invalid||(detail&&error))&&<section class="empty wrap"><h1>{invalid?'404':t.unavailable}</h1><p>{error?c.error:t.empty}</p><a class="button dark" href={url('/spreadsheet/')}>{t.back}</a></section>}
 </main>
-<footer><div class="wrap footer-main"><div><a class="brand" href={url('/')}><img src="/brand/logo.png" alt="Pikobuy" width="140" height="40"/><span class="brand-sheet">SHEET</span></a><p>{c.disclosure}</p></div><div class="footer-links"><a href={url('/spreadsheet/')}>{t.browse}</a><a href={url('/guide/')}>{t.guide}</a><a href={url('/faq/')}>{t.faq}</a><a href={url('/articles/')}>{ui.articlesLabel}</a><a href="https://www.pikobuy.com/shipping-cost" target="_blank" rel="noopener noreferrer">Pikobuy ↗</a><a href="https://findspreadsheet.com/" target="_blank" rel="noopener noreferrer">FindSpreadsheet ↗</a></div></div><div class="wrap footer-bottom"><span>© {new Date().getFullYear()} pikobuysheet.cc</span><span>{!production&&<>{t.preview} · </>}{t.price}</span><a href={url('/')}>{t.home} ↑</a></div></footer>
+<footer><div class="wrap footer-main"><div><a class="brand" href={url('/')}><img src="/brand/logo.png" alt="Pikobuy" width="140" height="40"/><span class="brand-sheet">SHEET</span></a><p>{c.disclosure}</p></div><div class="footer-links"><a href={url('/sitemap/')}>{sitemapLabel(lang)}</a><a href={url('/spreadsheet/')}>{t.browse}</a><a href={url('/guide/')}>{t.guide}</a><a href={url('/faq/')}>{t.faq}</a><a href={url('/articles/')}>{ui.articlesLabel}</a><a href="https://www.pikobuy.com/shipping-cost" target="_blank" rel="noopener noreferrer">Pikobuy ↗</a><a href="https://findspreadsheet.com/" target="_blank" rel="noopener noreferrer">FindSpreadsheet ↗</a></div></div><div class="wrap footer-bottom"><span>© {new Date().getFullYear()} pikobuysheet.cc</span><span>{!production&&<>{t.preview} · </>}{t.price}</span><a href={url('/')}>{t.home} ↑</a></div></footer>
 <script>
  import {scheduleCatalogRecovery} from '../lib/catalog-recovery';
  scheduleCatalogRecovery(document,window);

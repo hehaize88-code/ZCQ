@@ -1,6 +1,6 @@
 # Pikobuy Sheet project memory
 
-Updated: 2026-10-18
+Updated: 2026-10-21
 
 ## Scope and persistent decisions
 
@@ -58,3 +58,14 @@ Updated: 2026-10-18
 - One search request for socks returned503 with the honest source-unavailable message. The known Orb Graphic Crew Socks detail returned200. Do not conflate this search failure with an inability to connect to the entire domain, or assume all commerce routes are failing.
 - No root cause for the user's specific connection error is established. Current Cloudflare connector did not complete; the browser connector reported that the originating connected browser context was unavailable. A fresh screenshot containing the URL or the exact URL/error code is needed to match the user's failure.
 - No DNS, TLS, security rule, application source, existing cache binding, or sitemap configuration was changed during this check.
+
+## Crawl discovery repair, 2026-10-21
+
+- User reports Cloudflare cannot connect; do not require another Cloudflare connection. GitHub main still drives the previously authorized automatic deployment.
+- Verified GSC homepage, /articles/ and /spreadsheet/ are already indexed. GSC live test of /sitemap-main.xml fetched successfully at 11:06:23 Asia/Shanghai, but the Sitemaps report still says Could not fetch, Unknown, zero URLs. No root cause has been established; a successful live test is not successful sitemap processing.
+- GSC robots report read the current Allow:/ plus sitemap-main.xml and sitemap.txt at 10:33. Crawl stats showed no host/DNS/robots outage; the visible 404 example was favicon.ico.
+- All six crawler endpoints now build as static assets with static-v2 delivery headers, including legacy XML aliases and the index. Keep /sitemap-main.xml as the primary stable submission URL.
+- Added 24 prerendered HTML directories at /sitemap/ and localized equivalents, with localized footer links throughout existing pages. Each directory links the existing five core pages, ten full articles, and all language directories through real HTML anchors. Compact mobile layout keeps the language list collapsible.
+- XML and plain text maps now include 384 canonical URLs: all existing 360 plus the 24 directories. No existing content or languages removed. Directory rendering and crawler files are independent of runtime product-source availability.
+- Build plus production semantics, simulated upstream429, and static directory/XML agreement checks passed locally. The production verification script now writes dated output under .generated instead of overwriting the historical deployment report.
+- Deployment and updated GSC submission results must still be verified; do not call this a confirmed Google processing fix until the actual report succeeds.

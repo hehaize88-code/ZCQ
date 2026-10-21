@@ -18,13 +18,16 @@ export async function writeCrawlerAssets(directory = 'dist/client') {
   }
   const files = {
     'sitemap-main.xml': [SITEMAP_XML, 'application/xml; charset=utf-8'],
+    'sitemap.xml': [SITEMAP_XML, 'application/xml; charset=utf-8'],
+    'sitemap-pages.xml': [SITEMAP_XML, 'application/xml; charset=utf-8'],
+    'sitemap-index.xml': ['<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://pikobuysheet.cc/sitemap-main.xml</loc></sitemap></sitemapindex>\n', 'application/xml; charset=utf-8'],
     'sitemap.txt': [SITEMAP_URLS.join('\n') + '\n', 'text/plain; charset=utf-8'],
     'robots.txt': ['User-agent: *\nAllow: /\n\nSitemap: https://pikobuysheet.cc/sitemap-main.xml\nSitemap: https://pikobuysheet.cc/sitemap.txt\n', 'text/plain; charset=utf-8']
   };
   await mkdir(directory, { recursive: true });
   for (const [name, [body]] of Object.entries(files)) await writeFile(directory + '/' + name, body);
   const headers = Object.entries(files).map(([name, [, type]]) =>
-    '/' + name + '\n  Content-Type: ' + type + '\n  Cache-Control: public, max-age=300, no-transform\n  X-Content-Type-Options: nosniff\n  X-Crawler-Delivery: static-v1\n'
+    '/' + name + '\n  Content-Type: ' + type + '\n  Cache-Control: public, max-age=300, no-transform\n  X-Content-Type-Options: nosniff\n  X-Crawler-Delivery: static-v2\n'
   ).join('\n') + '\nhttps://:worker.:account.workers.dev/*\n  X-Robots-Tag: noindex\n\nhttps://:version.:worker.:account.workers.dev/*\n  X-Robots-Tag: noindex\n';
   await writeFile(directory + '/_headers', headers);
   console.log('Static crawler files written:', SITEMAP_URLS.length, 'canonical URLs');
